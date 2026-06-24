@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "project_count": 0,
+    "finding_count": 6,
+    "unreviewed_count": 0,
+    "ready_to_promote_count": 0,
+    "hold_count": 0,
+    "retry_needed_count": 0,
+    "applied_count": 0,
+    "validation_error_count": 6,
+    "validation_warning_count": 0,
+    "inputs": [
+      "analysis/representative-lot-fallback-edge-session-packet.json",
+      "data/review/representative-lot-fallback-browser-findings.json",
+      "analysis/representative-lot-fallback-api-probe.json"
+    ],
+    "outputs": [
+      "analysis/representative-lot-fallback-finding-board.md",
+      "analysis/representative-lot-fallback-finding-board.csv",
+      "analysis/representative-lot-fallback-finding-board.json",
+      "data/review/representative-lot-fallback-browser-findings.README.md",
+      "data/review/representative-lot-fallback-browser-finding-examples.json"
+    ]
+  },
+  "rows": [],
+  "issues": [
+    {
+      "rank": "2",
+      "project_name": "압구정아파트지구 특별계획구역② 재건축정비사업조합",
+      "checked_at": "2026-06-24",
+      "severity": "error",
+      "field": "rank",
+      "message": "알 수 없는 rank: 2",
+      "action": "fallback 6건 중 하나의 rank로 수정"
+    },
+    {
+      "rank": "10",
+      "project_name": "압구정아파트지구 특별계획구역③ 재건축정비사업 조합",
+      "checked_at": "2026-06-24",
+      "severity": "error",
+      "field": "rank",
+      "message": "알 수 없는 rank: 10",
+      "action": "fallback 6건 중 하나의 rank로 수정"
+    },
+    {
+      "rank": "11",
+      "project_name": "압구정아파트지구 특별계획구역4",
+      "checked_at": "2026-06-24",
+      "severity": "error",
+      "field": "rank",
+      "message": "알 수 없는 rank: 11",
+      "action": "fallback 6건 중 하나의 rank로 수정"
+    },
+    {
+      "rank": "12",
+      "project_name": "압구정아파트지구 특별계획구역5 재건축정비사업조합",
+      "checked_at": "2026-06-24",
+      "severity": "error",
+      "field": "rank",
+      "message": "알 수 없는 rank: 12",
+      "action": "fallback 6건 중 하나의 rank로 수정"
+    },
+    {
+      "rank": "26",
+      "project_name": "자양한양아파트 재건축정비사업",
+      "checked_at": "2026-06-24",
+      "severity": "error",
+      "field": "rank",
+      "message": "알 수 없는 rank: 26",
+      "action": "fallback 6건 중 하나의 rank로 수정"
+    },
+    {
+      "rank": "30",
+      "project_name": "자양4동 A구역 주택재개발사업",
+      "checked_at": "2026-06-24",
+      "severity": "error",
+      "field": "rank",
+      "message": "알 수 없는 rank: 30",
+      "action": "fallback 6건 중 하나의 rank로 수정"
+    }
+  ],
+  "exampleRows": []
+}

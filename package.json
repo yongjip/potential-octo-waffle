@@ -1,0 +1,20 @@
+{
+  "name": "seoul-redevelopment-research",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "agent:status": "node scripts/agent-coordinator.mjs status",
+    "agent:claim": "node scripts/agent-coordinator.mjs claim",
+    "agent:release": "node scripts/agent-coordinator.mjs release",
+    "doctor": "node scripts/project-doctor.mjs",
+    "instructions:doctor": "node scripts/instructions-doctor.mjs",
+    "kb:doctor": "node scripts/kb-doctor.mjs",
+    "regenerate": "node scripts/regenerate-research-artifacts.mjs",
+    "status": "git status --short",
+    "audit:dates": "node scripts/generate-fixed-date-hardcode-audit.mjs",
+    "weekly-log": "node scripts/create-weekly-monitoring-log.mjs --help"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "triage_rank": 1,
+    "packet_rank": 1,
+    "ledger_rank": 1,
+    "rank": "20",
+    "focus_area": "잠실/송파",
+    "district": "송파구",
+    "project_name": "마천1재정비촉진구역 주택재개발정비사업조합",
+    "current_stage": "조합설립인가",
+    "field_id": "total_households",
+    "field_label": "총 세대수",
+    "current_value": "3,113",
+    "review_status": "poor_ocr_direct_image_required",
+    "confidence_bucket": "poor_ocr",
+    "match_score": 0,
+    "value_match_level": "none",
+    "alternate_ocr_numbers": "",
+    "ocr_section": "OCR page 1",
+    "image_path": "data/urban/text/ocr/images/20-11000NTC197312011134-20-11000NTC197312011134-notice_file-건설부470/page-1.png",
+    "ocr_snippet": "' ; N zm 호언 rer ar 이 ~~ FY Y 개 , 골 ie por ~ i . $A CY 고 뿐직 2 | ESTER EI | 200 Mg, 한알, FAs AHI 한안자를 ANTS 2 ie 규전에 익하여 다을과 gel 지정학없기 고식찬닥, 도시계획 ety ANY 구 엮도를 서울 2 벽시 gl FAL 천광 EARL, 한야식 미 과하동사무소, BAY 관장 동사무소 에 비치하고 일반인에거 보이게 찬다. ) ，",
+    "next_review_action": "OCR 매칭 실패. 원문 이미지를 직접 확대 확인하거나 재OCR/원본 PDF 재처리",
+    "project_note": "project-notes/20-macheon-1.md"
+  }
+]

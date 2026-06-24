@@ -1,0 +1,395 @@
+{
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "final_verdict": "not_complete",
+    "dashboard_p0": 0,
+    "dashboard_p1": 0,
+    "core_review_items": 110,
+    "focus_external_wait_count": 1,
+    "expansion_due_this_week_count": 2,
+    "expansion_latest_stage_gap_count": 0,
+    "expansion_confirmed_baseline_count": 3,
+    "expansion_verified_result_count": 1,
+    "expansion_verified_no_result_count": 1,
+    "expansion_blocked_popup_count": 2,
+    "completion_p0_count": 2,
+    "completion_p1_count": 3,
+    "filed_waiting_count": 3,
+    "next_check_due_count": 3,
+    "next_external_check_date": "2026-06-29",
+    "representative_lot_fallback_count": 0,
+    "representative_lot_fallback_identifier_closure_count": 0,
+    "representative_lot_fallback_finding_count": 6,
+    "representative_lot_fallback_ready_to_promote_count": 0,
+    "representative_lot_fallback_ready_to_apply_count": 0,
+    "representative_lot_fallback_applied_verified_count": 0,
+    "inputs": [
+      "analysis/research-status-dashboard.json",
+      "analysis/current-research-snapshot.json",
+      "analysis/focus-project-weekly-monitoring-cockpit.json",
+      "analysis/expansion-zone-weekly-monitoring-cockpit.json",
+      "analysis/expansion-official-latest-check-audit.json",
+      "analysis/life-area-monitoring-board.json",
+      "analysis/research-completion-cockpit.json",
+      "analysis/research-goal-completion-audit.json",
+      "analysis/high-blocking-filing-tracker.json",
+      "analysis/representative-lot-fallback-workbook.json",
+      "analysis/representative-lot-fallback-identifier-closure-workbook.json",
+      "analysis/representative-lot-fallback-finding-board.json",
+      "analysis/representative-lot-fallback-apply-audit.json"
+    ],
+    "outputs": [
+      "analysis/current-research-operating-guide.md",
+      "analysis/current-research-operating-guide.json",
+      "analysis/current-research-operating-guide.csv"
+    ]
+  },
+  "firstFileRows": [
+    {
+      "order": 1,
+      "file": "analysis/personal-research-home.md",
+      "why": "전체 진입점과 오늘 열 항목",
+      "file_md": "[personal-research-home.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/personal-research-home.md)"
+    },
+    {
+      "order": 2,
+      "file": "analysis/research-now-action-board.md",
+      "why": "오늘 바로 할 일과 날짜 대기선을 한 장으로 분리한 실행 보드",
+      "file_md": "[research-now-action-board.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/research-now-action-board.md)"
+    },
+    {
+      "order": 3,
+      "file": "analysis/research-manual-web-session-packet.md",
+      "why": "핵심·확장·외부 회신 수동 웹 확인 진입점을 한 장으로 묶은 세션 패킷",
+      "file_md": "[research-manual-web-session-packet.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/research-manual-web-session-packet.md)"
+    },
+    {
+      "order": 4,
+      "file": "analysis/official-web-query-registry.md",
+      "why": "포털별 검색어, 기록 필드, 판정 gate를 한 행으로 묶은 검색 레지스트리",
+      "file_md": "[official-web-query-registry.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/official-web-query-registry.md)"
+    },
+    {
+      "order": 5,
+      "file": "analysis/current-research-snapshot.md",
+      "why": "핵심 3생활권·확장 2권역·핵심 4개 사업 현재 판단",
+      "file_md": "[current-research-snapshot.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/current-research-snapshot.md)"
+    },
+    {
+      "order": 6,
+      "file": "analysis/focus-project-weekly-monitoring-cockpit.md",
+      "why": "핵심 4개 사업의 이번 주 우선순위와 외부 회신 대기",
+      "file_md": "[focus-project-weekly-monitoring-cockpit.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/focus-project-weekly-monitoring-cockpit.md)"
+    },
+    {
+      "order": 7,
+      "file": "analysis/expansion-zone-weekly-monitoring-cockpit.md",
+      "why": "강동권 단계 신호 확인과 약수권 direct hit 루프",
+      "file_md": "[expansion-zone-weekly-monitoring-cockpit.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/expansion-zone-weekly-monitoring-cockpit.md)"
+    },
+    {
+      "order": 8,
+      "file": "analysis/expansion-official-latest-check-audit.md",
+      "why": "정비사업구역계 진입 페이지 검색 결과와 popup 직접 접근 차단 여부를 먼저 확인",
+      "file_md": "[expansion-official-latest-check-audit.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/expansion-official-latest-check-audit.md)"
+    },
+    {
+      "order": 9,
+      "file": "analysis/representative-lot-fallback-workbook.md",
+      "why": "대표지번 fallback만 남은 6건의 direct notice 단계와 current business 미확정 사유를 한 장으로 보는 워크북",
+      "file_md": "[representative-lot-fallback-workbook.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/representative-lot-fallback-workbook.md)"
+    },
+    {
+      "order": 10,
+      "file": "analysis/representative-lot-fallback-identifier-closure-workbook.md",
+      "why": "대표지번 fallback 6건의 PNU, UQ120 후보명, presentSn 채택 조건을 바로 보는 클로저 워크북",
+      "file_md": "[representative-lot-fallback-identifier-closure-workbook.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/representative-lot-fallback-identifier-closure-workbook.md)"
+    },
+    {
+      "order": 11,
+      "file": "analysis/representative-lot-fallback-command-packet.md",
+      "why": "today 기준 fallback 6건 copy-ready 기록 명령 패킷",
+      "file_md": "[representative-lot-fallback-command-packet.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/representative-lot-fallback-command-packet.md)"
+    },
+    {
+      "order": 12,
+      "file": "analysis/representative-lot-fallback-api-probe.md",
+      "why": "fallback 6건에 대해 API 기준 strong candidate와 hold를 먼저 보는 보드",
+      "file_md": "[representative-lot-fallback-api-probe.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/representative-lot-fallback-api-probe.md)"
+    },
+    {
+      "order": 13,
+      "file": "analysis/representative-lot-fallback-edge-session-packet.md",
+      "why": "Edge 브라우저에서 fallback 6건의 presentSn를 직접 확인할 때 쓰는 세션 패킷",
+      "file_md": "[representative-lot-fallback-edge-session-packet.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/representative-lot-fallback-edge-session-packet.md)"
+    },
+    {
+      "order": 14,
+      "file": "analysis/representative-lot-fallback-finding-board.md",
+      "why": "Edge 확인 결과를 intake로 남기고 승격/보류 상태를 보는 보드",
+      "file_md": "[representative-lot-fallback-finding-board.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/representative-lot-fallback-finding-board.md)"
+    },
+    {
+      "order": 15,
+      "file": "analysis/representative-lot-fallback-apply-audit.md",
+      "why": "confirmed finding이 matrix/project-note에 반영됐는지 보고 applied로 닫는 감사표",
+      "file_md": "[representative-lot-fallback-apply-audit.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/representative-lot-fallback-apply-audit.md)"
+    },
+    {
+      "order": 16,
+      "file": "analysis/life-area-market-reaction-brief.md",
+      "why": "핵심 3생활권 시장 신호와 확장권 baseline 커버를 같은 규칙으로 읽는 generated 브리프",
+      "file_md": "[life-area-market-reaction-brief.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/life-area-market-reaction-brief.md)"
+    },
+    {
+      "order": 16,
+      "file": "analysis/expansion-market-scope-workbook.md",
+      "why": "강동권·약수권 법정동 시장 scope를 core chain과 분리해 운영하는 워크북",
+      "file_md": "[expansion-market-scope-workbook.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/expansion-market-scope-workbook.md)"
+    },
+    {
+      "order": 17,
+      "file": "analysis/expansion-market-normalized-summary.md",
+      "why": "확장 6개 scope에 latest-window 정규화 거래가 모두 들어왔는지 보는 행·source 요약",
+      "file_md": "[expansion-market-normalized-summary.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/expansion-market-normalized-summary.md)"
+    },
+    {
+      "order": 18,
+      "file": "analysis/expansion-market-signal-summary.md",
+      "why": "강동권·약수권 2권역과 6개 법정동의 매매·전월세 중위값과 최근성을 읽는 시그널 요약",
+      "file_md": "[expansion-market-signal-summary.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/expansion-market-signal-summary.md)"
+    },
+    {
+      "order": 19,
+      "file": "analysis/life-area-market-baseline-board.md",
+      "why": "핵심 3생활권 full-chain과 확장 2권역 latest-window baseline을 같은 표에서 읽는 시장 기준 비교 보드",
+      "file_md": "[life-area-market-baseline-board.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/life-area-market-baseline-board.md)"
+    },
+    {
+      "order": 20,
+      "file": "analysis/expansion-market-first-download-packet.md",
+      "why": "확장권 시장 90개 raw task를 최신 window 우선 패킷으로 압축한 실행표",
+      "file_md": "[expansion-market-first-download-packet.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/expansion-market-first-download-packet.md)"
+    },
+    {
+      "order": 21,
+      "file": "analysis/expansion-market-download-session-packet.md",
+      "why": "확장권 latest-window 30개 수집을 바로 시작하는 세션 패킷",
+      "file_md": "[expansion-market-download-session-packet.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/expansion-market-download-session-packet.md)"
+    },
+    {
+      "order": 22,
+      "file": "analysis/expansion-market-quickstart-packet.md",
+      "why": "천호동·길동 10개 task만 먼저 닫는 first-session quickstart 패킷",
+      "file_md": "[expansion-market-quickstart-packet.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/expansion-market-quickstart-packet.md)"
+    },
+    {
+      "order": 23,
+      "file": "analysis/expansion-market-download-status.md",
+      "why": "확장권 latest-window 30개 파일 존재와 intake 기록 상태",
+      "file_md": "[expansion-market-download-status.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/expansion-market-download-status.md)"
+    },
+    {
+      "order": 24,
+      "file": "analysis/life-area-monitoring-board.md",
+      "why": "핵심 생활권과 확장 관심권을 같은 판에서 비교",
+      "file_md": "[life-area-monitoring-board.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/life-area-monitoring-board.md)"
+    },
+    {
+      "order": 25,
+      "file": "analysis/high-blocking-filing-tracker.md",
+      "why": "외부 회신 3건의 접수번호·다음 점검일",
+      "file_md": "[high-blocking-filing-tracker.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/high-blocking-filing-tracker.md)"
+    },
+    {
+      "order": 26,
+      "file": "analysis/high-blocking-response-followup-cockpit.md",
+      "why": "회신 도착 시 helper·dry-run·write 순서를 그대로 따라가는 실행판",
+      "file_md": "[high-blocking-response-followup-cockpit.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/high-blocking-response-followup-cockpit.md)"
+    },
+    {
+      "order": 27,
+      "file": "analysis/high-blocking-next-check-session-packet.md",
+      "why": "다음 점검일에 조회 URL과 no response/response helper를 바로 쓰는 세션 패킷",
+      "file_md": "[high-blocking-next-check-session-packet.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/high-blocking-next-check-session-packet.md)"
+    },
+    {
+      "order": 28,
+      "file": "analysis/high-blocking-next-check-command-audit.md",
+      "why": "세션 패킷 helper의 checked-at/next-check-date가 실제로 앞으로 가는지 감사",
+      "file_md": "[high-blocking-next-check-command-audit.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/high-blocking-next-check-command-audit.md)"
+    },
+    {
+      "order": 29,
+      "file": "analysis/high-blocking-followup-history.md",
+      "why": "실제 점검일에 무엇을 확인했고 어떤 상태 변화가 있었는지 누적 이력 확인",
+      "file_md": "[high-blocking-followup-history.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/high-blocking-followup-history.md)"
+    },
+    {
+      "order": 30,
+      "file": "analysis/research-completion-cockpit.md",
+      "why": "goal 완료를 막는 P0/P1 병목",
+      "file_md": "[research-completion-cockpit.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/research-completion-cockpit.md)"
+    },
+    {
+      "order": 31,
+      "file": "analysis/research-session-playbook.md",
+      "why": "15분/주간/현장/확장 세션별 실행 순서",
+      "file_md": "[research-session-playbook.md](/Users/yongjip/Projects/potential-octo-waffle/analysis/research-session-playbook.md)"
+    }
+  ],
+  "zoneRows": [
+    {
+      "group": "핵심 생활권",
+      "name": "강남",
+      "current_state": "조건 해석 우선",
+      "key_question": "상급 입지 프리미엄이 비용/공공기여 리스크를 이길 만큼 확실한가",
+      "next_action": "압구정3 비용·기반시설 공개항목과 현장 체감 연결",
+      "route": "압구정 한강변 특별계획구역"
+    },
+    {
+      "group": "핵심 생활권",
+      "name": "잠실/송파",
+      "current_state": "장기 잠재 강함, 리스크 분리 필요",
+      "key_question": "잠실 핵심축의 공공개발 기대가 비용·이주·혼잡을 보상하는가",
+      "next_action": "장미1,2,3차 현장 메모와 잠실우성4차 외부 회신 반영",
+      "route": "잠실역-잠실나루 한강축"
+    },
+    {
+      "group": "핵심 생활권",
+      "name": "구의/광진",
+      "current_state": "원문·단계 확정 우선",
+      "key_question": "2·7호선과 한강/터미널 변화 가능성이 사업성 편차를 보완하는가",
+      "next_action": "한양연립 현장 메모와 삼성1차/자양번영로3나길 회신 대기 관리",
+      "route": "강변-광나루 동서울터미널축"
+    },
+    {
+      "group": "확장 관심권",
+      "name": "강동권",
+      "current_state": "잠실/송파 동측 연장축 비교",
+      "key_question": "잠실 동측 연장축에서 중간 체급 재건축이 대안축으로 성립하는가",
+      "next_action": "천호3구역, 신동아1·2차, 성내미주의 최신 공개 단계를 강동구 고시공고·정보몽땅으로 다시 닫는다.",
+      "route": "천호역-강동역-길동역 축"
+    },
+    {
+      "group": "확장 관심권",
+      "name": "약수동 주변",
+      "current_state": "도심근접형 대조군 유지",
+      "key_question": "도심 경사형 재개발이 강남·잠실과 다른 장기 대안축으로 성립하는가",
+      "next_action": "신당8·신당9·금호14-1의 confirmed snapshot만 유지하고, 약수 direct hit가 생기면 adjacent에서 direct 후보로 승격한다.",
+      "route": "약수역-버티고개-신금호 축"
+    },
+    {
+      "group": "확장 실행상태",
+      "name": "강동권",
+      "current_state": "confirmed 비교 가능",
+      "key_question": "",
+      "next_action": "기반시설 비용분담과 세대 구성을 생활권 비교 보드에 옮기고 강동구 고시공고 최신 단계와 교차 확인; 사업 단계 최신성은 강동구 고시공고·정보몽땅으로 갱신하고, 면적/세대수는 장기 비교 기준값으로 보관",
+      "route": "잠실/송파"
+    },
+    {
+      "group": "확장 실행상태",
+      "name": "약수동 주변",
+      "current_state": "confirmed 비교 가능",
+      "key_question": "약수권 비교표에 1,215세대/임대 183세대 구조와 기부채납 10.81%를 반영하고, 생활권 대조에서는 서술부 OCR 숫자를 폐기; 약수권 비교표에 7층/28m, 334세대, 환산부지면적 967.39㎡를 공식 확정값으로 반영",
+      "next_action": "약수권 비교표에 1,215세대/임대 183세대 구조와 기부채납 10.81%를 반영하고, 생활권 대조에서는 서술부 OCR 숫자를 폐기; 약수권 비교표에 7층/28m, 334세대, 환산부지면적 967.39㎡를 공식 확정값으로 반영",
+      "route": "별도 도심근접형 대조군"
+    }
+  ],
+  "watchRows": [
+    {
+      "lane": "핵심 사업",
+      "target": "9. 잠실우성4차 주택재건축정비사업조합",
+      "status": "filed_waiting_response; waiting; receipt 626590",
+      "next_check": "접수번호 626590 유지, 회신 도착 여부 확인 후 intake 입력",
+      "output_route": "회신 없음: high-blocking-filing-tracker -> 회신 도착: response-intake -> decision draft -> 전체 재생성"
+    },
+    {
+      "lane": "핵심 사업",
+      "target": "10. 압구정아파트지구 특별계획구역③ 재건축정비사업 조합",
+      "status": "none",
+      "next_check": "추진경과와 공개항목/입찰공고에서 비용·기반시설 신호 확인",
+      "output_route": "변화 확인: project-notes -> project-comparison-matrix -> reassessment-watchlist"
+    },
+    {
+      "lane": "핵심 사업",
+      "target": "25. 한양연립 일대 가로주택정비사업",
+      "status": "none",
+      "next_check": "추진경과와 자치구 고시공고를 먼저 비교해 단계 선행 여부 확인",
+      "output_route": "변화 확인: project-notes -> project-comparison-matrix -> reassessment-watchlist"
+    },
+    {
+      "lane": "핵심 사업",
+      "target": "5. 장미1,2,3차아파트 주택재건축정비사업 조합",
+      "status": "none",
+      "next_check": "추진경과와 공개항목/입찰공고에서 비용·기반시설 신호 확인",
+      "output_route": "변화 확인: project-notes -> project-comparison-matrix -> reassessment-watchlist"
+    },
+    {
+      "lane": "확장 관심권",
+      "target": "강동권",
+      "status": "confirmed 비교 가능 / D-7",
+      "next_check": "정보몽땅 사업장 상세 공개자료의 최근 문서일과 강동구 고시공고 최신 문서일을 같은 날짜 기준으로 교차 확인",
+      "output_route": "official-update-intake -> expansion-gangdong-stage-watch-board -> expansion-zone-intake-seed-board -> regenerate-research-artifacts"
+    },
+    {
+      "lane": "확장 관심권",
+      "target": "약수동 주변",
+      "status": "confirmed 비교 가능 / D-7",
+      "next_check": "약수권 비교표에 1,215세대/임대 183세대 구조와 기부채납 10.81%를 반영하고, 생활권 대조에서는 서술부 OCR 숫자를 폐기; 약수권 비교표에 7층/28m, 334세대, 환산부지면적 967.39㎡를 공식 확정값으로 반영",
+      "output_route": "official-update-intake -> expansion-yaksu-ocr-recheck-board -> expansion-zone-intake-seed-board -> regenerate-research-artifacts"
+    }
+  ],
+  "externalWaitRows": [
+    {
+      "rank": "23",
+      "project_name": "광장동 삼성1차아파트 소규모재건축정비사업",
+      "filing_receipt_no": "16913396",
+      "next_check_date": "2026-06-29",
+      "next_check_note": "open.go.kr 나의청구에서 처리상태, 보완요구, 담당부서 회신 여부 확인",
+      "remaining_gap": "조합설립인가 고시번호, 고시일, 원문/첨부 URL"
+    },
+    {
+      "rank": "28",
+      "project_name": "자양번영로3나길 일대 가로주택정비사업",
+      "filing_receipt_no": "16913410",
+      "next_check_date": "2026-06-29",
+      "next_check_note": "open.go.kr 나의청구에서 처리상태, 보완요구, 처리기한 변경 여부 확인",
+      "remaining_gap": "조합설립인가 고시번호, 고시일, 원문/첨부 URL"
+    },
+    {
+      "rank": "9",
+      "project_name": "잠실우성4차 주택재건축정비사업조합",
+      "filing_receipt_no": "626590",
+      "next_check_date": "2026-06-29",
+      "next_check_note": "새올전자민원창구 나의민원조회에서 접수상태, 답변 게시 여부, 보완요구 여부 확인",
+      "remaining_gap": "관리처분계획 별첨 또는 공개 가능한 공사비/정비사업비 원문"
+    }
+  ],
+  "actionLaneRows": [
+    {
+      "lane": "외부 회신",
+      "availability": "지금은 대기 유지",
+      "targets": "23. 광장동 삼성1차아파트 소규모재건축정비사업; 28. 자양번영로3나길 일대 가로주택정비사업; 9. 잠실우성4차 주택재건축정비사업조합",
+      "current_status": "no_response 3건 / 다음 점검 2026-06-29 / D-5",
+      "today_action": "새 메일이나 알림이 없으면 오늘은 추가 제출 없이 대기하고, 2026-06-29에 next-check session packet으로 3건 상태를 재확인",
+      "open_file": "analysis/high-blocking-next-check-session-packet.md"
+    },
+    {
+      "lane": "확장 관심권",
+      "availability": "지금 바로 가능",
+      "targets": "강동권",
+      "current_status": "confirmed 비교 가능; D-7; 기준 2026-07-01 KST",
+      "today_action": "정보몽땅 사업장 상세 공개자료의 최근 문서일과 강동구 고시공고 최신 문서일을 같은 날짜 기준으로 교차 확인",
+      "open_file": "analysis/expansion-zone-weekly-monitoring-cockpit.md"
+    },
+    {
+      "lane": "핵심 생활권 비교",
+      "availability": "지금 바로 가능",
+      "targets": "10. 압구정아파트지구 특별계획구역③ 재건축정비사업 조합",
+      "current_status": "강남; 비용/기반시설 확인; 조합설립인가",
+      "today_action": "추진경과와 공개항목/입찰공고에서 비용·기반시설 신호 확인",
+      "open_file": "analysis/focus-project-weekly-monitoring-cockpit.md"
+    }
+  ]
+}

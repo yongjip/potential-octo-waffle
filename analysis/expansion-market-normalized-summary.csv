@@ -1,0 +1,7 @@
+zone_name,district,dong,representative_projects,normalized_transaction_rows,project_match_rows,source_mix,month_span,month_count,latest_window_rows,status
+강동권,강동구,천호동,천호3구역,3044,0,molit-rtms-rowhouse-manual 1505; molit-rtms-apt-manual 847; seoul-open-data-manual 692,202512~202606,7,3014,latest_window_normalized_present
+강동권,강동구,성내동,성내미주아파트 주택재건축정비사업,2220,0,molit-rtms-rowhouse-manual 1117; molit-rtms-apt-manual 674; seoul-open-data-manual 429,202511~202606,8,2192,latest_window_normalized_present
+강동권,강동구,길동,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,1643,0,molit-rtms-apt-manual 861; molit-rtms-rowhouse-manual 473; seoul-open-data-manual 309,202512~202606,7,1626,latest_window_normalized_present
+약수동 주변,중구,신당동,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,1845,0,molit-rtms-apt-manual 854; molit-rtms-rowhouse-manual 566; seoul-open-data-manual 425,202511~202606,8,1827,latest_window_normalized_present
+약수동 주변,성동구,금호동,금호 제14-1 주택재개발 정비사업,1837,0,molit-rtms-apt-manual 1286; seoul-open-data-manual 314; molit-rtms-rowhouse-manual 237,202512~202606,7,1831,latest_window_normalized_present
+약수동 주변,성동구,옥수동,약수-옥수/한남 경계축 context,941,0,molit-rtms-apt-manual 777; seoul-open-data-manual 146; molit-rtms-rowhouse-manual 18,202512~202606,7,939,latest_window_normalized_present

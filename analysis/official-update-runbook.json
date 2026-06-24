@@ -1,0 +1,123 @@
+[
+  {
+    "runbook_id": "weekly_primary_refresh",
+    "cadence": "weekly",
+    "trigger": "정기 점검일 또는 관심구 고시/공고 알림 수신",
+    "scope": "강남구, 송파구, 광진구 후보 30개",
+    "network_required": "Y",
+    "command_sequence": "node scripts/fetch-cleanup-projects.mjs -> node scripts/fetch-project-summaries.mjs -> node scripts/fetch-cafe-menu-links.mjs -> node scripts/fetch-cleanup-board-latest.mjs -> node scripts/fetch-urban-map-details.mjs -> node scripts/fetch-urban-notice-details.mjs --download -> node scripts/probe-gangnam-songpa-notices.mjs --download",
+    "followup_local_command": "node scripts/regenerate-research-artifacts.mjs",
+    "first_outputs_to_read": "analysis/official-refresh-summary.md; analysis/cleanup-snapshot-diff.md; analysis/cleanup-board-review-queue.md; analysis/project-comparison-matrix.md; analysis/research-status-dashboard.md",
+    "decision_rule": "단계 변경, 공개자료 수 증가, 새 고시번호, 새 첨부 원문이 있으면 사업별 메모와 원문 검증 큐를 먼저 갱신한다."
+  },
+  {
+    "runbook_id": "expansion_interest_zone_bootstrap",
+    "cadence": "weekly",
+    "trigger": "강동권·약수동 주변을 확장 관심권으로 운영 체계에 붙일 때",
+    "scope": "강동구 고시공고, 중구 고시공고, 서울도시공간포털 알림 슬롯, 확장 관심권 브리프",
+    "network_required": "Y",
+    "command_sequence": "수동 검색: 강동구 고시공고, 중구 고시공고, 서울도시공간포털 알림서비스 신청 범위 검토 -> 결과를 data/review/official-source-activation-intake.json 또는 data/review/official-update-intake.json에 기록",
+    "followup_local_command": "node scripts/generate-official-source-activation-checklist.mjs -> node scripts/generate-official-source-activation-validation.mjs -> node scripts/regenerate-research-artifacts.mjs",
+    "first_outputs_to_read": "analysis/expansion-interest-zone-brief.md; analysis/expansion-interest-zone-candidate-brief.md; analysis/official-source-activation-checklist.md; analysis/official-change-detection-board.md; analysis/official-update-intake-board.md",
+    "decision_rule": "강동구·중구 고시공고 페이지는 라우팅 출처다. 고시번호·고시일·원문 URL·첨부명이 확인되기 전에는 사업 단계나 수치 근거로 승격하지 않는다."
+  },
+  {
+    "runbook_id": "expansion_zone_latest_check",
+    "cadence": "weekly",
+    "trigger": "강동권·약수동 주변 확장 관심권의 최신 단계/직접 hit를 정기 재확인할 때",
+    "scope": "강동권 4건 최신 단계 재확인, 약수권 3건 confirmed 기준값 유지, 약수역 direct hit 탐색",
+    "network_required": "Y",
+    "command_sequence": "수동 검색: 강동구 고시공고, 중구 고시공고, 정비사업 정보몽땅 사업장검색/공개자료, 서울도시공간포털 정비사업구역계 진입 페이지(PMNU4030600001) 검색 + noticeCode 식별자 대조 -> 결과를 data/review/official-update-intake.json 또는 data/review/official-source-activation-intake.json에 기록",
+    "followup_local_command": "node scripts/generate-expansion-zone-monitoring-checklist.mjs -> node scripts/generate-expansion-zone-intake-seed-board.mjs -> node scripts/regenerate-research-artifacts.mjs",
+    "first_outputs_to_read": "analysis/expansion-zone-weekly-monitoring-cockpit.md; analysis/expansion-zone-latest-check-guide.md; analysis/expansion-zone-monitoring-checklist.md; analysis/expansion-zone-intake-seed-board.md; analysis/expansion-gangdong-stage-watch-board.md; analysis/expansion-yaksu-ocr-recheck-board.md; analysis/life-area-monitoring-board.md",
+    "decision_rule": "강동권은 값 confirmed와 최신 단계 재확인을 분리하고 gangdong_district_notice 새 row를 만든다. 약수권은 confirmed snapshot 3건을 유지하되, 신당8·신당9는 기존 seoul_urban_notice row를 재사용하고 금호14-1은 tracked_update_id가 없으면 seoul_urban_notice baseline row를 새로 만든다. 약수역 direct hit가 생기기 전에는 adjacent 대조군으로만 읽는다."
+  },
+  {
+    "runbook_id": "recordcode_bottleneck_probe",
+    "cadence": "ad_hoc",
+    "trigger": "research-status-dashboard 또는 recordcode-dead-end-audit에서 P0 recordCode/고시 병목 확인",
+    "scope": "recordCode 미연결 사업장, 특히 삼성1차·자양번영로3나길",
+    "network_required": "Y",
+    "command_sequence": "node scripts/fetch-representative-lot-map-candidates.mjs -> node scripts/fetch-map-missing-business-layer-details.mjs -> node scripts/fetch-business-layer-notice-candidates.mjs -> node scripts/fetch-gwangjin-gu-notice-candidates.mjs -> node scripts/probe-gangnam-songpa-notices.mjs --download -> node scripts/probe-source-link-officials.mjs",
+    "followup_local_command": "node scripts/generate-map-missing-business-layer-review.mjs -> node scripts/generate-recordcode-dead-end-audit.mjs -> node scripts/regenerate-research-artifacts.mjs",
+    "first_outputs_to_read": "analysis/recordcode-dead-end-audit.md; analysis/source-link-official-probe.md; analysis/map-missing-business-layer-review.md",
+    "decision_rule": "고신뢰 후보만 원문 후보로 승격한다. 토지구획정리·환지 등 과거 일반 구역은 현 정비사업 고시로 쓰지 않는다."
+  },
+  {
+    "runbook_id": "high_blocking_public_web_probe",
+    "cadence": "ad_hoc",
+    "trigger": "high-blocking-source-escalation-packet의 3개 사업장 외부 문의 전후 공개화면 재확인",
+    "scope": "광장동 삼성1차, 자양번영로3나길, 잠실우성4차 high blocking 필드",
+    "network_required": "Y",
+    "command_sequence": "node scripts/fetch-high-blocking-public-web-probe.mjs",
+    "followup_local_command": "node scripts/generate-high-blocking-public-web-probe.mjs -> node scripts/regenerate-research-artifacts.mjs",
+    "first_outputs_to_read": "analysis/high-blocking-public-web-probe.md; analysis/high-blocking-contact-channel-registry.md; analysis/high-blocking-public-summary-boundary.md; analysis/high-blocking-source-escalation-packet.md",
+    "decision_rule": "공식 공개화면에서 고시/공고 0건, 로그인 필요, 계 필드 공란이면 confirmed 승격하지 않고 담당부서/정보공개 확인 경로로 유지한다."
+  },
+  {
+    "runbook_id": "high_blocking_filing_submission",
+    "cadence": "ad_hoc",
+    "trigger": "사용자 승인 후 high blocking 3건을 실제 담당부서 문의 또는 정보공개청구로 접수할 때",
+    "scope": "광장동 삼성1차, 자양번영로3나길, 잠실우성4차 제출·접수기록",
+    "network_required": "N",
+    "command_sequence": "수동 승인 확인: analysis/high-blocking-submission-approval-board.md -> 수동 제출: data/review/high-blocking-filing-outbox/*.txt 사용 -> 접수 기록: node scripts/mark-high-blocking-filed.mjs --rank=NN --filed-at=YYYY-MM-DD --receipt=접수번호 --write",
+    "followup_local_command": "node scripts/regenerate-research-artifacts.mjs",
+    "first_outputs_to_read": "analysis/high-blocking-submission-approval-board.md; analysis/high-blocking-filing-checklist.md; data/review/high-blocking-filing-outbox/README.md; analysis/high-blocking-filing-tracker.md",
+    "decision_rule": "접수번호가 있으면 receipt로, 없으면 filing_note로 접수 흔적을 남긴 뒤 filed_waiting_response로 올린다. 회신 전에는 confirmed/partial로 승격하지 않는다."
+  },
+  {
+    "runbook_id": "high_blocking_contact_escalation",
+    "cadence": "ad_hoc",
+    "trigger": "high-blocking-public-web-probe에서 외부 확인 필요가 남거나 담당부서/정보몽땅 회신을 받은 경우",
+    "scope": "광장동 삼성1차, 자양번영로3나길, 잠실우성4차 high blocking 필드",
+    "network_required": "N",
+    "command_sequence": "수동 확인: analysis/high-blocking-contact-channel-registry.md의 우선 채널 선택 -> 수동 발송: analysis/high-blocking-source-escalation-packet.md의 사업별 문의 본문 사용 -> 회신 기록: node scripts/record-high-blocking-response.mjs --rank=NN --status=... --received-at=YYYY-MM-DD --responder='담당부서' --write",
+    "followup_local_command": "node scripts/generate-high-blocking-response-decision-drafts.mjs -> node scripts/regenerate-research-artifacts.mjs",
+    "first_outputs_to_read": "analysis/high-blocking-contact-channel-registry.md; analysis/high-blocking-source-escalation-packet.md; analysis/high-blocking-response-intake-guide.md; analysis/high-blocking-response-decision-drafts.md; analysis/research-system-readiness-audit.md",
+    "decision_rule": "공식 채널 URL은 라우팅 근거일 뿐 값 확정 근거가 아니다. 회신에 고시번호·고시일·원문 URL·별첨명 또는 정보공개 필요 사유가 있을 때만 intake에 기록한다."
+  },
+  {
+    "runbook_id": "text_extraction_and_hwp_qa",
+    "cadence": "after_new_files",
+    "trigger": "새 PDF/HWP/HWPX 원문 또는 첨부 파일 확보",
+    "scope": "data/urban/files 및 data/urban/text",
+    "network_required": "N",
+    "command_sequence": "/Users/yongjip/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/extract_urban_notice_text.py -> node scripts/generate-source-text-extraction-audit.mjs -> node scripts/generate-hwp-conversion-audit.mjs",
+    "followup_local_command": "node scripts/generate-source-value-verification-queue.mjs -> node scripts/generate-core-value-confirmation-ledger.mjs -> node scripts/regenerate-research-artifacts.mjs",
+    "first_outputs_to_read": "analysis/source-text-extraction-audit.md; analysis/hwp-conversion-audit.md; analysis/core-value-confirmation-ledger.md",
+    "decision_rule": "텍스트 추출이 되지 않은 파일은 OCR 또는 HWP 직접 파서 경로로 분리하고, 숫자 확정은 원문 이미지/텍스트 근거가 있을 때만 승격한다."
+  },
+  {
+    "runbook_id": "ocr_value_resolution",
+    "cadence": "after_text_audit",
+    "trigger": "source-text-extraction-audit 또는 core ledger에서 OCR 숫자/부분확정 항목 확인",
+    "scope": "스캔 PDF, 이미지형 HWP, OCR 보정 후보",
+    "network_required": "N",
+    "command_sequence": "node scripts/generate-ocr-source-verification-packet.mjs -> node scripts/generate-ocr-source-review-triage.mjs -> node scripts/generate-ocr-image-review-decisions.mjs -> node scripts/generate-source-value-update-candidates.mjs",
+    "followup_local_command": "node scripts/regenerate-research-artifacts.mjs",
+    "first_outputs_to_read": "analysis/ocr-source-verification-packet.md; analysis/ocr-source-review-triage.md; analysis/ocr-image-review-decisions.md; analysis/source-value-update-candidates.md",
+    "decision_rule": "OCR 값은 자동 반영하지 않고 confirmed_from_ocr_image, partial_confirmation_pending, source_value_update_recommended로 분리한다."
+  },
+  {
+    "runbook_id": "monthly_market_data_refresh",
+    "cadence": "monthly",
+    "trigger": "실거래 최신월 공표 또는 API 키 연결 완료",
+    "scope": "강남구·송파구·광진구 실거래, R-ONE 지표",
+    "network_required": "Y",
+    "command_sequence": "node scripts/generate-market-data-matrix.mjs -> node scripts/fetch-market-raw-data.mjs --plan-only --from=202401 --to=YYYYMM -> DATA_GO_KR_SERVICE_KEY=... node scripts/fetch-market-raw-data.mjs --from=202401 --to=YYYYMM",
+    "followup_local_command": "node scripts/regenerate-research-artifacts.mjs",
+    "first_outputs_to_read": "data/market/README.md; analysis/market-manual-download-workbook.md; analysis/market-manual-download-status.md; data/market/market-fetch-plan.csv; data/market/project-market-areas.csv; analysis/transport-location-context.md",
+    "decision_rule": "시장 데이터는 사업 단계 판정 근거가 아니라 반응 확인용이다. 고시·인가일 전후 6개월/12개월 거래량과 가격 방향만 별도 분석한다."
+  },
+  {
+    "runbook_id": "monthly_context_scan",
+    "cadence": "monthly",
+    "trigger": "서울시 도시계획·교통 정책 발표, 심의 이슈, 대형 사업 보도자료",
+    "scope": "잠실 MICE, 동서울터미널, 한강변, 압구정·대치·광진 생활권",
+    "network_required": "Y",
+    "command_sequence": "수동 검색: 서울시 주택·도시계획 분야, 서울시 교통 분야, 서울 정보소통광장",
+    "followup_local_command": "analysis/official-context-sources.csv 수동 갱신 -> node scripts/generate-transport-location-context.mjs -> node scripts/regenerate-research-artifacts.mjs",
+    "first_outputs_to_read": "analysis/official-context-sources.csv; analysis/transport-location-context.md; analysis/focus-area-strategy.md",
+    "decision_rule": "보도자료와 결재문서는 context로만 두고, 고시번호·결정조서·도면 원문을 확인하기 전에는 확정 신호로 승격하지 않는다."
+  }
+]

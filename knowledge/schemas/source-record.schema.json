@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/source-record.schema.json",
+  "title": "Knowledge Base Source Record",
+  "type": "object",
+  "required": ["id", "domain_id", "record_type", "source_id", "source_name", "source_type", "access_mode", "license_status", "status", "basis_date", "observed_at", "visibility", "agent", "created_at"],
+  "properties": {
+    "id": { "type": "string" },
+    "record_type": { "const": "source_record" },
+    "source_id": { "type": "string" },
+    "domain_id": { "type": "string" },
+    "source_name": { "type": "string" },
+    "source_type": {
+      "type": "string",
+      "enum": ["official_notice", "official_api", "official_csv", "filing", "market_data", "company_ir", "manual_observation", "derived"]
+    },
+    "access_mode": {
+      "type": "string",
+      "enum": ["manual", "api", "download", "scrape", "local_only"]
+    },
+    "source_url": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["confirmed", "pending", "conflict", "deferred", "context_only", "rejected"]
+    },
+    "basis_date": { "type": "string" },
+    "observed_at": { "type": "string" },
+    "license_status": {
+      "type": "string",
+      "enum": ["confirmed_open", "restricted", "unknown", "private_only"]
+    },
+    "visibility": {
+      "type": "string",
+      "enum": ["public_candidate", "private", "restricted", "unknown_license"]
+    },
+    "public_export_allowed": { "type": "boolean" },
+    "agent": { "type": "string" },
+    "created_at": { "type": "string" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": true
+}

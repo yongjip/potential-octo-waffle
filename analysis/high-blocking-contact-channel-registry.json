@@ -1,0 +1,430 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "channel_count": 9,
+    "jurisdiction_count": 3,
+    "project_count": 3,
+    "jurisdiction_counts": {
+      "광진구": 5,
+      "송파구": 2,
+      "서울시/정보몽땅": 2
+    },
+    "channel_type_counts": {
+      "disclosure_portal": 1,
+      "department_page": 1,
+      "staff_search": 2,
+      "civil_petition": 3,
+      "system_helpdesk": 1,
+      "competent_status_page": 1
+    },
+    "jurisdiction_summary": "광진구 5; 서울시/정보몽땅 2; 송파구 2",
+    "channel_type_summary": "civil_petition 3; staff_search 2; competent_status_page 1; department_page 1; disclosure_portal 1; system_helpdesk 1",
+    "output": [
+      "analysis/high-blocking-contact-channel-registry.md",
+      "analysis/high-blocking-contact-channel-registry.csv",
+      "analysis/high-blocking-contact-channel-registry.json"
+    ]
+  },
+  "usage_rules": [
+    "이 레지스트리는 high blocking 잔여 원문 확인을 어디로 보낼지 정하는 채널 목록이다.",
+    "개별 담당자 이름과 직통 연락처는 연구 파일에 복사하지 않고, 공식 부서 안내·직원검색·민원창구 URL만 저장한다.",
+    "채널 자체는 값 확정 근거가 아니다. 회신·원문 URL·첨부 파일명·고시번호·고시일을 data/review/high-blocking-source-response-intake.json에 기록한 뒤 decision 초안으로 검증한다.",
+    "정보몽땅 시스템 조작/장애 문의와 개별 사업 내용 문의를 혼동하지 않는다. 공개 내용 자체는 해당 조합 또는 관할구청 담당부서 확인 대상으로 둔다.",
+    "광진구는 새올전자민원창구 첫 화면에서 상담민원 접수 및 조회가 국민신문고로 통합되었다고 안내한다.",
+    "광진구 공식 정보공개청구 페이지는 대한민국정보공개포털 바로가기를 제공하므로, 23·28번 건처럼 고시문·원문 문서를 요청할 때는 국민신문고 일반민원보다 정보공개청구 경로를 우선한다."
+  ],
+  "rows": [
+    {
+      "channel_id": "gwangjin_information_disclosure_portal",
+      "jurisdiction": "광진구",
+      "channel_type": "disclosure_portal",
+      "channel_name": "광진구 정보공개청구 바로가기",
+      "official_url": "https://www.gwangjin.go.kr/portal/main/contents.do?menuNo=200107",
+      "official_page_evidence": "광진구 공식 정보공개청구 페이지는 대한민국정보공개포털 바로가기를 제공한다. 정보공개제도 설명 페이지도 대한민국정보공개포털 바로가기를 명시한다.",
+      "project_ranks": [
+        "23",
+        "28"
+      ],
+      "project_names": [
+        "광장동 삼성1차아파트 소규모재건축정비사업",
+        "자양번영로3나길 일대 가로주택정비사업"
+      ],
+      "request_scope": "조합설립인가 고시문, 고시번호, 고시일, 원문/첨부 URL 등 공식 문서 원문 정보공개청구",
+      "route_priority": 1,
+      "public_contact_hint": "광진구 정보공개청구 바로가기에서 대한민국정보공개포털(open.go.kr)로 진행한다. 문서 원문 요청은 이 경로를 우선 사용하고, 담당부서는 주거사업과 기준으로 적는다.",
+      "privacy_rule": "정보공개청구 회신 원문에 개인정보가 있으면 필요한 출처·자료명·고시정보만 요약해 intake에 기록한다.",
+      "value_promotion_rule": "정보공개청구 회신에 고시번호, 고시일, 원문 URL, 첨부명, 보유부서, 공개/부분공개/비공개 사유가 들어올 때만 confirmed 또는 partial 판단 근거로 사용한다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md"
+    },
+    {
+      "channel_id": "gwangjin_housing_redevelopment_department",
+      "jurisdiction": "광진구",
+      "channel_type": "department_page",
+      "channel_name": "광진구 주거사업과 부서 안내",
+      "official_url": "https://www.gwangjin.go.kr/portal/bbs/B0000113/deptGdc.do?deptId=101591&menuNo=201015",
+      "official_page_evidence": "공식 부서안내 페이지 제목이 주거사업과이며, 주요업무에 주거 정책·주거 사업·모아주택 업무 추진을 표시한다.",
+      "project_ranks": [
+        "23",
+        "28"
+      ],
+      "project_names": [
+        "광장동 삼성1차아파트 소규모재건축정비사업",
+        "자양번영로3나길 일대 가로주택정비사업"
+      ],
+      "request_scope": "조합설립인가 고시번호·고시일·원문 URL, 공개 URL 부재 시 열람/정보공개 대상 자료명 확인",
+      "route_priority": 2,
+      "public_contact_hint": "부서 안내 페이지의 직원담당안내/업무검색에서 최신 담당업무를 확인한다.",
+      "privacy_rule": "직원담당안내에 개별 성명·전화번호가 표시될 수 있으므로 이 레지스트리에는 URL만 저장한다.",
+      "value_promotion_rule": "부서 회신에 고시번호, 고시일, 원문/첨부 URL 또는 열람 자료명이 포함될 때만 response intake에 입력한다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md"
+    },
+    {
+      "channel_id": "gwangjin_staff_search",
+      "jurisdiction": "광진구",
+      "channel_type": "staff_search",
+      "channel_name": "광진구 업무검색",
+      "official_url": "https://www.gwangjin.go.kr/portal/member/user/searchEmpList.do?searchDeptId=100259&menuNo=200203",
+      "official_page_evidence": "광진구 공식 홈페이지 조직/업무검색 메뉴에서 부서별 담당업무를 검색할 수 있다.",
+      "project_ranks": [
+        "23",
+        "28"
+      ],
+      "project_names": [
+        "광장동 삼성1차아파트 소규모재건축정비사업",
+        "자양번영로3나길 일대 가로주택정비사업"
+      ],
+      "request_scope": "주거사업과 부서 안내만으로 담당업무가 불명확할 때 정비사업·소규모주택정비·가로주택정비 업무 담당 경로 확인",
+      "route_priority": 3,
+      "public_contact_hint": "업무검색에서 사업명 또는 정비사업 담당업무를 확인한 뒤 공식 민원/부서 경로로 문의한다.",
+      "privacy_rule": "개별 담당자 정보는 링크 대상 공식 페이지에서만 확인하고 연구 파일에 복사하지 않는다.",
+      "value_promotion_rule": "업무검색 결과만으로 수치를 확정하지 않는다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md"
+    },
+    {
+      "channel_id": "songpa_housing_project_department",
+      "jurisdiction": "송파구",
+      "channel_type": "staff_search",
+      "channel_name": "송파구 주택사업과 직원검색",
+      "official_url": "https://www.songpa.go.kr/www/selectEmpList.do?key=2356&deptCode=32303010000",
+      "official_page_evidence": "송파구 공식 직원검색 페이지에서 주택사업과와 재건축1팀 담당업무를 표시하며 잠실우성4차가 재건축정비사업 담당 목록에 포함된다. 별도 송파구 공식 사업별 페이지 잠실우성4차는 담당부서 주택사업과와 최종 수정일 2026-03-19를 표시한다.",
+      "project_ranks": [
+        "9"
+      ],
+      "project_names": [
+        "잠실우성4차 주택재건축정비사업조합"
+      ],
+      "request_scope": "관리처분계획인가 별첨, 공사비/총사업비 공개 가능 자료명, 정보몽땅 비회원 미공개 항목의 열람·정보공개 경로 확인",
+      "route_priority": 1,
+      "public_contact_hint": "송파구 공식 사업별 페이지 잠실우성4차 항목에서 담당부서 주택사업과와 최종 수정일 2026-03-19를 먼저 확인하고, 직원검색 페이지에서 최신 담당업무를 확인한다. 연결이 안 되면 대표전화 02-2147-2000 또는 새올전자민원창구로 전환한다.",
+      "privacy_rule": "직원검색에 개별 성명·전화번호가 표시될 수 있으므로 이 레지스트리에는 부서 URL과 대표 경로만 저장한다.",
+      "value_promotion_rule": "관리처분 공사비는 별첨/공식 회신/공개자료명 확인 전까지 확정값으로 승격하지 않는다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md"
+    },
+    {
+      "channel_id": "songpa_civil_petition_saeeol",
+      "jurisdiction": "송파구",
+      "channel_type": "civil_petition",
+      "channel_name": "송파구 새올전자민원창구",
+      "official_url": "https://songpa.eminwon.seoul.kr/emwp/gov/mogaha/ntis/web/emwp/cmmpotal/action/EmwpMainMgtAction.do?",
+      "official_page_evidence": "송파구 공식 홈페이지 종합민원 메뉴의 민원신청/상담 링크가 새올전자민원창구로 연결된다.",
+      "project_ranks": [
+        "9"
+      ],
+      "project_names": [
+        "잠실우성4차 주택재건축정비사업조합"
+      ],
+      "request_scope": "부서 전화/직원검색으로 원문 자료명 또는 공개 가능 여부가 확인되지 않을 때 공식 민원으로 관리처분 별첨 확인 요청",
+      "route_priority": 2,
+      "public_contact_hint": "민원 본문에는 사업명, 요청 자료명, 현재 공개화면에서 로그인 필요로 확인된 사실을 함께 적는다.",
+      "privacy_rule": "민원 회신 원문은 개인정보가 있으면 필요한 출처·자료명·고시정보만 요약해 intake에 기록한다.",
+      "value_promotion_rule": "민원 회신이 정보공개청구 또는 방문열람 필요라고 답하면 info_disclosure_required 상태로 기록한다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md"
+    },
+    {
+      "channel_id": "gwangjin_civil_petition_guide",
+      "jurisdiction": "광진구",
+      "channel_type": "civil_petition",
+      "channel_name": "광진구 민원신청방법",
+      "official_url": "https://www.gwangjin.go.kr/portal/bbs/B0000090/list.do?menuNo=200032",
+      "official_page_evidence": "광진구 민원신청방법 페이지는 국민신문고와 생활불편신고(새올전자민원창구 舊)를 함께 안내한다.",
+      "project_ranks": [
+        "23",
+        "28"
+      ],
+      "project_names": [
+        "광장동 삼성1차아파트 소규모재건축정비사업",
+        "자양번영로3나길 일대 가로주택정비사업"
+      ],
+      "request_scope": "담당부서 문의로 해결되지 않을 때 공식 민원신고 경로와 국민신문고 전환 기준 확인",
+      "route_priority": 4,
+      "public_contact_hint": "민원신청방법 목록에서 국민신문고와 생활불편신고(새올전자민원창구 舊)를 함께 확인한다. 광진구 새올 본문 안내 기준 상담민원 접수는 국민신문고 또는 구 홈페이지 경로를 쓴다.",
+      "privacy_rule": "민원신청방법 페이지는 경로 안내용이므로 담당자 개인 연락처나 민원 내용 자체를 이 문서에 저장하지 않는다.",
+      "value_promotion_rule": "민원신청방법 목록은 라우팅 근거일 뿐 값 확정 근거가 아니다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md"
+    },
+    {
+      "channel_id": "gwangjin_civil_petition_epeople",
+      "jurisdiction": "광진구",
+      "channel_type": "civil_petition",
+      "channel_name": "국민신문고",
+      "official_url": "https://www.epeople.go.kr/index.jsp",
+      "official_page_evidence": "광진구 새올전자민원창구 첫 화면은 상담민원 접수 및 조회가 국민신문고로 통합되었다고 안내한다.",
+      "project_ranks": [
+        "23",
+        "28"
+      ],
+      "project_names": [
+        "광장동 삼성1차아파트 소규모재건축정비사업",
+        "자양번영로3나길 일대 가로주택정비사업"
+      ],
+      "request_scope": "담당부서 민원 라우팅이나 일반 민원 제출이 필요할 때 공식 민원 제출",
+      "route_priority": 5,
+      "public_contact_hint": "광진구 새올전자민원창구 본문 안내 기준 상담민원 접수 및 조회는 국민신문고로 통합되어 있다. 문서 원문 요청 자체는 정보공개청구 경로를 우선 검토한다.",
+      "privacy_rule": "민원 회신 원문에 개인정보가 있으면 필요한 출처·자료명·고시정보만 요약해 intake에 기록한다.",
+      "value_promotion_rule": "민원 회신이 정보공개청구 또는 방문열람 필요라고 답하면 info_disclosure_required 상태로 기록한다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md"
+    },
+    {
+      "channel_id": "cleanup_helpdesk_disclosure",
+      "jurisdiction": "서울시/정보몽땅",
+      "channel_type": "system_helpdesk",
+      "channel_name": "정비사업 정보몽땅 문의처 안내",
+      "official_url": "https://cleanup.seoul.go.kr/cleanup/html/qacenterPopup.html",
+      "official_page_evidence": "정보몽땅 문의처 안내는 정보공개 시스템 조작·장애 문의 번호와, 개별 홈페이지 공개 내용은 해당 조합/관할구청 담당부서 문의 대상임을 함께 안내한다.",
+      "project_ranks": [
+        "9",
+        "23",
+        "28"
+      ],
+      "project_names": [
+        "잠실우성4차 주택재건축정비사업조합",
+        "광장동 삼성1차아파트 소규모재건축정비사업",
+        "자양번영로3나길 일대 가로주택정비사업"
+      ],
+      "request_scope": "정보몽땅 공개목록 0건, 비회원 로그인 필요, 계 필드 공란 등 공개화면 상태가 시스템 문제인지 공개 정책/권한 문제인지 확인",
+      "route_priority": 6,
+      "public_contact_hint": "정보공개 시스템 조작·장애 문의: 02-2126-4674, 02-2126-4672. 예산회계 문의: 02-2126-4673.",
+      "privacy_rule": "시스템 헬프데스크는 공개화면 접근·기능 확인용이며, 개별 사업 수치 확인의 최종 담당 경로로 쓰지 않는다.",
+      "value_promotion_rule": "헬프데스크 답변은 공개경로/권한상태 확인으로만 사용하고 사업 수치 confirmed 근거로 쓰지 않는다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md"
+    },
+    {
+      "channel_id": "cleanup_competent_disclosure_status",
+      "jurisdiction": "서울시/정보몽땅",
+      "channel_type": "competent_status_page",
+      "channel_name": "정비사업 정보몽땅 사업장 정보공개 담당자 현황",
+      "official_url": "https://cleanup.seoul.go.kr/cleanup/bbs/competent.do",
+      "official_page_evidence": "정보몽땅 정보공개현황 메뉴의 사업장 정보공개 담당자 현황 페이지이며, 조합·구청·시청의 정보공개 역할 구분을 설명한다.",
+      "project_ranks": [
+        "9",
+        "23",
+        "28"
+      ],
+      "project_names": [
+        "잠실우성4차 주택재건축정비사업조합",
+        "광장동 삼성1차아파트 소규모재건축정비사업",
+        "자양번영로3나길 일대 가로주택정비사업"
+      ],
+      "request_scope": "사업장별 홈페이지 관리감독 관할처, 공개 주체, 구청/조합/시청 역할 확인",
+      "route_priority": 7,
+      "public_contact_hint": "자치구·사업장 선택 후 공식 화면에서 최신 관할처를 확인한다.",
+      "privacy_rule": "담당자명·연락처 항목이 페이지에 있을 수 있으나 연구 파일에는 관할처 확인 URL만 저장한다.",
+      "value_promotion_rule": "담당자 현황은 문의 라우팅 근거일 뿐 수치 확정 근거가 아니다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md"
+    }
+  ],
+  "flatRows": [
+    {
+      "channel_id": "gwangjin_information_disclosure_portal",
+      "jurisdiction": "광진구",
+      "channel_type": "disclosure_portal",
+      "channel_name": "광진구 정보공개청구 바로가기",
+      "route_priority": 1,
+      "project_ranks": "23; 28",
+      "project_names": "광장동 삼성1차아파트 소규모재건축정비사업; 자양번영로3나길 일대 가로주택정비사업",
+      "official_url": "https://www.gwangjin.go.kr/portal/main/contents.do?menuNo=200107",
+      "request_scope": "조합설립인가 고시문, 고시번호, 고시일, 원문/첨부 URL 등 공식 문서 원문 정보공개청구",
+      "public_contact_hint": "광진구 정보공개청구 바로가기에서 대한민국정보공개포털(open.go.kr)로 진행한다. 문서 원문 요청은 이 경로를 우선 사용하고, 담당부서는 주거사업과 기준으로 적는다.",
+      "privacy_rule": "정보공개청구 회신 원문에 개인정보가 있으면 필요한 출처·자료명·고시정보만 요약해 intake에 기록한다.",
+      "value_promotion_rule": "정보공개청구 회신에 고시번호, 고시일, 원문 URL, 첨부명, 보유부서, 공개/부분공개/비공개 사유가 들어올 때만 confirmed 또는 partial 판단 근거로 사용한다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md",
+      "official_page_evidence": "광진구 공식 정보공개청구 페이지는 대한민국정보공개포털 바로가기를 제공한다. 정보공개제도 설명 페이지도 대한민국정보공개포털 바로가기를 명시한다."
+    },
+    {
+      "channel_id": "gwangjin_housing_redevelopment_department",
+      "jurisdiction": "광진구",
+      "channel_type": "department_page",
+      "channel_name": "광진구 주거사업과 부서 안내",
+      "route_priority": 2,
+      "project_ranks": "23; 28",
+      "project_names": "광장동 삼성1차아파트 소규모재건축정비사업; 자양번영로3나길 일대 가로주택정비사업",
+      "official_url": "https://www.gwangjin.go.kr/portal/bbs/B0000113/deptGdc.do?deptId=101591&menuNo=201015",
+      "request_scope": "조합설립인가 고시번호·고시일·원문 URL, 공개 URL 부재 시 열람/정보공개 대상 자료명 확인",
+      "public_contact_hint": "부서 안내 페이지의 직원담당안내/업무검색에서 최신 담당업무를 확인한다.",
+      "privacy_rule": "직원담당안내에 개별 성명·전화번호가 표시될 수 있으므로 이 레지스트리에는 URL만 저장한다.",
+      "value_promotion_rule": "부서 회신에 고시번호, 고시일, 원문/첨부 URL 또는 열람 자료명이 포함될 때만 response intake에 입력한다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md",
+      "official_page_evidence": "공식 부서안내 페이지 제목이 주거사업과이며, 주요업무에 주거 정책·주거 사업·모아주택 업무 추진을 표시한다."
+    },
+    {
+      "channel_id": "gwangjin_staff_search",
+      "jurisdiction": "광진구",
+      "channel_type": "staff_search",
+      "channel_name": "광진구 업무검색",
+      "route_priority": 3,
+      "project_ranks": "23; 28",
+      "project_names": "광장동 삼성1차아파트 소규모재건축정비사업; 자양번영로3나길 일대 가로주택정비사업",
+      "official_url": "https://www.gwangjin.go.kr/portal/member/user/searchEmpList.do?searchDeptId=100259&menuNo=200203",
+      "request_scope": "주거사업과 부서 안내만으로 담당업무가 불명확할 때 정비사업·소규모주택정비·가로주택정비 업무 담당 경로 확인",
+      "public_contact_hint": "업무검색에서 사업명 또는 정비사업 담당업무를 확인한 뒤 공식 민원/부서 경로로 문의한다.",
+      "privacy_rule": "개별 담당자 정보는 링크 대상 공식 페이지에서만 확인하고 연구 파일에 복사하지 않는다.",
+      "value_promotion_rule": "업무검색 결과만으로 수치를 확정하지 않는다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md",
+      "official_page_evidence": "광진구 공식 홈페이지 조직/업무검색 메뉴에서 부서별 담당업무를 검색할 수 있다."
+    },
+    {
+      "channel_id": "songpa_housing_project_department",
+      "jurisdiction": "송파구",
+      "channel_type": "staff_search",
+      "channel_name": "송파구 주택사업과 직원검색",
+      "route_priority": 1,
+      "project_ranks": "9",
+      "project_names": "잠실우성4차 주택재건축정비사업조합",
+      "official_url": "https://www.songpa.go.kr/www/selectEmpList.do?key=2356&deptCode=32303010000",
+      "request_scope": "관리처분계획인가 별첨, 공사비/총사업비 공개 가능 자료명, 정보몽땅 비회원 미공개 항목의 열람·정보공개 경로 확인",
+      "public_contact_hint": "송파구 공식 사업별 페이지 잠실우성4차 항목에서 담당부서 주택사업과와 최종 수정일 2026-03-19를 먼저 확인하고, 직원검색 페이지에서 최신 담당업무를 확인한다. 연결이 안 되면 대표전화 02-2147-2000 또는 새올전자민원창구로 전환한다.",
+      "privacy_rule": "직원검색에 개별 성명·전화번호가 표시될 수 있으므로 이 레지스트리에는 부서 URL과 대표 경로만 저장한다.",
+      "value_promotion_rule": "관리처분 공사비는 별첨/공식 회신/공개자료명 확인 전까지 확정값으로 승격하지 않는다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md",
+      "official_page_evidence": "송파구 공식 직원검색 페이지에서 주택사업과와 재건축1팀 담당업무를 표시하며 잠실우성4차가 재건축정비사업 담당 목록에 포함된다. 별도 송파구 공식 사업별 페이지 잠실우성4차는 담당부서 주택사업과와 최종 수정일 2026-03-19를 표시한다."
+    },
+    {
+      "channel_id": "songpa_civil_petition_saeeol",
+      "jurisdiction": "송파구",
+      "channel_type": "civil_petition",
+      "channel_name": "송파구 새올전자민원창구",
+      "route_priority": 2,
+      "project_ranks": "9",
+      "project_names": "잠실우성4차 주택재건축정비사업조합",
+      "official_url": "https://songpa.eminwon.seoul.kr/emwp/gov/mogaha/ntis/web/emwp/cmmpotal/action/EmwpMainMgtAction.do?",
+      "request_scope": "부서 전화/직원검색으로 원문 자료명 또는 공개 가능 여부가 확인되지 않을 때 공식 민원으로 관리처분 별첨 확인 요청",
+      "public_contact_hint": "민원 본문에는 사업명, 요청 자료명, 현재 공개화면에서 로그인 필요로 확인된 사실을 함께 적는다.",
+      "privacy_rule": "민원 회신 원문은 개인정보가 있으면 필요한 출처·자료명·고시정보만 요약해 intake에 기록한다.",
+      "value_promotion_rule": "민원 회신이 정보공개청구 또는 방문열람 필요라고 답하면 info_disclosure_required 상태로 기록한다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md",
+      "official_page_evidence": "송파구 공식 홈페이지 종합민원 메뉴의 민원신청/상담 링크가 새올전자민원창구로 연결된다."
+    },
+    {
+      "channel_id": "gwangjin_civil_petition_guide",
+      "jurisdiction": "광진구",
+      "channel_type": "civil_petition",
+      "channel_name": "광진구 민원신청방법",
+      "route_priority": 4,
+      "project_ranks": "23; 28",
+      "project_names": "광장동 삼성1차아파트 소규모재건축정비사업; 자양번영로3나길 일대 가로주택정비사업",
+      "official_url": "https://www.gwangjin.go.kr/portal/bbs/B0000090/list.do?menuNo=200032",
+      "request_scope": "담당부서 문의로 해결되지 않을 때 공식 민원신고 경로와 국민신문고 전환 기준 확인",
+      "public_contact_hint": "민원신청방법 목록에서 국민신문고와 생활불편신고(새올전자민원창구 舊)를 함께 확인한다. 광진구 새올 본문 안내 기준 상담민원 접수는 국민신문고 또는 구 홈페이지 경로를 쓴다.",
+      "privacy_rule": "민원신청방법 페이지는 경로 안내용이므로 담당자 개인 연락처나 민원 내용 자체를 이 문서에 저장하지 않는다.",
+      "value_promotion_rule": "민원신청방법 목록은 라우팅 근거일 뿐 값 확정 근거가 아니다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md",
+      "official_page_evidence": "광진구 민원신청방법 페이지는 국민신문고와 생활불편신고(새올전자민원창구 舊)를 함께 안내한다."
+    },
+    {
+      "channel_id": "gwangjin_civil_petition_epeople",
+      "jurisdiction": "광진구",
+      "channel_type": "civil_petition",
+      "channel_name": "국민신문고",
+      "route_priority": 5,
+      "project_ranks": "23; 28",
+      "project_names": "광장동 삼성1차아파트 소규모재건축정비사업; 자양번영로3나길 일대 가로주택정비사업",
+      "official_url": "https://www.epeople.go.kr/index.jsp",
+      "request_scope": "담당부서 민원 라우팅이나 일반 민원 제출이 필요할 때 공식 민원 제출",
+      "public_contact_hint": "광진구 새올전자민원창구 본문 안내 기준 상담민원 접수 및 조회는 국민신문고로 통합되어 있다. 문서 원문 요청 자체는 정보공개청구 경로를 우선 검토한다.",
+      "privacy_rule": "민원 회신 원문에 개인정보가 있으면 필요한 출처·자료명·고시정보만 요약해 intake에 기록한다.",
+      "value_promotion_rule": "민원 회신이 정보공개청구 또는 방문열람 필요라고 답하면 info_disclosure_required 상태로 기록한다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md",
+      "official_page_evidence": "광진구 새올전자민원창구 첫 화면은 상담민원 접수 및 조회가 국민신문고로 통합되었다고 안내한다."
+    },
+    {
+      "channel_id": "cleanup_helpdesk_disclosure",
+      "jurisdiction": "서울시/정보몽땅",
+      "channel_type": "system_helpdesk",
+      "channel_name": "정비사업 정보몽땅 문의처 안내",
+      "route_priority": 6,
+      "project_ranks": "9; 23; 28",
+      "project_names": "잠실우성4차 주택재건축정비사업조합; 광장동 삼성1차아파트 소규모재건축정비사업; 자양번영로3나길 일대 가로주택정비사업",
+      "official_url": "https://cleanup.seoul.go.kr/cleanup/html/qacenterPopup.html",
+      "request_scope": "정보몽땅 공개목록 0건, 비회원 로그인 필요, 계 필드 공란 등 공개화면 상태가 시스템 문제인지 공개 정책/권한 문제인지 확인",
+      "public_contact_hint": "정보공개 시스템 조작·장애 문의: 02-2126-4674, 02-2126-4672. 예산회계 문의: 02-2126-4673.",
+      "privacy_rule": "시스템 헬프데스크는 공개화면 접근·기능 확인용이며, 개별 사업 수치 확인의 최종 담당 경로로 쓰지 않는다.",
+      "value_promotion_rule": "헬프데스크 답변은 공개경로/권한상태 확인으로만 사용하고 사업 수치 confirmed 근거로 쓰지 않는다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md",
+      "official_page_evidence": "정보몽땅 문의처 안내는 정보공개 시스템 조작·장애 문의 번호와, 개별 홈페이지 공개 내용은 해당 조합/관할구청 담당부서 문의 대상임을 함께 안내한다."
+    },
+    {
+      "channel_id": "cleanup_competent_disclosure_status",
+      "jurisdiction": "서울시/정보몽땅",
+      "channel_type": "competent_status_page",
+      "channel_name": "정비사업 정보몽땅 사업장 정보공개 담당자 현황",
+      "route_priority": 7,
+      "project_ranks": "9; 23; 28",
+      "project_names": "잠실우성4차 주택재건축정비사업조합; 광장동 삼성1차아파트 소규모재건축정비사업; 자양번영로3나길 일대 가로주택정비사업",
+      "official_url": "https://cleanup.seoul.go.kr/cleanup/bbs/competent.do",
+      "request_scope": "사업장별 홈페이지 관리감독 관할처, 공개 주체, 구청/조합/시청 역할 확인",
+      "public_contact_hint": "자치구·사업장 선택 후 공식 화면에서 최신 관할처를 확인한다.",
+      "privacy_rule": "담당자명·연락처 항목이 페이지에 있을 수 있으나 연구 파일에는 관할처 확인 URL만 저장한다.",
+      "value_promotion_rule": "담당자 현황은 문의 라우팅 근거일 뿐 수치 확정 근거가 아니다.",
+      "response_intake_file": "data/review/high-blocking-source-response-intake.json",
+      "decision_draft_output": "analysis/high-blocking-response-decision-drafts.md",
+      "official_page_evidence": "정보몽땅 정보공개현황 메뉴의 사업장 정보공개 담당자 현황 페이지이며, 조합·구청·시청의 정보공개 역할 구분을 설명한다."
+    }
+  ],
+  "coverageRows": [
+    {
+      "rank": "9",
+      "project_name": "잠실우성4차 주택재건축정비사업조합",
+      "channel_count": 4,
+      "primary_channels": [
+        "송파구 주택사업과 직원검색",
+        "송파구 새올전자민원창구"
+      ]
+    },
+    {
+      "rank": "23",
+      "project_name": "광장동 삼성1차아파트 소규모재건축정비사업",
+      "channel_count": 7,
+      "primary_channels": [
+        "광진구 정보공개청구 바로가기",
+        "광진구 주거사업과 부서 안내"
+      ]
+    },
+    {
+      "rank": "28",
+      "project_name": "자양번영로3나길 일대 가로주택정비사업",
+      "channel_count": 7,
+      "primary_channels": [
+        "광진구 정보공개청구 바로가기",
+        "광진구 주거사업과 부서 안내"
+      ]
+    }
+  ]
+}

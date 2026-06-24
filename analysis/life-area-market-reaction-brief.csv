@@ -1,0 +1,6 @@
+section,name,market_scope_status,unique_transactions,trade_transactions,rent_transactions,median_trade_price_per_sqm_manwon,latest_deal_ymd,note
+core_life_area,강남,covered,23070,7185,15885,3509.6,20260616,"압구정은 한강변 조건과 기반시설 비용, 대치는 사업시행 이후 비용·이주 가능성과 학군 수요를 분리한다."
+core_life_area,잠실/송파,covered,35681,16961,18720,1998.8,20260619,"잠실5·장미·잠실우성은 공공기여/기반시설과 한강·잠실역 동선을 같이 보고, 가락·송파동은 단계/비용 확정성을 먼저 본다."
+core_life_area,구의/광진,covered,31728,15230,16498,1457.3,20260619,투자 가설보다 공식 원문 매칭이 먼저다. 삼성1차·자양번영로·한양연립의 고시/인가 원문과 OCR 수치를 우선 확정한다.
+expansion_zone,강동권,covered,6907,,,1016.2,20260615,중복제거 6611 / 중위 매매 ㎡당 1016.2만원 / 중위 보증금 17000만원 / 최신 20260615
+expansion_zone,약수동 주변,covered,4623,,,1965.6,20260618,중복제거 4388 / 중위 매매 ㎡당 1965.6만원 / 중위 보증금 50000만원 / 최신 20260618

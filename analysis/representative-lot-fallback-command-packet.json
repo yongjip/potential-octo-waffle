@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "project_count": 6,
+    "strong_same_stage_candidate_count": 6,
+    "needs_manual_confirmation_count": 0,
+    "planning_hold_count": 0,
+    "stage_gap_hold_count": 0,
+    "outputs": [
+      "analysis/representative-lot-fallback-command-packet.md",
+      "analysis/representative-lot-fallback-command-packet.csv",
+      "analysis/representative-lot-fallback-command-packet.json"
+    ],
+    "inputs": [
+      "analysis/representative-lot-fallback-api-probe.json",
+      "analysis/representative-lot-fallback-finding-board.json"
+    ]
+  },
+  "rows": [
+    {
+      "rank": "2",
+      "project_name": "압구정아파트지구 특별계획구역② 재건축정비사업조합",
+      "api_verdict": "strong_same_stage_candidate",
+      "current_stage": "조합설립인가",
+      "board_status": "",
+      "present_sn": "11680UQ120PS202603090002",
+      "data_reference_date": "2026-03-31",
+      "business_type": "재건축(공동)",
+      "verified_zone_name": "압구정아파트지구특별계획구역2",
+      "probe_key": "",
+      "dry_run_command": "node scripts/record-representative-lot-fallback-finding.mjs --rank=2 --checked-at=today --check-status=confirmed_current_business --prefill-from-api",
+      "write_command": "node scripts/record-representative-lot-fallback-finding.mjs --rank=2 --checked-at=today --check-status=confirmed_current_business --prefill-from-api --write --refresh --auto-mark-applied",
+      "manual_apply_command": "node scripts/mark-representative-lot-fallback-finding-applied.mjs --rank=2 --checked-at=today --write --refresh"
+    },
+    {
+      "rank": "10",
+      "project_name": "압구정아파트지구 특별계획구역③ 재건축정비사업 조합",
+      "api_verdict": "strong_same_stage_candidate",
+      "current_stage": "조합설립인가",
+      "board_status": "",
+      "present_sn": "11000UQ120PS202411014197",
+      "data_reference_date": "2026-03-31",
+      "business_type": "재건축(공동)",
+      "verified_zone_name": "압구정아파트지구특별계획구역3",
+      "probe_key": "",
+      "dry_run_command": "node scripts/record-representative-lot-fallback-finding.mjs --rank=10 --checked-at=today --check-status=confirmed_current_business --prefill-from-api",
+      "write_command": "node scripts/record-representative-lot-fallback-finding.mjs --rank=10 --checked-at=today --check-status=confirmed_current_business --prefill-from-api --write --refresh --auto-mark-applied",
+      "manual_apply_command": "node scripts/mark-representative-lot-fallback-finding-applied.mjs --rank=10 --checked-at=today --write --refresh"
+    },
+    {
+      "rank": "11",
+      "project_name": "압구정아파트지구 특별계획구역4",
+      "api_verdict": "strong_same_stage_candidate",
+      "current_stage": "조합설립인가",
+      "board_status": "",
+      "present_sn": "11000UQ120PS202411014198",
+      "data_reference_date": "2026-03-31",
+      "business_type": "재건축(공동)",
+      "verified_zone_name": "압구정아파트지구특별계획구역4",
+      "probe_key": "",
+      "dry_run_command": "node scripts/record-representative-lot-fallback-finding.mjs --rank=11 --checked-at=today --check-status=confirmed_current_business --prefill-from-api",
+      "write_command": "node scripts/record-representative-lot-fallback-finding.mjs --rank=11 --checked-at=today --check-status=confirmed_current_business --prefill-from-api --write --refresh --auto-mark-applied",
+      "manual_apply_command": "node scripts/mark-representative-lot-fallback-finding-applied.mjs --rank=11 --checked-at=today --write --refresh"
+    },
+    {
+      "rank": "12",
+      "project_name": "압구정아파트지구 특별계획구역5 재건축정비사업조합",
+      "api_verdict": "strong_same_stage_candidate",
+      "current_stage": "조합설립인가",
+      "board_status": "",
+      "present_sn": "11000UQ120PS202411014199",
+      "data_reference_date": "2026-03-31",
+      "business_type": "재건축(공동)",
+      "verified_zone_name": "압구정아파트지구특별계획구역5",
+      "probe_key": "",
+      "dry_run_command": "node scripts/record-representative-lot-fallback-finding.mjs --rank=12 --checked-at=today --check-status=confirmed_current_business --prefill-from-api",
+      "write_command": "node scripts/record-representative-lot-fallback-finding.mjs --rank=12 --checked-at=today --check-status=confirmed_current_business --prefill-from-api --write --refresh --auto-mark-applied",
+      "manual_apply_command": "node scripts/mark-representative-lot-fallback-finding-applied.mjs --rank=12 --checked-at=today --write --refresh"
+    },
+    {
+      "rank": "26",
+      "project_name": "자양한양아파트 재건축정비사업",
+      "api_verdict": "strong_same_stage_candidate",
+      "current_stage": "추진위원회승인",
+      "board_status": "",
+      "present_sn": "11000UQ120PS202411014174",
+      "data_reference_date": "2026-03-31",
+      "business_type": "재건축(공동)",
+      "verified_zone_name": "자양한양아파트",
+      "probe_key": "",
+      "dry_run_command": "node scripts/record-representative-lot-fallback-finding.mjs --rank=26 --checked-at=today --check-status=confirmed_current_business --prefill-from-api",
+      "write_command": "node scripts/record-representative-lot-fallback-finding.mjs --rank=26 --checked-at=today --check-status=confirmed_current_business --prefill-from-api --write --refresh --auto-mark-applied",
+      "manual_apply_command": "node scripts/mark-representative-lot-fallback-finding-applied.mjs --rank=26 --checked-at=today --write --refresh"
+    },
+    {
+      "rank": "30",
+      "project_name": "자양4동 A구역 주택재개발사업",
+      "api_verdict": "strong_same_stage_candidate",
+      "current_stage": "정비구역지정",
+      "board_status": "",
+      "present_sn": "11000UQ120PS202601310048",
+      "data_reference_date": "2026-03-31",
+      "business_type": "재개발(주택정비형)",
+      "verified_zone_name": "자양4동A구역주택재개발사업",
+      "probe_key": "",
+      "dry_run_command": "node scripts/record-representative-lot-fallback-finding.mjs --rank=30 --checked-at=today --check-status=confirmed_current_business --prefill-from-api",
+      "write_command": "node scripts/record-representative-lot-fallback-finding.mjs --rank=30 --checked-at=today --check-status=confirmed_current_business --prefill-from-api --write --refresh --auto-mark-applied",
+      "manual_apply_command": "node scripts/mark-representative-lot-fallback-finding-applied.mjs --rank=30 --checked-at=today --write --refresh"
+    }
+  ]
+}

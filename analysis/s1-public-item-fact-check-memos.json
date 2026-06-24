@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-06-24",
+  "rows": [
+    {
+      "rank": "8",
+      "project_name": "대치쌍용1차아파트 주택재건축정비사업조합",
+      "priority": "P1",
+      "public_item_count": 2,
+      "p0_public_item_count": 0,
+      "memo_path": "analysis/ssang1-s1-public-item-fact-check.md",
+      "notice_source_to_open": "data/urban/text/files/08-11680NTC202112010001-08-11680NTC202112010001-business-notice_file-강남구_2021-203호_고시.txt"
+    },
+    {
+      "rank": "11",
+      "project_name": "압구정아파트지구 특별계획구역4",
+      "priority": "P1",
+      "public_item_count": 2,
+      "p0_public_item_count": 1,
+      "memo_path": "analysis/apgujeong4-s1-public-item-fact-check.md",
+      "notice_source_to_open": "data/urban/text/files/11-11000NTC202312010004-11-11000NTC202312010004-notice_file-서울특별시_제2023-516호_고시.txt"
+    },
+    {
+      "rank": "14",
+      "project_name": "개포주공6,7단지아파트 재건축정비사업조합",
+      "priority": "P0",
+      "public_item_count": 4,
+      "p0_public_item_count": 1,
+      "memo_path": "analysis/gaepo6_7-s1-public-item-fact-check.md",
+      "notice_source_to_open": "data/urban/text/files/14-53675-14-gangnam-gu-53675-1-240426_개포주공67단지-정비계획-경미한변경-고시문-안.txt"
+    },
+    {
+      "rank": "17",
+      "project_name": "송파한양2차아파트 재건축정비사업 조합",
+      "priority": "P1",
+      "public_item_count": 2,
+      "p0_public_item_count": 0,
+      "memo_path": "analysis/songpa2-s1-public-item-fact-check.md",
+      "notice_source_to_open": "analysis/ocr-image-review-decisions.md"
+    },
+    {
+      "rank": "30",
+      "project_name": "자양4동 A구역 주택재개발사업",
+      "priority": "P1",
+      "public_item_count": 2,
+      "p0_public_item_count": 1,
+      "memo_path": "analysis/jayangdong-s1-public-item-fact-check.md",
+      "notice_source_to_open": "data/urban/text/files/30-11215NTC202505200003-30-11215NTC202505200003-notice_file-서울특별시_제2025-356호_고시.txt"
+    }
+  ]
+}

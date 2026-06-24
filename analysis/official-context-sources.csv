@@ -1,0 +1,6 @@
+source_key,title,url,use
+seoul_traffic,서울시 교통 분야,https://news.seoul.go.kr/traffic/,"지하철, 교통통계, 보행, TOPIS, 도시철도망 보도자료 확인"
+seoul_citybuild,서울시 주택·도시계획 분야,https://news.seoul.go.kr/citybuild/,"국제교류복합지구, 한강변관리기본계획, 생활권계획, 역세권활성화 확인"
+seoul_urban,서울도시공간포털,https://urban.seoul.go.kr/,"도시계획 결정고시, 지구단위계획, 정비구역계, 도시계획시설 확인"
+cleanup,정비사업 정보몽땅,https://cleanup.seoul.go.kr/,"정비사업 진행단계, 사업개요, 공개자료, 관리처분/사업시행 자료 확인"
+opengov,서울 정보소통광장,https://opengov.seoul.go.kr/,"심의자료, 결재문서, 위원회 회의정보 확인"

@@ -1,0 +1,101 @@
+{
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "scope_count": 6,
+    "normalized_transaction_rows": 11530,
+    "project_match_rows": 0,
+    "scopes_with_rows": 6,
+    "source_summary": "molit-rtms-apt-manual 5299; molit-rtms-rowhouse-manual 3916; seoul-open-data-manual 2315",
+    "dong_summary": "금호동 1; 길동 1; 성내동 1; 신당동 1; 옥수동 1; 천호동 1",
+    "inputs": [
+      "data/market/expansion-market-areas.json",
+      "data/market/transactions/expansion-manual-official-transactions-normalized.json",
+      "data/market/transactions/expansion-manual-official-transactions-project-matches.json"
+    ],
+    "outputs": [
+      "analysis/expansion-market-normalized-summary.md",
+      "analysis/expansion-market-normalized-summary.csv",
+      "analysis/expansion-market-normalized-summary.json"
+    ]
+  },
+  "rows": [
+    {
+      "zone_name": "강동권",
+      "district": "강동구",
+      "dong": "천호동",
+      "representative_projects": "천호3구역",
+      "normalized_transaction_rows": 3044,
+      "project_match_rows": 0,
+      "source_mix": "molit-rtms-rowhouse-manual 1505; molit-rtms-apt-manual 847; seoul-open-data-manual 692",
+      "month_span": "202512~202606",
+      "month_count": 7,
+      "latest_window_rows": 3014,
+      "status": "latest_window_normalized_present"
+    },
+    {
+      "zone_name": "강동권",
+      "district": "강동구",
+      "dong": "성내동",
+      "representative_projects": "성내미주아파트 주택재건축정비사업",
+      "normalized_transaction_rows": 2220,
+      "project_match_rows": 0,
+      "source_mix": "molit-rtms-rowhouse-manual 1117; molit-rtms-apt-manual 674; seoul-open-data-manual 429",
+      "month_span": "202511~202606",
+      "month_count": 8,
+      "latest_window_rows": 2192,
+      "status": "latest_window_normalized_present"
+    },
+    {
+      "zone_name": "강동권",
+      "district": "강동구",
+      "dong": "길동",
+      "representative_projects": "신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역",
+      "normalized_transaction_rows": 1643,
+      "project_match_rows": 0,
+      "source_mix": "molit-rtms-apt-manual 861; molit-rtms-rowhouse-manual 473; seoul-open-data-manual 309",
+      "month_span": "202512~202606",
+      "month_count": 7,
+      "latest_window_rows": 1626,
+      "status": "latest_window_normalized_present"
+    },
+    {
+      "zone_name": "약수동 주변",
+      "district": "중구",
+      "dong": "신당동",
+      "representative_projects": "신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역",
+      "normalized_transaction_rows": 1845,
+      "project_match_rows": 0,
+      "source_mix": "molit-rtms-apt-manual 854; molit-rtms-rowhouse-manual 566; seoul-open-data-manual 425",
+      "month_span": "202511~202606",
+      "month_count": 8,
+      "latest_window_rows": 1827,
+      "status": "latest_window_normalized_present"
+    },
+    {
+      "zone_name": "약수동 주변",
+      "district": "성동구",
+      "dong": "금호동",
+      "representative_projects": "금호 제14-1 주택재개발 정비사업",
+      "normalized_transaction_rows": 1837,
+      "project_match_rows": 0,
+      "source_mix": "molit-rtms-apt-manual 1286; seoul-open-data-manual 314; molit-rtms-rowhouse-manual 237",
+      "month_span": "202512~202606",
+      "month_count": 7,
+      "latest_window_rows": 1831,
+      "status": "latest_window_normalized_present"
+    },
+    {
+      "zone_name": "약수동 주변",
+      "district": "성동구",
+      "dong": "옥수동",
+      "representative_projects": "약수-옥수/한남 경계축 context",
+      "normalized_transaction_rows": 941,
+      "project_match_rows": 0,
+      "source_mix": "molit-rtms-apt-manual 777; seoul-open-data-manual 146; molit-rtms-rowhouse-manual 18",
+      "month_span": "202512~202606",
+      "month_count": 7,
+      "latest_window_rows": 939,
+      "status": "latest_window_normalized_present"
+    }
+  ]
+}

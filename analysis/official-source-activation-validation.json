@@ -1,0 +1,148 @@
+{
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "target_source_count": 9,
+    "intake_row_count": 2,
+    "tracked_count": 2,
+    "untracked_count": 7,
+    "orphan_count": 0,
+    "error_count": 0,
+    "warning_count": 0,
+    "active_count": 2,
+    "submitted_count": 0,
+    "blocked_count": 0,
+    "overdue_check_count": 0,
+    "status_mix": "untracked 7; active 2",
+    "type_mix": "manual_monitoring 5; api_key 2; manual_subscription 1; manual_market_monitoring 1",
+    "tracked_mix": "no 7; yes 2",
+    "inputs": [
+      "analysis/official-source-activation-checklist.json",
+      "data/review/official-source-activation-intake.json"
+    ],
+    "outputs": [
+      "analysis/official-source-activation-validation.md",
+      "analysis/official-source-activation-validation.csv",
+      "analysis/official-source-activation-validation.json"
+    ]
+  },
+  "rows": [
+    {
+      "activation_priority": 110,
+      "source_id": "seoul_urban_alert",
+      "source_name": "서울도시공간포털 알림서비스",
+      "activation_type": "manual_subscription",
+      "intake_status": "untracked",
+      "tracked": "no",
+      "next_check_at": "",
+      "issue_count": 0,
+      "issues": "",
+      "required_fields": "source_id, activation_status, next_check_at",
+      "next_action": "examples JSON에서 해당 출처 예시를 복사해 intake에 추가"
+    },
+    {
+      "activation_priority": 103,
+      "source_id": "opengov",
+      "source_name": "서울 정보소통광장",
+      "activation_type": "manual_monitoring",
+      "intake_status": "untracked",
+      "tracked": "no",
+      "next_check_at": "",
+      "issue_count": 0,
+      "issues": "",
+      "required_fields": "source_id, activation_status, next_check_at",
+      "next_action": "examples JSON에서 해당 출처 예시를 복사해 intake에 추가"
+    },
+    {
+      "activation_priority": 102,
+      "source_id": "seoul_traffic_news",
+      "source_name": "서울시 교통 분야",
+      "activation_type": "manual_monitoring",
+      "intake_status": "untracked",
+      "tracked": "no",
+      "next_check_at": "",
+      "issue_count": 0,
+      "issues": "",
+      "required_fields": "source_id, activation_status, next_check_at",
+      "next_action": "examples JSON에서 해당 출처 예시를 복사해 intake에 추가"
+    },
+    {
+      "activation_priority": 99,
+      "source_id": "seoul_citybuild_news",
+      "source_name": "서울시 주택·도시계획 분야",
+      "activation_type": "manual_monitoring",
+      "intake_status": "untracked",
+      "tracked": "no",
+      "next_check_at": "",
+      "issue_count": 0,
+      "issues": "",
+      "required_fields": "source_id, activation_status, next_check_at",
+      "next_action": "examples JSON에서 해당 출처 예시를 복사해 intake에 추가"
+    },
+    {
+      "activation_priority": 80,
+      "source_id": "gangdong_district_notice",
+      "source_name": "강동구 고시공고",
+      "activation_type": "manual_monitoring",
+      "intake_status": "active",
+      "tracked": "yes",
+      "next_check_at": "2026-07-01 KST",
+      "issue_count": 0,
+      "issues": "",
+      "required_fields": "coverage, next_check_at, credential_or_subscription_note",
+      "next_action": "확장 관심권 최신 점검 결과와 direct hit/단계 재확인 메모를 activation intake에 기록"
+    },
+    {
+      "activation_priority": 80,
+      "source_id": "jung_district_notice",
+      "source_name": "중구 고시공고",
+      "activation_type": "manual_monitoring",
+      "intake_status": "active",
+      "tracked": "yes",
+      "next_check_at": "2026-07-01 KST",
+      "issue_count": 0,
+      "issues": "",
+      "required_fields": "coverage, next_check_at, credential_or_subscription_note",
+      "next_action": "확장 관심권 최신 점검 결과와 direct hit/단계 재확인 메모를 activation intake에 기록"
+    },
+    {
+      "activation_priority": 50,
+      "source_id": "molit_data_go_kr",
+      "source_name": "국토교통부 실거래/공공데이터포털",
+      "activation_type": "api_key",
+      "intake_status": "untracked",
+      "tracked": "no",
+      "next_check_at": "",
+      "issue_count": 0,
+      "issues": "",
+      "required_fields": "source_id, activation_status, next_check_at",
+      "next_action": "examples JSON에서 해당 출처 예시를 복사해 intake에 추가"
+    },
+    {
+      "activation_priority": 50,
+      "source_id": "seoul_open_data",
+      "source_name": "서울 열린데이터광장",
+      "activation_type": "api_key",
+      "intake_status": "untracked",
+      "tracked": "no",
+      "next_check_at": "",
+      "issue_count": 0,
+      "issues": "",
+      "required_fields": "source_id, activation_status, next_check_at",
+      "next_action": "examples JSON에서 해당 출처 예시를 복사해 intake에 추가"
+    },
+    {
+      "activation_priority": 45,
+      "source_id": "r_one",
+      "source_name": "한국부동산원 R-ONE",
+      "activation_type": "manual_market_monitoring",
+      "intake_status": "untracked",
+      "tracked": "no",
+      "next_check_at": "",
+      "issue_count": 0,
+      "issues": "",
+      "required_fields": "source_id, activation_status, next_check_at",
+      "next_action": "examples JSON에서 해당 출처 예시를 복사해 intake에 추가"
+    }
+  ],
+  "issues": []
+}

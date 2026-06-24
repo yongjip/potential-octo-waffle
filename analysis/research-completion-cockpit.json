@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "task_count": 6,
+    "p0_count": 2,
+    "p1_count": 3,
+    "market_task_count": 0,
+    "source_task_count": 5,
+    "completion_task_count": 1,
+    "status_counts": {
+      "official_response_waiting": 1,
+      "high_blocking_fields_unclosed": 1,
+      "filed_waiting_response": 3,
+      "final_regeneration_current": 1
+    },
+    "status_summary": "filed_waiting_response 3; final_regeneration_current 1; high_blocking_fields_unclosed 1; official_response_waiting 1",
+    "inputs": [
+      "analysis/market-manual-download-workbook.json",
+      "analysis/market-manual-download-status.json",
+      "analysis/market-manual-ingest-manifest.json",
+      "analysis/market-manual-column-audit.json",
+      "analysis/market-manual-normalization-audit.json",
+      "analysis/market-api-readiness-audit.json",
+      "analysis/high-blocking-source-escalation-packet.json",
+      "analysis/high-blocking-info-disclosure-packet.json",
+      "analysis/high-blocking-response-decision-drafts.json",
+      "analysis/high-blocking-filing-tracker.json",
+      "analysis/high-blocking-intake-validation.json",
+      "data/review/high-blocking-filing-outbox/manifest.json",
+      "analysis/high-blocking-filing-checklist.json",
+      "analysis/official-update-runbook-checklist.json"
+    ]
+  },
+  "rows": [
+    {
+      "task_id": "SRC-01",
+      "blocker_area": "source_value_verification",
+      "priority": "P0",
+      "status": "official_response_waiting",
+      "required_evidence": "회신 대기 3건, append 가능 0건",
+      "next_action": "analysis/high-blocking-source-escalation-packet.md의 담당부서/정보몽땅 문의 본문으로 3개 사업장 회신을 확보하고, node scripts/process-high-blocking-response-workflow.mjs dry-run 검토 후 --write로 반영한다.",
+      "source_file": "analysis/high-blocking-source-escalation-packet.md",
+      "update_file": "data/review/high-blocking-source-response-intake.json",
+      "verification_command": "node scripts/process-high-blocking-response-workflow.mjs",
+      "completion_gate": "회신 intake가 no_response를 벗어나고 ready_to_append 또는 정보공개/열람 보류 근거로 검증됨"
+    },
+    {
+      "task_id": "SRC-03",
+      "blocker_area": "source_value_verification",
+      "priority": "P0",
+      "status": "high_blocking_fields_unclosed",
+      "required_evidence": "3개 사업장 21개 필드 중 high blocking 16개",
+      "next_action": "회신 또는 정보공개 결과를 process-high-blocking-response-workflow dry-run으로 검증하고 --write로 반영한 뒤 completion audit을 확인한다.",
+      "source_file": "analysis/high-blocking-source-escalation-packet.md",
+      "update_file": "data/review/source-verification-closure-decisions.json",
+      "verification_command": "node scripts/regenerate-research-artifacts.mjs",
+      "completion_gate": "research-system-readiness-audit에서 high blocking 외부 회신 대기가 사라지고 completion_boundary가 ready 계열로 이동"
+    },
+    {
+      "task_id": "SRC-P09",
+      "blocker_area": "source_value_verification",
+      "priority": "P1",
+      "status": "filed_waiting_response",
+      "required_evidence": "잠실우성4차 주택재건축정비사업조합: 관리처분계획 별첨 또는 공개 가능한 공사비/정비사업비 원문",
+      "next_action": "회신 intake 상태를 확인한다.",
+      "source_file": "analysis/high-blocking-filing-checklist.md",
+      "update_file": "data/review/high-blocking-source-response-intake.json",
+      "verification_command": "node scripts/process-high-blocking-response-workflow.mjs",
+      "completion_gate": "관리처분 공사비·총사업비 금액, 기준일, 자료명 또는 원문 URL이 회신에 들어 있을 때만 confirmed/partial decision 초안으로 승격한다."
+    },
+    {
+      "task_id": "SRC-P23",
+      "blocker_area": "source_value_verification",
+      "priority": "P1",
+      "status": "filed_waiting_response",
+      "required_evidence": "광장동 삼성1차아파트 소규모재건축정비사업: 조합설립인가 고시번호, 고시일, 원문/첨부 URL",
+      "next_action": "회신 intake 상태를 확인한다.",
+      "source_file": "analysis/high-blocking-filing-checklist.md",
+      "update_file": "data/review/high-blocking-source-response-intake.json",
+      "verification_command": "node scripts/process-high-blocking-response-workflow.mjs",
+      "completion_gate": "고시번호·고시일·원문 URL 또는 첨부명 중 하나 이상과 자료 보유/기준일이 회신에 들어 있을 때만 confirmed/partial decision 초안으로 승격한다."
+    },
+    {
+      "task_id": "SRC-P28",
+      "blocker_area": "source_value_verification",
+      "priority": "P1",
+      "status": "filed_waiting_response",
+      "required_evidence": "자양번영로3나길 일대 가로주택정비사업: 조합설립인가 고시번호, 고시일, 원문/첨부 URL",
+      "next_action": "회신 intake 상태를 확인한다.",
+      "source_file": "analysis/high-blocking-filing-checklist.md",
+      "update_file": "data/review/high-blocking-source-response-intake.json",
+      "verification_command": "node scripts/process-high-blocking-response-workflow.mjs",
+      "completion_gate": "고시번호·고시일·원문 URL 또는 첨부명 중 하나 이상과 자료 보유/기준일이 회신에 들어 있을 때만 confirmed/partial decision 초안으로 승격한다."
+    },
+    {
+      "task_id": "AUD-01",
+      "blocker_area": "completion_boundary",
+      "priority": "P2",
+      "status": "final_regeneration_current",
+      "required_evidence": "현재 로컬 재생성 체인은 58개 체크리스트 단계와 별도 regenerate 명령으로 운영됨",
+      "next_action": "high-blocking 회신/정보공개 결과 같은 새 입력을 반영한 뒤 전체 재생성을 다시 실행한다.",
+      "source_file": "scripts/regenerate-research-artifacts.mjs",
+      "update_file": "analysis/research-system-readiness-audit.md",
+      "verification_command": "node scripts/regenerate-research-artifacts.mjs",
+      "completion_gate": "새 입력 반영 뒤 readiness audit의 not_complete_count가 0이고 completion_boundary가 ready로 판정"
+    }
+  ]
+}

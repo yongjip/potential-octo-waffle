@@ -1,0 +1,257 @@
+# 시장 원자료 수동 다운로드 워크북
+
+작성 기준: 2026-06-24 KST
+
+API 키 없이 공식 사이트에서 원자료를 받을 때, `market-fetch-plan`의 월별 690개 계획을 실제 다운로드·필터 작업 단위로 압축한 워크북이다. 서울 열린데이터는 신고년도별 필터, 국토부 RTMS는 1년 이내 계약일자 범위에 맞춰 쪼갠다. 이 문서는 원자료를 생성하지 않고, 어떤 공식 페이지에서 어떤 지역·기간·키워드 묶음을 받아야 하는지 고정한다.
+
+## 요약
+
+| 항목 | 값 |
+| --- | ---: |
+| 다운로드/필터 작업 | 70 |
+| 서울 열린데이터 법정동 필터 | 39 |
+| 국토부 RTMS 자치구·유형 묶음 | 30 |
+| R-ONE 통계 묶음 | 1 |
+| 법정동 필터 수 | 39 |
+| 자료 출처 분포 | seoul-open-data 39; molit-apt-rent 9; molit-apt-trade 9; molit-rowhouse-rent 6; molit-rowhouse-trade 6; r-one-statistics 1 |
+| 반입 상태 | waiting_for_manual_download 70 |
+
+## 실행 순서
+
+1. 아래 작업표의 `official_page`에서 원자료를 내려받는다.
+2. 원본 파일명은 가능하면 `suggested_output_filename`을 따른다.
+3. 원본 파일을 `data/market/manual-import/files/`에 보존한다.
+4. `data/market/manual-import/manifest.json`의 해당 `manual_source_id`에 `local_path`, `downloaded_at`, `coverage_from`, `coverage_to`를 채운다.
+5. `node scripts/generate-market-manual-import-readiness.mjs`와 `python3 scripts/generate-market-manual-column-audit.py`를 실행한다.
+6. 컬럼 감사 후 `python3 scripts/normalize-market-manual-import.py`로 수동 원자료를 표준 거래/지표 스키마에 연결한다.
+
+## 공식 제약 메모
+
+- 서울 열린데이터광장 `서울시 부동산 실거래가 정보`는 데이터 갱신일 2026-06-22, 갱신주기 매일 1회이며, 미리보기에서 신고년도별 조회 및 내려받기를 안내한다.
+- 같은 서울 열린데이터 화면은 Sheet Open API 미리보기 1,000건 한계를 안내하므로, 전체 데이터는 CSV 내려받기 후 로컬 필터링 대상으로 둔다.
+- 국토교통부 실거래가 공개시스템 자료제공 화면은 시도별 계약일자 범위를 최대 1년으로 안내하므로, 2024년, 2025년, 2026년 작업으로 나눠 받는다.
+
+## 작업표
+
+| 작업 | 자료 | 자치구 | 법정동 | 시작 | 종료 | 월별 계획 | 사업장 | 필터 | 권장 파일명 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| seoul-open-data-01 | 서울시 실거래 전체 원자료 | 강남구 | 개포동 | 202401 | 202412 | 12 | 1 | 신고년도=2024; 자치구=강남구; 법정동=개포동; 건물명/단지명 키워드=개포; 주공; 디에이치; 래미안; 자이 | seoul-open-data_강남구_개포동_202401_202412.csv |
+| seoul-open-data-02 | 서울시 실거래 전체 원자료 | 강남구 | 개포동 | 202501 | 202512 | 12 | 1 | 신고년도=2025; 자치구=강남구; 법정동=개포동; 건물명/단지명 키워드=개포; 주공; 디에이치; 래미안; 자이 | seoul-open-data_강남구_개포동_202501_202512.csv |
+| seoul-open-data-03 | 서울시 실거래 전체 원자료 | 강남구 | 개포동 | 202601 | 202606 | 6 | 1 | 신고년도=2026; 자치구=강남구; 법정동=개포동; 건물명/단지명 키워드=개포; 주공; 디에이치; 래미안; 자이 | seoul-open-data_강남구_개포동_202601_202606.csv |
+| seoul-open-data-04 | 서울시 실거래 전체 원자료 | 강남구 | 대치동 | 202401 | 202412 | 12 | 4 | 신고년도=2024; 자치구=강남구; 법정동=대치동; 건물명/단지명 키워드=은마; 우성; 쌍용; 대치 | seoul-open-data_강남구_대치동_202401_202412.csv |
+| seoul-open-data-05 | 서울시 실거래 전체 원자료 | 강남구 | 대치동 | 202501 | 202512 | 12 | 4 | 신고년도=2025; 자치구=강남구; 법정동=대치동; 건물명/단지명 키워드=은마; 우성; 쌍용; 대치 | seoul-open-data_강남구_대치동_202501_202512.csv |
+| seoul-open-data-06 | 서울시 실거래 전체 원자료 | 강남구 | 대치동 | 202601 | 202606 | 6 | 4 | 신고년도=2026; 자치구=강남구; 법정동=대치동; 건물명/단지명 키워드=은마; 우성; 쌍용; 대치 | seoul-open-data_강남구_대치동_202601_202606.csv |
+| seoul-open-data-07 | 서울시 실거래 전체 원자료 | 강남구 | 압구정동 | 202401 | 202412 | 12 | 5 | 신고년도=2024; 자치구=강남구; 법정동=압구정동; 건물명/단지명 키워드=압구정; 현대; 한양; 미성; 신현대 | seoul-open-data_강남구_압구정동_202401_202412.csv |
+| seoul-open-data-08 | 서울시 실거래 전체 원자료 | 강남구 | 압구정동 | 202501 | 202512 | 12 | 5 | 신고년도=2025; 자치구=강남구; 법정동=압구정동; 건물명/단지명 키워드=압구정; 현대; 한양; 미성; 신현대 | seoul-open-data_강남구_압구정동_202501_202512.csv |
+| seoul-open-data-09 | 서울시 실거래 전체 원자료 | 강남구 | 압구정동 | 202601 | 202606 | 6 | 5 | 신고년도=2026; 자치구=강남구; 법정동=압구정동; 건물명/단지명 키워드=압구정; 현대; 한양; 미성; 신현대 | seoul-open-data_강남구_압구정동_202601_202606.csv |
+| seoul-open-data-10 | 서울시 실거래 전체 원자료 | 광진구 | 광장동 | 202401 | 202412 | 12 | 3 | 신고년도=2024; 자치구=광진구; 법정동=광장동; 건물명/단지명 키워드=광장; 극동; 워커힐; 삼성 | seoul-open-data_광진구_광장동_202401_202412.csv |
+| seoul-open-data-11 | 서울시 실거래 전체 원자료 | 광진구 | 광장동 | 202501 | 202512 | 12 | 3 | 신고년도=2025; 자치구=광진구; 법정동=광장동; 건물명/단지명 키워드=광장; 극동; 워커힐; 삼성 | seoul-open-data_광진구_광장동_202501_202512.csv |
+| seoul-open-data-12 | 서울시 실거래 전체 원자료 | 광진구 | 광장동 | 202601 | 202606 | 6 | 3 | 신고년도=2026; 자치구=광진구; 법정동=광장동; 건물명/단지명 키워드=광장; 극동; 워커힐; 삼성 | seoul-open-data_광진구_광장동_202601_202606.csv |
+| seoul-open-data-13 | 서울시 실거래 전체 원자료 | 광진구 | 구의동 | 202401 | 202412 | 12 | 1 | 신고년도=2024; 자치구=광진구; 법정동=구의동; 건물명/단지명 키워드=구의; 한양; 강변 | seoul-open-data_광진구_구의동_202401_202412.csv |
+| seoul-open-data-14 | 서울시 실거래 전체 원자료 | 광진구 | 구의동 | 202501 | 202512 | 12 | 1 | 신고년도=2025; 자치구=광진구; 법정동=구의동; 건물명/단지명 키워드=구의; 한양; 강변 | seoul-open-data_광진구_구의동_202501_202512.csv |
+| seoul-open-data-15 | 서울시 실거래 전체 원자료 | 광진구 | 구의동 | 202601 | 202606 | 6 | 1 | 신고년도=2026; 자치구=광진구; 법정동=구의동; 건물명/단지명 키워드=구의; 한양; 강변 | seoul-open-data_광진구_구의동_202601_202606.csv |
+| seoul-open-data-16 | 서울시 실거래 전체 원자료 | 광진구 | 자양동 | 202401 | 202412 | 12 | 5 | 신고년도=2024; 자치구=광진구; 법정동=자양동; 건물명/단지명 키워드=자양; 한양; 자양7; 자양4 | seoul-open-data_광진구_자양동_202401_202412.csv |
+| seoul-open-data-17 | 서울시 실거래 전체 원자료 | 광진구 | 자양동 | 202501 | 202512 | 12 | 5 | 신고년도=2025; 자치구=광진구; 법정동=자양동; 건물명/단지명 키워드=자양; 한양; 자양7; 자양4 | seoul-open-data_광진구_자양동_202501_202512.csv |
+| seoul-open-data-18 | 서울시 실거래 전체 원자료 | 광진구 | 자양동 | 202601 | 202606 | 6 | 5 | 신고년도=2026; 자치구=광진구; 법정동=자양동; 건물명/단지명 키워드=자양; 한양; 자양7; 자양4 | seoul-open-data_광진구_자양동_202601_202606.csv |
+| seoul-open-data-19 | 서울시 실거래 전체 원자료 | 광진구 | 중곡동 | 202401 | 202412 | 12 | 1 | 신고년도=2024; 자치구=광진구; 법정동=중곡동; 건물명/단지명 키워드=중곡; 중곡아파트 | seoul-open-data_광진구_중곡동_202401_202412.csv |
+| seoul-open-data-20 | 서울시 실거래 전체 원자료 | 광진구 | 중곡동 | 202501 | 202512 | 12 | 1 | 신고년도=2025; 자치구=광진구; 법정동=중곡동; 건물명/단지명 키워드=중곡; 중곡아파트 | seoul-open-data_광진구_중곡동_202501_202512.csv |
+| seoul-open-data-21 | 서울시 실거래 전체 원자료 | 광진구 | 중곡동 | 202601 | 202606 | 6 | 1 | 신고년도=2026; 자치구=광진구; 법정동=중곡동; 건물명/단지명 키워드=중곡; 중곡아파트 | seoul-open-data_광진구_중곡동_202601_202606.csv |
+| seoul-open-data-22 | 서울시 실거래 전체 원자료 | 송파구 | 마천동 | 202401 | 202412 | 12 | 1 | 신고년도=2024; 자치구=송파구; 법정동=마천동; 건물명/단지명 키워드=마천; 거여; 재정비촉진 | seoul-open-data_송파구_마천동_202401_202412.csv |
+| seoul-open-data-23 | 서울시 실거래 전체 원자료 | 송파구 | 마천동 | 202501 | 202512 | 12 | 1 | 신고년도=2025; 자치구=송파구; 법정동=마천동; 건물명/단지명 키워드=마천; 거여; 재정비촉진 | seoul-open-data_송파구_마천동_202501_202512.csv |
+| seoul-open-data-24 | 서울시 실거래 전체 원자료 | 송파구 | 마천동 | 202601 | 202606 | 6 | 1 | 신고년도=2026; 자치구=송파구; 법정동=마천동; 건물명/단지명 키워드=마천; 거여; 재정비촉진 | seoul-open-data_송파구_마천동_202601_202606.csv |
+| seoul-open-data-25 | 서울시 실거래 전체 원자료 | 송파구 | 문정동 | 202401 | 202412 | 12 | 1 | 신고년도=2024; 자치구=송파구; 법정동=문정동; 건물명/단지명 키워드=가락; 현대; 문정 | seoul-open-data_송파구_문정동_202401_202412.csv |
+| seoul-open-data-26 | 서울시 실거래 전체 원자료 | 송파구 | 문정동 | 202501 | 202512 | 12 | 1 | 신고년도=2025; 자치구=송파구; 법정동=문정동; 건물명/단지명 키워드=가락; 현대; 문정 | seoul-open-data_송파구_문정동_202501_202512.csv |
+| seoul-open-data-27 | 서울시 실거래 전체 원자료 | 송파구 | 문정동 | 202601 | 202606 | 6 | 1 | 신고년도=2026; 자치구=송파구; 법정동=문정동; 건물명/단지명 키워드=가락; 현대; 문정 | seoul-open-data_송파구_문정동_202601_202606.csv |
+| seoul-open-data-28 | 서울시 실거래 전체 원자료 | 송파구 | 방이동 | 202401 | 202412 | 12 | 1 | 신고년도=2024; 자치구=송파구; 법정동=방이동; 건물명/단지명 키워드=대림; 가락; 방이 | seoul-open-data_송파구_방이동_202401_202412.csv |
+| seoul-open-data-29 | 서울시 실거래 전체 원자료 | 송파구 | 방이동 | 202501 | 202512 | 12 | 1 | 신고년도=2025; 자치구=송파구; 법정동=방이동; 건물명/단지명 키워드=대림; 가락; 방이 | seoul-open-data_송파구_방이동_202501_202512.csv |
+| seoul-open-data-30 | 서울시 실거래 전체 원자료 | 송파구 | 방이동 | 202601 | 202606 | 6 | 1 | 신고년도=2026; 자치구=송파구; 법정동=방이동; 건물명/단지명 키워드=대림; 가락; 방이 | seoul-open-data_송파구_방이동_202601_202606.csv |
+| seoul-open-data-31 | 서울시 실거래 전체 원자료 | 송파구 | 송파동 | 202401 | 202412 | 12 | 3 | 신고년도=2024; 자치구=송파구; 법정동=송파동; 건물명/단지명 키워드=송파; 한양; 미성; 가락삼익; 삼익 | seoul-open-data_송파구_송파동_202401_202412.csv |
+| seoul-open-data-32 | 서울시 실거래 전체 원자료 | 송파구 | 송파동 | 202501 | 202512 | 12 | 3 | 신고년도=2025; 자치구=송파구; 법정동=송파동; 건물명/단지명 키워드=송파; 한양; 미성; 가락삼익; 삼익 | seoul-open-data_송파구_송파동_202501_202512.csv |
+| seoul-open-data-33 | 서울시 실거래 전체 원자료 | 송파구 | 송파동 | 202601 | 202606 | 6 | 3 | 신고년도=2026; 자치구=송파구; 법정동=송파동; 건물명/단지명 키워드=송파; 한양; 미성; 가락삼익; 삼익 | seoul-open-data_송파구_송파동_202601_202606.csv |
+| seoul-open-data-34 | 서울시 실거래 전체 원자료 | 송파구 | 신천동 | 202401 | 202412 | 12 | 1 | 신고년도=2024; 자치구=송파구; 법정동=신천동; 건물명/단지명 키워드=장미; 파크리오; 진주; 미성; 크로바 | seoul-open-data_송파구_신천동_202401_202412.csv |
+| seoul-open-data-35 | 서울시 실거래 전체 원자료 | 송파구 | 신천동 | 202501 | 202512 | 12 | 1 | 신고년도=2025; 자치구=송파구; 법정동=신천동; 건물명/단지명 키워드=장미; 파크리오; 진주; 미성; 크로바 | seoul-open-data_송파구_신천동_202501_202512.csv |
+| seoul-open-data-36 | 서울시 실거래 전체 원자료 | 송파구 | 신천동 | 202601 | 202606 | 6 | 1 | 신고년도=2026; 자치구=송파구; 법정동=신천동; 건물명/단지명 키워드=장미; 파크리오; 진주; 미성; 크로바 | seoul-open-data_송파구_신천동_202601_202606.csv |
+| seoul-open-data-37 | 서울시 실거래 전체 원자료 | 송파구 | 잠실동 | 202401 | 202412 | 12 | 3 | 신고년도=2024; 자치구=송파구; 법정동=잠실동; 건물명/단지명 키워드=잠실; 주공; 우성; 엘스; 리센츠; 트리지움 | seoul-open-data_송파구_잠실동_202401_202412.csv |
+| seoul-open-data-38 | 서울시 실거래 전체 원자료 | 송파구 | 잠실동 | 202501 | 202512 | 12 | 3 | 신고년도=2025; 자치구=송파구; 법정동=잠실동; 건물명/단지명 키워드=잠실; 주공; 우성; 엘스; 리센츠; 트리지움 | seoul-open-data_송파구_잠실동_202501_202512.csv |
+| seoul-open-data-39 | 서울시 실거래 전체 원자료 | 송파구 | 잠실동 | 202601 | 202606 | 6 | 3 | 신고년도=2026; 자치구=송파구; 법정동=잠실동; 건물명/단지명 키워드=잠실; 주공; 우성; 엘스; 리센츠; 트리지움 | seoul-open-data_송파구_잠실동_202601_202606.csv |
+| molit-apt-rent-01 | 국토부 아파트 전월세 | 강남구 | 압구정동; 대치동; 개포동 | 202401 | 202412 | 12 | 10 | 계약년도=2024; LAWD_CD=11680; 계약년월=202401~202412; 자료유형=국토부 아파트 전월세 | molit-apt-rent_강남구_압구정동-대치동-개포동_202401_202412.csv |
+| molit-apt-rent-02 | 국토부 아파트 전월세 | 강남구 | 압구정동; 대치동; 개포동 | 202501 | 202512 | 12 | 10 | 계약년도=2025; LAWD_CD=11680; 계약년월=202501~202512; 자료유형=국토부 아파트 전월세 | molit-apt-rent_강남구_압구정동-대치동-개포동_202501_202512.csv |
+| molit-apt-rent-03 | 국토부 아파트 전월세 | 강남구 | 압구정동; 대치동; 개포동 | 202601 | 202606 | 6 | 10 | 계약년도=2026; LAWD_CD=11680; 계약년월=202601~202606; 자료유형=국토부 아파트 전월세 | molit-apt-rent_강남구_압구정동-대치동-개포동_202601_202606.csv |
+| molit-apt-rent-04 | 국토부 아파트 전월세 | 광진구 | 자양동; 중곡동; 광장동 | 202401 | 202412 | 12 | 6 | 계약년도=2024; LAWD_CD=11215; 계약년월=202401~202412; 자료유형=국토부 아파트 전월세 | molit-apt-rent_광진구_자양동-중곡동-광장동_202401_202412.csv |
+| molit-apt-rent-05 | 국토부 아파트 전월세 | 광진구 | 자양동; 중곡동; 광장동 | 202501 | 202512 | 12 | 6 | 계약년도=2025; LAWD_CD=11215; 계약년월=202501~202512; 자료유형=국토부 아파트 전월세 | molit-apt-rent_광진구_자양동-중곡동-광장동_202501_202512.csv |
+| molit-apt-rent-06 | 국토부 아파트 전월세 | 광진구 | 자양동; 중곡동; 광장동 | 202601 | 202606 | 6 | 6 | 계약년도=2026; LAWD_CD=11215; 계약년월=202601~202606; 자료유형=국토부 아파트 전월세 | molit-apt-rent_광진구_자양동-중곡동-광장동_202601_202606.csv |
+| molit-apt-rent-07 | 국토부 아파트 전월세 | 송파구 | 잠실동; 신천동; 문정동; 송파동; 방이동 | 202401 | 202412 | 12 | 9 | 계약년도=2024; LAWD_CD=11710; 계약년월=202401~202412; 자료유형=국토부 아파트 전월세 | molit-apt-rent_송파구_잠실동-신천동-문정동-송파동-방이동_202401_202412.csv |
+| molit-apt-rent-08 | 국토부 아파트 전월세 | 송파구 | 잠실동; 신천동; 문정동; 송파동; 방이동 | 202501 | 202512 | 12 | 9 | 계약년도=2025; LAWD_CD=11710; 계약년월=202501~202512; 자료유형=국토부 아파트 전월세 | molit-apt-rent_송파구_잠실동-신천동-문정동-송파동-방이동_202501_202512.csv |
+| molit-apt-rent-09 | 국토부 아파트 전월세 | 송파구 | 잠실동; 신천동; 문정동; 송파동; 방이동 | 202601 | 202606 | 6 | 9 | 계약년도=2026; LAWD_CD=11710; 계약년월=202601~202606; 자료유형=국토부 아파트 전월세 | molit-apt-rent_송파구_잠실동-신천동-문정동-송파동-방이동_202601_202606.csv |
+| molit-apt-trade-01 | 국토부 아파트 매매 | 강남구 | 압구정동; 대치동; 개포동 | 202401 | 202412 | 12 | 10 | 계약년도=2024; LAWD_CD=11680; 계약년월=202401~202412; 자료유형=국토부 아파트 매매 | molit-apt-trade_강남구_압구정동-대치동-개포동_202401_202412.csv |
+| molit-apt-trade-02 | 국토부 아파트 매매 | 강남구 | 압구정동; 대치동; 개포동 | 202501 | 202512 | 12 | 10 | 계약년도=2025; LAWD_CD=11680; 계약년월=202501~202512; 자료유형=국토부 아파트 매매 | molit-apt-trade_강남구_압구정동-대치동-개포동_202501_202512.csv |
+| molit-apt-trade-03 | 국토부 아파트 매매 | 강남구 | 압구정동; 대치동; 개포동 | 202601 | 202606 | 6 | 10 | 계약년도=2026; LAWD_CD=11680; 계약년월=202601~202606; 자료유형=국토부 아파트 매매 | molit-apt-trade_강남구_압구정동-대치동-개포동_202601_202606.csv |
+| molit-apt-trade-04 | 국토부 아파트 매매 | 광진구 | 자양동; 중곡동; 광장동; 구의동 | 202401 | 202412 | 12 | 10 | 계약년도=2024; LAWD_CD=11215; 계약년월=202401~202412; 자료유형=국토부 아파트 매매 | molit-apt-trade_광진구_자양동-중곡동-광장동-구의동_202401_202412.csv |
+| molit-apt-trade-05 | 국토부 아파트 매매 | 광진구 | 자양동; 중곡동; 광장동; 구의동 | 202501 | 202512 | 12 | 10 | 계약년도=2025; LAWD_CD=11215; 계약년월=202501~202512; 자료유형=국토부 아파트 매매 | molit-apt-trade_광진구_자양동-중곡동-광장동-구의동_202501_202512.csv |
+| molit-apt-trade-06 | 국토부 아파트 매매 | 광진구 | 자양동; 중곡동; 광장동; 구의동 | 202601 | 202606 | 6 | 10 | 계약년도=2026; LAWD_CD=11215; 계약년월=202601~202606; 자료유형=국토부 아파트 매매 | molit-apt-trade_광진구_자양동-중곡동-광장동-구의동_202601_202606.csv |
+| molit-apt-trade-07 | 국토부 아파트 매매 | 송파구 | 잠실동; 신천동; 문정동; 송파동; 방이동; 마천동 | 202401 | 202412 | 12 | 10 | 계약년도=2024; LAWD_CD=11710; 계약년월=202401~202412; 자료유형=국토부 아파트 매매 | molit-apt-trade_송파구_잠실동-신천동-문정동-송파동-방이동-마천동_202401_202412.csv |
+| molit-apt-trade-08 | 국토부 아파트 매매 | 송파구 | 잠실동; 신천동; 문정동; 송파동; 방이동; 마천동 | 202501 | 202512 | 12 | 10 | 계약년도=2025; LAWD_CD=11710; 계약년월=202501~202512; 자료유형=국토부 아파트 매매 | molit-apt-trade_송파구_잠실동-신천동-문정동-송파동-방이동-마천동_202501_202512.csv |
+| molit-apt-trade-09 | 국토부 아파트 매매 | 송파구 | 잠실동; 신천동; 문정동; 송파동; 방이동; 마천동 | 202601 | 202606 | 6 | 10 | 계약년도=2026; LAWD_CD=11710; 계약년월=202601~202606; 자료유형=국토부 아파트 매매 | molit-apt-trade_송파구_잠실동-신천동-문정동-송파동-방이동-마천동_202601_202606.csv |
+| molit-rowhouse-rent-01 | 국토부 연립·다세대 전월세 | 광진구 | 구의동; 자양동 | 202401 | 202412 | 12 | 4 | 계약년도=2024; LAWD_CD=11215; 계약년월=202401~202412; 자료유형=국토부 연립·다세대 전월세 | molit-rowhouse-rent_광진구_구의동-자양동_202401_202412.csv |
+| molit-rowhouse-rent-02 | 국토부 연립·다세대 전월세 | 광진구 | 구의동; 자양동 | 202501 | 202512 | 12 | 4 | 계약년도=2025; LAWD_CD=11215; 계약년월=202501~202512; 자료유형=국토부 연립·다세대 전월세 | molit-rowhouse-rent_광진구_구의동-자양동_202501_202512.csv |
+| molit-rowhouse-rent-03 | 국토부 연립·다세대 전월세 | 광진구 | 구의동; 자양동 | 202601 | 202606 | 6 | 4 | 계약년도=2026; LAWD_CD=11215; 계약년월=202601~202606; 자료유형=국토부 연립·다세대 전월세 | molit-rowhouse-rent_광진구_구의동-자양동_202601_202606.csv |
+| molit-rowhouse-rent-04 | 국토부 연립·다세대 전월세 | 송파구 | 마천동 | 202401 | 202412 | 12 | 1 | 계약년도=2024; LAWD_CD=11710; 계약년월=202401~202412; 자료유형=국토부 연립·다세대 전월세 | molit-rowhouse-rent_송파구_마천동_202401_202412.csv |
+| molit-rowhouse-rent-05 | 국토부 연립·다세대 전월세 | 송파구 | 마천동 | 202501 | 202512 | 12 | 1 | 계약년도=2025; LAWD_CD=11710; 계약년월=202501~202512; 자료유형=국토부 연립·다세대 전월세 | molit-rowhouse-rent_송파구_마천동_202501_202512.csv |
+| molit-rowhouse-rent-06 | 국토부 연립·다세대 전월세 | 송파구 | 마천동 | 202601 | 202606 | 6 | 1 | 계약년도=2026; LAWD_CD=11710; 계약년월=202601~202606; 자료유형=국토부 연립·다세대 전월세 | molit-rowhouse-rent_송파구_마천동_202601_202606.csv |
+| molit-rowhouse-trade-01 | 국토부 연립·다세대 매매 | 광진구 | 구의동; 자양동 | 202401 | 202412 | 12 | 4 | 계약년도=2024; LAWD_CD=11215; 계약년월=202401~202412; 자료유형=국토부 연립·다세대 매매 | molit-rowhouse-trade_광진구_구의동-자양동_202401_202412.csv |
+| molit-rowhouse-trade-02 | 국토부 연립·다세대 매매 | 광진구 | 구의동; 자양동 | 202501 | 202512 | 12 | 4 | 계약년도=2025; LAWD_CD=11215; 계약년월=202501~202512; 자료유형=국토부 연립·다세대 매매 | molit-rowhouse-trade_광진구_구의동-자양동_202501_202512.csv |
+| molit-rowhouse-trade-03 | 국토부 연립·다세대 매매 | 광진구 | 구의동; 자양동 | 202601 | 202606 | 6 | 4 | 계약년도=2026; LAWD_CD=11215; 계약년월=202601~202606; 자료유형=국토부 연립·다세대 매매 | molit-rowhouse-trade_광진구_구의동-자양동_202601_202606.csv |
+| molit-rowhouse-trade-04 | 국토부 연립·다세대 매매 | 송파구 | 마천동 | 202401 | 202412 | 12 | 1 | 계약년도=2024; LAWD_CD=11710; 계약년월=202401~202412; 자료유형=국토부 연립·다세대 매매 | molit-rowhouse-trade_송파구_마천동_202401_202412.csv |
+| molit-rowhouse-trade-05 | 국토부 연립·다세대 매매 | 송파구 | 마천동 | 202501 | 202512 | 12 | 1 | 계약년도=2025; LAWD_CD=11710; 계약년월=202501~202512; 자료유형=국토부 연립·다세대 매매 | molit-rowhouse-trade_송파구_마천동_202501_202512.csv |
+| molit-rowhouse-trade-06 | 국토부 연립·다세대 매매 | 송파구 | 마천동 | 202601 | 202606 | 6 | 1 | 계약년도=2026; LAWD_CD=11710; 계약년월=202601~202606; 자료유형=국토부 연립·다세대 매매 | molit-rowhouse-trade_송파구_마천동_202601_202606.csv |
+| r-one-statistics-01 | R-ONE 가격지수·거래현황 | 서울/권역/자치구 |  | 2024-01 | 2026-06 | 0 | 30 | 지역=서울 송파구; 서울 동남권; 서울; 서울 강남구; 서울 광진구; 서울 동북권; 지표=전국주택가격동향_아파트매매; 전국주택가격동향_아파트전세; 공동주택실거래가격지수; 부동산거래현황_아파트매매; 지가변동률 | r-one-statistics_서울-권역-자치구_2024-01_2026-06.xlsx |
+
+## 공식 페이지와 상태
+
+| 작업 | manifest ID | 제공기관 | 공식 페이지 | 현재 상태 | 다음 액션 |
+| --- | --- | --- | --- | --- | --- |
+| seoul-open-data-01 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-02 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-03 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-04 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-05 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-06 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-07 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-08 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-09 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-10 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-11 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-12 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-13 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-14 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-15 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-16 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-17 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-18 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-19 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-20 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-21 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-22 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-23 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-24 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-25 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-26 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-27 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-28 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-29 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-30 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-31 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-32 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-33 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-34 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-35 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-36 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-37 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-38 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| seoul-open-data-39 | seoul-open-data-real-estate-csv | 서울특별시 | https://data.seoul.go.kr/dataList/OA-21275/S/1/datasetView.do | waiting_for_manual_download | 서울 열린데이터광장 공식 페이지에서 신고년도별로 내려받은 뒤 자치구·법정동·건물명 키워드로 필터링한다. |
+| molit-apt-rent-01 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-rent-02 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-rent-03 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-rent-04 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-rent-05 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-rent-06 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-rent-07 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-rent-08 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-rent-09 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-trade-01 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-trade-02 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-trade-03 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-trade-04 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-trade-05 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-trade-06 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-trade-07 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-trade-08 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-apt-trade-09 | molit-rtms-apt-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-rowhouse-rent-01 | molit-rtms-rowhouse-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-rowhouse-rent-02 | molit-rtms-rowhouse-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-rowhouse-rent-03 | molit-rtms-rowhouse-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-rowhouse-rent-04 | molit-rtms-rowhouse-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-rowhouse-rent-05 | molit-rtms-rowhouse-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-rowhouse-rent-06 | molit-rtms-rowhouse-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-rowhouse-trade-01 | molit-rtms-rowhouse-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-rowhouse-trade-02 | molit-rtms-rowhouse-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-rowhouse-trade-03 | molit-rtms-rowhouse-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-rowhouse-trade-04 | molit-rtms-rowhouse-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-rowhouse-trade-05 | molit-rtms-rowhouse-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| molit-rowhouse-trade-06 | molit-rtms-rowhouse-trade-rent-manual | 국토교통부 | https://rt.molit.go.kr/ | waiting_for_manual_download | 공식 RTMS 자료제공 화면은 시도별 계약일자 범위가 최대 1년이므로 자치구·계약년도·주택유형별 원자료를 나눠 내려받아 보존한다. |
+| r-one-statistics-01 | r-one-price-and-volume-statistics | 한국부동산원 | https://www.reb.or.kr/r-one/main.do | waiting_for_manual_download | R-ONE 공식 통계자료받기에서 서울·권역·자치구 가격지수와 거래현황을 내려받아 실거래 방향성 대조용으로 보존한다. |
+
+## 사업장 연결
+
+| 작업 | 순위 | 사업장 | 키워드/지표 |
+| --- | --- | --- | --- |
+| seoul-open-data-01 | 14 | 14. 개포주공6,7단지아파트 재건축정비사업조합 | 개포; 주공; 디에이치; 래미안; 자이 |
+| seoul-open-data-02 | 14 | 14. 개포주공6,7단지아파트 재건축정비사업조합 | 개포; 주공; 디에이치; 래미안; 자이 |
+| seoul-open-data-03 | 14 | 14. 개포주공6,7단지아파트 재건축정비사업조합 | 개포; 주공; 디에이치; 래미안; 자이 |
+| seoul-open-data-04 | 4; 6; 7; 8 | 4. 은마아파트 재건축정비사업조합; 6. 대치우성1차아파트 재건축정비사업조합; 7. 대치쌍용2차아파트 주택재건축정비사업조합; 8. 대치쌍용1차아파트 주택재건축정비사업조합 | 은마; 우성; 쌍용; 대치 |
+| seoul-open-data-05 | 4; 6; 7; 8 | 4. 은마아파트 재건축정비사업조합; 6. 대치우성1차아파트 재건축정비사업조합; 7. 대치쌍용2차아파트 주택재건축정비사업조합; 8. 대치쌍용1차아파트 주택재건축정비사업조합 | 은마; 우성; 쌍용; 대치 |
+| seoul-open-data-06 | 4; 6; 7; 8 | 4. 은마아파트 재건축정비사업조합; 6. 대치우성1차아파트 재건축정비사업조합; 7. 대치쌍용2차아파트 주택재건축정비사업조합; 8. 대치쌍용1차아파트 주택재건축정비사업조합 | 은마; 우성; 쌍용; 대치 |
+| seoul-open-data-07 | 2; 10; 11; 12; 15 | 2. 압구정아파트지구 특별계획구역② 재건축정비사업조합; 10. 압구정아파트지구 특별계획구역③ 재건축정비사업 조합; 11. 압구정아파트지구 특별계획구역4; 12. 압구정아파트지구 특별계획구역5 재건축정비사업조합; 15. 압구정한양7차아파트 재건축정비사업조합 | 압구정; 현대; 한양; 미성; 신현대 |
+| seoul-open-data-08 | 2; 10; 11; 12; 15 | 2. 압구정아파트지구 특별계획구역② 재건축정비사업조합; 10. 압구정아파트지구 특별계획구역③ 재건축정비사업 조합; 11. 압구정아파트지구 특별계획구역4; 12. 압구정아파트지구 특별계획구역5 재건축정비사업조합; 15. 압구정한양7차아파트 재건축정비사업조합 | 압구정; 현대; 한양; 미성; 신현대 |
+| seoul-open-data-09 | 2; 10; 11; 12; 15 | 2. 압구정아파트지구 특별계획구역② 재건축정비사업조합; 10. 압구정아파트지구 특별계획구역③ 재건축정비사업 조합; 11. 압구정아파트지구 특별계획구역4; 12. 압구정아파트지구 특별계획구역5 재건축정비사업조합; 15. 압구정한양7차아파트 재건축정비사업조합 | 압구정; 현대; 한양; 미성; 신현대 |
+| seoul-open-data-10 | 23; 24; 27 | 23. 광장동 삼성1차아파트 소규모재건축정비사업; 24. 워커힐아파트1단지 재건축정비사업 조합설립추진위원회; 27. 광장극동아파트 재건축사업 (신속통합기획) | 광장; 극동; 워커힐; 삼성 |
+| seoul-open-data-11 | 23; 24; 27 | 23. 광장동 삼성1차아파트 소규모재건축정비사업; 24. 워커힐아파트1단지 재건축정비사업 조합설립추진위원회; 27. 광장극동아파트 재건축사업 (신속통합기획) | 광장; 극동; 워커힐; 삼성 |
+| seoul-open-data-12 | 23; 24; 27 | 23. 광장동 삼성1차아파트 소규모재건축정비사업; 24. 워커힐아파트1단지 재건축정비사업 조합설립추진위원회; 27. 광장극동아파트 재건축사업 (신속통합기획) | 광장; 극동; 워커힐; 삼성 |
+| seoul-open-data-13 | 25 | 25. 한양연립 일대 가로주택정비사업 | 구의; 한양; 강변 |
+| seoul-open-data-14 | 25 | 25. 한양연립 일대 가로주택정비사업 | 구의; 한양; 강변 |
+| seoul-open-data-15 | 25 | 25. 한양연립 일대 가로주택정비사업 | 구의; 한양; 강변 |
+| seoul-open-data-16 | 13; 26; 28; 29; 30 | 13. 자양제7구역 주택재건축정비사업 조합; 26. 자양한양아파트 재건축정비사업; 28. 자양번영로3나길 일대 가로주택정비사업; 29. 자양1의4구역 가로주택정비사업; 30. 자양4동 A구역 주택재개발사업 | 자양; 한양; 자양7; 자양4 |
+| seoul-open-data-17 | 13; 26; 28; 29; 30 | 13. 자양제7구역 주택재건축정비사업 조합; 26. 자양한양아파트 재건축정비사업; 28. 자양번영로3나길 일대 가로주택정비사업; 29. 자양1의4구역 가로주택정비사업; 30. 자양4동 A구역 주택재개발사업 | 자양; 한양; 자양7; 자양4 |
+| seoul-open-data-18 | 13; 26; 28; 29; 30 | 13. 자양제7구역 주택재건축정비사업 조합; 26. 자양한양아파트 재건축정비사업; 28. 자양번영로3나길 일대 가로주택정비사업; 29. 자양1의4구역 가로주택정비사업; 30. 자양4동 A구역 주택재개발사업 | 자양; 한양; 자양7; 자양4 |
+| seoul-open-data-19 | 22 | 22. 중곡아파트 주택재건축정비사업조합 | 중곡; 중곡아파트 |
+| seoul-open-data-20 | 22 | 22. 중곡아파트 주택재건축정비사업조합 | 중곡; 중곡아파트 |
+| seoul-open-data-21 | 22 | 22. 중곡아파트 주택재건축정비사업조합 | 중곡; 중곡아파트 |
+| seoul-open-data-22 | 20 | 20. 마천1재정비촉진구역 주택재개발정비사업조합 | 마천; 거여; 재정비촉진 |
+| seoul-open-data-23 | 20 | 20. 마천1재정비촉진구역 주택재개발정비사업조합 | 마천; 거여; 재정비촉진 |
+| seoul-open-data-24 | 20 | 20. 마천1재정비촉진구역 주택재개발정비사업조합 | 마천; 거여; 재정비촉진 |
+| seoul-open-data-25 | 16 | 16. 가락1차현대아파트 재건축정비사업 조합 | 가락; 현대; 문정 |
+| seoul-open-data-26 | 16 | 16. 가락1차현대아파트 재건축정비사업 조합 | 가락; 현대; 문정 |
+| seoul-open-data-27 | 16 | 16. 가락1차현대아파트 재건축정비사업 조합 | 가락; 현대; 문정 |
+| seoul-open-data-28 | 19 | 19. 대림가락아파트 재건축정비사업조합 | 대림; 가락; 방이 |
+| seoul-open-data-29 | 19 | 19. 대림가락아파트 재건축정비사업조합 | 대림; 가락; 방이 |
+| seoul-open-data-30 | 19 | 19. 대림가락아파트 재건축정비사업조합 | 대림; 가락; 방이 |
+| seoul-open-data-31 | 17; 18; 21 | 17. 송파한양2차아파트 재건축정비사업 조합; 18. 송파미성아파트 재건축정비사업조합; 21. 가락삼익맨숀아파트 재건축정비사업 조합 | 송파; 한양; 미성; 가락삼익; 삼익 |
+| seoul-open-data-32 | 17; 18; 21 | 17. 송파한양2차아파트 재건축정비사업 조합; 18. 송파미성아파트 재건축정비사업조합; 21. 가락삼익맨숀아파트 재건축정비사업 조합 | 송파; 한양; 미성; 가락삼익; 삼익 |
+| seoul-open-data-33 | 17; 18; 21 | 17. 송파한양2차아파트 재건축정비사업 조합; 18. 송파미성아파트 재건축정비사업조합; 21. 가락삼익맨숀아파트 재건축정비사업 조합 | 송파; 한양; 미성; 가락삼익; 삼익 |
+| seoul-open-data-34 | 5 | 5. 장미1,2,3차아파트 주택재건축정비사업 조합 | 장미; 파크리오; 진주; 미성; 크로바 |
+| seoul-open-data-35 | 5 | 5. 장미1,2,3차아파트 주택재건축정비사업 조합 | 장미; 파크리오; 진주; 미성; 크로바 |
+| seoul-open-data-36 | 5 | 5. 장미1,2,3차아파트 주택재건축정비사업 조합 | 장미; 파크리오; 진주; 미성; 크로바 |
+| seoul-open-data-37 | 1; 3; 9 | 1. 잠실5단지아파트 주택재건축정비사업조합; 3. 잠실우성아파트 재건축정비사업조합; 9. 잠실우성4차 주택재건축정비사업조합 | 잠실; 주공; 우성; 엘스; 리센츠; 트리지움 |
+| seoul-open-data-38 | 1; 3; 9 | 1. 잠실5단지아파트 주택재건축정비사업조합; 3. 잠실우성아파트 재건축정비사업조합; 9. 잠실우성4차 주택재건축정비사업조합 | 잠실; 주공; 우성; 엘스; 리센츠; 트리지움 |
+| seoul-open-data-39 | 1; 3; 9 | 1. 잠실5단지아파트 주택재건축정비사업조합; 3. 잠실우성아파트 재건축정비사업조합; 9. 잠실우성4차 주택재건축정비사업조합 | 잠실; 주공; 우성; 엘스; 리센츠; 트리지움 |
+| molit-apt-rent-01 | 2; 4; 6; 7; 8; 10; 11; 12; 14; 15 | 2. 압구정아파트지구 특별계획구역② 재건축정비사업조합; 4. 은마아파트 재건축정비사업조합; 6. 대치우성1차아파트 재건축정비사업조합; 7. 대치쌍용2차아파트 주택재건축정비사업조합; 8. 대치쌍용1차아파트 주택재건축정비사업조합; 10. 압구정아파트지구 특별계획구역③ 재건축정비사업 조합; 11. 압구정아파트지구 특별계획구역4; 12. 압구정아파트지구 특별계획구역5 재건축정비사업조합; 14. 개포주공6,7단지아파트 재건축정비사업조합; 15. 압구정한양7차아파트 재건축정비사업조합 | 압구정; 현대; 한양; 미성; 신현대; 은마; 우성; 쌍용; 대치; 개포; 주공; 디에이치; 래미안; 자이 |
+| molit-apt-rent-02 | 2; 4; 6; 7; 8; 10; 11; 12; 14; 15 | 2. 압구정아파트지구 특별계획구역② 재건축정비사업조합; 4. 은마아파트 재건축정비사업조합; 6. 대치우성1차아파트 재건축정비사업조합; 7. 대치쌍용2차아파트 주택재건축정비사업조합; 8. 대치쌍용1차아파트 주택재건축정비사업조합; 10. 압구정아파트지구 특별계획구역③ 재건축정비사업 조합; 11. 압구정아파트지구 특별계획구역4; 12. 압구정아파트지구 특별계획구역5 재건축정비사업조합; 14. 개포주공6,7단지아파트 재건축정비사업조합; 15. 압구정한양7차아파트 재건축정비사업조합 | 압구정; 현대; 한양; 미성; 신현대; 은마; 우성; 쌍용; 대치; 개포; 주공; 디에이치; 래미안; 자이 |
+| molit-apt-rent-03 | 2; 4; 6; 7; 8; 10; 11; 12; 14; 15 | 2. 압구정아파트지구 특별계획구역② 재건축정비사업조합; 4. 은마아파트 재건축정비사업조합; 6. 대치우성1차아파트 재건축정비사업조합; 7. 대치쌍용2차아파트 주택재건축정비사업조합; 8. 대치쌍용1차아파트 주택재건축정비사업조합; 10. 압구정아파트지구 특별계획구역③ 재건축정비사업 조합; 11. 압구정아파트지구 특별계획구역4; 12. 압구정아파트지구 특별계획구역5 재건축정비사업조합; 14. 개포주공6,7단지아파트 재건축정비사업조합; 15. 압구정한양7차아파트 재건축정비사업조합 | 압구정; 현대; 한양; 미성; 신현대; 은마; 우성; 쌍용; 대치; 개포; 주공; 디에이치; 래미안; 자이 |
+| molit-apt-rent-04 | 13; 22; 23; 24; 26; 27 | 13. 자양제7구역 주택재건축정비사업 조합; 22. 중곡아파트 주택재건축정비사업조합; 23. 광장동 삼성1차아파트 소규모재건축정비사업; 24. 워커힐아파트1단지 재건축정비사업 조합설립추진위원회; 26. 자양한양아파트 재건축정비사업; 27. 광장극동아파트 재건축사업 (신속통합기획) | 자양; 한양; 자양7; 자양4; 중곡; 중곡아파트; 광장; 극동; 워커힐; 삼성 |
+| molit-apt-rent-05 | 13; 22; 23; 24; 26; 27 | 13. 자양제7구역 주택재건축정비사업 조합; 22. 중곡아파트 주택재건축정비사업조합; 23. 광장동 삼성1차아파트 소규모재건축정비사업; 24. 워커힐아파트1단지 재건축정비사업 조합설립추진위원회; 26. 자양한양아파트 재건축정비사업; 27. 광장극동아파트 재건축사업 (신속통합기획) | 자양; 한양; 자양7; 자양4; 중곡; 중곡아파트; 광장; 극동; 워커힐; 삼성 |
+| molit-apt-rent-06 | 13; 22; 23; 24; 26; 27 | 13. 자양제7구역 주택재건축정비사업 조합; 22. 중곡아파트 주택재건축정비사업조합; 23. 광장동 삼성1차아파트 소규모재건축정비사업; 24. 워커힐아파트1단지 재건축정비사업 조합설립추진위원회; 26. 자양한양아파트 재건축정비사업; 27. 광장극동아파트 재건축사업 (신속통합기획) | 자양; 한양; 자양7; 자양4; 중곡; 중곡아파트; 광장; 극동; 워커힐; 삼성 |
+| molit-apt-rent-07 | 1; 3; 5; 9; 16; 17; 18; 19; 21 | 1. 잠실5단지아파트 주택재건축정비사업조합; 3. 잠실우성아파트 재건축정비사업조합; 5. 장미1,2,3차아파트 주택재건축정비사업 조합; 9. 잠실우성4차 주택재건축정비사업조합; 16. 가락1차현대아파트 재건축정비사업 조합; 17. 송파한양2차아파트 재건축정비사업 조합; 18. 송파미성아파트 재건축정비사업조합; 19. 대림가락아파트 재건축정비사업조합; 21. 가락삼익맨숀아파트 재건축정비사업 조합 | 잠실; 주공; 우성; 엘스; 리센츠; 트리지움; 장미; 파크리오; 진주; 미성; 크로바; 가락; 현대; 문정; 송파; 한양; 가락삼익; 삼익; 대림; 방이 |
+| molit-apt-rent-08 | 1; 3; 5; 9; 16; 17; 18; 19; 21 | 1. 잠실5단지아파트 주택재건축정비사업조합; 3. 잠실우성아파트 재건축정비사업조합; 5. 장미1,2,3차아파트 주택재건축정비사업 조합; 9. 잠실우성4차 주택재건축정비사업조합; 16. 가락1차현대아파트 재건축정비사업 조합; 17. 송파한양2차아파트 재건축정비사업 조합; 18. 송파미성아파트 재건축정비사업조합; 19. 대림가락아파트 재건축정비사업조합; 21. 가락삼익맨숀아파트 재건축정비사업 조합 | 잠실; 주공; 우성; 엘스; 리센츠; 트리지움; 장미; 파크리오; 진주; 미성; 크로바; 가락; 현대; 문정; 송파; 한양; 가락삼익; 삼익; 대림; 방이 |
+| molit-apt-rent-09 | 1; 3; 5; 9; 16; 17; 18; 19; 21 | 1. 잠실5단지아파트 주택재건축정비사업조합; 3. 잠실우성아파트 재건축정비사업조합; 5. 장미1,2,3차아파트 주택재건축정비사업 조합; 9. 잠실우성4차 주택재건축정비사업조합; 16. 가락1차현대아파트 재건축정비사업 조합; 17. 송파한양2차아파트 재건축정비사업 조합; 18. 송파미성아파트 재건축정비사업조합; 19. 대림가락아파트 재건축정비사업조합; 21. 가락삼익맨숀아파트 재건축정비사업 조합 | 잠실; 주공; 우성; 엘스; 리센츠; 트리지움; 장미; 파크리오; 진주; 미성; 크로바; 가락; 현대; 문정; 송파; 한양; 가락삼익; 삼익; 대림; 방이 |
+| molit-apt-trade-01 | 2; 4; 6; 7; 8; 10; 11; 12; 14; 15 | 2. 압구정아파트지구 특별계획구역② 재건축정비사업조합; 4. 은마아파트 재건축정비사업조합; 6. 대치우성1차아파트 재건축정비사업조합; 7. 대치쌍용2차아파트 주택재건축정비사업조합; 8. 대치쌍용1차아파트 주택재건축정비사업조합; 10. 압구정아파트지구 특별계획구역③ 재건축정비사업 조합; 11. 압구정아파트지구 특별계획구역4; 12. 압구정아파트지구 특별계획구역5 재건축정비사업조합; 14. 개포주공6,7단지아파트 재건축정비사업조합; 15. 압구정한양7차아파트 재건축정비사업조합 | 압구정; 현대; 한양; 미성; 신현대; 은마; 우성; 쌍용; 대치; 개포; 주공; 디에이치; 래미안; 자이 |
+| molit-apt-trade-02 | 2; 4; 6; 7; 8; 10; 11; 12; 14; 15 | 2. 압구정아파트지구 특별계획구역② 재건축정비사업조합; 4. 은마아파트 재건축정비사업조합; 6. 대치우성1차아파트 재건축정비사업조합; 7. 대치쌍용2차아파트 주택재건축정비사업조합; 8. 대치쌍용1차아파트 주택재건축정비사업조합; 10. 압구정아파트지구 특별계획구역③ 재건축정비사업 조합; 11. 압구정아파트지구 특별계획구역4; 12. 압구정아파트지구 특별계획구역5 재건축정비사업조합; 14. 개포주공6,7단지아파트 재건축정비사업조합; 15. 압구정한양7차아파트 재건축정비사업조합 | 압구정; 현대; 한양; 미성; 신현대; 은마; 우성; 쌍용; 대치; 개포; 주공; 디에이치; 래미안; 자이 |
+| molit-apt-trade-03 | 2; 4; 6; 7; 8; 10; 11; 12; 14; 15 | 2. 압구정아파트지구 특별계획구역② 재건축정비사업조합; 4. 은마아파트 재건축정비사업조합; 6. 대치우성1차아파트 재건축정비사업조합; 7. 대치쌍용2차아파트 주택재건축정비사업조합; 8. 대치쌍용1차아파트 주택재건축정비사업조합; 10. 압구정아파트지구 특별계획구역③ 재건축정비사업 조합; 11. 압구정아파트지구 특별계획구역4; 12. 압구정아파트지구 특별계획구역5 재건축정비사업조합; 14. 개포주공6,7단지아파트 재건축정비사업조합; 15. 압구정한양7차아파트 재건축정비사업조합 | 압구정; 현대; 한양; 미성; 신현대; 은마; 우성; 쌍용; 대치; 개포; 주공; 디에이치; 래미안; 자이 |
+| molit-apt-trade-04 | 13; 22; 23; 24; 25; 26; 27; 28; 29; 30 | 13. 자양제7구역 주택재건축정비사업 조합; 22. 중곡아파트 주택재건축정비사업조합; 23. 광장동 삼성1차아파트 소규모재건축정비사업; 24. 워커힐아파트1단지 재건축정비사업 조합설립추진위원회; 25. 한양연립 일대 가로주택정비사업; 26. 자양한양아파트 재건축정비사업; 27. 광장극동아파트 재건축사업 (신속통합기획); 28. 자양번영로3나길 일대 가로주택정비사업; 29. 자양1의4구역 가로주택정비사업; 30. 자양4동 A구역 주택재개발사업 | 자양; 한양; 자양7; 자양4; 중곡; 중곡아파트; 광장; 극동; 워커힐; 삼성; 구의; 강변 |
+| molit-apt-trade-05 | 13; 22; 23; 24; 25; 26; 27; 28; 29; 30 | 13. 자양제7구역 주택재건축정비사업 조합; 22. 중곡아파트 주택재건축정비사업조합; 23. 광장동 삼성1차아파트 소규모재건축정비사업; 24. 워커힐아파트1단지 재건축정비사업 조합설립추진위원회; 25. 한양연립 일대 가로주택정비사업; 26. 자양한양아파트 재건축정비사업; 27. 광장극동아파트 재건축사업 (신속통합기획); 28. 자양번영로3나길 일대 가로주택정비사업; 29. 자양1의4구역 가로주택정비사업; 30. 자양4동 A구역 주택재개발사업 | 자양; 한양; 자양7; 자양4; 중곡; 중곡아파트; 광장; 극동; 워커힐; 삼성; 구의; 강변 |
+| molit-apt-trade-06 | 13; 22; 23; 24; 25; 26; 27; 28; 29; 30 | 13. 자양제7구역 주택재건축정비사업 조합; 22. 중곡아파트 주택재건축정비사업조합; 23. 광장동 삼성1차아파트 소규모재건축정비사업; 24. 워커힐아파트1단지 재건축정비사업 조합설립추진위원회; 25. 한양연립 일대 가로주택정비사업; 26. 자양한양아파트 재건축정비사업; 27. 광장극동아파트 재건축사업 (신속통합기획); 28. 자양번영로3나길 일대 가로주택정비사업; 29. 자양1의4구역 가로주택정비사업; 30. 자양4동 A구역 주택재개발사업 | 자양; 한양; 자양7; 자양4; 중곡; 중곡아파트; 광장; 극동; 워커힐; 삼성; 구의; 강변 |
+| molit-apt-trade-07 | 1; 3; 5; 9; 16; 17; 18; 19; 20; 21 | 1. 잠실5단지아파트 주택재건축정비사업조합; 3. 잠실우성아파트 재건축정비사업조합; 5. 장미1,2,3차아파트 주택재건축정비사업 조합; 9. 잠실우성4차 주택재건축정비사업조합; 16. 가락1차현대아파트 재건축정비사업 조합; 17. 송파한양2차아파트 재건축정비사업 조합; 18. 송파미성아파트 재건축정비사업조합; 19. 대림가락아파트 재건축정비사업조합; 20. 마천1재정비촉진구역 주택재개발정비사업조합; 21. 가락삼익맨숀아파트 재건축정비사업 조합 | 잠실; 주공; 우성; 엘스; 리센츠; 트리지움; 장미; 파크리오; 진주; 미성; 크로바; 가락; 현대; 문정; 송파; 한양; 가락삼익; 삼익; 대림; 방이; 마천; 거여; 재정비촉진 |
+| molit-apt-trade-08 | 1; 3; 5; 9; 16; 17; 18; 19; 20; 21 | 1. 잠실5단지아파트 주택재건축정비사업조합; 3. 잠실우성아파트 재건축정비사업조합; 5. 장미1,2,3차아파트 주택재건축정비사업 조합; 9. 잠실우성4차 주택재건축정비사업조합; 16. 가락1차현대아파트 재건축정비사업 조합; 17. 송파한양2차아파트 재건축정비사업 조합; 18. 송파미성아파트 재건축정비사업조합; 19. 대림가락아파트 재건축정비사업조합; 20. 마천1재정비촉진구역 주택재개발정비사업조합; 21. 가락삼익맨숀아파트 재건축정비사업 조합 | 잠실; 주공; 우성; 엘스; 리센츠; 트리지움; 장미; 파크리오; 진주; 미성; 크로바; 가락; 현대; 문정; 송파; 한양; 가락삼익; 삼익; 대림; 방이; 마천; 거여; 재정비촉진 |
+| molit-apt-trade-09 | 1; 3; 5; 9; 16; 17; 18; 19; 20; 21 | 1. 잠실5단지아파트 주택재건축정비사업조합; 3. 잠실우성아파트 재건축정비사업조합; 5. 장미1,2,3차아파트 주택재건축정비사업 조합; 9. 잠실우성4차 주택재건축정비사업조합; 16. 가락1차현대아파트 재건축정비사업 조합; 17. 송파한양2차아파트 재건축정비사업 조합; 18. 송파미성아파트 재건축정비사업조합; 19. 대림가락아파트 재건축정비사업조합; 20. 마천1재정비촉진구역 주택재개발정비사업조합; 21. 가락삼익맨숀아파트 재건축정비사업 조합 | 잠실; 주공; 우성; 엘스; 리센츠; 트리지움; 장미; 파크리오; 진주; 미성; 크로바; 가락; 현대; 문정; 송파; 한양; 가락삼익; 삼익; 대림; 방이; 마천; 거여; 재정비촉진 |
+| molit-rowhouse-rent-01 | 25; 28; 29; 30 | 25. 한양연립 일대 가로주택정비사업; 28. 자양번영로3나길 일대 가로주택정비사업; 29. 자양1의4구역 가로주택정비사업; 30. 자양4동 A구역 주택재개발사업 | 구의; 한양; 강변; 자양; 자양7; 자양4 |
+| molit-rowhouse-rent-02 | 25; 28; 29; 30 | 25. 한양연립 일대 가로주택정비사업; 28. 자양번영로3나길 일대 가로주택정비사업; 29. 자양1의4구역 가로주택정비사업; 30. 자양4동 A구역 주택재개발사업 | 구의; 한양; 강변; 자양; 자양7; 자양4 |
+| molit-rowhouse-rent-03 | 25; 28; 29; 30 | 25. 한양연립 일대 가로주택정비사업; 28. 자양번영로3나길 일대 가로주택정비사업; 29. 자양1의4구역 가로주택정비사업; 30. 자양4동 A구역 주택재개발사업 | 구의; 한양; 강변; 자양; 자양7; 자양4 |
+| molit-rowhouse-rent-04 | 20 | 20. 마천1재정비촉진구역 주택재개발정비사업조합 | 마천; 거여; 재정비촉진 |
+| molit-rowhouse-rent-05 | 20 | 20. 마천1재정비촉진구역 주택재개발정비사업조합 | 마천; 거여; 재정비촉진 |
+| molit-rowhouse-rent-06 | 20 | 20. 마천1재정비촉진구역 주택재개발정비사업조합 | 마천; 거여; 재정비촉진 |
+| molit-rowhouse-trade-01 | 25; 28; 29; 30 | 25. 한양연립 일대 가로주택정비사업; 28. 자양번영로3나길 일대 가로주택정비사업; 29. 자양1의4구역 가로주택정비사업; 30. 자양4동 A구역 주택재개발사업 | 구의; 한양; 강변; 자양; 자양7; 자양4 |
+| molit-rowhouse-trade-02 | 25; 28; 29; 30 | 25. 한양연립 일대 가로주택정비사업; 28. 자양번영로3나길 일대 가로주택정비사업; 29. 자양1의4구역 가로주택정비사업; 30. 자양4동 A구역 주택재개발사업 | 구의; 한양; 강변; 자양; 자양7; 자양4 |
+| molit-rowhouse-trade-03 | 25; 28; 29; 30 | 25. 한양연립 일대 가로주택정비사업; 28. 자양번영로3나길 일대 가로주택정비사업; 29. 자양1의4구역 가로주택정비사업; 30. 자양4동 A구역 주택재개발사업 | 구의; 한양; 강변; 자양; 자양7; 자양4 |
+| molit-rowhouse-trade-04 | 20 | 20. 마천1재정비촉진구역 주택재개발정비사업조합 | 마천; 거여; 재정비촉진 |
+| molit-rowhouse-trade-05 | 20 | 20. 마천1재정비촉진구역 주택재개발정비사업조합 | 마천; 거여; 재정비촉진 |
+| molit-rowhouse-trade-06 | 20 | 20. 마천1재정비촉진구역 주택재개발정비사업조합 | 마천; 거여; 재정비촉진 |
+| r-one-statistics-01 | 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15; 16; 17; 18; 19; 20; 21; 22; 23; 24; 25; 26; 27; 28; 29; 30 | 후보 30개 전체 | 전국주택가격동향_아파트매매; 전국주택가격동향_아파트전세; 공동주택실거래가격지수; 부동산거래현황_아파트매매; 지가변동률 |

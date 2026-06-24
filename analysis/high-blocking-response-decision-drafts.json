@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "intake_rows": 3,
+    "packet_projects": 3,
+    "ready_to_append": 0,
+    "waiting_for_response": 3,
+    "needs_intake_fix": 0,
+    "outputs": [
+      "analysis/high-blocking-response-decision-drafts.md",
+      "analysis/high-blocking-response-decision-drafts.json"
+    ]
+  },
+  "rows": [
+    {
+      "rank": "23",
+      "project_name": "광장동 삼성1차아파트 소규모재건축정비사업",
+      "closure_ids": "S2-0002",
+      "request_type": "조합설립인가 고시번호·고시일·원문 URL 확인",
+      "response_status": "no_response",
+      "draft_status": "waiting_for_response",
+      "validation_issues": "",
+      "draft_decision_id": "",
+      "target_decision_status": "",
+      "resolved_value": "",
+      "evidence_files": ""
+    },
+    {
+      "rank": "28",
+      "project_name": "자양번영로3나길 일대 가로주택정비사업",
+      "closure_ids": "S2-0003",
+      "request_type": "조합설립인가 고시번호·고시일·원문 URL 확인",
+      "response_status": "no_response",
+      "draft_status": "waiting_for_response",
+      "validation_issues": "",
+      "draft_decision_id": "",
+      "target_decision_status": "",
+      "resolved_value": "",
+      "evidence_files": ""
+    },
+    {
+      "rank": "9",
+      "project_name": "잠실우성4차 주택재건축정비사업조합",
+      "closure_ids": "S4-0002",
+      "request_type": "관리처분계획인가 별첨/공개항목 확인",
+      "response_status": "no_response",
+      "draft_status": "waiting_for_response",
+      "validation_issues": "",
+      "draft_decision_id": "",
+      "target_decision_status": "",
+      "resolved_value": "",
+      "evidence_files": ""
+    }
+  ],
+  "drafts": []
+}

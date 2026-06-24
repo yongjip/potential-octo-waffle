@@ -1,0 +1,10 @@
+activation_priority,source_id,source_name,activation_type,intake_status,tracked,next_check_at,issue_count,issues,required_fields,next_action
+110,seoul_urban_alert,서울도시공간포털 알림서비스,manual_subscription,untracked,no,,0,,"source_id, activation_status, next_check_at",examples JSON에서 해당 출처 예시를 복사해 intake에 추가
+103,opengov,서울 정보소통광장,manual_monitoring,untracked,no,,0,,"source_id, activation_status, next_check_at",examples JSON에서 해당 출처 예시를 복사해 intake에 추가
+102,seoul_traffic_news,서울시 교통 분야,manual_monitoring,untracked,no,,0,,"source_id, activation_status, next_check_at",examples JSON에서 해당 출처 예시를 복사해 intake에 추가
+99,seoul_citybuild_news,서울시 주택·도시계획 분야,manual_monitoring,untracked,no,,0,,"source_id, activation_status, next_check_at",examples JSON에서 해당 출처 예시를 복사해 intake에 추가
+80,gangdong_district_notice,강동구 고시공고,manual_monitoring,active,yes,2026-07-01 KST,0,,"coverage, next_check_at, credential_or_subscription_note",확장 관심권 최신 점검 결과와 direct hit/단계 재확인 메모를 activation intake에 기록
+80,jung_district_notice,중구 고시공고,manual_monitoring,active,yes,2026-07-01 KST,0,,"coverage, next_check_at, credential_or_subscription_note",확장 관심권 최신 점검 결과와 direct hit/단계 재확인 메모를 activation intake에 기록
+50,molit_data_go_kr,국토교통부 실거래/공공데이터포털,api_key,untracked,no,,0,,"source_id, activation_status, next_check_at",examples JSON에서 해당 출처 예시를 복사해 intake에 추가
+50,seoul_open_data,서울 열린데이터광장,api_key,untracked,no,,0,,"source_id, activation_status, next_check_at",examples JSON에서 해당 출처 예시를 복사해 intake에 추가
+45,r_one,한국부동산원 R-ONE,manual_market_monitoring,untracked,no,,0,,"source_id, activation_status, next_check_at",examples JSON에서 해당 출처 예시를 복사해 intake에 추가

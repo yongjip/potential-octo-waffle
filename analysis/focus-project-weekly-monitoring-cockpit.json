@@ -1,0 +1,92 @@
+{
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "project_count": 4,
+    "external_wait_focus_count": 1,
+    "weekly_remote_step_count": 7,
+    "weekly_local_step_count": 1,
+    "filed_waiting_response_count": 3,
+    "weekly_followup_command": "node scripts/regenerate-research-artifacts.mjs",
+    "inputs": [
+      "analysis/focus-project-monitoring-board.json",
+      "analysis/high-blocking-filing-tracker.json",
+      "analysis/official-update-runbook-checklist.json",
+      "analysis/current-research-snapshot.json"
+    ],
+    "outputs": [
+      "analysis/focus-project-weekly-monitoring-cockpit.md",
+      "analysis/focus-project-weekly-monitoring-cockpit.csv",
+      "analysis/focus-project-weekly-monitoring-cockpit.json"
+    ]
+  },
+  "rows": [
+    {
+      "weekly_priority_score": 446.6,
+      "lane": "외부 회신 대기",
+      "rank": 9,
+      "project_name": "잠실우성4차 주택재건축정비사업조합",
+      "life_area": "잠실/송파",
+      "stage": "관리처분인가",
+      "baseline_status": "관리처분인가; 관리처분 이후 전환 리스크를 읽는 대표 사업; 관리처분 공사비·정비사업비 원문은 외부 회신 대기",
+      "external_wait_status": "filed_waiting_response; waiting; receipt 626590",
+      "first_check_action": "접수번호 626590 유지, 회신 도착 여부 확인 후 intake 입력",
+      "first_official_urls": "cleanup_main: https://cleanup.seoul.go.kr/cafe/mainIndx.do?cafeUrl=Tw2w7Iwv; cleanup_summary: https://cleanup.seoul.go.kr/cafe/mastr-cleanup-bsnsSumry/execute.do?cafeId=710900000108s28&stepSeCode=102&div=sumry; cleanup_progress: https://cleanup.seoul.go.kr/cafe/mainIndx/cleanup-prtnelapse/vscr.do?cafeId=710900000108s28&bsnsPk=11710-900000108",
+      "weekly_question": "잠실 핵심축의 공공개발 기대가 비용·이주·혼잡을 보상하는가",
+      "weekly_change_signals": "추진경과 또는 송파구 공식 사업별 페이지의 단계일자 변경; 관리처분 이후 이주비, 명도, 범죄예방, 철거, 착공 성격의 조합입찰공고 추가; 담당부서 또는 정보공개 회신으로 공사비, 총사업비, 기준일, 자료명이 확인됨",
+      "update_targets": "project-notes/09-tw2w7iwv.md; analysis/management-stage-value-resolution.md; analysis/high-blocking-filing-checklist.md; analysis/project-comparison-matrix.md; analysis/reassessment-watchlist.md",
+      "output_route": "회신 없음: high-blocking-filing-tracker -> 회신 도착: response-intake -> decision draft -> 전체 재생성",
+      "first_outputs_to_read": "analysis/high-blocking-filing-tracker.md; analysis/high-blocking-filing-checklist.md; data/review/high-blocking-source-response-intake.json"
+    },
+    {
+      "weekly_priority_score": 250.5,
+      "lane": "비용/기반시설 확인",
+      "rank": 10,
+      "project_name": "압구정아파트지구 특별계획구역③ 재건축정비사업 조합",
+      "life_area": "강남",
+      "stage": "조합설립인가",
+      "baseline_status": "조합설립인가; 상급지 프리미엄보다 공공기여·기반시설·높이 조건이 더 중요; 분담금/사업비 공개항목과 정비계획 조건 연결 정리 필요",
+      "external_wait_status": "none",
+      "first_check_action": "추진경과와 공개항목/입찰공고에서 비용·기반시설 신호 확인",
+      "first_official_urls": "cleanup_main: https://cleanup.seoul.go.kr/cafe/mainIndx.do?cafeUrl=apgujeong3; cleanup_summary: https://cleanup.seoul.go.kr/cafe/mastr-cleanup-bsnsSumry/execute.do?cafeId=680900000675S91&stepSeCode=102&div=sumry; cleanup_progress: https://cleanup.seoul.go.kr/cafe/mainIndx/cleanup-prtnelapse/vscr.do?cafeId=680900000675S91&bsnsPk=11680-900000675",
+      "weekly_question": "상급 입지 프리미엄이 비용/공공기여 리스크를 이길 만큼 확실한가",
+      "weekly_change_signals": "지하차도, 소방설계, 환경영향평가, 시공자 선정 조합입찰공고의 실제 추가; 압구정아파트지구 관련 고시, 지구단위계획 변경, 공공기여 조건 변경; 정보몽땅 공개자료에서 분담금, 사업비, 기반시설 관련 새 첨부 확인",
+      "update_targets": "project-notes/10-apgujeong3.md; analysis/apgujeong3-s1-public-item-fact-check.md; analysis/focus-area-comparison-brief.md; analysis/project-comparison-matrix.md; analysis/reassessment-watchlist.md",
+      "output_route": "변화 확인: project-notes -> project-comparison-matrix -> reassessment-watchlist",
+      "first_outputs_to_read": "analysis/official-refresh-summary.md; analysis/cleanup-snapshot-diff.md; analysis/cleanup-board-review-queue.md; analysis/project-comparison-matrix.md; analysis/research-status-dashboard.md"
+    },
+    {
+      "weekly_priority_score": 244.5,
+      "lane": "원문/고시 확인",
+      "rank": 25,
+      "project_name": "한양연립 일대 가로주택정비사업",
+      "life_area": "구의/광진",
+      "stage": "착공 공개신호 / 사업시행계획변경인가 직접 원문",
+      "baseline_status": "사업시행인가; 구의·광진에서 실제 원문 기반 판단이 가능한 대표 케이스; 조합설립/추진위 단계 일부 공백, 사업 레이어 선행 단계 확인 필요",
+      "external_wait_status": "none",
+      "first_check_action": "추진경과와 자치구 고시공고를 먼저 비교해 단계 선행 여부 확인",
+      "first_official_urls": "cleanup_main: https://cleanup.seoul.go.kr/cafe/mainIndx.do?cafeUrl=hanyanggaro; cleanup_summary: https://cleanup.seoul.go.kr/cafe/mastr-cleanup-bsnsSumry/execute.do?cafeId=215900001126x73&stepSeCode=102&div=sumry; cleanup_progress: https://cleanup.seoul.go.kr/cafe/mainIndx/cleanup-prtnelapse/vscr.do?cafeId=215900001126x73&bsnsPk=11215-900001126",
+      "weekly_question": "2·7호선과 한강/터미널 변화 가능성이 사업성 편차를 보완하는가",
+      "weekly_change_signals": "광진구청 고시공고에서 착공, 준공, 사용승인 관련 새 공고 확인; 정비사업 정보몽땅 추진경과의 착공신고 2024-02-15 또는 입주자 모집 공고 2024-05-31 값 변경; 동서울터미널, 강변역 사전협상, 도시계획, 교통처리계획이 공식 원문으로 구체화됨",
+      "update_targets": "project-notes/25-hanyanggaro.md; analysis/gwangjin-gu-notice-fact-check.md; analysis/transport-location-context.md; analysis/project-comparison-matrix.md; analysis/reassessment-watchlist.md",
+      "output_route": "변화 확인: project-notes -> project-comparison-matrix -> reassessment-watchlist",
+      "first_outputs_to_read": "analysis/official-refresh-summary.md; analysis/cleanup-snapshot-diff.md; analysis/cleanup-board-review-queue.md; analysis/project-comparison-matrix.md; analysis/research-status-dashboard.md"
+    },
+    {
+      "weekly_priority_score": 230.3,
+      "lane": "비용/기반시설 확인",
+      "rank": 5,
+      "project_name": "장미1,2,3차아파트 주택재건축정비사업 조합",
+      "life_area": "잠실/송파",
+      "stage": "조합설립인가",
+      "baseline_status": "조합설립인가; 잠실 대단지 장기 잠재 대표. 비용·기반시설 해석이 핵심; direct 고시 recordCode 미연결, 비용·기반시설 공개항목 대조 필요",
+      "external_wait_status": "none",
+      "first_check_action": "추진경과와 공개항목/입찰공고에서 비용·기반시설 신호 확인",
+      "first_official_urls": "cleanup_main: https://cleanup.seoul.go.kr/cafe/mainIndx.do?cafeUrl=jmapt1; cleanup_summary: https://cleanup.seoul.go.kr/cafe/mastr-cleanup-bsnsSumry/execute.do?cafeId=710900000615u63&stepSeCode=102&div=sumry; cleanup_progress: https://cleanup.seoul.go.kr/cafe/mainIndx/cleanup-prtnelapse/vscr.do?cafeId=710900000615u63&bsnsPk=11710-900000615",
+      "weekly_question": "잠실 핵심축의 공공개발 기대가 비용·이주·혼잡을 보상하는가",
+      "weekly_change_signals": "추진경과 또는 item 200의 최신 변경인가 신청일, 인가일, 동의율 변경; 조합입찰공고에 도로설계, 지하안전, 우수박스 이설, 재해영향평가 공고 추가; 사업시행계획서(인가) 또는 관리처분계획서(인가) 메뉴에 실제 문서 추가",
+      "update_targets": "project-notes/05-jmapt1.md; analysis/songpa-notice-value-corroboration.md; analysis/project-comparison-matrix.md; analysis/reassessment-watchlist.md",
+      "output_route": "변화 확인: project-notes -> project-comparison-matrix -> reassessment-watchlist",
+      "first_outputs_to_read": "analysis/official-refresh-summary.md; analysis/cleanup-snapshot-diff.md; analysis/cleanup-board-review-queue.md; analysis/project-comparison-matrix.md; analysis/research-status-dashboard.md"
+    }
+  ]
+}

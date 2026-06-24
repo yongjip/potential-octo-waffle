@@ -1,0 +1,37 @@
+section,item,priority,file,action,note
+packet,1. 강동구 천호동,1차 direct 최신분,analysis/expansion-market-first-download-packet.md,서울시 실거래 -> 국토부 아파트 매매 -> 국토부 아파트 전월세 -> 국토부 연립·다세대 매매 -> 국토부 연립·다세대 전월세,dong-level baseline만 먼저 확보
+packet,2. 강동구 길동,1차 direct 최신분,analysis/expansion-market-first-download-packet.md,서울시 실거래 -> 국토부 아파트 매매 -> 국토부 아파트 전월세 -> 국토부 연립·다세대 매매 -> 국토부 연립·다세대 전월세,신동아1·2차와 길동 43번지 generic 카드를 구분
+packet,3. 강동구 성내동,1차 direct 최신분,analysis/expansion-market-first-download-packet.md,서울시 실거래 -> 국토부 아파트 매매 -> 국토부 아파트 전월세 -> 국토부 연립·다세대 매매 -> 국토부 연립·다세대 전월세,dong-level baseline만 먼저 확보
+packet,4. 중구 신당동,2차 adjacent 최신분,analysis/expansion-market-first-download-packet.md,서울시 실거래 -> 국토부 아파트 매매 -> 국토부 아파트 전월세 -> 국토부 연립·다세대 매매 -> 국토부 연립·다세대 전월세,dong-level baseline만 먼저 확보
+packet,5. 성동구 금호동,2차 adjacent 최신분,analysis/expansion-market-first-download-packet.md,서울시 실거래 -> 국토부 아파트 매매 -> 국토부 아파트 전월세 -> 국토부 연립·다세대 매매 -> 국토부 연립·다세대 전월세,금호동1가~4가 포함 여부를 수동 확인
+packet,6. 성동구 옥수동,3차 edge 최신분,analysis/expansion-market-first-download-packet.md,서울시 실거래 -> 국토부 아파트 매매 -> 국토부 아파트 전월세 -> 국토부 연립·다세대 매매 -> 국토부 연립·다세대 전월세,edge context 비교군으로만 유지
+latest_task,강동구 천호동 / seoul-open-data,1차 direct 최신분,seoul-open-data_강동구_천호동_202601_202606.csv,신고년도=2026; 자치구=강동구; 법정동 필터=법정동=천호동,dong-level baseline만 먼저 확보
+latest_task,강동구 천호동 / molit-apt-trade,1차 direct 최신분,molit-apt-trade_강동구_천호동_202601_202606.csv,LAWD_CD=11740; 계약년월=202601~202606; 법정동 baseline=천호동,scope 편입 전 baseline 확보용
+latest_task,강동구 천호동 / molit-apt-rent,1차 direct 최신분,molit-apt-rent_강동구_천호동_202601_202606.csv,LAWD_CD=11740; 계약년월=202601~202606; 법정동 baseline=천호동,scope 편입 전 baseline 확보용
+latest_task,강동구 천호동 / molit-rowhouse-trade,1차 direct 최신분,molit-rowhouse-trade_강동구_천호동_202601_202606.csv,LAWD_CD=11740; 계약년월=202601~202606; 법정동 baseline=천호동,scope 편입 전 baseline 확보용
+latest_task,강동구 천호동 / molit-rowhouse-rent,1차 direct 최신분,molit-rowhouse-rent_강동구_천호동_202601_202606.csv,LAWD_CD=11740; 계약년월=202601~202606; 법정동 baseline=천호동,scope 편입 전 baseline 확보용
+latest_task,강동구 길동 / seoul-open-data,1차 direct 최신분,seoul-open-data_강동구_길동_202601_202606.csv,신고년도=2026; 자치구=강동구; 법정동 필터=법정동=길동,dong-level baseline만 먼저 확보
+latest_task,강동구 길동 / molit-apt-trade,1차 direct 최신분,molit-apt-trade_강동구_길동_202601_202606.csv,LAWD_CD=11740; 계약년월=202601~202606; 법정동 baseline=길동,scope 편입 전 baseline 확보용
+latest_task,강동구 길동 / molit-apt-rent,1차 direct 최신분,molit-apt-rent_강동구_길동_202601_202606.csv,LAWD_CD=11740; 계약년월=202601~202606; 법정동 baseline=길동,scope 편입 전 baseline 확보용
+latest_task,강동구 길동 / molit-rowhouse-trade,1차 direct 최신분,molit-rowhouse-trade_강동구_길동_202601_202606.csv,LAWD_CD=11740; 계약년월=202601~202606; 법정동 baseline=길동,scope 편입 전 baseline 확보용
+latest_task,강동구 길동 / molit-rowhouse-rent,1차 direct 최신분,molit-rowhouse-rent_강동구_길동_202601_202606.csv,LAWD_CD=11740; 계약년월=202601~202606; 법정동 baseline=길동,scope 편입 전 baseline 확보용
+latest_task,강동구 성내동 / seoul-open-data,1차 direct 최신분,seoul-open-data_강동구_성내동_202601_202606.csv,신고년도=2026; 자치구=강동구; 법정동 필터=법정동=성내동,dong-level baseline만 먼저 확보
+latest_task,강동구 성내동 / molit-apt-trade,1차 direct 최신분,molit-apt-trade_강동구_성내동_202601_202606.csv,LAWD_CD=11740; 계약년월=202601~202606; 법정동 baseline=성내동,scope 편입 전 baseline 확보용
+latest_task,강동구 성내동 / molit-apt-rent,1차 direct 최신분,molit-apt-rent_강동구_성내동_202601_202606.csv,LAWD_CD=11740; 계약년월=202601~202606; 법정동 baseline=성내동,scope 편입 전 baseline 확보용
+latest_task,강동구 성내동 / molit-rowhouse-trade,1차 direct 최신분,molit-rowhouse-trade_강동구_성내동_202601_202606.csv,LAWD_CD=11740; 계약년월=202601~202606; 법정동 baseline=성내동,scope 편입 전 baseline 확보용
+latest_task,강동구 성내동 / molit-rowhouse-rent,1차 direct 최신분,molit-rowhouse-rent_강동구_성내동_202601_202606.csv,LAWD_CD=11740; 계약년월=202601~202606; 법정동 baseline=성내동,scope 편입 전 baseline 확보용
+latest_task,중구 신당동 / seoul-open-data,2차 adjacent 최신분,seoul-open-data_중구_신당동_202601_202606.csv,신고년도=2026; 자치구=중구; 법정동 필터=법정동=신당동,dong-level baseline만 먼저 확보
+latest_task,중구 신당동 / molit-apt-trade,2차 adjacent 최신분,molit-apt-trade_중구_신당동_202601_202606.csv,LAWD_CD=11140; 계약년월=202601~202606; 법정동 baseline=신당동,scope 편입 전 baseline 확보용
+latest_task,중구 신당동 / molit-apt-rent,2차 adjacent 최신분,molit-apt-rent_중구_신당동_202601_202606.csv,LAWD_CD=11140; 계약년월=202601~202606; 법정동 baseline=신당동,scope 편입 전 baseline 확보용
+latest_task,중구 신당동 / molit-rowhouse-trade,2차 adjacent 최신분,molit-rowhouse-trade_중구_신당동_202601_202606.csv,LAWD_CD=11140; 계약년월=202601~202606; 법정동 baseline=신당동,scope 편입 전 baseline 확보용
+latest_task,중구 신당동 / molit-rowhouse-rent,2차 adjacent 최신분,molit-rowhouse-rent_중구_신당동_202601_202606.csv,LAWD_CD=11140; 계약년월=202601~202606; 법정동 baseline=신당동,scope 편입 전 baseline 확보용
+latest_task,성동구 금호동 / seoul-open-data,2차 adjacent 최신분,seoul-open-data_성동구_금호동_202601_202606.csv,신고년도=2026; 자치구=성동구; 법정동 필터=법정동 like 금호동%,금호동1가~4가 포함 여부를 수동 확인
+latest_task,성동구 금호동 / molit-apt-trade,2차 adjacent 최신분,molit-apt-trade_성동구_금호동_202601_202606.csv,LAWD_CD=11200; 계약년월=202601~202606; 법정동 baseline=금호동,금호동 계열 세부 법정동을 수동 포함
+latest_task,성동구 금호동 / molit-apt-rent,2차 adjacent 최신분,molit-apt-rent_성동구_금호동_202601_202606.csv,LAWD_CD=11200; 계약년월=202601~202606; 법정동 baseline=금호동,금호동 계열 세부 법정동을 수동 포함
+latest_task,성동구 금호동 / molit-rowhouse-trade,2차 adjacent 최신분,molit-rowhouse-trade_성동구_금호동_202601_202606.csv,LAWD_CD=11200; 계약년월=202601~202606; 법정동 baseline=금호동,금호동 계열 세부 법정동을 수동 포함
+latest_task,성동구 금호동 / molit-rowhouse-rent,2차 adjacent 최신분,molit-rowhouse-rent_성동구_금호동_202601_202606.csv,LAWD_CD=11200; 계약년월=202601~202606; 법정동 baseline=금호동,금호동 계열 세부 법정동을 수동 포함
+latest_task,성동구 옥수동 / seoul-open-data,3차 edge 최신분,seoul-open-data_성동구_옥수동_202601_202606.csv,신고년도=2026; 자치구=성동구; 법정동 필터=법정동=옥수동,edge context baseline이므로 direct project 해석 금지
+latest_task,성동구 옥수동 / molit-apt-trade,3차 edge 최신분,molit-apt-trade_성동구_옥수동_202601_202606.csv,LAWD_CD=11200; 계약년월=202601~202606; 법정동 baseline=옥수동,scope 편입 전 baseline 확보용
+latest_task,성동구 옥수동 / molit-apt-rent,3차 edge 최신분,molit-apt-rent_성동구_옥수동_202601_202606.csv,LAWD_CD=11200; 계약년월=202601~202606; 법정동 baseline=옥수동,scope 편입 전 baseline 확보용
+latest_task,성동구 옥수동 / molit-rowhouse-trade,3차 edge 최신분,molit-rowhouse-trade_성동구_옥수동_202601_202606.csv,LAWD_CD=11200; 계약년월=202601~202606; 법정동 baseline=옥수동,scope 편입 전 baseline 확보용
+latest_task,성동구 옥수동 / molit-rowhouse-rent,3차 edge 최신분,molit-rowhouse-rent_성동구_옥수동_202601_202606.csv,LAWD_CD=11200; 계약년월=202601~202606; 법정동 baseline=옥수동,scope 편입 전 baseline 확보용

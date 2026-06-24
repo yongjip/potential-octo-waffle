@@ -1,0 +1,81 @@
+{
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "pair_count": 3,
+    "ready_to_compare_count": 0,
+    "await_second_observation_count": 0,
+    "recorded_comparison_count": 0,
+    "applied_count": 0,
+    "inputs": [
+      "data/review/fieldwork-observations.json",
+      "data/review/focus-project-pair-comparisons.json"
+    ],
+    "outputs": [
+      "analysis/focus-project-pair-comparison-board.md",
+      "analysis/focus-project-pair-comparison-board.csv",
+      "analysis/focus-project-pair-comparison-board.json",
+      "data/review/focus-project-pair-comparisons.README.md",
+      "data/review/focus-project-pair-comparison-examples.json"
+    ]
+  },
+  "pairRows": [
+    {
+      "pair_id": "songpa-09-05",
+      "pair_name": "잠실우성4차 vs 장미1,2,3차",
+      "lane": "잠실/송파 내부 비교",
+      "life_area": "잠실/송파",
+      "rank_a": "9",
+      "rank_b": "5",
+      "latest_same_day": "",
+      "comparison_status": "not_started",
+      "pair_question": "관리처분 이후 속도 프리미엄이 실제 혼잡·단절을 이기는가",
+      "observed_signal_a": "",
+      "observed_signal_b": "",
+      "interpretation_a": "",
+      "interpretation_b": "",
+      "judgment_shift": "",
+      "not_closed_reason": "",
+      "follow_up_action": "project-notes/09-tw2w7iwv.md; project-notes/05-jmapt1.md; analysis/transport-location-context.md; analysis/life-area-comparison-worksheet.md; analysis/focus-area-decision-memo.md",
+      "next_action": "두 사업 모두 아직 현장 입력 전"
+    },
+    {
+      "pair_id": "cross-10-25",
+      "pair_name": "압구정3 vs 한양연립",
+      "lane": "강남 vs 구의/광진 비교",
+      "life_area": "강남 / 구의·광진",
+      "rank_a": "10",
+      "rank_b": "25",
+      "latest_same_day": "",
+      "comparison_status": "not_started",
+      "pair_question": "좋은 입지의 무거운 조건과 약한 사업의 좋은 접근 중 무엇이 더 설득력 있는가",
+      "observed_signal_a": "",
+      "observed_signal_b": "",
+      "interpretation_a": "",
+      "interpretation_b": "",
+      "judgment_shift": "",
+      "not_closed_reason": "",
+      "follow_up_action": "project-notes/10-apgujeong3.md; project-notes/25-hanyanggaro.md; analysis/transport-location-context.md; analysis/life-area-comparison-worksheet.md; analysis/focus-area-decision-memo.md",
+      "next_action": "두 사업 모두 아직 현장 입력 전"
+    },
+    {
+      "pair_id": "cross-09-10",
+      "pair_name": "잠실우성4차 vs 압구정3",
+      "lane": "잠실/송파 vs 강남 비교",
+      "life_area": "잠실/송파 / 강남",
+      "rank_a": "9",
+      "rank_b": "10",
+      "latest_same_day": "",
+      "comparison_status": "not_started",
+      "pair_question": "하나는 비용·이주, 다른 하나는 공공기여·규제인데 어느 쪽이 더 무거운가",
+      "observed_signal_a": "",
+      "observed_signal_b": "",
+      "interpretation_a": "",
+      "interpretation_b": "",
+      "judgment_shift": "",
+      "not_closed_reason": "",
+      "follow_up_action": "project-notes/09-tw2w7iwv.md; project-notes/10-apgujeong3.md; analysis/transport-location-context.md; analysis/life-area-comparison-worksheet.md; analysis/focus-area-decision-memo.md",
+      "next_action": "두 사업 모두 아직 현장 입력 전"
+    }
+  ],
+  "recordedRows": []
+}

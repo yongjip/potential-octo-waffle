@@ -1,0 +1,19 @@
+{
+  "id": "src-example-source",
+  "source_id": "example-source",
+  "domain_id": "korea-real-estate",
+  "record_type": "source_record",
+  "source_name": "공식 출처명",
+  "source_type": "official_notice",
+  "access_mode": "manual",
+  "source_url": "https://example.local/",
+  "status": "pending",
+  "basis_date": "YYYY-MM-DD",
+  "observed_at": "YYYY-MM-DD KST",
+  "license_status": "unknown",
+  "visibility": "unknown_license",
+  "public_export_allowed": false,
+  "agent": "agent-name",
+  "created_at": "YYYY-MM-DDTHH:mm:ss+09:00",
+  "notes": "라이선스 확인 전에는 raw 재배포 금지"
+}

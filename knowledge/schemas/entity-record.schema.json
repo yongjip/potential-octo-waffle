@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/entity-record.schema.json",
+  "title": "Knowledge Base Entity Record",
+  "type": "object",
+  "required": ["id", "domain_id", "record_type", "entity_id", "entity_type", "name", "status", "basis_date", "observed_at", "source_id", "visibility", "agent", "created_at"],
+  "properties": {
+    "id": { "type": "string" },
+    "domain_id": { "type": "string" },
+    "record_type": { "const": "entity_record" },
+    "entity_id": { "type": "string" },
+    "entity_type": { "type": "string" },
+    "name": { "type": "string" },
+    "status": { "enum": ["confirmed", "pending", "conflict", "deferred", "context_only", "rejected"] },
+    "basis_date": { "type": "string" },
+    "observed_at": { "type": "string" },
+    "source_id": { "type": "string" },
+    "visibility": { "enum": ["public_candidate", "private", "restricted", "unknown_license"] },
+    "agent": { "type": "string" },
+    "created_at": { "type": "string" }
+  },
+  "additionalProperties": true
+}

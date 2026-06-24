@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "needs_approval_count": 0,
+    "gwangjin_count": 0,
+    "songpa_count": 0,
+    "no_response_count": 0,
+    "official_search_exhausted_count": 0,
+    "inputs": [
+      "data/review/high-blocking-filing-outbox/manifest.json",
+      "analysis/high-blocking-filing-checklist.json",
+      "analysis/high-blocking-official-search-rerun.json",
+      "data/review/high-blocking-source-response-intake.json"
+    ],
+    "outputs": [
+      "analysis/high-blocking-submission-approval-board.md",
+      "analysis/high-blocking-submission-approval-board.csv",
+      "analysis/high-blocking-submission-approval-board.json"
+    ]
+  },
+  "rows": []
+}

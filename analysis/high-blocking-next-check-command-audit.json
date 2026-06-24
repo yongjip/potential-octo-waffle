@@ -1,0 +1,52 @@
+{
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "project_count": 3,
+    "ok_count": 3,
+    "warning_count": 0,
+    "error_count": 0,
+    "issue_count": 0,
+    "inputs": [
+      "analysis/high-blocking-next-check-session-packet.json",
+      "analysis/high-blocking-filing-tracker.json"
+    ],
+    "outputs": [
+      "analysis/high-blocking-next-check-command-audit.md",
+      "analysis/high-blocking-next-check-command-audit.csv",
+      "analysis/high-blocking-next-check-command-audit.json"
+    ]
+  },
+  "rows": [
+    {
+      "rank": "9",
+      "project_name": "잠실우성4차 주택재건축정비사업조합",
+      "current_next_check_date": "2026-06-29",
+      "expected_response_by": "",
+      "command_checked_at": "2026-06-29",
+      "command_next_check_date": "2026-07-02",
+      "status": "ok",
+      "issue_count": 0
+    },
+    {
+      "rank": "23",
+      "project_name": "광장동 삼성1차아파트 소규모재건축정비사업",
+      "current_next_check_date": "2026-06-29",
+      "expected_response_by": "",
+      "command_checked_at": "2026-06-29",
+      "command_next_check_date": "2026-07-02",
+      "status": "ok",
+      "issue_count": 0
+    },
+    {
+      "rank": "28",
+      "project_name": "자양번영로3나길 일대 가로주택정비사업",
+      "current_next_check_date": "2026-06-29",
+      "expected_response_by": "2026-07-06",
+      "command_checked_at": "2026-06-29",
+      "command_next_check_date": "2026-07-02",
+      "status": "ok",
+      "issue_count": 0
+    }
+  ],
+  "issues": []
+}

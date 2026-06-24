@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "project_count": 0,
+    "focus_area_counts": {},
+    "watch_level_counts": {},
+    "current_stage_counts": {},
+    "trigger_type_counts": {},
+    "present_sn_missing_count": 0,
+    "data_reference_date_missing_count": 0,
+    "cleanup_link_missing_count": 0
+  },
+  "rows": [],
+  "inputs": {
+    "matrix": "analysis/project-comparison-matrix.json",
+    "representativeLotCandidates": "data/urban/representative-lot-map-candidates.csv",
+    "urbanMapDetails": "data/urban/urban-map-details-priority-candidates.json",
+    "reassessmentWatchlist": "analysis/reassessment-watchlist.json"
+  }
+}

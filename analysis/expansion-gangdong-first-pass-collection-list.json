@@ -1,0 +1,81 @@
+{
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "scope": "expansion_gangdong_3_targets",
+    "matched_notice_code_count": 1,
+    "probe_candidate_count": 1,
+    "ready_notice_count": 1,
+    "pending_manual_count": 2,
+    "outputs": [
+      "analysis/expansion-gangdong-first-pass-collection-list.md",
+      "analysis/expansion-gangdong-first-pass-collection-list.json",
+      "analysis/expansion-gangdong-first-pass-collection-list.csv"
+    ],
+    "base_commands": [
+      "node scripts/probe-expansion-gangdong-notice-candidates.mjs",
+      "node scripts/generate-expansion-urban-notice-fetch-input.mjs",
+      "node scripts/fetch-urban-notice-details.mjs --input data/urban/urban-notice-fetch-input-expansion-shortlist.json --out-json data/urban/urban-notice-details-expansion-shortlist.json --out-csv data/urban/urban-notice-details-expansion-shortlist.csv --out-attachments-csv data/urban/urban-notice-attachments-expansion-shortlist.csv --file-dir data/urban/expansion-files --download",
+      "node scripts/generate-expansion-urban-notice-collection-queue.mjs",
+      "node scripts/generate-expansion-urban-notice-review-board.mjs"
+    ]
+  },
+  "rows": [
+    {
+      "target_rank": 1,
+      "shortlist_id": "exp-short-gd-sangilvilla",
+      "project_name": "상일동 빌라단지 통합 재건축",
+      "location": "강동구 상일동 174 일대",
+      "shortlist_notice_no": "",
+      "shortlist_notice_date": "",
+      "shortlist_notice_code": "",
+      "shortlist_notice_url": "",
+      "probe_candidate_count": 0,
+      "best_probe_code": "",
+      "best_probe_no": "",
+      "best_probe_date": "",
+      "best_probe_url": "",
+      "best_probe_confidence": "",
+      "status": "probe_needed_manual_check",
+      "recommended_action": "정비사업정보공개 검색어/공고 연계 채널로 noticeCode 재탐색",
+      "first_command": "node scripts/probe-expansion-gangdong-notice-candidates.mjs"
+    },
+    {
+      "target_rank": 2,
+      "shortlist_id": "exp-short-gd-gokang1",
+      "project_name": "고덕강일1역세권 재개발사업",
+      "location": "강동구 고덕동 294 일대",
+      "shortlist_notice_no": "2024-23",
+      "shortlist_notice_date": "2024-02-21",
+      "shortlist_notice_code": "11740NTC202403190003",
+      "shortlist_notice_url": "https://urban.seoul.go.kr/view/ntfc/mapForm.pop?noticeCode=11740NTC202403190003",
+      "probe_candidate_count": 1,
+      "best_probe_code": "11740NTC202403190003",
+      "best_probe_no": "2024-23",
+      "best_probe_date": "2024-02-21",
+      "best_probe_url": "https://urban.seoul.go.kr/view/ntfc/mapForm.pop?noticeCode=11740NTC202403190003",
+      "best_probe_confidence": "high",
+      "status": "notice_ready_for_review",
+      "recommended_action": "수집 큐/리뷰 보드 재생성 후 텍스트 검토",
+      "first_command": "node scripts/fetch-urban-notice-details.mjs --input data/urban/urban-notice-fetch-input-expansion-shortlist.json --out-json data/urban/urban-notice-details-expansion-shortlist.json --out-csv data/urban/urban-notice-details-expansion-shortlist.csv --out-attachments-csv data/urban/urban-notice-attachments-expansion-shortlist.csv --file-dir data/urban/expansion-files --download"
+    },
+    {
+      "target_rank": 3,
+      "shortlist_id": "exp-short-gd-gd1207",
+      "project_name": "고덕대우아파트 소규모재건축사업",
+      "location": "강동구 고덕동 470 일대",
+      "shortlist_notice_no": "",
+      "shortlist_notice_date": "",
+      "shortlist_notice_code": "",
+      "shortlist_notice_url": "",
+      "probe_candidate_count": 0,
+      "best_probe_code": "",
+      "best_probe_no": "",
+      "best_probe_date": "",
+      "best_probe_url": "",
+      "best_probe_confidence": "",
+      "status": "probe_needed_manual_check",
+      "recommended_action": "정비사업정보공개 검색어/공고 연계 채널로 noticeCode 재탐색",
+      "first_command": "node scripts/probe-expansion-gangdong-notice-candidates.mjs"
+    }
+  ]
+}

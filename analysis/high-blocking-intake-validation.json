@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "intake_rows": 3,
+    "packet_rows": 3,
+    "issue_count": 0,
+    "error_count": 0,
+    "warning_count": 0,
+    "ready_to_append_count": 0,
+    "waiting_for_response_count": 3,
+    "inputs": [
+      "analysis/high-blocking-info-disclosure-packet.json",
+      "analysis/high-blocking-response-decision-drafts.json",
+      "data/review/high-blocking-source-response-intake.json"
+    ],
+    "outputs": [
+      "analysis/high-blocking-intake-validation.md",
+      "analysis/high-blocking-intake-validation.csv",
+      "analysis/high-blocking-intake-validation.json"
+    ]
+  },
+  "issues": []
+}

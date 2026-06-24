@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "project_count": 0,
+    "reviewable_count": 0,
+    "unreviewed_count": 0,
+    "ready_to_mark_applied_count": 0,
+    "pending_apply_verification_needed_count": 0,
+    "applied_verified_count": 0,
+    "applied_mismatch_count": 0,
+    "hold_count": 0,
+    "inputs": [
+      "analysis/representative-lot-fallback-edge-session-packet.json",
+      "data/review/representative-lot-fallback-browser-findings.json",
+      "analysis/project-comparison-matrix.json"
+    ],
+    "outputs": [
+      "analysis/representative-lot-fallback-apply-audit.md",
+      "analysis/representative-lot-fallback-apply-audit.csv",
+      "analysis/representative-lot-fallback-apply-audit.json"
+    ]
+  },
+  "rows": []
+}

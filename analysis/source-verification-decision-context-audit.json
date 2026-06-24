@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "audit_row_count": 0,
+    "recovered_count": 0,
+    "unresolved_mismatch_count": 0,
+    "no_decision_count": 0,
+    "duplicate_closure_id_count": 25,
+    "decision_context_status_mix": "",
+    "decision_match_mode_mix": "",
+    "inputs": [
+      "analysis/source-verification-closure-ledger.json",
+      "data/review/source-verification-closure-decisions.json"
+    ],
+    "outputs": [
+      "analysis/source-verification-decision-context-audit.md",
+      "analysis/source-verification-decision-context-audit.csv",
+      "analysis/source-verification-decision-context-audit.json"
+    ]
+  },
+  "rows": []
+}

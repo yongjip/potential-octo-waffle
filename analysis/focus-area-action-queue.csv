@@ -1,0 +1,31 @@
+queue_rank,rank,focus_area,project_name,current_stage,fact_check_priority,text_coverage,next_action,project_note
+1,9,잠실/송파,잠실우성4차 주택재건축정비사업조합,관리처분인가,very_high,text_extracted,사업시행·관리처분 공개항목 수치와 고시문/원문 수치 대조,project-notes/09-tw2w7iwv.md
+2,21,잠실/송파,가락삼익맨숀아파트 재건축정비사업 조합,관리처분인가,very_high,text_extracted,사업시행·관리처분 공개항목 수치와 고시문/원문 수치 대조,project-notes/21-grsamik.md
+3,27,구의/광진,광장극동아파트 재건축사업 (신속통합기획),정비구역지정,original_notice_fact_checked,text_extracted,analysis/seoul-sibo-original-notice-fact-check.md 기준으로 총세대수·공공기여·용적률 수치 승격,project-notes/27-kukdong-reborn.md
+4,14,강남,"개포주공6,7단지아파트 재건축정비사업조합",사업시행인가,district_text_review,text_extracted,강남·송파구청 첨부 텍스트의 사업명·위치·면적을 기존 고시/사업개요와 대조,project-notes/14-gaepo6_7.md
+5,25,구의/광진,한양연립 일대 가로주택정비사업,사업시행인가,gu_text_review,text_extracted,광진구 공사개요·예정공정표와 정보몽땅 착공신고 공개 신호를 함께 대조해 현재단계를 재판정,project-notes/25-hanyanggaro.md
+6,29,구의/광진,자양1의4구역 가로주택정비사업,조합설립인가,gu_text_review,text_extracted,OCR 이미지 수동 판독값을 비교 매트릭스 원천 수치 또는 2차 출처 확인으로 후속 처리,project-notes/29-jayang104.md
+7,24,구의/광진,워커힐아파트1단지 재건축정비사업 조합설립추진위원회,추진위원회승인,gu_text_review,text_extracted,광진구청 첨부 텍스트의 인가·계획 수치와 정보몽땅 단계 공개항목 대조,project-notes/24-walkerhill1.md
+8,8,강남,대치쌍용1차아파트 주택재건축정비사업조합,사업시행인가,notice_candidate_review,text_extracted,보강 고시 원문 텍스트 대조 후 recordCode 확정/승격,project-notes/08-ssang1.md
+9,17,잠실/송파,송파한양2차아파트 재건축정비사업 조합,조합설립인가,notice_candidate_review,text_extracted,OCR 이미지 수동 판독값을 비교 매트릭스 원천 수치 또는 2차 출처 확인으로 후속 처리,project-notes/17-songpa2.md
+10,18,잠실/송파,송파미성아파트 재건축정비사업조합,조합설립인가,notice_candidate_review,text_extracted,보강 고시 원문 텍스트 대조 후 recordCode 확정/승격,project-notes/18-songpams.md
+11,23,구의/광진,광장동 삼성1차아파트 소규모재건축정비사업,조합설립인가,notice_record_needed,no_notice_text,"단계·동의율은 정보몽땅 공개항목으로 확인, 결정고시 recordCode·인가 원문 연결",project-notes/23-j15171517.md
+12,28,구의/광진,자양번영로3나길 일대 가로주택정비사업,조합설립인가,notice_record_needed,no_notice_text,"단계·동의율은 정보몽땅 공개항목으로 확인, 결정고시 recordCode·인가 원문 연결",project-notes/28-jayang588-22.md
+13,6,강남,대치우성1차아파트 재건축정비사업조합,사업시행인가,high,text_extracted,notice-key-fields 스니펫과 PDF 원문을 대조해 확정 수치 승격,project-notes/06-woosung1.md
+14,7,강남,대치쌍용2차아파트 주택재건축정비사업조합,사업시행인가,high,text_extracted,OCR 이미지 수동 판독값을 비교 매트릭스 원천 수치 또는 2차 출처 확인으로 후속 처리,project-notes/07-ssang2.md
+15,16,잠실/송파,가락1차현대아파트 재건축정비사업 조합,사업시행인가,high,text_extracted,OCR 이미지 수동 판독값을 비교 매트릭스 원천 수치 또는 2차 출처 확인으로 후속 처리,project-notes/16-hyundai.md
+16,1,잠실/송파,잠실5단지아파트 주택재건축정비사업조합,조합설립인가,high,text_extracted,notice-key-fields 스니펫과 PDF 원문을 대조해 확정 수치 승격,project-notes/01-jamsil5apt.md
+17,2,강남,압구정아파트지구 특별계획구역② 재건축정비사업조합,조합설립인가,high,text_extracted,notice-key-fields 스니펫과 PDF 원문을 대조해 확정 수치 승격,project-notes/02-apgujeong2.md
+18,3,잠실/송파,잠실우성아파트 재건축정비사업조합,조합설립인가,high,text_extracted,notice-key-fields 스니펫과 PDF 원문을 대조해 확정 수치 승격,project-notes/03-q1qk5nf6.md
+19,4,강남,은마아파트 재건축정비사업조합,조합설립인가,high,text_extracted,notice-key-fields 스니펫과 PDF 원문을 대조해 확정 수치 승격,project-notes/04-the-eunma.md
+20,10,강남,압구정아파트지구 특별계획구역③ 재건축정비사업 조합,조합설립인가,high,text_extracted,notice-key-fields 스니펫과 PDF 원문을 대조해 확정 수치 승격,project-notes/10-apgujeong3.md
+21,11,강남,압구정아파트지구 특별계획구역4,조합설립인가,high,text_extracted,notice-key-fields 스니펫과 PDF 원문을 대조해 확정 수치 승격,project-notes/11-apgujeong4.md
+22,12,강남,압구정아파트지구 특별계획구역5 재건축정비사업조합,조합설립인가,high,text_extracted,notice-key-fields 스니펫과 PDF 원문을 대조해 확정 수치 승격,project-notes/12-apgujeong5.md
+23,13,구의/광진,자양제7구역 주택재건축정비사업 조합,조합설립인가,high,text_extracted,notice-key-fields 스니펫과 PDF 원문을 대조해 확정 수치 승격,project-notes/13-jayang7.md
+24,19,잠실/송파,대림가락아파트 재건축정비사업조합,조합설립인가,high,text_extracted,OCR 이미지 수동 판독값을 비교 매트릭스 원천 수치 또는 2차 출처 확인으로 후속 처리,project-notes/19-daelim.md
+25,20,잠실/송파,마천1재정비촉진구역 주택재개발정비사업조합,조합설립인가,high,text_extracted,OCR 이미지 수동 판독값을 비교 매트릭스 원천 수치 또는 2차 출처 확인으로 후속 처리,project-notes/20-macheon-1.md
+26,22,구의/광진,중곡아파트 주택재건축정비사업조합,조합설립인가,high,text_extracted,notice-key-fields 스니펫과 PDF 원문을 대조해 확정 수치 승격,project-notes/22-junggokapt.md
+27,5,잠실/송파,"장미1,2,3차아파트 주택재건축정비사업 조합",조합설립인가,high,text_extracted,"사업구역 레이어는 매칭됨, 고시 recordCode·인가 원문 수동 확인",project-notes/05-jmapt1.md
+28,15,강남,압구정한양7차아파트 재건축정비사업조합,조합설립인가,high,text_extracted,"presentSn 후보는 보조 식별자로 두고, direct 고시·정보몽땅 연결 또는 추가 공식 링크로 current business 여부 확인",project-notes/15-hanyang7.md
+29,26,구의/광진,자양한양아파트 재건축정비사업,추진위원회승인,normal,text_extracted,notice-key-fields 스니펫과 PDF 원문을 대조해 확정 수치 승격,project-notes/26-jyhy2024.md
+30,30,구의/광진,자양4동 A구역 주택재개발사업,정비구역지정,normal,text_extracted,notice-key-fields 스니펫과 PDF 원문을 대조해 확정 수치 승격,project-notes/30-jayangdong.md

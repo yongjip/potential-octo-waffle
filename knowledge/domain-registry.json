@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "domains": [
+    {
+      "domain_id": "korea-real-estate",
+      "label": "한국 부동산",
+      "status": "active",
+      "owner_scope": "personal_research",
+      "primary_readme": "knowledge/domains/korea-real-estate/README.md",
+      "current_data_roots": ["data/urban", "data/cleanup", "data/market", "data/review"],
+      "current_analysis_roots": ["analysis", "project-notes"],
+      "public_data_candidate": true,
+      "public_boundary": "공식 출처 메타데이터, 정규화된 공개 데이터, 출처 링크가 있는 assertion은 후보. 개인 판단, 정보공개 회신 전문, 계정/접수 개인정보는 제외.",
+      "llm_entrypoints": [
+        "INSTRUCTIONS.md",
+        "instructions/domain-prompts/korea-real-estate.md",
+        "analysis/current-research-operating-guide.md",
+        "analysis/llm-research-handoff-guide.md",
+        "knowledge/domains/korea-real-estate/README.md"
+      ]
+    },
+    {
+      "domain_id": "korea-stocks",
+      "label": "한국 주식",
+      "status": "planned",
+      "owner_scope": "personal_research",
+      "primary_readme": "knowledge/domains/korea-stocks/README.md",
+      "current_data_roots": [],
+      "current_analysis_roots": [],
+      "public_data_candidate": true,
+      "public_boundary": "상장사 공시, 거래소 공개 통계, 재무제표에서 재배포 가능한 정규화 필드만 후보. 개인 포트폴리오와 매매 판단은 제외.",
+      "llm_entrypoints": ["INSTRUCTIONS.md", "instructions/domain-prompts/korea-stocks.md", "knowledge/domains/korea-stocks/README.md"]
+    },
+    {
+      "domain_id": "us-stocks",
+      "label": "미국 주식",
+      "status": "planned",
+      "owner_scope": "personal_research",
+      "primary_readme": "knowledge/domains/us-stocks/README.md",
+      "current_data_roots": [],
+      "current_analysis_roots": [],
+      "public_data_candidate": true,
+      "public_boundary": "SEC filings, issuer reports, exchange/reference data 중 라이선스가 허용하는 정규화 필드만 후보. 개인 포트폴리오와 매매 판단은 제외.",
+      "llm_entrypoints": ["INSTRUCTIONS.md", "instructions/domain-prompts/us-stocks.md", "knowledge/domains/us-stocks/README.md"]
+    }
+  ]
+}

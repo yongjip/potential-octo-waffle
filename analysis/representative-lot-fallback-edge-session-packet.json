@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "project_count": 0,
+    "same_stage_count": 0,
+    "stage_gap_count": 0,
+    "api_strong_same_stage_count": 0,
+    "api_stage_gap_hold_count": 0,
+    "inputs": [
+      "analysis/representative-lot-fallback-identifier-closure-workbook.json",
+      "analysis/representative-lot-fallback-api-probe.json"
+    ],
+    "outputs": [
+      "analysis/representative-lot-fallback-edge-session-packet.md",
+      "analysis/representative-lot-fallback-edge-session-packet.csv",
+      "analysis/representative-lot-fallback-edge-session-packet.json"
+    ]
+  },
+  "rows": []
+}

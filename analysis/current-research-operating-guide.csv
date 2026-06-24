@@ -1,0 +1,52 @@
+section,item,priority,note
+first_file,analysis/personal-research-home.md,1,전체 진입점과 오늘 열 항목
+first_file,analysis/research-now-action-board.md,2,오늘 바로 할 일과 날짜 대기선을 한 장으로 분리한 실행 보드
+first_file,analysis/research-manual-web-session-packet.md,3,핵심·확장·외부 회신 수동 웹 확인 진입점을 한 장으로 묶은 세션 패킷
+first_file,analysis/official-web-query-registry.md,4,"포털별 검색어, 기록 필드, 판정 gate를 한 행으로 묶은 검색 레지스트리"
+first_file,analysis/current-research-snapshot.md,5,핵심 3생활권·확장 2권역·핵심 4개 사업 현재 판단
+first_file,analysis/focus-project-weekly-monitoring-cockpit.md,6,핵심 4개 사업의 이번 주 우선순위와 외부 회신 대기
+first_file,analysis/expansion-zone-weekly-monitoring-cockpit.md,7,강동권 단계 신호 확인과 약수권 direct hit 루프
+first_file,analysis/expansion-official-latest-check-audit.md,8,정비사업구역계 진입 페이지 검색 결과와 popup 직접 접근 차단 여부를 먼저 확인
+first_file,analysis/representative-lot-fallback-workbook.md,9,대표지번 fallback만 남은 6건의 direct notice 단계와 current business 미확정 사유를 한 장으로 보는 워크북
+first_file,analysis/representative-lot-fallback-identifier-closure-workbook.md,10,"대표지번 fallback 6건의 PNU, UQ120 후보명, presentSn 채택 조건을 바로 보는 클로저 워크북"
+first_file,analysis/representative-lot-fallback-command-packet.md,11,today 기준 fallback 6건 copy-ready 기록 명령 패킷
+first_file,analysis/representative-lot-fallback-api-probe.md,12,fallback 6건에 대해 API 기준 strong candidate와 hold를 먼저 보는 보드
+first_file,analysis/representative-lot-fallback-edge-session-packet.md,13,Edge 브라우저에서 fallback 6건의 presentSn를 직접 확인할 때 쓰는 세션 패킷
+first_file,analysis/representative-lot-fallback-finding-board.md,14,Edge 확인 결과를 intake로 남기고 승격/보류 상태를 보는 보드
+first_file,analysis/representative-lot-fallback-apply-audit.md,15,confirmed finding이 matrix/project-note에 반영됐는지 보고 applied로 닫는 감사표
+first_file,analysis/life-area-market-reaction-brief.md,16,핵심 3생활권 시장 신호와 확장권 baseline 커버를 같은 규칙으로 읽는 generated 브리프
+first_file,analysis/expansion-market-scope-workbook.md,16,강동권·약수권 법정동 시장 scope를 core chain과 분리해 운영하는 워크북
+first_file,analysis/expansion-market-normalized-summary.md,17,확장 6개 scope에 latest-window 정규화 거래가 모두 들어왔는지 보는 행·source 요약
+first_file,analysis/expansion-market-signal-summary.md,18,강동권·약수권 2권역과 6개 법정동의 매매·전월세 중위값과 최근성을 읽는 시그널 요약
+first_file,analysis/life-area-market-baseline-board.md,19,핵심 3생활권 full-chain과 확장 2권역 latest-window baseline을 같은 표에서 읽는 시장 기준 비교 보드
+first_file,analysis/expansion-market-first-download-packet.md,20,확장권 시장 90개 raw task를 최신 window 우선 패킷으로 압축한 실행표
+first_file,analysis/expansion-market-download-session-packet.md,21,확장권 latest-window 30개 수집을 바로 시작하는 세션 패킷
+first_file,analysis/expansion-market-quickstart-packet.md,22,천호동·길동 10개 task만 먼저 닫는 first-session quickstart 패킷
+first_file,analysis/expansion-market-download-status.md,23,확장권 latest-window 30개 파일 존재와 intake 기록 상태
+first_file,analysis/life-area-monitoring-board.md,24,핵심 생활권과 확장 관심권을 같은 판에서 비교
+first_file,analysis/high-blocking-filing-tracker.md,25,외부 회신 3건의 접수번호·다음 점검일
+first_file,analysis/high-blocking-response-followup-cockpit.md,26,회신 도착 시 helper·dry-run·write 순서를 그대로 따라가는 실행판
+first_file,analysis/high-blocking-next-check-session-packet.md,27,다음 점검일에 조회 URL과 no response/response helper를 바로 쓰는 세션 패킷
+first_file,analysis/high-blocking-next-check-command-audit.md,28,세션 패킷 helper의 checked-at/next-check-date가 실제로 앞으로 가는지 감사
+first_file,analysis/high-blocking-followup-history.md,29,실제 점검일에 무엇을 확인했고 어떤 상태 변화가 있었는지 누적 이력 확인
+first_file,analysis/research-completion-cockpit.md,30,goal 완료를 막는 P0/P1 병목
+first_file,analysis/research-session-playbook.md,31,15분/주간/현장/확장 세션별 실행 순서
+action_lane,외부 회신,지금은 대기 유지,"no_response 3건 / 다음 점검 2026-06-29 / D-5; 새 메일이나 알림이 없으면 오늘은 추가 제출 없이 대기하고, 2026-06-29에 next-check session packet으로 3건 상태를 재확인"
+action_lane,확장 관심권,지금 바로 가능,confirmed 비교 가능; D-7; 기준 2026-07-01 KST; 정보몽땅 사업장 상세 공개자료의 최근 문서일과 강동구 고시공고 최신 문서일을 같은 날짜 기준으로 교차 확인
+action_lane,핵심 생활권 비교,지금 바로 가능,강남; 비용/기반시설 확인; 조합설립인가; 추진경과와 공개항목/입찰공고에서 비용·기반시설 신호 확인
+핵심 생활권,강남,,조건 해석 우선; 압구정3 비용·기반시설 공개항목과 현장 체감 연결
+핵심 생활권,잠실/송파,,"장기 잠재 강함, 리스크 분리 필요; 장미1,2,3차 현장 메모와 잠실우성4차 외부 회신 반영"
+핵심 생활권,구의/광진,,원문·단계 확정 우선; 한양연립 현장 메모와 삼성1차/자양번영로3나길 회신 대기 관리
+확장 관심권,강동권,,"잠실/송파 동측 연장축 비교; 천호3구역, 신동아1·2차, 성내미주의 최신 공개 단계를 강동구 고시공고·정보몽땅으로 다시 닫는다."
+확장 관심권,약수동 주변,,"도심근접형 대조군 유지; 신당8·신당9·금호14-1의 confirmed snapshot만 유지하고, 약수 direct hit가 생기면 adjacent에서 direct 후보로 승격한다."
+확장 실행상태,강동권,,"confirmed 비교 가능; 기반시설 비용분담과 세대 구성을 생활권 비교 보드에 옮기고 강동구 고시공고 최신 단계와 교차 확인; 사업 단계 최신성은 강동구 고시공고·정보몽땅으로 갱신하고, 면적/세대수는 장기 비교 기준값으로 보관"
+확장 실행상태,약수동 주변,,"confirmed 비교 가능; 약수권 비교표에 1,215세대/임대 183세대 구조와 기부채납 10.81%를 반영하고, 생활권 대조에서는 서술부 OCR 숫자를 폐기; 약수권 비교표에 7층/28m, 334세대, 환산부지면적 967.39㎡를 공식 확정값으로 반영"
+핵심 사업,9. 잠실우성4차 주택재건축정비사업조합,filed_waiting_response; waiting; receipt 626590,"접수번호 626590 유지, 회신 도착 여부 확인 후 intake 입력"
+핵심 사업,10. 압구정아파트지구 특별계획구역③ 재건축정비사업 조합,none,추진경과와 공개항목/입찰공고에서 비용·기반시설 신호 확인
+핵심 사업,25. 한양연립 일대 가로주택정비사업,none,추진경과와 자치구 고시공고를 먼저 비교해 단계 선행 여부 확인
+핵심 사업,"5. 장미1,2,3차아파트 주택재건축정비사업 조합",none,추진경과와 공개항목/입찰공고에서 비용·기반시설 신호 확인
+확장 관심권,강동권,confirmed 비교 가능 / D-7,정보몽땅 사업장 상세 공개자료의 최근 문서일과 강동구 고시공고 최신 문서일을 같은 날짜 기준으로 교차 확인
+확장 관심권,약수동 주변,confirmed 비교 가능 / D-7,"약수권 비교표에 1,215세대/임대 183세대 구조와 기부채납 10.81%를 반영하고, 생활권 대조에서는 서술부 OCR 숫자를 폐기; 약수권 비교표에 7층/28m, 334세대, 환산부지면적 967.39㎡를 공식 확정값으로 반영"
+external_wait,23. 광장동 삼성1차아파트 소규모재건축정비사업,2026-06-29,"조합설립인가 고시번호, 고시일, 원문/첨부 URL"
+external_wait,28. 자양번영로3나길 일대 가로주택정비사업,2026-06-29,"조합설립인가 고시번호, 고시일, 원문/첨부 URL"
+external_wait,9. 잠실우성4차 주택재건축정비사업조합,2026-06-29,관리처분계획 별첨 또는 공개 가능한 공사비/정비사업비 원문

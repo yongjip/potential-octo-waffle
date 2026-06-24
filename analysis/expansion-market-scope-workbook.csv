@@ -1,0 +1,97 @@
+section,item,priority,district,lawd_cd,representative_projects,note
+scope,강동권 / 천호동,direct_baseline,강동구,11740,천호3구역,"latest-window 정규화 거래가 들어온 scope다. 남은 scope latest-window 수집과 backfill을 분리해서 닫고, 현재는 dong-level baseline으로만 읽는다."
+scope,강동권 / 성내동,direct_baseline,강동구,11740,성내미주아파트 주택재건축정비사업,"latest-window 정규화 거래가 들어온 scope다. 남은 scope latest-window 수집과 backfill을 분리해서 닫고, 현재는 dong-level baseline으로만 읽는다."
+scope,강동권 / 길동,direct_baseline,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,"latest-window 정규화 거래가 들어온 scope다. 남은 scope latest-window 수집과 backfill을 분리해서 닫고, 현재는 dong-level baseline으로만 읽는다."
+scope,약수동 주변 / 신당동,adjacent_baseline,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,"latest-window 정규화 거래가 들어온 scope다. 남은 scope latest-window 수집과 backfill을 분리해서 닫고, 현재는 dong-level baseline으로만 읽는다."
+scope,약수동 주변 / 금호동,adjacent_corridor_baseline,성동구,11200,금호 제14-1 주택재개발 정비사업,"latest-window 정규화 거래가 들어온 scope다. 남은 scope latest-window 수집과 backfill을 분리해서 닫고, 현재는 dong-level baseline으로만 읽는다."
+scope,약수동 주변 / 옥수동,edge_context_baseline,성동구,11200,약수-옥수/한남 경계축 context,"latest-window 정규화 거래가 들어온 scope다. 남은 scope latest-window 수집과 backfill을 분리해서 닫고, 현재는 dong-level baseline으로만 읽는다."
+download_task,seoul-open-data / 강동구 / 천호동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,dong-level baseline만 먼저 확보
+download_task,seoul-open-data / 강동구 / 천호동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,dong-level baseline만 먼저 확보
+download_task,seoul-open-data / 강동구 / 천호동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,dong-level baseline만 먼저 확보
+download_task,molit-apt-trade / 강동구 / 천호동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-trade / 강동구 / 천호동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-trade / 강동구 / 천호동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 강동구 / 천호동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 강동구 / 천호동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 강동구 / 천호동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 강동구 / 천호동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 강동구 / 천호동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 강동구 / 천호동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 강동구 / 천호동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 강동구 / 천호동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 강동구 / 천호동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,천호3구역,scope 편입 전 baseline 확보용
+download_task,seoul-open-data / 강동구 / 성내동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,dong-level baseline만 먼저 확보
+download_task,seoul-open-data / 강동구 / 성내동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,dong-level baseline만 먼저 확보
+download_task,seoul-open-data / 강동구 / 성내동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,dong-level baseline만 먼저 확보
+download_task,molit-apt-trade / 강동구 / 성내동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,scope 편입 전 baseline 확보용
+download_task,molit-apt-trade / 강동구 / 성내동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,scope 편입 전 baseline 확보용
+download_task,molit-apt-trade / 강동구 / 성내동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 강동구 / 성내동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 강동구 / 성내동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 강동구 / 성내동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 강동구 / 성내동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 강동구 / 성내동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 강동구 / 성내동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 강동구 / 성내동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 강동구 / 성내동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 강동구 / 성내동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,성내미주아파트 주택재건축정비사업,scope 편입 전 baseline 확보용
+download_task,seoul-open-data / 강동구 / 길동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,dong-level baseline만 먼저 확보
+download_task,seoul-open-data / 강동구 / 길동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,dong-level baseline만 먼저 확보
+download_task,seoul-open-data / 강동구 / 길동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,dong-level baseline만 먼저 확보
+download_task,molit-apt-trade / 강동구 / 길동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-trade / 강동구 / 길동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-trade / 강동구 / 길동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 강동구 / 길동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 강동구 / 길동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 강동구 / 길동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 강동구 / 길동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 강동구 / 길동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 강동구 / 길동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 강동구 / 길동 / 202401~202412,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 강동구 / 길동 / 202501~202512,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 강동구 / 길동 / 202601~202606,expansion_scope_defined_not_downloaded,강동구,11740,신동아1·2차아파트 주택재건축 정비사업; 길동 신동아3차아파트 주택재건축 정비구역,scope 편입 전 baseline 확보용
+download_task,seoul-open-data / 중구 / 신당동 / 202401~202412,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,dong-level baseline만 먼저 확보
+download_task,seoul-open-data / 중구 / 신당동 / 202501~202512,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,dong-level baseline만 먼저 확보
+download_task,seoul-open-data / 중구 / 신당동 / 202601~202606,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,dong-level baseline만 먼저 확보
+download_task,molit-apt-trade / 중구 / 신당동 / 202401~202412,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-trade / 중구 / 신당동 / 202501~202512,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-trade / 중구 / 신당동 / 202601~202606,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 중구 / 신당동 / 202401~202412,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 중구 / 신당동 / 202501~202512,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 중구 / 신당동 / 202601~202606,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 중구 / 신당동 / 202401~202412,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 중구 / 신당동 / 202501~202512,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 중구 / 신당동 / 202601~202606,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 중구 / 신당동 / 202401~202412,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 중구 / 신당동 / 202501~202512,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 중구 / 신당동 / 202601~202606,expansion_scope_defined_not_downloaded,중구,11140,신당 제8구역 주택재개발정비사업; 신당 제9주택재개발정비구역,scope 편입 전 baseline 확보용
+download_task,seoul-open-data / 성동구 / 금호동 / 202401~202412,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동1가~4가 포함 여부를 수동 확인
+download_task,seoul-open-data / 성동구 / 금호동 / 202501~202512,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동1가~4가 포함 여부를 수동 확인
+download_task,seoul-open-data / 성동구 / 금호동 / 202601~202606,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동1가~4가 포함 여부를 수동 확인
+download_task,molit-apt-trade / 성동구 / 금호동 / 202401~202412,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동 계열 세부 법정동을 수동 포함
+download_task,molit-apt-trade / 성동구 / 금호동 / 202501~202512,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동 계열 세부 법정동을 수동 포함
+download_task,molit-apt-trade / 성동구 / 금호동 / 202601~202606,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동 계열 세부 법정동을 수동 포함
+download_task,molit-apt-rent / 성동구 / 금호동 / 202401~202412,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동 계열 세부 법정동을 수동 포함
+download_task,molit-apt-rent / 성동구 / 금호동 / 202501~202512,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동 계열 세부 법정동을 수동 포함
+download_task,molit-apt-rent / 성동구 / 금호동 / 202601~202606,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동 계열 세부 법정동을 수동 포함
+download_task,molit-rowhouse-trade / 성동구 / 금호동 / 202401~202412,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동 계열 세부 법정동을 수동 포함
+download_task,molit-rowhouse-trade / 성동구 / 금호동 / 202501~202512,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동 계열 세부 법정동을 수동 포함
+download_task,molit-rowhouse-trade / 성동구 / 금호동 / 202601~202606,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동 계열 세부 법정동을 수동 포함
+download_task,molit-rowhouse-rent / 성동구 / 금호동 / 202401~202412,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동 계열 세부 법정동을 수동 포함
+download_task,molit-rowhouse-rent / 성동구 / 금호동 / 202501~202512,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동 계열 세부 법정동을 수동 포함
+download_task,molit-rowhouse-rent / 성동구 / 금호동 / 202601~202606,expansion_scope_defined_not_downloaded,성동구,11200,금호 제14-1 주택재개발 정비사업,금호동 계열 세부 법정동을 수동 포함
+download_task,seoul-open-data / 성동구 / 옥수동 / 202401~202412,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,edge context baseline이므로 direct project 해석 금지
+download_task,seoul-open-data / 성동구 / 옥수동 / 202501~202512,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,edge context baseline이므로 direct project 해석 금지
+download_task,seoul-open-data / 성동구 / 옥수동 / 202601~202606,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,edge context baseline이므로 direct project 해석 금지
+download_task,molit-apt-trade / 성동구 / 옥수동 / 202401~202412,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,scope 편입 전 baseline 확보용
+download_task,molit-apt-trade / 성동구 / 옥수동 / 202501~202512,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,scope 편입 전 baseline 확보용
+download_task,molit-apt-trade / 성동구 / 옥수동 / 202601~202606,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 성동구 / 옥수동 / 202401~202412,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 성동구 / 옥수동 / 202501~202512,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,scope 편입 전 baseline 확보용
+download_task,molit-apt-rent / 성동구 / 옥수동 / 202601~202606,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 성동구 / 옥수동 / 202401~202412,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 성동구 / 옥수동 / 202501~202512,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-trade / 성동구 / 옥수동 / 202601~202606,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 성동구 / 옥수동 / 202401~202412,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 성동구 / 옥수동 / 202501~202512,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,scope 편입 전 baseline 확보용
+download_task,molit-rowhouse-rent / 성동구 / 옥수동 / 202601~202606,expansion_scope_defined_not_downloaded,성동구,11200,약수-옥수/한남 경계축 context,scope 편입 전 baseline 확보용

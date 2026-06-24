@@ -1,0 +1,402 @@
+# 분석 산출물
+
+이 폴더는 공식 원천 데이터를 직접 바꾸지 않고, 리서치 판단을 위한 파생 산출물을 저장한다.
+
+## 파일
+
+- `priority-redevelopment-candidates.md`: 우선검토 후보 30개를 읽기 쉽게 정리한 문서
+- `priority-redevelopment-candidates.csv`: 같은 후보를 스프레드시트에서 필터링하기 위한 CSV
+- `personal-research-home.md`: 강남·잠실/송파·구의/광진 리서치를 시작할 때 여는 홈 화면. 오늘 열 파일, P0 병목, 정보공개 접수 준비, 답사 루트, 업데이트 런북을 한 장에 묶음
+- `personal-research-home.csv`: 같은 개인 리서치 홈의 실행 항목 스프레드시트용 파일
+- `personal-research-home.json`: 같은 개인 리서치 홈의 구조화 원본
+- `research-now-action-board.md`: 오늘 바로 할 일, 수동 웹 확인, 날짜 대기선을 분리한 한 장짜리 실행 보드
+- `research-now-action-board.csv`: 같은 즉시 실행 보드의 스프레드시트용 파일
+- `research-now-action-board.json`: 같은 즉시 실행 보드의 구조화 원본
+- `research-manual-web-session-packet.md`: 핵심 사업·확장 관심권·외부 회신 포털 점검을 한 장에 묶은 수동 웹 세션 패킷
+- `research-manual-web-session-packet.csv`: 같은 수동 웹 세션 패킷의 스프레드시트용 파일
+- `research-manual-web-session-packet.json`: 같은 수동 웹 세션 패킷의 구조화 원본
+- `official-web-query-registry.md`: 포털별 검색어, 기록 필드, 판정 gate를 한 행으로 묶은 공식 웹 검색 레지스트리
+- `official-web-query-registry.csv`: 같은 공식 웹 검색 레지스트리의 스프레드시트용 파일
+- `official-web-query-registry.json`: 같은 공식 웹 검색 레지스트리의 구조화 원본
+- `research-status-dashboard.md`: 후보 30개의 원문 검증 태스크, 핵심 수치 검토 항목, OCR/recordCode 병목, 생활권별 남은 작업량을 모은 상태판
+- `research-status-dashboard.csv`: 같은 리서치 상태판의 스프레드시트용 파일
+- `research-status-dashboard.json`: 같은 리서치 상태판의 구조화 원본
+- `strategic-research-brief.md`: 생활권별 큰 그림, 장기 관찰 후보, 이번 액션, 현장 루트, 재평가 감시 대상을 합친 전략 브리프
+- `strategic-research-brief.csv`: 같은 전략 브리프의 생활권별 요약 CSV
+- `strategic-research-brief.json`: 같은 전략 브리프의 구조화 원본
+- `focus-area-comparison-brief.md`: 강남·잠실/송파·구의/광진을 같은 기준으로 비교한 생활권 상대 비교 브리프
+- `focus-area-comparison-brief.csv`: 같은 생활권 비교 브리프의 스프레드시트용 파일
+- `focus-area-comparison-brief.json`: 같은 생활권 비교 브리프의 구조화 원본
+- `life-area-market-reaction-brief.md`: 핵심 3생활권 시장 신호와 확장 2권역 baseline 커버를 같은 규칙으로 읽는 generated 브리프
+- `life-area-market-reaction-brief.csv`: 같은 생활권 시장 반응 브리프의 스프레드시트용 파일
+- `life-area-market-reaction-brief.json`: 같은 생활권 시장 반응 브리프의 구조화 원본
+- `expansion-market-scope-workbook.md`: 강동권·약수권 법정동 시장 scope를 core chain과 분리해 먼저 닫는 generated 워크북
+- `expansion-market-scope-workbook.csv`: 같은 확장권 시장 scope/workbook의 스프레드시트용 파일
+- `expansion-market-scope-workbook.json`: 같은 확장권 시장 scope/workbook의 구조화 원본
+- `expansion-project-market-areas.md`: 확장권 baseline을 정규화 거래와 1차 매칭하기 위한 project-area 입력 설명
+- `expansion-project-market-areas.csv`: 같은 확장권 project-area 입력의 스프레드시트용 파일
+- `expansion-project-market-areas.json`: 같은 확장권 project-area 입력의 구조화 원본
+- `expansion-market-ingest-manifest.md`: 확장권 latest-window 파일을 정규화 입력으로 넘기는 task-level ingest manifest
+- `expansion-market-ingest-manifest.csv`: 같은 확장권 ingest manifest의 스프레드시트용 파일
+- `expansion-market-ingest-manifest.json`: 같은 확장권 ingest manifest의 구조화 원본
+- `expansion-market-manual-normalization-audit.md`: 확장권 수동 원자료 정규화 결과와 막힌 source 유무를 보는 감사표
+- `expansion-market-manual-normalization-audit.csv`: 같은 확장권 정규화 감사표의 스프레드시트용 파일
+- `expansion-market-manual-normalization-audit.json`: 같은 확장권 정규화 감사표의 구조화 원본
+- `expansion-market-normalized-summary.md`: 확장권 dong-level baseline별 정규화 거래 행과 source 분포 요약
+- `expansion-market-normalized-summary.csv`: 같은 확장권 정규화 요약의 스프레드시트용 파일
+- `expansion-market-normalized-summary.json`: 같은 확장권 정규화 요약의 구조화 원본
+- `expansion-market-signal-summary.md`: 확장권 2권역·6개 법정동의 매매·전월세 중위값과 최근성을 읽는 시그널 요약
+- `expansion-market-signal-summary.csv`: 같은 확장권 시그널 요약의 스프레드시트용 파일
+- `expansion-market-signal-summary.json`: 같은 확장권 시그널 요약의 구조화 원본
+- `life-area-market-baseline-board.md`: 핵심 3생활권 full-chain과 확장 2권역 latest-window baseline을 한 표에서 비교하는 시장 기준 보드
+- `life-area-market-baseline-board.csv`: 같은 생활권 시장 기준 보드의 스프레드시트용 파일
+- `life-area-market-baseline-board.json`: 같은 생활권 시장 기준 보드의 구조화 원본
+- `expansion-market-first-download-packet.md`: 확장권 시장 90개 raw task를 최신 window 우선 실행 순서로 압축한 generated 패킷
+- `expansion-market-first-download-packet.csv`: 같은 확장권 시장 1차 다운로드 패킷의 스프레드시트용 파일
+- `expansion-market-first-download-packet.json`: 같은 확장권 시장 1차 다운로드 패킷의 구조화 원본
+- `expansion-market-quickstart-packet.md`: 천호동·길동 10개 task만 먼저 닫는 first-session quickstart 패킷
+- `expansion-market-quickstart-packet.csv`: 같은 확장권 quickstart 패킷의 스프레드시트용 파일
+- `expansion-market-quickstart-packet.json`: 같은 확장권 quickstart 패킷의 구조화 원본
+- `expansion-market-download-session-packet.md`: 확장권 latest-window 30개를 세션 단위로 바로 처리하는 generated 다운로드 패킷
+- `expansion-market-download-session-packet.csv`: 같은 확장권 다운로드 세션 패킷의 스프레드시트용 파일
+- `expansion-market-download-session-packet.json`: 같은 확장권 다운로드 세션 패킷의 구조화 원본
+- `expansion-market-download-status.md`: 확장권 latest-window 30개 수집 상태를 따로 보는 상태표
+- `expansion-market-download-status.csv`: 같은 확장권 다운로드 상태표의 스프레드시트용 파일
+- `expansion-market-download-status.json`: 같은 확장권 다운로드 상태표의 구조화 원본
+- `focus-area-evidence-risk-heatmap.md`: 생활권별 공식 근거 품질, 원문 병목, 공식 회신 필요, very high 리스크를 같은 행에서 보는 heatmap
+- `focus-area-evidence-risk-heatmap.csv`: 같은 생활권 증거·리스크 heatmap의 스프레드시트용 파일
+- `focus-area-evidence-risk-heatmap.json`: 같은 생활권 증거·리스크 heatmap의 구조화 원본
+- `research-system-readiness-audit.md`: 리서치 goal 요구사항별 준비도와 완료 보류 병목을 정리한 감사표
+- `research-system-readiness-audit.csv`: 같은 준비도 감사표의 스프레드시트용 파일
+- `research-system-readiness-audit.json`: 같은 준비도 감사표의 구조화 원본
+- `llm-research-handoff-guide.md`: 성능이 낮은 LLM도 공식 원문·보조 신호·추정·보류를 섞지 않도록 최소 파일 순서, 증거 등급, 답변 형식, 금지 규칙을 고정한 작업 지시서
+- `llm-error-correction-playbook.md`: LLM이 edge case나 self-correction을 만났을 때 오류 원인, 깨진 gate, 수정 경로, 재발 방지 규칙을 기록하는 기준 문서
+- `research-goal-completion-audit.md`: active goal을 완료로 선언할 수 있는지 readiness audit과 completion cockpit 기준으로 판정하는 최종 감사표
+- `research-goal-completion-audit.csv`: 같은 완료 감사표의 스프레드시트용 파일
+- `research-goal-completion-audit.json`: 같은 완료 감사표의 구조화 원본
+- `research-completion-cockpit.md`: goal 완료를 막는 시장 원자료, high blocking 회신, 최종 재생성/완료감사 작업을 P0/P1 critical path로 묶은 실행 보드
+- `research-completion-cockpit.csv`: 같은 completion cockpit의 스프레드시트용 파일
+- `research-completion-cockpit.json`: 같은 completion cockpit의 구조화 원본
+- `high-blocking-submission-approval-board.md`: 담당부서 문의/정보공개청구 전 사용자 승인 질문, 제출 본문, 접수 후 intake 기록 필드를 한 화면에 묶은 보드
+- `high-blocking-submission-approval-board.csv`: 같은 제출 승인 보드의 스프레드시트용 파일
+- `high-blocking-submission-approval-board.json`: 같은 제출 승인 보드의 구조화 원본
+- `project-comparison-matrix.md`: 후보 30개의 단계, 공식 원문 커버리지, 정보몽땅 단계 공개항목, 로컬 원문, 텍스트 추출 상태, OCR 이미지 수동 판독, 시장 데이터 키를 한눈에 비교하는 문서
+- `project-comparison-matrix.csv`: 같은 비교 매트릭스의 스프레드시트용 파일
+- `project-comparison-matrix.json`: 같은 비교 매트릭스의 구조화 원본
+- `market-api-readiness-audit.md`: 시장 데이터 API 키, 호출 계획, 원자료/정규화/사업장 매칭 산출물 준비 상태 감사표
+- `market-api-readiness-audit.csv`: 같은 시장 API 준비도 감사표의 출처별 스프레드시트용 파일
+- `market-api-readiness-audit.json`: 같은 시장 API 준비도 감사표의 구조화 원본
+- `market-manual-import-readiness.md`: API 키 없이 공식 사이트에서 받은 시장 원자료 파일의 manifest·메타데이터 준비 상태 감사표
+- `market-manual-import-readiness.csv`: 같은 수동 반입 준비도 감사표의 스프레드시트용 파일
+- `market-manual-import-readiness.json`: 같은 수동 반입 준비도 감사표의 구조화 원본
+- `market-manual-download-workbook.md`: API 계획을 공식 수동 다운로드·필터 작업으로 압축한 시장 원자료 실행 워크북
+- `market-manual-download-workbook.csv`: 같은 수동 다운로드 워크북의 스프레드시트용 파일
+- `market-manual-download-workbook.json`: 같은 수동 다운로드 워크북의 구조화 원본
+- `market-manual-download-status.md`: 수동 다운로드 작업별 원자료 파일 존재와 다운로드 메타데이터를 점검한 상태표
+- `market-manual-download-status.csv`: 같은 수동 다운로드 상태표의 스프레드시트용 파일
+- `market-manual-download-status.json`: 같은 수동 다운로드 상태표의 구조화 원본
+- `market-manual-ingest-manifest.md`: 작업별 다운로드 파일 또는 출처별 manifest를 컬럼 감사/정규화 입력 manifest로 승격한 감사표
+- `market-manual-ingest-manifest.csv`: 같은 수동 반입 manifest 감사표의 스프레드시트용 파일
+- `market-manual-ingest-manifest.json`: 같은 수동 반입 manifest 감사표의 구조화 원본
+- `market-manual-column-audit.md`: 수동 반입 CSV/XLSX/JSON 원자료의 컬럼명과 필수 필드 매칭 준비도 감사표
+- `market-manual-column-audit.csv`: 같은 수동 원자료 컬럼 감사표의 스프레드시트용 파일
+- `market-manual-column-audit.json`: 같은 수동 원자료 컬럼 감사표의 구조화 원본
+- `market-manual-normalization-audit.md`: 수동 원자료를 표준 거래/지표 스키마와 사업장 키워드 매칭 결과로 정규화할 수 있는지 점검한 감사표
+- `market-manual-normalization-audit.csv`: 같은 수동 원자료 정규화 감사표의 스프레드시트용 파일
+- `market-manual-normalization-audit.json`: 같은 수동 원자료 정규화 감사표의 구조화 원본
+- `cleanup-snapshot-diff.md`: 정비사업 정보몽땅 강남구·송파구·광진구 사업장 목록의 직전/현재 스냅샷 변경 감시 문서
+- `cleanup-snapshot-diff.csv`: 단계 변경, 공개자료 수 변화, 신규/삭제 사업장을 필터링하기 위한 CSV
+- `cleanup-snapshot-diff.json`: 같은 변경 감시 결과의 구조화 원본
+- `official-refresh-summary.md`: 정보몽땅·서울도시공간포털·강남/송파 자치구 고시공고 최신 수집 결과를 한 장으로 묶은 운영 요약
+- `official-refresh-summary.csv`: 같은 최신 수집 요약의 실행 큐 스프레드시트용 파일
+- `official-refresh-summary.json`: 같은 최신 수집 요약의 구조화 원본
+- `official-source-freshness-ledger.md`: 공식 업데이트 출처별 로컬 산출물 존재 여부, 최신 갱신일, 수동/API 키 필요 상태, 다음 실행 런북을 점검한 신선도 장부
+- `official-source-freshness-ledger.csv`: 같은 공식 출처 신선도 장부의 스프레드시트용 파일
+- `official-source-freshness-ledger.json`: 같은 공식 출처 신선도 장부의 구조화 원본
+- `cleanup-board-latest.md`: 우선검토 후보 30개 사업장의 정보몽땅 공지사항·입찰공고·분담금 목록 등 최신 공개 항목 요약
+- `cleanup-board-review-queue.md`: 최신 공개 항목 512건을 비용·분담금, 기반시설, 인가·고시, 이주·착공 전 등 신호로 분류한 검토 큐
+- `cleanup-board-review-queue.csv`: 같은 공개 항목 검토 큐의 스프레드시트용 파일
+- `cleanup-board-review-queue.json`: 같은 공개 항목 검토 큐의 구조화 원본
+- `project-risk-signal-summary.md`: 후보 30개의 공식 근거, 교통입지, 정보몽땅 공개항목 리스크 신호를 사업장별로 합친 요약표
+- `project-risk-signal-summary.csv`: 같은 사업장별 리스크 신호 요약의 스프레드시트용 파일
+- `project-risk-signal-summary.json`: 같은 사업장별 리스크 신호 요약의 구조화 원본
+- `source-value-verification-queue.md`: 리스크 신호, 공식 근거 품질, 원문 텍스트 추출 상태를 결합한 원문 수치 검증 작업 큐
+- `source-value-verification-queue.csv`: 같은 원문 수치 검증 큐의 스프레드시트용 파일
+- `source-value-verification-queue.json`: 같은 원문 수치 검증 큐의 구조화 원본
+- `source-verification-sprint-plan.md`: 남은 P0/P1 원문 검증을 S1-S5 실행 묶음과 완료 기준으로 압축한 작업 패킷
+- `source-verification-sprint-plan.csv`: 같은 원문 검증 실행 패킷의 스프레드시트용 파일
+- `source-verification-sprint-plan.json`: 같은 원문 검증 실행 패킷의 구조화 원본
+- `s1-cost-infrastructure-workbook.md`: S1 비용·기반시설 대상 사업장의 공개항목, 원문 스니펫, 장부 필드를 결합한 원문 대조 워크북
+- `s1-cost-infrastructure-workbook.csv`: 같은 S1 비용·기반시설 워크북의 스프레드시트용 파일
+- `s1-cost-infrastructure-workbook.json`: 같은 S1 비용·기반시설 워크북의 구조화 원본
+- `s1-original-evidence-candidates.md`: S1 로컬 원문에서 공공기여·기반시설·비용·용적률 산정 수치 후보를 뽑은 검토표
+- `s1-original-evidence-candidates.csv`: 같은 S1 원문 수치 후보의 스프레드시트용 파일
+- `s1-original-evidence-candidates.json`: 같은 S1 원문 수치 후보의 구조화 원본
+- `s1-evidence-review-board.md`: S1 수치 후보를 사업장·유형별 검토 묶음으로 압축한 리뷰 보드
+- `s1-evidence-review-board.csv`: 같은 S1 원문 증거 리뷰 보드의 스프레드시트용 파일
+- `s1-evidence-review-board.json`: 같은 S1 원문 증거 리뷰 보드의 구조화 원본
+- `s2-source-link-closure-workbook.md`: S2 recordCode·원문 URL 닫기 대상 사업장을 원문 링크 클로저 상태별로 정리한 워크북
+- `s2-source-link-closure-workbook.csv`: 같은 S2 원문 링크 클로저 워크북의 스프레드시트용 파일
+- `s2-source-link-closure-workbook.json`: 같은 S2 원문 링크 클로저 워크북의 구조화 원본
+- `s3-ocr-image-verification-workbook.md`: S3 OCR·이미지 수치 검증 대상 사업장을 수동 이미지 판정, 보정 필요, 재연결 필요 상태로 정리한 워크북
+- `s3-ocr-image-verification-workbook.csv`: 같은 S3 OCR·이미지 수치 검증 워크북의 스프레드시트용 필드 목록
+- `s3-ocr-image-verification-workbook.json`: 같은 S3 OCR·이미지 수치 검증 워크북의 구조화 원본
+- `s4-stage-conflict-resolution-workbook.md`: S4 사업시행·관리처분 시점 충돌 대상 사업장을 시점별 분리, 공개항목 반영, 별첨/일자 보강 상태로 정리한 워크북
+- `s4-stage-conflict-resolution-workbook.csv`: 같은 S4 시점 충돌 해소 워크북의 스프레드시트용 필드 목록
+- `s4-stage-conflict-resolution-workbook.json`: 같은 S4 시점 충돌 해소 워크북의 구조화 원본
+- `s5-core-gap-fill-workbook.md`: S5 핵심 공란 보강 대상 사업장을 후보값 있는 공란, 후보 없는 공란, 원문 스니펫 승격, 단계상 미적용으로 분리한 워크북
+- `s5-core-gap-fill-workbook.csv`: 같은 S5 핵심 공란 보강 워크북의 스프레드시트용 필드 목록
+- `s5-core-gap-fill-workbook.json`: 같은 S5 핵심 공란 보강 워크북의 구조화 원본
+- `source-verification-closure-ledger.md`: S1-S5 워크북의 남은 원문 검증 항목을 하나의 confirmed/pending/conflict/deferred 클로저 장부로 표준화한 실행 목록
+- `source-verification-closure-ledger.csv`: 같은 통합 클로저 장부의 전체 항목 스프레드시트용 파일
+- `source-verification-closure-ledger.json`: 같은 통합 클로저 장부의 구조화 원본과 요약 통계
+- `source-verification-decision-context-audit.md`: 통합 클로저 장부의 decision이 현재 closure 문맥과 맞는지 점검하는 감사표
+- `source-verification-decision-context-audit.csv`: 같은 decision 문맥 감사표의 전체 항목 스프레드시트용 파일
+- `source-verification-decision-context-audit.json`: 같은 decision 문맥 감사표의 구조화 원본과 요약 통계
+- `source-verification-action-queue.md`: 통합 클로저 장부에서 pending/conflict/open 항목만 추린 P0/P1 원문 검증 실행 큐
+- `source-verification-action-queue.csv`: 같은 원문 검증 실행 큐의 스프레드시트용 전체 항목
+- `source-verification-action-queue.json`: 같은 원문 검증 실행 큐의 구조화 원본과 사업장 묶음
+- `../data/review/source-verification-closure-decisions.json`: 통합 클로저 장부에 적용되는 항목별 판정 로그. 재생성 시 이 파일을 읽어 open/confirmed/pending/conflict/deferred 상태를 보존
+- `core-value-confirmation-ledger.md`: 후보 30개의 핵심 비교 수치를 필드 단위로 펼친 확인 상태 장부. 원문 링크 병목 중 공식 보조근거 직접 일치 항목도 별도 표시
+- `core-value-confirmation-ledger.csv`: 같은 핵심 수치 확인 장부의 스프레드시트용 파일
+- `core-value-confirmation-ledger.json`: 같은 핵심 수치 확인 장부의 구조화 원본
+- `ocr-source-verification-packet.md`: OCR 검수 필요 수치를 OCR 텍스트 구간과 원문 이미지 경로에 연결한 검수 패킷
+- `ocr-source-verification-packet.csv`: 같은 OCR 원문 검수 패킷의 스프레드시트용 파일
+- `ocr-source-verification-packet.json`: 같은 OCR 원문 검수 패킷의 구조화 원본
+- `ocr-source-review-triage.md`: OCR 검수 패킷을 이미지 확인 후보, 값 불일치 후보, 직접 이미지 확인 대상으로 재분류한 표
+- `ocr-source-review-triage.csv`: 같은 OCR 수치 검수 트리아지의 스프레드시트용 파일
+- `ocr-source-review-triage.json`: 같은 OCR 수치 검수 트리아지의 구조화 원본
+- `ocr-image-review-decisions.md`: 원문 이미지를 직접 열어 OCR 트리아지 결과를 수동 판정한 결정 로그
+- `ocr-image-review-decisions.csv`: 같은 OCR 이미지 수동 검수 결정의 스프레드시트용 파일
+- `ocr-image-review-decisions.json`: 같은 OCR 이미지 수동 검수 결정의 구조화 원본
+- `source-value-update-candidates.md`: OCR 이미지 수동 판독 결과를 비교용 구조화 수치 보정 후보로 정리한 작업표
+- `source-value-update-candidates.csv`: 같은 원문 수치 보정 후보의 스프레드시트용 파일
+- `source-value-update-candidates.json`: 같은 원문 수치 보정 후보의 구조화 원본
+- `source-link-repair-queue.md`: 잘못 연결된 원문, recordCode/고시번호 연결 필요, 텍스트 추출 누락을 모은 원문 링크 보정 큐
+- `source-link-repair-queue.csv`: 같은 원문 링크 보정 큐의 스프레드시트용 파일
+- `source-link-repair-queue.json`: 같은 원문 링크 보정 큐의 구조화 원본
+- `source-link-repair-candidates.md`: 원문 링크 보정 큐 항목별로 이미 확보한 공식 후보 근거와 새 검색 필요 여부를 분리한 문서
+- `source-link-repair-candidates.csv`: 같은 원문 링크 보정 후보의 스프레드시트용 파일
+- `source-link-repair-candidates.json`: 같은 원문 링크 보정 후보의 구조화 원본
+- `source-link-closure-board.md`: 원문 링크 후보를 값 일치와 원문 URL/recordCode 닫힘 상태로 분리한 보드
+- `source-link-closure-board.csv`: 같은 원문 링크 클로저 보드의 스프레드시트용 파일
+- `source-link-closure-board.json`: 같은 원문 링크 클로저 보드의 구조화 원본
+- `songpa-source-gap-audit.md`: 송파권 후보 10개의 원문 연결 병목, 송파구청 프로브 결과, 정보몽땅 보조값, 다음 검색어 큐
+- `songpa-source-gap-audit.csv`: 같은 송파권 원문 연결 병목 감사의 스프레드시트용 파일
+- `songpa-source-gap-audit.json`: 같은 송파권 원문 연결 병목 감사의 구조화 원본
+- `songpa-value-review-packet.md`: 송파권 후보 10개의 면적, 세대수, 용적률, 건폐율, 높이/층수, 기반시설, 공공기여 원문 수치 검토 패킷
+- `songpa-value-review-packet.csv`: 같은 송파권 원문 수치 검토 패킷의 스프레드시트용 파일
+- `songpa-value-review-packet.json`: 같은 송파권 원문 수치 검토 패킷의 구조화 원본
+- `songpa-notice-value-corroboration.md`: 장미1,2,3차·송파한양2차·송파미성 원문을 직접 확정값, 상위계획 보조근거, 정의/시점 충돌로 분리한 판정표
+- `songpa-notice-value-corroboration.csv`: 같은 송파권 원문 수치 확정성 판정의 스프레드시트용 파일
+- `songpa-notice-value-corroboration.json`: 같은 송파권 원문 수치 확정성 판정의 구조화 원본
+- `source-link-official-probe.md`: P0 recordCode/고시 원문 미확인 사업장을 서울도시공간포털·자치구 공고에서 직접 검색한 프로브 결과
+- `source-link-official-probe.csv`: 같은 공식 검색 프로브의 스프레드시트용 파일
+- `source-link-official-probe.json`: 같은 공식 검색 프로브의 구조화 원본
+- `gangnam-songpa-notice-probe.md`: 강남구청·송파구청 고시공고에서 강남·송파 후보 사업명·단지명을 검색한 원격 프로브 결과
+- `../data/urban/gangnam-songpa-notice-candidates.csv`: 같은 강남·송파 고시공고 후보의 스프레드시트용 파일
+- `../data/urban/gangnam-songpa-notice-attachments.csv`: 같은 강남·송파 고시공고 후보의 첨부 링크·다운로드 상태 목록
+- `cleanup-process-page-probes.md`: 삼성1차·자양번영로3나길의 정보몽땅 공정별 페이지를 조회해 사업별 표/첨부 신호 여부를 확인한 프로브 결과
+- `cleanup-process-page-probes.csv`: 같은 정보몽땅 공정 페이지 프로브의 스프레드시트용 파일
+- `cleanup-process-page-probes.json`: 같은 정보몽땅 공정 페이지 프로브의 구조화 원본
+- `recordcode-dead-end-audit.md`: 사업구역 레이어는 확인됐지만 지도 recordCode/고시 원문 자동 연결이 안 된 사업장의 후속 확인 감사표
+- `recordcode-dead-end-audit.csv`: 같은 recordCode 미연결 감사표의 스프레드시트용 파일
+- `recordcode-dead-end-audit.json`: 같은 recordCode 미연결 감사표의 구조화 원본
+- `residual-gap-interpretation-audit.md`: 핵심 수치 장부에 남은 공란·보류·부분확정 필드의 비교표 사용 규칙과 재개 트리거
+- `residual-gap-interpretation-audit.csv`: 같은 잔여 공란·보류 해석 감사표의 스프레드시트용 파일
+- `residual-gap-interpretation-audit.json`: 같은 잔여 공란·보류 해석 감사표의 구조화 원본
+- `focus-area-strategy.md`: 강남·잠실/송파·구의/광진 생활권별 연구 가설, 병목, 현장 루트, 우선 사업장
+- `focus-area-strategy.csv`: 생활권별 전략 요약 테이블
+- `focus-area-strategy.json`: 생활권별 전략 요약의 구조화 원본
+- `long-term-potential-scorecard.md`: 입지·단계·규모·공공 변화 동인·근거 품질을 분리한 장기 관찰 점수카드
+- `long-term-potential-scorecard.csv`: 같은 장기 가능성 점수카드의 스프레드시트용 파일
+- `long-term-potential-scorecard.json`: 같은 장기 가능성 점수카드의 구조화 원본
+- `research-hypothesis-ledger.md`: 장기 가능성, 공공 개발 촉매, 리스크 신호, 딥다이브 질문, 재평가 런북을 결합한 사업별 리서치 가설 장부
+- `research-hypothesis-ledger.csv`: 같은 리서치 가설 장부의 스프레드시트용 파일
+- `research-hypothesis-ledger.json`: 같은 리서치 가설 장부의 구조화 원본
+- `project-evidence-binder.md`: 후보 30개 사업장별 공식 원천, 로컬 원문/텍스트, 원문 링크 병목, 핵심 수치 검증 상태, 먼저 열 파일을 묶은 근거 바인더
+- `project-evidence-binder.csv`: 같은 사업장별 공식 근거 바인더의 스프레드시트용 파일
+- `project-evidence-binder.json`: 같은 사업장별 공식 근거 바인더의 구조화 원본
+- `project-due-diligence-board.md`: 후보 30개 사업장의 원문 상태, 다음 액션, 현장 루트, 공공 촉매, 시장 보조신호를 한 행으로 묶은 통합 실사 보드
+- `project-due-diligence-board.csv`: 같은 사업장별 통합 실사 보드의 스프레드시트용 파일
+- `project-due-diligence-board.json`: 같은 사업장별 통합 실사 보드의 구조화 원본
+- `focus-area-decision-memo.md`: 생활권별 잠정 입장, 승격 조건, 반증 조건, 다음 증거, 대표 사업장 메모를 묶은 의사결정 메모
+- `focus-area-decision-memo.csv`: 같은 생활권 의사결정 메모의 스프레드시트용 파일
+- `focus-area-decision-memo.json`: 같은 생활권 의사결정 메모의 구조화 원본
+- `research-session-playbook.md`: 15분 triage, 주간 공식 갱신, 현장답사, 새 업데이트, 월간 시장/정책 점검을 세션별로 나눈 실행 플레이북
+- `research-session-playbook.csv`: 같은 리서치 세션 플레이북의 스프레드시트용 파일
+- `research-session-playbook.json`: 같은 리서치 세션 플레이북의 구조화 원본
+- `research-artifact-dependency-map.md`: 재생성 단계, 주요 JSON summary, 선언된 입력·출력, 내부 의존 edge를 묶은 운영용 의존성 맵
+- `research-artifact-dependency-map.csv`: 같은 의존성 맵의 산출물 목록 스프레드시트용 파일
+- `research-artifact-dependency-map.json`: 같은 의존성 맵의 구조화 원본
+- `official-change-detection-board.md`: 공식 출처별 변경 신호, 감지 방식, 기록 위치, 판정 gate, 영향 사업장·산출물을 묶은 출처 기준 운영 보드
+- `official-change-detection-board.csv`: 같은 변경 감지 보드의 스프레드시트용 파일
+- `official-change-detection-board.json`: 같은 변경 감지 보드의 구조화 원본
+- `official-update-intake-board.md`: 수동 공식 업데이트 inbox를 검증하고 source verification, high blocking response, context, market intake로 라우팅하는 보드
+- `official-update-intake-board.csv`: 같은 intake 라우팅 보드의 스프레드시트용 파일
+- `official-update-intake-board.json`: 같은 intake 라우팅 보드의 구조화 원본
+- `official-update-source-verification-bridge.md`: source verification 경로 공식 업데이트를 candidate closure_id, 연관 사업장, applied 승격 후보로 연결하는 브리지 보드
+- `official-update-source-verification-bridge.csv`: 같은 source verification 브리지의 candidate closure 스프레드시트용 파일
+- `official-update-source-verification-bridge.json`: 같은 source verification 브리지의 구조화 원본
+- `official-update-scenario-playbook.md`: 새 고시·공고·보도자료·시장자료 발견 시 intake JSON 예시와 라우팅 gate를 출처별로 묶은 플레이북
+- `official-update-scenario-playbook.csv`: 같은 공식 업데이트 시나리오 플레이북의 스프레드시트용 파일
+- `official-update-scenario-playbook.json`: 같은 공식 업데이트 시나리오 플레이북의 구조화 원본
+- `official-source-activation-checklist.md`: 수동 알림 신청, 수동 월간 검색, API 키 연결이 필요한 공식 출처의 활성화 상태와 완료 gate를 묶은 체크리스트
+- `official-source-activation-checklist.csv`: 같은 공식 출처 활성화 체크리스트의 스프레드시트용 파일
+- `official-source-activation-checklist.json`: 같은 공식 출처 활성화 체크리스트의 구조화 원본
+- `official-source-activation-validation.md`: 활성화 intake의 오류/경고와 미기록 출처를 분리해 보여주는 검증 보드
+- `official-source-activation-validation.csv`: 같은 공식 출처 활성화 검증 보드의 스프레드시트용 파일
+- `official-source-activation-validation.json`: 같은 공식 출처 활성화 검증 보드의 구조화 원본
+- `../data/review/official-source-activation-intake.json`: 알림 신청, 수동 검색 루틴, API 키 연결 상태를 누적하는 수동 입력 파일
+- `../data/review/official-source-activation-intake.README.md`: 같은 활성화 입력 파일의 상태값 규칙과 실행 순서를 적은 가이드
+- `../data/review/official-source-activation-intake-examples.json`: 활성화 대상 출처별 복사용 예시 행
+- `official-context-search-queue.md`: 공공 촉매별 월간 공식 검색어, 출처, 기록 위치, context_only/원문 후보 판정 gate를 묶은 검색 큐
+- `official-context-search-queue.csv`: 같은 공식 context 검색 큐의 스프레드시트용 파일
+- `official-context-search-queue.json`: 같은 공식 context 검색 큐의 구조화 원본
+- `official-context-search-results-board.md`: 월간 공식 context 검색 결과를 not_found/context_only/원문 후보로 검증하고 다음 intake로 라우팅하는 보드
+- `official-context-search-results-board.csv`: 같은 공식 context 검색 결과 보드의 스프레드시트용 파일
+- `official-context-search-results-board.json`: 같은 공식 context 검색 결과 보드의 구조화 원본
+- `official-context-impact-board.md`: 공식 context 검색 결과가 어느 사업장 가설에 연결되는지와 context_only/승격 gate를 분리한 영향 보드
+- `official-context-impact-board.csv`: 같은 공식 context 영향 보드의 스프레드시트용 파일
+- `official-context-impact-board.json`: 같은 공식 context 영향 보드의 구조화 원본
+- `../data/review/official-context-search-results-intake.json`: 월간 공식 context 검색 결과를 수동 누적하는 입력 파일
+- `../data/review/official-context-search-results-intake.README.md`: 같은 context 검색 결과 입력 파일의 상태값 규칙, 증거 조건, 실행 순서를 적은 가이드
+- `../data/review/official-context-search-results-intake-examples.json`: context 검색 결과용 복사용 예시 행
+- `update-impact-ledger.md`: 새 원문·공개항목·현장 관찰·공공계획·시장 데이터가 어느 사업별 가설과 산출물에 영향을 주는지 연결한 업데이트 영향 장부
+- `update-impact-ledger.csv`: 같은 업데이트 영향 장부의 스프레드시트용 파일
+- `update-impact-ledger.json`: 같은 업데이트 영향 장부의 구조화 원본
+- `research-next-moves.md`: 장기 가능성, 리서치 상태, 원문 장부, 검증 큐를 결합한 다음 리서치 액션 보드
+- `research-next-moves.csv`: 같은 다음 리서치 액션 보드의 스프레드시트용 파일
+- `research-next-moves.json`: 같은 다음 리서치 액션 보드의 구조화 원본
+- `fieldwork-route-planner.md`: 우선검토 후보 30개를 지하철 답사 루트로 묶은 현장 조사 플래너
+- `fieldwork-route-planner.csv`: 같은 지하철 현장 조사 루트 플래너의 스프레드시트용 파일
+- `fieldwork-route-planner.json`: 같은 지하철 현장 조사 루트 플래너의 구조화 원본
+- `fieldwork-observation-notebook.md`: 지하철 답사에서 기록할 보행시간, 횡단 대기, 도로/한강 단절, 환승, 사진 경로, 해석 변화를 사업장별로 구조화한 노트북
+- `fieldwork-observation-notebook.csv`: 같은 현장 관찰 노트북의 스프레드시트용 파일
+- `fieldwork-observation-notebook.json`: 같은 현장 관찰 노트북의 구조화 원본
+- `../data/review/fieldwork-observations.json`: 실제 현장 관찰값을 누적하는 수동 입력 파일
+- `../data/review/fieldwork-observations.README.md`: 현장 답사 관찰값 입력 규칙과 재생성 절차를 설명하는 수동 intake 안내
+- `../data/review/fieldwork-observation-examples.json`: 답사 루트 8개별 현장 관찰 복사용 예시 행
+- `autonomous-mobility-scenario.md`: 자율주행 보편화 시 역세권 지속성, 도로 접근성 보완, 보행단절 현장 확인 우선순위를 후보 30개에 부여한 시나리오 점검표
+- `autonomous-mobility-scenario.csv`: 같은 자율주행 보편화 시나리오 점검표의 스프레드시트용 파일
+- `autonomous-mobility-scenario.json`: 같은 자율주행 보편화 시나리오 점검표의 구조화 원본
+- `public-development-catalyst-map.md`: 잠실 MICE, 압구정 한강변관리, 동서울터미널, 구의·자양 한강축 등 공공 개발 동인과 후보 사업장 재평가 트리거를 연결한 맵
+- `public-development-catalyst-map.csv`: 같은 공공 개발 촉매 맵의 스프레드시트용 파일
+- `public-development-catalyst-map.json`: 같은 공공 개발 촉매 맵의 구조화 원본
+- `catalyst-trigger-matrix.md`: 공공 개발·교통 촉매 업데이트가 들어왔을 때 사업장 가설을 상향, 하향, 원문 보강, 공식 회신 선행 중 어디에 둘지 판정하는 트리거 매트릭스
+- `catalyst-trigger-matrix.csv`: 같은 공공 촉매 트리거 매트릭스의 스프레드시트용 파일
+- `catalyst-trigger-matrix.json`: 같은 공공 촉매 트리거 매트릭스의 구조화 원본
+- `focus-deep-dive-queue.md`: 진행단계, 장기 가능성, 리스크, 시장 거래 신호, 공공 촉매, 자율주행 시나리오, 다음 공식자료를 사업장별 한 행으로 묶은 딥다이브 큐
+- `focus-deep-dive-queue.csv`: 같은 생활권별 딥다이브 큐의 스프레드시트용 파일
+- `focus-deep-dive-queue.json`: 같은 생활권별 딥다이브 큐의 구조화 원본
+- `focus-area-action-queue.csv`: 다음에 처리할 사업장별 액션 큐
+- `expansion-official-latest-check-audit.md`: 강동권·약수권 확장 관심권의 서울도시공간포털 진입 페이지 검색 결과와 popup 직접 접근 차단 여부를 감사한 문서
+- `expansion-official-latest-check-audit.csv`: 같은 확장 관심권 공식 최신 확인 감사의 스프레드시트용 파일
+- `expansion-official-latest-check-audit.json`: 같은 확장 관심권 공식 최신 확인 감사의 구조화 원본
+- `map-missing-business-layer-review.md`: 서울도시공간포털 지도 recordCode가 없던 광진권 4건의 사업구역 레이어 보강 결과와 남은 원문 확인 과제
+- `seoul-sibo-original-notice-fact-check.md`: 서울시보 제4146호에서 확보한 광장극동 본고시 제2026-249호 원문·OCR 수치 대조표
+- `seoul-sibo-original-notice-fact-check.csv`: 같은 서울시보 본고시 대조표의 스프레드시트용 파일
+- `seoul-sibo-original-notice-fact-check.json`: 같은 서울시보 본고시 대조표의 구조화 원본
+- `gwangjin-gu-notice-fact-check.md`: 광진구청 고시공고 첨부 원문에서 워커힐·광장극동·자양1의4의 수치·일자·범위 차이를 대조한 문서
+- `gwangjin-gu-notice-fact-check.csv`: 같은 광진구청 원문 대조표의 스프레드시트용 파일
+- `gwangjin-gu-notice-fact-check.json`: 같은 광진구청 원문 대조표의 구조화 원본
+- `management-stage-fact-check.md`: 관리처분인가 사업의 사업개요 수치, 고시문 수치, 정보몽땅 공개항목 수치 대조
+- `management-stage-fact-check.csv`: 같은 대조 결과의 스프레드시트용 파일
+- `management-stage-fact-check.json`: 같은 대조 결과의 구조화 원본
+- `management-stage-value-resolution.md`: 관리처분인가 사업의 수치 차이를 고시 시점·사업시행 공개항목·관리처분 공개항목으로 나눈 해소표
+- `management-stage-value-resolution.csv`: 같은 관리처분 수치 시점 해소표의 스프레드시트용 파일
+- `management-stage-value-resolution.json`: 같은 관리처분 수치 시점 해소표의 구조화 원본
+- `source-text-extraction-audit.md`: 서울도시공간포털·광진구청 원문 PDF/HWP/HWPX의 텍스트 추출 커버리지와 soffice 필요 여부 감사표
+- `source-text-extraction-audit.csv`: 같은 원문 텍스트 추출 감사표의 스프레드시트용 파일
+- `source-text-extraction-audit.json`: 같은 원문 텍스트 추출 감사표의 구조화 원본
+- `hwp-conversion-audit.md`: HWP/HWPX 원문만 따로 모은 자체 변환·OCR·차단 여부 감사표
+- `hwp-conversion-audit.csv`: 같은 HWP/HWPX 변환 감사표의 스프레드시트용 파일
+- `hwp-conversion-audit.json`: 같은 HWP/HWPX 변환 감사표의 구조화 원본
+- `high-blocking-source-escalation-packet.md`: high blocking 잔여 원문을 관할 자치구/정보몽땅 문의 패킷으로 묶은 실행 문서
+- `high-blocking-source-escalation-packet.csv`: 같은 원문 확인 패킷의 필드별 스프레드시트용 파일
+- `high-blocking-source-escalation-packet.json`: 같은 원문 확인 패킷의 구조화 원본
+- `high-blocking-public-summary-boundary.md`: high blocking 필드의 공식 요약값 사용 가능 범위와 본고시/인가 원문 필요 경계를 분리한 문서
+- `high-blocking-public-summary-boundary.csv`: 같은 공식 요약값 경계표의 스프레드시트용 파일
+- `high-blocking-public-summary-boundary.json`: 같은 공식 요약값 경계표의 구조화 원본
+- `high-blocking-public-web-probe.md`: high blocking 3개 사업장의 비회원 공식 웹 화면 확인 결과와 공개화면만으로 닫히지 않는 이유를 정리한 문서
+- `high-blocking-public-web-probe.csv`: 같은 공식 웹 프로브의 스프레드시트용 파일
+- `high-blocking-public-web-probe.json`: 같은 공식 웹 프로브의 구조화 원본
+- `high-blocking-official-search-rerun.md`: 광진구청·서울도시공간포털·정보몽땅 공개화면을 high blocking 3개 사업장별로 다시 묶은 공식 검색 재실행 감사 문서
+- `high-blocking-official-search-rerun.csv`: 같은 공식 검색 재실행 감사의 스프레드시트용 파일
+- `high-blocking-official-search-rerun.json`: 같은 공식 검색 재실행 감사의 구조화 원본
+- `high-blocking-contact-channel-registry.md`: high blocking 3개 사업장의 관할 부서, 민원창구, 정보몽땅 문의/담당자 현황 URL을 공식 채널 단위로 정리한 문서
+- `high-blocking-contact-channel-registry.csv`: 같은 문의 채널 레지스트리의 스프레드시트용 파일
+- `high-blocking-contact-channel-registry.json`: 같은 문의 채널 레지스트리의 구조화 원본
+- `high-blocking-info-disclosure-packet.md`: high blocking 원문 병목을 정보공개청구 또는 공식 민원으로 전환할 제목·본문·요청 자료명·회신 intake 필드로 정리한 문서
+- `high-blocking-info-disclosure-packet.csv`: 같은 정보공개청구 패킷의 스프레드시트용 파일
+- `high-blocking-info-disclosure-packet.json`: 같은 정보공개청구 패킷의 구조화 원본
+- `high-blocking-filing-tracker.md`: high blocking 3개 사업장의 정보공개청구/공식 민원 접수 상태, 회신 intake, decision 승격 절차를 추적하는 운영판
+- `high-blocking-filing-tracker.csv`: 같은 접수/회신 tracker의 스프레드시트용 파일
+- `high-blocking-filing-tracker.json`: 같은 접수/회신 tracker의 구조화 원본
+- `high-blocking-response-followup-cockpit.md`: 회신 대기 3건의 우선순위, helper, dry-run, write 순서를 한 장으로 묶은 후속 점검 콕핏
+- `high-blocking-response-followup-cockpit.csv`: 같은 후속 점검 콕핏의 스프레드시트용 파일
+- `high-blocking-response-followup-cockpit.json`: 같은 후속 점검 콕핏의 구조화 원본
+- `high-blocking-next-check-session-packet.md`: 다음 점검일 세션에서 조회 URL, no response 기록 helper, 회신 반영 helper를 바로 쓰는 실행 패킷
+- `high-blocking-next-check-session-packet.csv`: 같은 다음 점검 세션 패킷의 스프레드시트용 파일
+- `high-blocking-next-check-session-packet.json`: 같은 다음 점검 세션 패킷의 구조화 원본
+- `high-blocking-next-check-command-audit.md`: 다음 점검 세션 패킷의 no response helper가 checked-at/next-check-date 규칙을 지키는지 감사하는 표
+- `high-blocking-next-check-command-audit.csv`: 같은 다음 점검 helper 감사표의 스프레드시트용 파일
+- `high-blocking-next-check-command-audit.json`: 같은 다음 점검 helper 감사표의 구조화 원본
+- `high-blocking-followup-history.md`: 외부 회신 대기 3건의 실제 점검 이력과 사업장별 최신 포털 상태를 누적하는 보드
+- `high-blocking-followup-history.csv`: 같은 후속 점검 이력 보드의 스프레드시트용 파일
+- `high-blocking-followup-history.json`: 같은 후속 점검 이력 보드의 구조화 원본
+- `high-blocking-intake-validation.md`: high blocking 회신 intake의 상태값, 필수 필드, 증거 URL/파일 경로, decision 승격 준비 상태를 검증하는 문서
+- `high-blocking-intake-validation.csv`: 같은 intake 검증 결과의 스프레드시트용 파일
+- `high-blocking-intake-validation.json`: 같은 intake 검증 결과의 구조화 원본
+- `high-blocking-response-intake-guide.md`: high blocking 회신 유형별 response_status 선택 기준과 사업장별 입력 예시를 정리한 문서
+- `high-blocking-response-intake-guide.json`: 같은 회신 입력 가이드의 구조화 원본
+- `../data/review/high-blocking-response-intake-examples.json`: 실제 intake와 분리된 회신 유형별 예시 JSON
+- `../data/review/high-blocking-source-response-intake.README.md`: high blocking 회신/점검 intake 원본의 상태값, helper, 운영 규칙
+- `../data/review/high-blocking-followup-check-log.README.md`: 외부 회신 대기 3건 점검 로그 입력 규칙과 helper 예시
+- `../data/review/high-blocking-followup-check-log.json`: 외부 회신 대기 3건의 포털 상태 재확인 이력 입력 원본
+- `../data/review/high-blocking-followup-check-log-examples.json`: 같은 follow-up check log의 복사용 예시 행
+- `../data/review/high-blocking-filing-outbox/README.md`: high blocking 3개 사업장의 제출 준비 파일과 접수 후 명령을 모은 outbox 색인
+- `../data/review/high-blocking-filing-outbox/manifest.json`: 같은 outbox의 구조화 manifest
+- `high-blocking-filing-checklist.md`: high blocking 3개 사업장의 접수 전 확인, 접수 직후 intake 기록, 회신 후 decision 승격 규칙을 한 화면에 묶은 체크리스트
+- `high-blocking-filing-checklist.csv`: 같은 접수 전후 체크리스트의 스프레드시트용 파일
+- `high-blocking-filing-checklist.json`: 같은 접수 전후 체크리스트의 구조화 원본
+- `high-blocking-response-decision-drafts.md`: 담당부서/정보몽땅 회신 intake를 source-verification decision 초안으로 검증한 문서
+- `high-blocking-response-decision-drafts.json`: 같은 decision 초안 검증 결과의 구조화 원본
+- `high-blocking-response-workflow-run.md`: high blocking 회신 intake 검증, decision dry-run/apply, 선택적 전체 재생성을 묶은 최신 workflow 실행 로그
+- `high-blocking-response-workflow-run.json`: 같은 workflow 실행 로그의 구조화 원본
+- `source-evidence-audit.md`: 후보 30개의 공식 근거 품질 등급, 원문 검증 병목, 다음 원문 확인 작업
+- `source-evidence-audit.csv`: 같은 공식 근거 품질 감사표의 스프레드시트용 파일
+- `source-evidence-audit.json`: 같은 공식 근거 품질 감사표의 구조화 원본
+- `transport-location-context.md`: 후보 30개의 교통축, 생활권 변화, 현장 확인 포인트, 공식 출처 비교
+- `transport-location-context.csv`: 같은 교통입지·생활권 컨텍스트의 스프레드시트용 파일
+- `transport-location-context.json`: 같은 교통입지·생활권 컨텍스트의 구조화 원본
+- `official-context-sources.csv`: 교통입지·생활권 가설 검증에 쓸 공식 출처 목록
+- `official-update-registry.md`: 최신 업데이트를 확인할 공식 출처, 확인 주기, 자동화 상태, 관련 산출물 목록
+- `official-update-registry.csv`: 같은 공식 업데이트 출처 레지스트리의 스프레드시트용 파일
+- `official-update-registry.json`: 같은 공식 업데이트 출처 레지스트리의 구조화 원본
+- `official-update-runbook.md`: 최신 정보 확인 시 주간/월간/ad hoc 실행 순서, 후속 재생성, 판독 산출물, 판정 규칙
+- `official-update-runbook.csv`: 같은 공식 업데이트 실행 런북의 스프레드시트용 파일
+- `official-update-runbook.json`: 같은 공식 업데이트 실행 런북의 구조화 원본
+- `official-update-runbook-checklist.md`: 런북을 원격/로컬/API 키 필요 단계로 펼친 드라이런 실행 체크리스트
+- `official-update-runbook-checklist.csv`: 같은 공식 업데이트 실행 체크리스트의 스프레드시트용 파일
+- `official-update-runbook-checklist.json`: 같은 공식 업데이트 실행 체크리스트의 구조화 원본
+- `official-refresh-summary.md`: 주간 공식 수집 직후 먼저 읽을 변경 큐와 원문 후보 운영 요약
+- `official-refresh-summary.csv`: 같은 최신 수집 요약의 실행 큐 스프레드시트용 파일
+- `official-refresh-summary.json`: 같은 최신 수집 요약의 구조화 원본
+- `reassessment-watchlist.md`: 사업별 장기 가설 재평가 트리거, 공식 출처, 실행 런북을 연결한 감시표
+- `reassessment-watchlist.csv`: 같은 재평가 감시표의 스프레드시트용 파일
+- `reassessment-watchlist.json`: 같은 재평가 감시표의 구조화 원본
+
+## 재생성
+
+루트 폴더에서 로컬 분석 산출물만 다시 만들려면 다음 명령을 실행한다. 이 명령은 원격 웹사이트를 다시 호출하거나 OCR을 새로 돌리지 않고, 이미 받은 `data/` 원천과 검수 로그를 기준으로 분석 문서와 사업별 메모를 재생성한다.
+
+```bash
+node scripts/regenerate-research-artifacts.mjs
+```
+
+실행 순서를 먼저 확인하려면 `node scripts/regenerate-research-artifacts.mjs --dry-run`, 단계 목록만 보려면 `node scripts/regenerate-research-artifacts.mjs --list`를 쓴다.
+
+원문 수집, OCR, 시장 데이터 API 호출까지 새로 할 때는 `seoul-redevelopment-research-playbook.md`의 수집 명령을 먼저 실행한 뒤 위 재생성 명령을 다시 실행한다.
+
+입력 파일은 `data/cleanup/cleanup-projects-gangnam-songpa-gwangjin.json`과 `data/urban`, `data/market` 아래의 파생 수집물이다. 후보 점수와 비교 매트릭스는 정비사업 정보몽땅의 공식 목록 정보, 서울도시공간포털 원문, 생활권 가설을 결합한 리서치 우선순위이며, 투자 추천 점수가 아니다.

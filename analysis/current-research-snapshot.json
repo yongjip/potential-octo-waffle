@@ -1,0 +1,140 @@
+{
+  "as_of": "2026-06-24",
+  "life_areas": [
+    {
+      "name": "강남",
+      "current_stance": "조건 해석 우선",
+      "official_evidence_status": "높음",
+      "fieldwork_needed": true,
+      "external_dependency": "낮음",
+      "top_projects": ["압구정3", "압구정2", "대치쌍용2차"],
+      "key_question": "상급 입지 프리미엄이 비용/공공기여 리스크를 이길 만큼 확실한가",
+      "main_catalyst": "한강변관리·경관·높이·공공기여",
+      "main_risks": ["공공기여 부담", "기반시설 부담", "압구정로 혼잡", "조합별 속도 차이"],
+      "fieldwork_route": "압구정 한강변 특별계획구역",
+      "next_action": "압구정3 비용·기반시설 공개항목과 현장 체감 연결",
+      "one_line_conclusion": "입지는 강하지만 공공기여·기반시설·높이 조건 해석이 먼저다."
+    },
+    {
+      "name": "잠실/송파",
+      "current_stance": "장기 잠재 강함, 리스크 분리 필요",
+      "official_evidence_status": "높음",
+      "fieldwork_needed": true,
+      "external_dependency": "중간",
+      "top_projects": ["장미1,2,3차", "잠실우성4차", "잠실5단지"],
+      "key_question": "잠실 핵심축의 공공개발 기대가 비용·이주·혼잡을 보상하는가",
+      "main_catalyst": "잠실 MICE·국제교류복합지구",
+      "main_risks": ["행사 혼잡", "한강·탄천·대형도로 단절", "이주기 전세 압력", "비용·기반시설 부담"],
+      "fieldwork_route": "잠실역-잠실나루 한강축",
+      "next_action": "장미1,2,3차 현장 메모와 잠실우성4차 외부 회신 반영",
+      "one_line_conclusion": "가장 강한 장기 축이지만 혼잡·이주·비용을 분리해서 봐야 한다."
+    },
+    {
+      "name": "구의/광진",
+      "current_stance": "원문·단계 확정 우선",
+      "official_evidence_status": "중간",
+      "fieldwork_needed": true,
+      "external_dependency": "높음",
+      "top_projects": ["한양연립", "워커힐1단지", "광장동 삼성1차"],
+      "key_question": "2·7호선과 한강/터미널 변화 가능성이 사업성 편차를 보완하는가",
+      "main_catalyst": "동서울터미널·강변역·광역교통",
+      "main_risks": ["원문 미연결", "도로 단절", "터미널 혼잡", "소규모정비 편차"],
+      "fieldwork_route": "강변-광나루 동서울터미널축",
+      "next_action": "한양연립 현장 메모와 삼성1차/자양번영로3나길 회신 대기 관리",
+      "one_line_conclusion": "기대보다 원문과 단계 확정이 먼저다."
+    }
+  ],
+  "expansion_zones": [
+    {
+      "name": "강동권",
+      "current_stance": "잠실/송파 동측 연장축 비교",
+      "official_evidence_status": "중간",
+      "fieldwork_needed": true,
+      "external_dependency": "중간",
+      "top_projects": ["천호3구역", "신동아1·2차", "성내미주"],
+      "key_question": "잠실 동측 연장축에서 중간 체급 재건축이 대안축으로 성립하는가",
+      "main_catalyst": "천호·길동·성내 정비계획, 5·8호선 생활권, 천호대로 축",
+      "main_risks": ["최신 인허가 단계 공백", "고시 시점과 현재 단계 혼선", "잠실 대비 생활권 체급 차이"],
+      "fieldwork_route": "천호역-강동역-길동역 축",
+      "next_action": "천호3구역, 신동아1·2차, 성내미주의 최신 공개 단계를 강동구 고시공고·정보몽땅으로 다시 닫는다.",
+      "one_line_conclusion": "잠실/송파 대안축 후보지만 최신 인허가 단계는 별도 재확인이 먼저다."
+    },
+    {
+      "name": "약수동 주변",
+      "current_stance": "도심근접형 대조군 유지",
+      "official_evidence_status": "중간",
+      "fieldwork_needed": true,
+      "external_dependency": "중간",
+      "top_projects": ["신당8", "신당9", "금호14-1"],
+      "key_question": "도심 경사형 재개발이 강남·잠실과 다른 장기 대안축으로 성립하는가",
+      "main_catalyst": "약수역·버티고개·신금호 접근, 도심 근접성, 신당 재개발 축",
+      "main_risks": ["direct hit 부족", "OCR 서술부 오인값", "중구/성동 경계 생활권 해석"],
+      "fieldwork_route": "약수역-버티고개-신금호 축",
+      "next_action": "신당8·신당9·금호14-1의 confirmed snapshot만 유지하고, 약수 direct hit가 생기면 adjacent에서 direct 후보로 승격한다.",
+      "one_line_conclusion": "direct hit는 없지만 도심 경사형 대조군으로는 충분히 읽힌다."
+    }
+  ],
+  "core_projects": [
+    {
+      "name": "장미1,2,3차",
+      "life_area": "잠실/송파",
+      "stage": "조합설립인가",
+      "long_term_potential": 8.4,
+      "confidence": 7.3,
+      "risk_level": "very_high",
+      "current_read": "잠실 대단지 장기 잠재 대표. 비용·기반시설 해석이 핵심",
+      "main_gap": "direct 고시 recordCode 미연결, 비용·기반시설 공개항목 대조 필요",
+      "next_action": "비용·기반시설 신호를 고시 수치와 연결하고 현장 메모 보강"
+    },
+    {
+      "name": "압구정3",
+      "life_area": "강남",
+      "stage": "조합설립인가",
+      "long_term_potential": 8.1,
+      "confidence": 7.3,
+      "risk_level": "very_high",
+      "current_read": "상급지 프리미엄보다 공공기여·기반시설·높이 조건이 더 중요",
+      "main_gap": "분담금/사업비 공개항목과 정비계획 조건 연결 정리 필요",
+      "next_action": "공개항목의 비용·기반시설 신호와 현장 체감 연결"
+    },
+    {
+      "name": "잠실우성4차",
+      "life_area": "잠실/송파",
+      "stage": "관리처분인가",
+      "long_term_potential": 8.1,
+      "confidence": 9.0,
+      "risk_level": "very_high",
+      "current_read": "관리처분 이후 전환 리스크를 읽는 대표 사업",
+      "main_gap": "관리처분 공사비·정비사업비 원문은 외부 회신 대기",
+      "next_action": "외부 회신 전까지 비용 확정 판단 보류, 현장 메모 보강"
+    },
+    {
+      "name": "한양연립",
+      "life_area": "구의/광진",
+      "stage": "사업시행인가",
+      "long_term_potential": 7.3,
+      "confidence": 7.9,
+      "risk_level": "high",
+      "current_read": "구의·광진에서 실제 원문 기반 판단이 가능한 대표 케이스",
+      "main_gap": "조합설립/추진위 단계 일부 공백, 사업 레이어 선행 단계 확인 필요",
+      "next_action": "강변-광나루 축 현장 메모와 단계 선행 여부 확인"
+    }
+  ],
+  "external_waits": [
+    {
+      "project": "잠실우성4차",
+      "pending_item": "관리처분 공사비 / 정비사업비 원문",
+      "impact": "비용 확정 기반 장기 유지 판단 보류"
+    },
+    {
+      "project": "광장동 삼성1차",
+      "pending_item": "조합설립인가 고시번호 / 고시일 / 원문 URL",
+      "impact": "구의/광진 생활권 비교 확정도 제한"
+    },
+    {
+      "project": "자양번영로3나길",
+      "pending_item": "조합설립인가 고시번호 / 고시일 / 원문 URL",
+      "impact": "구의/광진 생활권 비교 확정도 제한"
+    }
+  ]
+}

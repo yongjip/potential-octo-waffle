@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/correction-record.schema.json",
+  "title": "Knowledge Base Correction Record",
+  "type": "object",
+  "required": ["id", "domain_id", "record_type", "status", "basis_date", "observed_at", "source_id", "bad_claim", "broken_gate", "corrected_status", "visibility", "agent", "created_at"],
+  "properties": {
+    "id": { "type": "string" },
+    "domain_id": { "type": "string" },
+    "record_type": { "const": "correction_record" },
+    "entity_id": { "type": "string" },
+    "status": { "enum": ["confirmed", "pending", "conflict", "deferred", "context_only", "rejected"] },
+    "basis_date": { "type": "string" },
+    "observed_at": { "type": "string" },
+    "source_id": { "type": "string" },
+    "bad_claim": { "type": "string" },
+    "broken_gate": { "type": "string" },
+    "corrected_status": { "enum": ["confirmed", "pending", "conflict", "deferred", "context_only", "rejected"] },
+    "source_path": { "type": "string" },
+    "prevention_rule": { "type": "string" },
+    "visibility": { "enum": ["public_candidate", "private", "restricted", "unknown_license"] },
+    "agent": { "type": "string" },
+    "created_at": { "type": "string" }
+  },
+  "additionalProperties": true
+}

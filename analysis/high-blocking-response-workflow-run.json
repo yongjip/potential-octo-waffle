@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "mode": "dry_run",
+  "status": "dry_run_completed",
+  "validation_errors": 0,
+  "appendable_decisions": 0,
+  "wrote_decisions": false,
+  "regenerated": false,
+  "next_action": "아직 append 가능한 회신이 없다. 외부 회신을 intake에 보강한다.",
+  "steps": [
+    {
+      "id": "intake-validation",
+      "command": "node scripts/generate-high-blocking-intake-validation.mjs",
+      "exit_code": 0,
+      "duration_ms": 90,
+      "stdout": "{\n  \"issues\": 0,\n  \"errors\": 0,\n  \"warnings\": 0,\n  \"output\": \"analysis/high-blocking-intake-validation.{md,csv,json}\"\n}",
+      "stderr": "",
+      "parsed_stdout": {
+        "issues": 0,
+        "errors": 0,
+        "warnings": 0,
+        "output": "analysis/high-blocking-intake-validation.{md,csv,json}"
+      }
+    },
+    {
+      "id": "intake-guide",
+      "command": "node scripts/generate-high-blocking-response-intake-guide.mjs",
+      "exit_code": 0,
+      "duration_ms": 88,
+      "stdout": "{\n  \"rows\": 3,\n  \"examples\": 3,\n  \"output\": \"analysis/high-blocking-response-intake-guide.{md,json}\"\n}",
+      "stderr": "",
+      "parsed_stdout": {
+        "rows": 3,
+        "examples": 3,
+        "output": "analysis/high-blocking-response-intake-guide.{md,json}"
+      }
+    },
+    {
+      "id": "decision-drafts",
+      "command": "node scripts/generate-high-blocking-response-decision-drafts.mjs",
+      "exit_code": 0,
+      "duration_ms": 89,
+      "stdout": "{\n  \"ready_to_append\": 0,\n  \"waiting_for_response\": 3,\n  \"needs_intake_fix\": 0,\n  \"output\": \"analysis/high-blocking-response-decision-drafts.{md,json}\"\n}",
+      "stderr": "",
+      "parsed_stdout": {
+        "ready_to_append": 0,
+        "waiting_for_response": 3,
+        "needs_intake_fix": 0,
+        "output": "analysis/high-blocking-response-decision-drafts.{md,json}"
+      }
+    },
+    {
+      "id": "apply-dry-run",
+      "command": "node scripts/apply-high-blocking-response-decisions.mjs",
+      "exit_code": 0,
+      "duration_ms": 74,
+      "stdout": "{\n  \"mode\": \"dry_run\",\n  \"readyDrafts\": 0,\n  \"appendable\": 0,\n  \"duplicates\": 0,\n  \"decisionsBefore\": 290,\n  \"decisionsAfter\": 290,\n  \"wrote\": false,\n  \"draftInput\": \"analysis/high-blocking-response-decision-drafts.json\",\n  \"decisionsInput\": \"data/review/source-verification-closure-decisions.json\",\n  \"nextCommand\": \"입력 회신을 data/review/high-blocking-source-response-intake.json에 보강한 뒤 node scripts/generate-high-blocking-response-decision-drafts.mjs 실행\"\n}",
+      "stderr": "",
+      "parsed_stdout": {
+        "mode": "dry_run",
+        "readyDrafts": 0,
+        "appendable": 0,
+        "duplicates": 0,
+        "decisionsBefore": 290,
+        "decisionsAfter": 290,
+        "wrote": false,
+        "draftInput": "analysis/high-blocking-response-decision-drafts.json",
+        "decisionsInput": "data/review/source-verification-closure-decisions.json",
+        "nextCommand": "입력 회신을 data/review/high-blocking-source-response-intake.json에 보강한 뒤 node scripts/generate-high-blocking-response-decision-drafts.mjs 실행"
+      }
+    }
+  ],
+  "outputs": [
+    "analysis/high-blocking-response-workflow-run.md",
+    "analysis/high-blocking-response-workflow-run.json"
+  ]
+}

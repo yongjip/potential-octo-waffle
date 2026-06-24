@@ -1,0 +1,55 @@
+# 공식 업데이트 실행 런북
+
+작성 기준: 2026-06-24 KST
+
+최신 정보가 생겼을 때 어떤 수집 명령을 먼저 실행하고 어떤 분석 산출물을 읽을지 고정한 운영표다. 원격 호출이 필요한 단계와 로컬 재생성 단계를 분리해, 주간 점검과 병목 해소 작업을 반복 가능하게 만든다.
+
+## 실행 큐
+
+| ID | 주기 | 트리거 | 범위 | 원격 | 수집/처리 명령 | 후속 로컬 재생성 |
+| --- | --- | --- | --- | --- | --- | --- |
+| weekly_primary_refresh | weekly | 정기 점검일 또는 관심구 고시/공고 알림 수신 | 강남구, 송파구, 광진구 후보 30개 | Y | node scripts/fetch-cleanup-projects.mjs -> node scripts/fetch-project-summaries.mjs -> node scripts/fetch-cafe-menu-links.mjs -> node scripts/fetch-cleanup-board-latest.mjs -> node scripts/fetch-urban-map-details.mjs -> node scripts/fetch-urban-notice-details.mjs --download -> node scripts/probe-gangnam-songpa-notices.mjs --download | node scripts/regenerate-research-artifacts.mjs |
+| expansion_interest_zone_bootstrap | weekly | 강동권·약수동 주변을 확장 관심권으로 운영 체계에 붙일 때 | 강동구 고시공고, 중구 고시공고, 서울도시공간포털 알림 슬롯, 확장 관심권 브리프 | Y | 수동 검색: 강동구 고시공고, 중구 고시공고, 서울도시공간포털 알림서비스 신청 범위 검토 -> 결과를 data/review/official-source-activation-intake.json 또는 data/review/official-update-intake.json에 기록 | node scripts/generate-official-source-activation-checklist.mjs -> node scripts/generate-official-source-activation-validation.mjs -> node scripts/regenerate-research-artifacts.mjs |
+| expansion_zone_latest_check | weekly | 강동권·약수동 주변 확장 관심권의 최신 단계/직접 hit를 정기 재확인할 때 | 강동권 4건 최신 단계 재확인, 약수권 3건 confirmed 기준값 유지, 약수역 direct hit 탐색 | Y | 수동 검색: 강동구 고시공고, 중구 고시공고, 정비사업 정보몽땅 사업장검색/공개자료, 서울도시공간포털 정비사업구역계 진입 페이지(PMNU4030600001) 검색 + noticeCode 식별자 대조 -> 결과를 data/review/official-update-intake.json 또는 data/review/official-source-activation-intake.json에 기록 | node scripts/generate-expansion-zone-monitoring-checklist.mjs -> node scripts/generate-expansion-zone-intake-seed-board.mjs -> node scripts/regenerate-research-artifacts.mjs |
+| recordcode_bottleneck_probe | ad_hoc | research-status-dashboard 또는 recordcode-dead-end-audit에서 P0 recordCode/고시 병목 확인 | recordCode 미연결 사업장, 특히 삼성1차·자양번영로3나길 | Y | node scripts/fetch-representative-lot-map-candidates.mjs -> node scripts/fetch-map-missing-business-layer-details.mjs -> node scripts/fetch-business-layer-notice-candidates.mjs -> node scripts/fetch-gwangjin-gu-notice-candidates.mjs -> node scripts/probe-gangnam-songpa-notices.mjs --download -> node scripts/probe-source-link-officials.mjs | node scripts/generate-map-missing-business-layer-review.mjs -> node scripts/generate-recordcode-dead-end-audit.mjs -> node scripts/regenerate-research-artifacts.mjs |
+| high_blocking_public_web_probe | ad_hoc | high-blocking-source-escalation-packet의 3개 사업장 외부 문의 전후 공개화면 재확인 | 광장동 삼성1차, 자양번영로3나길, 잠실우성4차 high blocking 필드 | Y | node scripts/fetch-high-blocking-public-web-probe.mjs | node scripts/generate-high-blocking-public-web-probe.mjs -> node scripts/regenerate-research-artifacts.mjs |
+| high_blocking_filing_submission | ad_hoc | 사용자 승인 후 high blocking 3건을 실제 담당부서 문의 또는 정보공개청구로 접수할 때 | 광장동 삼성1차, 자양번영로3나길, 잠실우성4차 제출·접수기록 | N | 수동 승인 확인: analysis/high-blocking-submission-approval-board.md -> 수동 제출: data/review/high-blocking-filing-outbox/*.txt 사용 -> 접수 기록: node scripts/mark-high-blocking-filed.mjs --rank=NN --filed-at=YYYY-MM-DD --receipt=접수번호 --write | node scripts/regenerate-research-artifacts.mjs |
+| high_blocking_contact_escalation | ad_hoc | high-blocking-public-web-probe에서 외부 확인 필요가 남거나 담당부서/정보몽땅 회신을 받은 경우 | 광장동 삼성1차, 자양번영로3나길, 잠실우성4차 high blocking 필드 | N | 수동 확인: analysis/high-blocking-contact-channel-registry.md의 우선 채널 선택 -> 수동 발송: analysis/high-blocking-source-escalation-packet.md의 사업별 문의 본문 사용 -> 회신 기록: node scripts/record-high-blocking-response.mjs --rank=NN --status=... --received-at=YYYY-MM-DD --responder='담당부서' --write | node scripts/generate-high-blocking-response-decision-drafts.mjs -> node scripts/regenerate-research-artifacts.mjs |
+| text_extraction_and_hwp_qa | after_new_files | 새 PDF/HWP/HWPX 원문 또는 첨부 파일 확보 | data/urban/files 및 data/urban/text | N | /Users/yongjip/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/extract_urban_notice_text.py -> node scripts/generate-source-text-extraction-audit.mjs -> node scripts/generate-hwp-conversion-audit.mjs | node scripts/generate-source-value-verification-queue.mjs -> node scripts/generate-core-value-confirmation-ledger.mjs -> node scripts/regenerate-research-artifacts.mjs |
+| ocr_value_resolution | after_text_audit | source-text-extraction-audit 또는 core ledger에서 OCR 숫자/부분확정 항목 확인 | 스캔 PDF, 이미지형 HWP, OCR 보정 후보 | N | node scripts/generate-ocr-source-verification-packet.mjs -> node scripts/generate-ocr-source-review-triage.mjs -> node scripts/generate-ocr-image-review-decisions.mjs -> node scripts/generate-source-value-update-candidates.mjs | node scripts/regenerate-research-artifacts.mjs |
+| monthly_market_data_refresh | monthly | 실거래 최신월 공표 또는 API 키 연결 완료 | 강남구·송파구·광진구 실거래, R-ONE 지표 | Y | node scripts/generate-market-data-matrix.mjs -> node scripts/fetch-market-raw-data.mjs --plan-only --from=202401 --to=YYYYMM -> DATA_GO_KR_SERVICE_KEY=... node scripts/fetch-market-raw-data.mjs --from=202401 --to=YYYYMM | node scripts/regenerate-research-artifacts.mjs |
+| monthly_context_scan | monthly | 서울시 도시계획·교통 정책 발표, 심의 이슈, 대형 사업 보도자료 | 잠실 MICE, 동서울터미널, 한강변, 압구정·대치·광진 생활권 | Y | 수동 검색: 서울시 주택·도시계획 분야, 서울시 교통 분야, 서울 정보소통광장 | analysis/official-context-sources.csv 수동 갱신 -> node scripts/generate-transport-location-context.mjs -> node scripts/regenerate-research-artifacts.mjs |
+
+## 판독 순서
+
+| ID | 먼저 읽을 산출물 | 판정 규칙 |
+| --- | --- | --- |
+| weekly_primary_refresh | analysis/official-refresh-summary.md; analysis/cleanup-snapshot-diff.md; analysis/cleanup-board-review-queue.md; analysis/project-comparison-matrix.md; analysis/research-status-dashboard.md | 단계 변경, 공개자료 수 증가, 새 고시번호, 새 첨부 원문이 있으면 사업별 메모와 원문 검증 큐를 먼저 갱신한다. |
+| expansion_interest_zone_bootstrap | analysis/expansion-interest-zone-brief.md; analysis/expansion-interest-zone-candidate-brief.md; analysis/official-source-activation-checklist.md; analysis/official-change-detection-board.md; analysis/official-update-intake-board.md | 강동구·중구 고시공고 페이지는 라우팅 출처다. 고시번호·고시일·원문 URL·첨부명이 확인되기 전에는 사업 단계나 수치 근거로 승격하지 않는다. |
+| expansion_zone_latest_check | analysis/expansion-zone-weekly-monitoring-cockpit.md; analysis/expansion-zone-latest-check-guide.md; analysis/expansion-zone-monitoring-checklist.md; analysis/expansion-zone-intake-seed-board.md; analysis/expansion-gangdong-stage-watch-board.md; analysis/expansion-yaksu-ocr-recheck-board.md; analysis/life-area-monitoring-board.md | 강동권은 값 confirmed와 최신 단계 재확인을 분리하고 gangdong_district_notice 새 row를 만든다. 약수권은 confirmed snapshot 3건을 유지하되, 신당8·신당9는 기존 seoul_urban_notice row를 재사용하고 금호14-1은 tracked_update_id가 없으면 seoul_urban_notice baseline row를 새로 만든다. 약수역 direct hit가 생기기 전에는 adjacent 대조군으로만 읽는다. |
+| recordcode_bottleneck_probe | analysis/recordcode-dead-end-audit.md; analysis/source-link-official-probe.md; analysis/map-missing-business-layer-review.md | 고신뢰 후보만 원문 후보로 승격한다. 토지구획정리·환지 등 과거 일반 구역은 현 정비사업 고시로 쓰지 않는다. |
+| high_blocking_public_web_probe | analysis/high-blocking-public-web-probe.md; analysis/high-blocking-contact-channel-registry.md; analysis/high-blocking-public-summary-boundary.md; analysis/high-blocking-source-escalation-packet.md | 공식 공개화면에서 고시/공고 0건, 로그인 필요, 계 필드 공란이면 confirmed 승격하지 않고 담당부서/정보공개 확인 경로로 유지한다. |
+| high_blocking_filing_submission | analysis/high-blocking-submission-approval-board.md; analysis/high-blocking-filing-checklist.md; data/review/high-blocking-filing-outbox/README.md; analysis/high-blocking-filing-tracker.md | 접수번호가 있으면 receipt로, 없으면 filing_note로 접수 흔적을 남긴 뒤 filed_waiting_response로 올린다. 회신 전에는 confirmed/partial로 승격하지 않는다. |
+| high_blocking_contact_escalation | analysis/high-blocking-contact-channel-registry.md; analysis/high-blocking-source-escalation-packet.md; analysis/high-blocking-response-intake-guide.md; analysis/high-blocking-response-decision-drafts.md; analysis/research-system-readiness-audit.md | 공식 채널 URL은 라우팅 근거일 뿐 값 확정 근거가 아니다. 회신에 고시번호·고시일·원문 URL·별첨명 또는 정보공개 필요 사유가 있을 때만 intake에 기록한다. |
+| text_extraction_and_hwp_qa | analysis/source-text-extraction-audit.md; analysis/hwp-conversion-audit.md; analysis/core-value-confirmation-ledger.md | 텍스트 추출이 되지 않은 파일은 OCR 또는 HWP 직접 파서 경로로 분리하고, 숫자 확정은 원문 이미지/텍스트 근거가 있을 때만 승격한다. |
+| ocr_value_resolution | analysis/ocr-source-verification-packet.md; analysis/ocr-source-review-triage.md; analysis/ocr-image-review-decisions.md; analysis/source-value-update-candidates.md | OCR 값은 자동 반영하지 않고 confirmed_from_ocr_image, partial_confirmation_pending, source_value_update_recommended로 분리한다. |
+| monthly_market_data_refresh | data/market/README.md; analysis/market-manual-download-workbook.md; analysis/market-manual-download-status.md; data/market/market-fetch-plan.csv; data/market/project-market-areas.csv; analysis/transport-location-context.md | 시장 데이터는 사업 단계 판정 근거가 아니라 반응 확인용이다. 고시·인가일 전후 6개월/12개월 거래량과 가격 방향만 별도 분석한다. |
+| monthly_context_scan | analysis/official-context-sources.csv; analysis/transport-location-context.md; analysis/focus-area-strategy.md | 보도자료와 결재문서는 context로만 두고, 고시번호·결정조서·도면 원문을 확인하기 전에는 확정 신호로 승격하지 않는다. |
+
+## 체크리스트 생성
+
+원격 호출을 바로 실행하기 전에 런북을 단계별 드라이런 체크리스트로 펼친다.
+
+```bash
+node scripts/generate-official-update-runbook-checklist.mjs --cadence=weekly
+node scripts/generate-official-update-runbook-checklist.mjs --runbook=monthly_market_data_refresh --to=202606
+```
+
+산출물은 `analysis/official-update-runbook-checklist.md`에서 확인한다.
+
+## 운영 원칙
+
+1. 원격 수집을 실행한 뒤에는 항상 `node scripts/regenerate-research-artifacts.mjs`로 로컬 분석 산출물을 맞춘다.
+2. 고시·인가·도면 원문은 확정 근거이고, 보도자료·정책 페이지·시장 데이터는 context 또는 반응 확인용이다.
+3. 새 파일이 생기면 텍스트 추출 감사와 HWP/HWPX 감사부터 확인한다.
+4. 저신뢰 후보는 비교 매트릭스에 직접 승격하지 않고 별도 감사표에 남긴다.

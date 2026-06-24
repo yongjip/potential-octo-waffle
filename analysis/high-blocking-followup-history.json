@@ -1,0 +1,63 @@
+{
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "log_count": 0,
+    "projects_with_log_count": 0,
+    "projects_without_log_count": 3,
+    "no_change_count": 0,
+    "response_posted_count": 0,
+    "supplement_requested_count": 0,
+    "deadline_changed_count": 0,
+    "portal_issue_count": 0,
+    "session_anchor_date": "2026-06-29",
+    "inputs": [
+      "data/review/high-blocking-followup-check-log.json",
+      "analysis/high-blocking-filing-tracker.json",
+      "analysis/high-blocking-next-check-session-packet.json"
+    ],
+    "outputs": [
+      "analysis/high-blocking-followup-history.md",
+      "analysis/high-blocking-followup-history.csv",
+      "analysis/high-blocking-followup-history.json"
+    ]
+  },
+  "latest_rows": [
+    {
+      "rank": "23",
+      "project_name": "광장동 삼성1차아파트 소규모재건축정비사업",
+      "filing_receipt_no": "16913396",
+      "current_response_status": "no_response",
+      "next_check_date": "2026-06-29",
+      "latest_checked_at": "",
+      "latest_check_status": "no_log_yet",
+      "portal_status": "",
+      "observed_note": "",
+      "follow_up_action": "접수번호와 접수일을 유지하고 회신 도착 시 record-high-blocking-response helper로 상태/증거값 기록"
+    },
+    {
+      "rank": "28",
+      "project_name": "자양번영로3나길 일대 가로주택정비사업",
+      "filing_receipt_no": "16913410",
+      "current_response_status": "no_response",
+      "next_check_date": "2026-06-29",
+      "latest_checked_at": "",
+      "latest_check_status": "no_log_yet",
+      "portal_status": "",
+      "observed_note": "",
+      "follow_up_action": "접수번호와 접수일을 유지하고 회신 도착 시 record-high-blocking-response helper로 상태/증거값 기록"
+    },
+    {
+      "rank": "9",
+      "project_name": "잠실우성4차 주택재건축정비사업조합",
+      "filing_receipt_no": "626590",
+      "current_response_status": "no_response",
+      "next_check_date": "2026-06-29",
+      "latest_checked_at": "",
+      "latest_check_status": "no_log_yet",
+      "portal_status": "",
+      "observed_note": "",
+      "follow_up_action": "접수번호와 접수일을 유지하고 회신 도착 시 record-high-blocking-response helper로 상태/증거값 기록"
+    }
+  ],
+  "history_rows": []
+}

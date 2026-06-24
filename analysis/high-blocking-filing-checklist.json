@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "project_count": 3,
+    "ready_to_submit_count": 0,
+    "waiting_for_response_count": 3,
+    "response_review_count": 0,
+    "decision_review_count": 0,
+    "validation_error_count": 0,
+    "validation_warning_count": 0,
+    "inputs": [
+      "analysis/high-blocking-filing-tracker.json",
+      "analysis/high-blocking-intake-validation.json",
+      "data/review/high-blocking-filing-outbox/manifest.json",
+      "data/review/high-blocking-source-response-intake.json"
+    ],
+    "outputs": [
+      "analysis/high-blocking-filing-checklist.md",
+      "analysis/high-blocking-filing-checklist.csv",
+      "analysis/high-blocking-filing-checklist.json"
+    ]
+  },
+  "rows": [
+    {
+      "rank": "23",
+      "project_name": "광장동 삼성1차아파트 소규모재건축정비사업",
+      "district": "광진구",
+      "current_stage": "조합설립인가",
+      "checklist_status": "waiting_for_response",
+      "filing_status": "filed_waiting_response",
+      "response_status": "no_response",
+      "primary_channel": "대한민국정보공개포털(open.go.kr) via 광진구 정보공개청구 바로가기",
+      "filing_url": "https://www.open.go.kr/rqestMlrd/rqestDtls/reqstDocList.do",
+      "outbox_file": "data/review/high-blocking-filing-outbox/23-광장동-삼성1차아파트-소규모재건축정비사업.txt",
+      "remaining_gap": "조합설립인가 고시번호, 고시일, 원문/첨부 URL",
+      "pre_submit_check": "사업명·단계·요청자료·비공개/부분공개 요청문구 확인",
+      "submit_record_fields": "filing_status=filed_waiting_response; filed_at; filing_channel; filing_url; filing_receipt_no; filing_note",
+      "mark_filed_command": "",
+      "response_record_fields": "response_status; response_received_at; responder; official_notice_no; official_notice_date; official_url; attachment_name; confirmed_values.district_area_sqm; confirmed_values.floor_area_ratio_pct; confirmed_values.building_coverage_ratio_pct; confirmed_values.floors; confirmed_values.max_height_m; confirmed_values.total_households; confirmed_values.union_approval_date; evidence_files; response_note; follow_up_action",
+      "promotion_rule": "고시번호·고시일·원문 URL 또는 첨부명 중 하나 이상과 자료 보유/기준일이 회신에 들어 있을 때만 confirmed/partial decision 초안으로 승격한다.",
+      "dry_run_command": "node scripts/process-high-blocking-response-workflow.mjs",
+      "write_command": "node scripts/process-high-blocking-response-workflow.mjs --write",
+      "final_regeneration_command": "node scripts/regenerate-research-artifacts.mjs",
+      "next_step": "회신 도착 시 response_status와 증거값 입력"
+    },
+    {
+      "rank": "28",
+      "project_name": "자양번영로3나길 일대 가로주택정비사업",
+      "district": "광진구",
+      "current_stage": "조합설립인가",
+      "checklist_status": "waiting_for_response",
+      "filing_status": "filed_waiting_response",
+      "response_status": "no_response",
+      "primary_channel": "대한민국정보공개포털(open.go.kr) via 광진구 정보공개청구 바로가기",
+      "filing_url": "https://www.open.go.kr/rqestMlrd/rqestDtls/reqstDocList.do",
+      "outbox_file": "data/review/high-blocking-filing-outbox/28-자양번영로3나길-일대-가로주택정비사업.txt",
+      "remaining_gap": "조합설립인가 고시번호, 고시일, 원문/첨부 URL",
+      "pre_submit_check": "사업명·단계·요청자료·비공개/부분공개 요청문구 확인",
+      "submit_record_fields": "filing_status=filed_waiting_response; filed_at; filing_channel; filing_url; filing_receipt_no; filing_note",
+      "mark_filed_command": "",
+      "response_record_fields": "response_status; response_received_at; responder; official_notice_no; official_notice_date; official_url; attachment_name; confirmed_values.district_area_sqm; confirmed_values.floor_area_ratio_pct; confirmed_values.building_coverage_ratio_pct; confirmed_values.floors; confirmed_values.max_height_m; confirmed_values.total_households; confirmed_values.union_approval_date; evidence_files; response_note; follow_up_action",
+      "promotion_rule": "고시번호·고시일·원문 URL 또는 첨부명 중 하나 이상과 자료 보유/기준일이 회신에 들어 있을 때만 confirmed/partial decision 초안으로 승격한다.",
+      "dry_run_command": "node scripts/process-high-blocking-response-workflow.mjs",
+      "write_command": "node scripts/process-high-blocking-response-workflow.mjs --write",
+      "final_regeneration_command": "node scripts/regenerate-research-artifacts.mjs",
+      "next_step": "회신 도착 시 response_status와 증거값 입력"
+    },
+    {
+      "rank": "9",
+      "project_name": "잠실우성4차 주택재건축정비사업조합",
+      "district": "송파구",
+      "current_stage": "관리처분인가",
+      "checklist_status": "waiting_for_response",
+      "filing_status": "filed_waiting_response",
+      "response_status": "no_response",
+      "primary_channel": "송파구 새올전자민원창구",
+      "filing_url": "https://songpa.eminwon.seoul.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdInputAction.do",
+      "outbox_file": "data/review/high-blocking-filing-outbox/09-잠실우성4차-주택재건축정비사업조합.txt",
+      "remaining_gap": "관리처분계획 별첨 또는 공개 가능한 공사비/정비사업비 원문",
+      "pre_submit_check": "사업명·단계·요청자료·비공개/부분공개 요청문구 확인",
+      "submit_record_fields": "filing_status=filed_waiting_response; filed_at; filing_channel; filing_url; filing_receipt_no; filing_note",
+      "mark_filed_command": "",
+      "response_record_fields": "response_status; response_received_at; responder; official_notice_no; official_notice_date; official_url; attachment_name; confirmed_values.management_construction_cost; confirmed_values.management_total_project_cost; confirmed_values.management_cost_basis_date; evidence_files; response_note; follow_up_action",
+      "promotion_rule": "관리처분 공사비·총사업비 금액, 기준일, 자료명 또는 원문 URL이 회신에 들어 있을 때만 confirmed/partial decision 초안으로 승격한다.",
+      "dry_run_command": "node scripts/process-high-blocking-response-workflow.mjs",
+      "write_command": "node scripts/process-high-blocking-response-workflow.mjs --write",
+      "final_regeneration_command": "node scripts/regenerate-research-artifacts.mjs",
+      "next_step": "회신 도착 시 response_status와 증거값 입력"
+    }
+  ]
+}

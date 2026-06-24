@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-06-24 KST",
+  "summary": {
+    "generated_at": "2026-06-24 KST",
+    "project_count": 0,
+    "probe_relation_counts": {},
+    "focus_area_counts": {},
+    "uq120_multi_candidate_count": 0,
+    "same_stage_candidate_count": 0,
+    "stage_gap_candidate_count": 0
+  },
+  "rows": [],
+  "inputs": {
+    "fallbackWorkbook": "analysis/representative-lot-fallback-workbook.json",
+    "representativeLotCandidates": "data/urban/representative-lot-map-candidates.csv"
+  }
+}
