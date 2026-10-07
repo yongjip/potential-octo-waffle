@@ -1,0 +1,148 @@
+{
+  "observed_on": "2026-10-08",
+  "purpose": "Official public sources for pre-implementation issue discovery. Review scope and availability are observations; candidate risk is separate analysis. No recurring monitor or external submission was created.",
+  "sources": [
+    {
+      "source_id": "government-legislative-plans",
+      "owner": "법제처",
+      "url": "https://opinion.lawmaking.go.kr/lmSts/govLmPln",
+      "access_status": "listing_reviewed",
+      "review_scope": "Plan list, filters, responsible ministry, stage and date columns; one installment-sales plan detail surface was opened.",
+      "collect": ["plan_id", "rule_title", "responsible_institution", "stage_raw", "stage_on", "planned_milestones", "observed_at"],
+      "limits": "A plan is not adopted text. Detailed milestones and complete coverage were not verified. The portal's legislative-information subscription link redirected to login; no subscription was made."
+    },
+    {
+      "source_id": "government-legislative-notices",
+      "owner": "법제처 및 공고 발행기관",
+      "url": "https://opinion.lawmaking.go.kr/gcom/ogLmPp",
+      "access_status": "text_reviewed",
+      "review_scope": "Public list and infectious-disease ordinance re-notice's notice text, submission routes and attachment titles.",
+      "sample_document": {
+        "title": "감염병의 예방 및 관리에 관한 법률 시행규칙 일부개정령안 재입법예고",
+        "notice_id": "질병관리청공고제2026-376호",
+        "published_on": "2026-10-06",
+        "opinion_start_on": "2026-10-06",
+        "opinion_due_on": "2026-10-12",
+        "url": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/88934"
+      },
+      "collect": ["notice_id", "institution", "rule_kind", "proposal_text", "comparison_text", "impact_report", "opinion_period", "deadline_precision", "version_hash"],
+      "limits": "The sample's attachment bodies and earlier proposal were not read. No conclusion about shortened-period legality or the proposal's merits. Countdown labels differed between list and detail, so preserve the published dates."
+    },
+    {
+      "source_id": "administrative-notices",
+      "owner": "법제처 및 공고 발행기관",
+      "url": "https://opinion.lawmaking.go.kr/gcom/admpp",
+      "access_status": "text_reviewed",
+      "review_scope": "List's coverage warning and public AI-service inventory notice text, including proposed inventory management and disclosure restrictions.",
+      "sample_document": {
+        "title": "인공지능 활용 서비스 목록 관리 및 공표에 관한 규정안 행정예고",
+        "notice_id": "행정안전부공고제2026-1258호",
+        "published_on": "2026-10-07",
+        "opinion_start_on": "2026-10-07",
+        "opinion_due_on": "2026-11-05",
+        "url": "https://opinion.lawmaking.go.kr/gcom/admpp/47498?announceType=TYPE6&mappingAdmRulSeq=2000000331718"
+      },
+      "collect": ["notice_id", "institution", "proposed_instruction", "delegation_basis", "affected_group", "opinion_period", "version_hash"],
+      "limits": "The consolidated list is based on Official Gazette publications; notices absent from the Gazette may only appear on institutional sites. The sample had no listed attachments. Final adoption, service inventories and actual implementation were not checked."
+    },
+    {
+      "source_id": "local-legislative-notices",
+      "owner": "법제처·행정안전부 및 지방자치단체",
+      "url": "https://opinion.lawmaking.go.kr/gcom/sgLmPp/list",
+      "access_status": "listing_reviewed",
+      "review_scope": "Local notice list and its statement that records are based on the autonomous-legislation system.",
+      "related_entry_url": "https://www.elis.go.kr/",
+      "collect": ["issuing_body", "notice_id", "ordinance_title", "published_on", "opinion_period", "council_bill_id"],
+      "limits": "The list points users to ELIS or the local authority when an item cannot be found. ELIS bodies and individual local drafts were not reviewed in this task. Council-origin drafts require their own source checks."
+    },
+    {
+      "source_id": "assembly-legislative-notices",
+      "owner": "대한민국 국회",
+      "url": "https://pal.assembly.go.kr/",
+      "access_status": "text_reviewed",
+      "review_scope": "Public home and bill 2221814 detail through computer use; official downloaded PDF's proposal text on printed pages 3-4, extracted locally.",
+      "sample_document": {
+        "title": "관세법 일부개정법률안",
+        "bill_number": "2221814",
+        "bill_id": "PRC_707A5F4A8617479E9738B01DB72804",
+        "proposed_on": "2026-10-06",
+        "referred_on": "2026-10-07",
+        "committee": "재정경제기획위원회",
+        "opinion_start_on": "2026-10-07",
+        "opinion_due_on": "2026-10-16",
+        "url": "https://pal.assembly.go.kr/napal/lgsltpa/lgsltpaOngoing/view.do?menuNo=1100026&lgsltPaId=PRC_707A5F4A8617479E9738B01DB72804",
+        "attachment_url": "https://likms.assembly.go.kr/filegate/servlet/FileGate?bookId=52e53836-c006-4351-ade8-439046a8600b&type=1",
+        "attachment_sha256": "e0890e548297a50d9d0eae8e87b4f84cfe4231046b472bf69e297971cce98e0b",
+        "source_location": "Proposed Article 265-3, printed PDF pages 3-4; public detail metadata and opinion instructions."
+      },
+      "collect": ["bill_number", "bill_id", "proposal_text", "committee", "referred_on", "opinion_period", "stage_raw", "related_bill_ids"],
+      "limits": "Web retrieval failed; supported computer use succeeded. The bill proposes biometric collection and interagency requests, and explicitly refers to the Personal Information Protection Act. No present implementation, absence of all safeguards, illegality or net-harm finding was established."
+    },
+    {
+      "source_id": "assembly-bill-progress",
+      "owner": "대한민국 국회",
+      "url": "https://likms.assembly.go.kr/bill/main.do",
+      "access_status": "entry_only",
+      "review_scope": "Official destination linked from the lawmaking portal. The portal's partial National Assembly list was read.",
+      "related_entry_url": "https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out",
+      "collect": ["bill_id", "review_stage", "review_documents", "amendments", "alternative_bill", "meeting_agenda", "decision_on"],
+      "limits": "Direct web retrieval failed. Detailed review state and meeting agendas were not inspected. The lawmaking portal explicitly provides only some information. Obtain current original review documents before confirming progress or a replacement relationship."
+    },
+    {
+      "source_id": "seoul-council-public-documents",
+      "owner": "서울특별시의회",
+      "url": "https://www.smc.seoul.kr/main/index.do",
+      "access_status": "menu_reviewed",
+      "review_scope": "Menus for agendas, bills, legislative notices, committee-review reports, budget reviews and work reports.",
+      "collect": ["council_bill_id", "draft_ordinance", "opinion_period", "agenda_date", "committee_report", "program_plan", "budget_basis"],
+      "limits": "Individual bills, reports and agenda items were not reviewed. This is one council's entry point; it does not cover all local authorities."
+    },
+    {
+      "source_id": "ministry-proposed-budget",
+      "owner": "행정안전부",
+      "url": "https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=129203",
+      "access_status": "text_reviewed",
+      "review_scope": "2027 proposed-budget press release dated 2026-09-02, including planned new and expanded programs and reference-attachment listing.",
+      "collect": ["fiscal_year", "proposed_or_approved", "program_id", "purpose", "performance_measure", "planned_cost", "implementation_schedule"],
+      "limits": "No attachment-body review, approved-budget verification, procurement-record match or program-effect evaluation. The press release is an official policy announcement, not evidence of waste or completed expenditure."
+    },
+    {
+      "source_id": "procurement-order-plans",
+      "owner": "조달청",
+      "url": "https://www.data.go.kr/data/15129462/openapi.do",
+      "access_status": "text_reviewed",
+      "review_scope": "Official data-service description, metadata and warning that procurement may lack a corresponding order plan.",
+      "collect": ["ordering_institution", "order_plan_id", "planned_item", "budget_basis", "planned_order_date", "linked_notice_id"],
+      "limits": "No API request or individual order plan was retrieved. The metadata lists a time range ending 2025-01 and an update frequency described as real time. Actual current coverage and freshness need response-level checks. Absence of a plan is not proof of hidden or improper procurement."
+    },
+    {
+      "source_id": "procurement-prespecifications",
+      "owner": "조달청",
+      "url": "https://www.data.go.kr/data/15129437/openapi.do",
+      "access_status": "text_reviewed",
+      "review_scope": "Official description of pre-bid specifications, available identifiers, specification documents and opinions.",
+      "collect": ["prespecification_id", "program_title", "institution", "specification_file", "budget_basis", "opinion_period", "eligible_participant"],
+      "limits": "The description identifies a related-company opinion process. No citizen eligibility, live deadline, individual specification or API response was verified. Check the actual procedure and use the appropriate general inquiry route where necessary."
+    },
+    {
+      "source_id": "administrative-procedure-notice-rules",
+      "owner": "국가법령정보센터",
+      "url": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1032794171",
+      "access_status": "text_reviewed",
+      "review_scope": "Article 43 and Article 46 paragraph 1 with displayed effective date 2023-03-24; original Act 18748 PDF with 2022-07-12 basis, printed page 18, for Article 46 paragraphs 2-4 and Article 47.",
+      "related_entry_url": "https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1020128385",
+      "attachment_url": "https://www.law.go.kr/LSW/lsPdfPrint.do?ancYnChk=0&bylChaChk=N&efGubun=Y&efYd=20220712&joAllCheck=Y&joEfOutPutYn=on&lsiSeq=239291&mokChaChk=N",
+      "collect": ["rule_version", "effective_date", "procedure_kind", "applicable_scope", "notice_period", "exceptions", "opinion_handling"],
+      "limits": "The complete current desktop body and a 2023-basis PDF did not render through web retrieval. Keep the PDF's basis date separate from the current article-page date. Verify applicable scope, special rules and current notice before making a case-specific legal conclusion."
+    },
+    {
+      "source_id": "assembly-notice-rules",
+      "owner": "국가법령정보센터",
+      "url": "https://law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lspttninfSeq=57516",
+      "access_status": "text_reviewed",
+      "review_scope": "National Assembly Rule 174, displayed effective date 2012-05-30, Articles 2-5 on notice, periods, changes and opinion submission.",
+      "collect": ["rule_version", "effective_date", "bill_kind", "notice_period", "period_changes", "opinion_route"],
+      "limits": "Do not apply executive notice periods to parliamentary notices. Use each current notice's dates and check applicable exceptions rather than calculating the deadline from bill type alone."
+    }
+  ]
+}

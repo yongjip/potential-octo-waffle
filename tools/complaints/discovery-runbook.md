@@ -2,6 +2,8 @@
 
 Canonical language: English. Read the repository instructions, discovery-research.md, strategy.md and discovery-sources.json. This runbook covers public-source research and locally documented observations. It does not create a recurring schedule or authorize a new complaint, policy opinion, disclosure request, payment, cancellation or message to another person.
 
+For a proposal or planned public action, also read early-warning.md and early-warning-sources.json. Research may proceed within the user's existing scope. External submissions and subscriptions require the relevant concrete authorization; do not request it again when it has already been given.
+
 ## Scope and source selection
 
 Choose one field, user goal, population and comparison period. State the question before collecting sources. Use the source catalog as verified starting points, not permanent selectors or proof that every linked document has been read. Re-observe current pages before using their menus or dates.
@@ -18,6 +20,21 @@ Use an official report or original decision where available. Search results, hea
 6. Search for counterevidence: legitimate safety or eligibility checks, delegated local discretion, differing user conditions, corrected guidance, implemented changes and alternative explanations. Preserve conflicting evidence.
 7. Use issue-candidate.example.md to record the candidate, provenance, observations, interpretation, evidence gaps, alternatives and next action. Store real records in ignored data/complaints/discovery. The template is not accepted by tracker.mjs add.
 8. Decide whether to verify further, prepare a concrete requested change, defer or reject. Record the reason and reconsideration condition. Create a separate case only for a concrete procedure and link its issue_id. Follow computer-use.md for any authorized external submission.
+
+## Pre-implementation research procedure
+
+1. Select topics, institutions and regions. Inspect new and amended plans, executive notices, parliamentary bills, local-authority and council drafts, proposed budgets and procurement plans. Use topic keywords to assist selection; inspect some unmatched items to assess missed signals.
+2. Record the issuing body and official object ID. Preserve the original stage, publication date, observation time, attachment hash and source passage. A plan, notice or bill is a proposed action; it is not proof of adoption, implementation or harm.
+3. Compare current rules or program conditions with the actual proposed text. Extract changed scope, obligations, sanctions, eligibility, data access, delegated powers, costs and implementation dates. Separate simulations and predicted impacts from observed effects.
+4. Check the stated purpose, supporting evidence, existing safeguards, exceptions and lower-burden alternatives. Apply the same review criteria across institutions and proponents. Preserve unresolved legal interpretations as pending or conflict.
+5. Verify the decision stage, responsible body, available opinion procedure and actual deadline. Keep opinion deadlines, planned meetings, implementation dates and internal check dates separate. Do not infer a midnight cutoff, universal notice period, citizen eligibility for supplier procedures, or a guaranteed reply before the deadline.
+6. Track re-notices, attachment replacements, amendments and officially linked alternative bills. Preserve superseded versions. A missing page or disposal of an original bill does not establish that the underlying proposal ended. Check the successor and original review documents.
+7. Complete the pre-implementation section of issue-candidate.example.md. Prepare a clause-specific opinion and any existing-record request locally. Link each authorized submission to a separate case and the same issue_id after confirming the tracker supports its procedure and portal.
+8. Verify final text, commencement, transitional rules and actual implementation. Record adoption of a requested change separately from evidence that the user's submission caused it. Follow the outcome after implementation.
+
+Use early-warning-sources.json as a dated catalog of reviewed surfaces. The administrative-notice list covers Gazette-published items; institutional notices require additional checks. Local executive and council sources are separate. The parliamentary home, one bill's notice and its original PDF were reviewed through computer use; detailed bill-review screens and meeting agendas were not. Procurement API descriptions were read, but no API response or individual specification was retrieved.
+
+If monitoring is implemented, preserve per-source last successful observation, overlap the changed-item query window, deduplicate by official ID and version, and report access failures separately from empty results. Alert on substantive changes, deadline changes, review advances, replacements and blocked retrieval. Suggested cadence and advance reminders in early-warning.md are design proposals, not running jobs.
 
 ## Computer use and source availability
 
