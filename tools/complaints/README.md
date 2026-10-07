@@ -11,6 +11,10 @@
 | 문서 | 내용 |
 | --- | --- |
 | [민원 개선 전략](strategy.md) | 문제 발굴 기준, 현재 추적 범위, 우선순위, 제출 경로와 해결 확인 |
+| [문제 발굴 조사 방법](discovery-research.md) | 공식 자료로 조사한 발굴 방법, 규칙 비교, 절차 측정과 검증 사례 |
+| [조사 자료 목록](discovery-sources.json) | 공식 자료 경로, 관찰 범위와 접근 제한 |
+| [문제 후보 기록 양식](issue-candidate.example.md) | 문제 후보의 근거, 반대 근거, 비교 조건과 다음 행동 |
+| [발굴 실행 지침](discovery-runbook.md) | 에이전트의 조사 순서, 근거 확인, 중복 후보 정리와 결과 기록 |
 | [주거정책 민원 경과](../../data/complaints/housing-policy-history.md) | 공유 대화의 국토부 및 서울시 민원, 정보공개청구, 후속 판단 |
 | [민원 추적 장부](../../data/complaints/board.md) | 현재 상태, 근거 수준, 접수번호, 다음 확인일 |
 | [computer use 실행 지침](computer-use.md) | 포털별 진입 경로, 조회·작성·접수 확인, 중복 제출 복구 |

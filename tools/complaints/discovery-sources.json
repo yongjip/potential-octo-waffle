@@ -1,0 +1,131 @@
+{
+  "observed_on": "2026-10-08",
+  "purpose": "Public source catalog for issue-discovery research. Entries describe access and review scope; they are not petition cases or confirmation of an underlying policy problem.",
+  "sources": [
+    {
+      "source_id": "acrc-analysis-method",
+      "owner": "국민권익위원회",
+      "url": "https://www.acrc.go.kr/menu.es?mid=a10104050100",
+      "kind": "official_webpage",
+      "access_status": "text_reviewed",
+      "review_scope": "Published description of complaint collection, monitoring, topic analysis and use in institutional improvement.",
+      "collect": ["collection_scope", "counting_unit", "analysis_period", "issue_topic", "institution_response"],
+      "discovery_use": "Start with recurring complaints and trace their causes to rules or processes.",
+      "limits": "The internal analysis system and authenticated raw complaint data were not inspected."
+    },
+    {
+      "source_id": "acrc-complaint-trends",
+      "owner": "국민권익위원회",
+      "url": "https://www.acrc.go.kr/board.es?mid=a10302000000&bid=1009",
+      "kind": "official_report_collection",
+      "access_status": "text_reviewed",
+      "review_scope": "Public report list and selected passages of issue 878, covering 2026-09-21 through 2026-09-27. Issue 877 was located as an additional monthly source.",
+      "sample_document": {
+        "title": "국민의 소리 제878호",
+        "published_on": "2026-10-02",
+        "basis_start": "2026-09-21",
+        "basis_end": "2026-09-27",
+        "url": "https://www.acrc.go.kr/board.es?act=view&bid=1009&list_no=119416&mid=a10302000000",
+        "attachment_url": "https://www.acrc.go.kr/boardDownload.es?bid=1009&list_no=119416&seq=1"
+      },
+      "collect": ["report_date", "basis_period", "included_channels", "exclusions", "counting_unit", "request_description"],
+      "discovery_use": "Extract questions from recurring requests; compare reports with matched collection scope.",
+      "limits": "Issue 878 excludes traffic-enforcement complaints. Requests are not institutional findings. Counts do not establish unique people or population prevalence. The separate dashboard at https://bigdata.epeople.go.kr/ had no readable body through web retrieval."
+    },
+    {
+      "source_id": "acrc-improvement-decisions",
+      "owner": "국민권익위원회",
+      "url": "https://www.acrc.go.kr/board.es?mid=a10504030000&bid=1013",
+      "kind": "official_decision_collection",
+      "access_status": "text_reviewed",
+      "review_scope": "Public decisions list and the integrated business-closure recommendation's original decision, problem descriptions and proposed improvements.",
+      "sample_document": {
+        "title": "국민 편익 증진을 위한 통합 폐업신고 확대·강화 방안",
+        "decision_id": "제2026-363호",
+        "decision_on": "2026-08-24",
+        "published_on": "2026-09-08",
+        "url": "https://www.acrc.go.kr/board.es?act=view&bid=1013&list_no=118027&mid=a10504030000",
+        "attachment_url": "https://www.acrc.go.kr/boardDownload.es?bid=1013&list_no=118027&seq=1"
+      },
+      "collect": ["decision_id", "decision_date", "publication_date", "problem_description", "target_institutions", "requested_actions", "action_deadlines"],
+      "discovery_use": "Find diagnosed process failures and check whether recommendations have reached implementation.",
+      "limits": "Recommendation, acceptance and implementation are separate. Current service behavior and compliance were not inspected. Do not republish the complete licensed originals."
+    },
+    {
+      "source_id": "korean-regulatory-impact-criteria",
+      "owner": "국가법령정보센터",
+      "url": "https://law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1032109827",
+      "kind": "official_law",
+      "access_status": "text_reviewed",
+      "review_scope": "Administrative Regulations Basic Act Article 7, effective 2026-05-12, and its published analytical criteria.",
+      "related_entry_url": "https://opinion.lawmaking.go.kr/",
+      "collect": ["rule_version", "effective_date", "regulated_group", "purpose", "alternatives", "costs_and_benefits", "document_and_process_requirements"],
+      "discovery_use": "Review necessity, proportional burdens, duplicate requirements and lower-burden alternatives.",
+      "limits": "Article 7 covers new or strengthened central-government regulation within its applicable scope. Do not assume every policy or notice requires an identical impact report."
+    },
+    {
+      "source_id": "nars-impact-analysis",
+      "owner": "국회입법조사처",
+      "url": "https://www.nars.go.kr/report/list.do?cmsCode=CM0152",
+      "kind": "official_report_collection",
+      "access_status": "listing_reviewed",
+      "review_scope": "Public report categories and impact-analysis titles. Individual reports were not reviewed for substantive findings in this task.",
+      "collect": ["report_title", "publication_date", "rule_or_bill", "evaluated_period", "method", "evidence", "alternatives"],
+      "discovery_use": "Locate analysis of legal effects and policy alternatives, then inspect the original report.",
+      "limits": "A report title or recommendation is not proof of the current rule or its effects."
+    },
+    {
+      "source_id": "nabo-program-evaluation",
+      "owner": "국회예산정책처",
+      "url": "https://www.nabo.go.kr/ko/periodical/focusList.do?key=2507040015",
+      "kind": "official_report_collection",
+      "access_status": "text_reviewed",
+      "review_scope": "Public list and Focus issue 177's stated purpose and staged processing-time analysis. No underlying dataset was recalculated.",
+      "sample_document": {
+        "title": "개인정보 유출사고 관련 재정사업의 효과성 분석과 개선과제",
+        "published_on": "2026-09-29",
+        "url": "https://www.nabo.go.kr/ko/periodical/focusView.do?idx=9447&key=2507040015",
+        "attachment_url": "https://www.nabo.go.kr/board/file/bulkDown.do?bid=68&idx=9447"
+      },
+      "collect": ["publication_date", "evaluated_period", "sample_definition", "budget_basis", "output_measure", "outcome_measure", "process_stage_dates"],
+      "discovery_use": "Trace expenditure through program activity to measurable service results.",
+      "limits": "Budget increases, low execution rates and incident counts do not by themselves establish waste or causation. Preserve the report's sampling and time basis."
+    },
+    {
+      "source_id": "oecd-sludge-audits",
+      "owner": "OECD",
+      "url": "https://www.oecd.org/en/publications/fixing-frictions-sludge-audits-around-the-world_5e9bb35c-en.html",
+      "kind": "official_methodology_report",
+      "access_status": "text_reviewed",
+      "published_on": "2024-06-12",
+      "attachment_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/06/fixing-frictions-sludge-audits-around-the-world_1b4bbf1a/5e9bb35c-en.pdf",
+      "review_scope": "Definition, justified versus unjustified friction, NSW method and good-practice sections.",
+      "collect": ["user_goal", "behavioral_steps", "time_and_money", "experience", "accessibility", "purpose_of_friction", "follow_up_measurement"],
+      "discovery_use": "Assess unnecessary friction around a defined user goal and measure changes.",
+      "limits": "International use does not establish effectiveness for a particular Korean service. Confirm local facts and necessary checks."
+    },
+    {
+      "source_id": "nsw-sludge-toolkit",
+      "owner": "NSW Government Behavioural Insights Unit",
+      "url": "https://www.nsw.gov.au/departments-and-agencies/behavioural-insights-unit/sludge-toolkit",
+      "kind": "official_methodology_toolkit",
+      "access_status": "text_reviewed",
+      "attachment_url": "https://www.nsw.gov.au/sites/default/files/2026-04/reducing-sludge-in-complaint-handling.pdf",
+      "review_scope": "Public toolkit descriptions and the complaint-handling guide's seven-step audit and follow-up on printed page 29.",
+      "collect": ["journey_map", "inputs", "time_and_progression", "ease_and_experience", "access_and_equity", "findings", "solutions", "follow_up"],
+      "discovery_use": "Use a repeatable journey and burden assessment; remeasure after improvements.",
+      "limits": "The full method-guide form requests an email and was not submitted. No research-site registration was performed. The guide's text was readable, but its screenshot retrieval failed; no chart values or visual scoring scale were extracted."
+    },
+    {
+      "source_id": "bai-audit-results",
+      "owner": "감사원",
+      "url": "https://www.bai.go.kr/bai/",
+      "kind": "official_portal",
+      "access_status": "body_unreadable",
+      "review_scope": "Homepage retrieval attempted; no readable body or individual audit result inspected.",
+      "collect": ["audit_title", "audit_period", "finding", "institution", "requested_action", "follow_up_evidence"],
+      "discovery_use": "Potential extension for recurring audit findings after inspecting actual results.",
+      "limits": "Do not claim a specific finding, live menu path or repeated noncompliance from this attempted access."
+    }
+  ]
+}
