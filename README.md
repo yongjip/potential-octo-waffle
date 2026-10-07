@@ -4,6 +4,11 @@
 
 ## 프로젝트 운영
 
+- [민원 추적과 제출 자동화](tools/complaints/README.md)
+  - 기존 민원 기록, 제출 준비, 포털 조회와 접수 확인의 실행 방법을 정리한다.
+- [대한민국 행정과 제도 개선을 위한 민원 전략](tools/complaints/strategy.md)
+  - 문제 발굴, 근거 검증, 개선 요구와 실제 변경 확인의 기준을 정리한다.
+
 - [INSTRUCTIONS.md](INSTRUCTIONS.md)
   - 에이전트가 가장 먼저 읽는 canonical instruction entrypoint다.
   - 영어를 기준 언어로 두고 evidence policy, generated-file policy, multi-agent workflow, open-data boundary를 고정한다.

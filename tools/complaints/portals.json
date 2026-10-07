@@ -1,0 +1,29 @@
+{
+  "observed_on": "2026-10-07",
+  "observation_scope": "Public menus only; no authenticated forms or account records inspected",
+  "portals": {
+    "open_go_kr": {
+      "name": "대한민국 정보공개포털",
+      "home": "https://www.open.go.kr/com/main/mainView.do",
+      "query": "https://www.open.go.kr/rqestMlrd/rqestDtls/reqstDocList.do",
+      "new_request": "https://www.open.go.kr/rqestMlrd/rqestReg/rqestRegWritingForm.do",
+      "objection": "https://www.open.go.kr/rqestMlrd/fobjct/fobjectList.do",
+      "query_labels": ["청구/소통", "신청내역조회", "정보공개청구내역"]
+    },
+    "epeople": {
+      "name": "국민신문고",
+      "home": "https://www.epeople.go.kr/index.jsp",
+      "query": null,
+      "new_request": null,
+      "query_labels": ["결과조회"],
+      "submission_labels": ["민원신청"]
+    },
+    "seoul_eungdapso": {
+      "name": "서울시 응답소",
+      "home": "https://eungdapso.seoul.go.kr/main.do",
+      "query": "https://eungdapso.seoul.go.kr/mpg/complaint/complaint_lis.do",
+      "new_request": "https://eungdapso.seoul.go.kr/req/rectify/rectify.do",
+      "query_labels": ["민원결과", "응답소 민원결과"]
+    }
+  }
+}

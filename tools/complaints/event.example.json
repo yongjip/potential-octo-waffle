@@ -1,0 +1,21 @@
+{
+  "event_id": "example-observation-001",
+  "case_id": "REPLACE_WITH_CASE_ID",
+  "observed_at": "2026-10-07T18:00:00+09:00",
+  "source": {
+    "kind": "portal_observation",
+    "url": "https://www.open.go.kr/rqestMlrd/rqestDtls/reqstDocList.do",
+    "evidence_path": "evidence/REPLACE_WITH_CASE_ID/REPLACE_WITH_SAVED_SCREENSHOT.png",
+    "observed_on": "2026-10-07"
+  },
+  "changes": {
+    "status": "waiting",
+    "status_raw": "REPLACE_WITH_EXACT_PORTAL_STATE",
+    "evidence_status": "confirmed",
+    "last_checked_on": "2026-10-07",
+    "portal_due_on": null,
+    "next_check_on": null,
+    "next_action": "REPLACE_WITH_NEXT_ACTION"
+  },
+  "note": "Example only; replace every placeholder and persist primary evidence before recording."
+}

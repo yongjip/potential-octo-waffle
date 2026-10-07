@@ -1,0 +1,40 @@
+{
+  "case_id": "example-request",
+  "issue_id": "example-issue",
+  "parent_case_id": null,
+  "kind": "information_disclosure",
+  "portal": "open_go_kr",
+  "agency": "REPLACE_WITH_INSTITUTION",
+  "title": "REPLACE_WITH_TITLE",
+  "status": "draft",
+  "status_raw": null,
+  "resolution_status": "unknown",
+  "evidence_status": "pending",
+  "receipt_number": null,
+  "agency_receipt_number": null,
+  "submitted_on": null,
+  "received_on": null,
+  "response_on": null,
+  "portal_due_on": null,
+  "decision_notified_on": null,
+  "next_check_on": null,
+  "last_checked_on": null,
+  "next_action": "Prepare an exact local filing packet",
+  "source": {
+    "kind": "local_decision",
+    "url": null,
+    "evidence_path": null,
+    "observed_on": "2026-10-07"
+  },
+  "questions": [
+    { "id": "q1", "request": "REPLACE_WITH_REQUEST", "answer_status": "unanswered", "response_evidence": null }
+  ],
+  "filing": {
+    "body": "REPLACE_WITH_FINAL_BODY",
+    "period_start": null,
+    "period_end": null,
+    "disclosure_method": "전자파일",
+    "receipt_method": "정보통신망(정보공개포털)",
+    "attachments": []
+  }
+}
