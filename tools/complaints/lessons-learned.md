@@ -1,6 +1,6 @@
 # Lessons from complaint research tracking and login verification
 
-Basis date: 2026-10-08 KST. Canonical language: English.
+Basis date: 2026-10-09 KST. Canonical language: English.
 
 This record covers account preparation, four-portal login verification, complaint tracking, telephone follow-up, issue discovery and legislative review. Keep storage, authentication, accepted filing, official response and actual improvement as separate results. Apply each lesson in the relevant runbook so that the next task starts from the corrected procedure.
 
@@ -146,6 +146,26 @@ A later Seoul login observation had returned to the identifier step. The authori
 A broad diagnostic text filter also matched a private identifier control. Full observations belong in private evidence, and displayed diagnostics need an explicit safe field list rather than broad keyword filtering. Do not copy such values into public lessons, commits or displayed screenshots.
 
 Sources: private resumed-run evidence; [browser recovery and filing procedure](computer-use.md); [password checks and adapter limit](remote-runbook.md); [resumed-run handoff](../../data/agents/handoffs/complaints-filing-2026-10-08.md).
+
+## Lessons from Seoul login and proposal preparation on 2026-10-09
+
+The user's current login-CAPTCHA delegation completed the pending Seoul challenge. One password submission reached the authenticated member page, then the authenticated Eungdapso origin. The first post-submit native observation still showed the password page. A subsequent current observation showed authentication. Observation, input and navigation errors before that submission were not additional login attempts. Append the completed result so that the old pending-login question does not remain the current task.
+
+Both retained and fresh tab controls produced stale page states, detached-command failures or unsuitable screenshots. Asset bundling did not recover the challenge. A media-download call timed out, but the browser showed a related downloaded file; timeout did not prove absence of a side effect. Native tab capture exposed the actual identifier page despite stale password-page metadata. Match the current visible page before any input. The cause of these inconsistent observations remains unknown. A temporary viewport override was reset after recovery; browser security and extension permissions were not changed.
+
+The native browser name or bundle identifier matched the installed app and updater copies. The canonical application path selected the intended Edge window. A direct native setter filled the observed identifier field after earlier typing had not left a verified value. Native password paste and a direct CAPTCHA setter then succeeded. An iCloud autofill popover obscured the challenge until it was dismissed with the supported `Escape` key. Do not substitute the unsupported `ESC` spelling, assume a changed password, or use coordinates from an unsuitable screenshot.
+
+A failed REPL initializer did not establish a usable variable. In a later script, earlier UI actions could finish before a reference error stopped the script. Use an existing verified binding or a new declaration, then inspect the reached page after an error. Build diagnostics from an explicit safe field list; app inventories and broad text filters can include unrelated tabs, downloads or private field values. Keep those observations private and exclude them from public records.
+
+The prospective suggestion reached Seoul's actual 시정일반 건의ㆍ질의 form. Its complete entered body matched the frozen packet, including newlines. The observed title and body limits were sufficient even though the visible character counters still showed zero after native setters. Verify the complete field value rather than using the counter alone. 본청(서울시) was an actual region option; the eventual department was not yet assigned. The suggestion's policy purpose does not prove registration through a different formal proposal procedure.
+
+The form already populated the member's name, email and mobile number. Required collection/use and third-party provision displayed ten-year retention and specific recipient categories. Optional collection could be refused. The agent prepared the exact body, preserved private case visibility, refused optional collection and left the required consents unselected. A concrete confirmation named the data, recipient categories, purpose, retention and specific filing. The current login delegation did not supply that new consent. Preserve any pending answer; elapsed time does not authorize submission.
+
+The earlier information-disclosure form had returned to its homepage. Its frozen packet and historical form evidence remained intact, but the live form was no longer ready. Record expiration separately from acceptance and restore the actual form before any attempt. The ledger still held nine historical filings and two prepared cases. Form preparation and session recovery created no new receipt.
+
+Proof originals and display crops were kept separate under private evidence. The native capture bytes used a JPEG format despite a `.png` filename. The local Python interpreter lacked Pillow; the installed image utility explicitly converted the display copies to PNG. Verify format and source dimensions before cropping, inspect the produced file even when an auxiliary warning appears, and exclude contact fields and unrelated browser tabs from user-facing proof. Do not install a dependency or alter the computer merely to crop existing evidence.
+
+Sources: private dated login/form evidence; [browser recovery and filing procedure](computer-use.md); [password checks](remote-runbook.md); [dated login handoff](../../data/agents/handoffs/complaints-login-2026-10-09.md).
 
 ## Issue discovery and legislative review
 

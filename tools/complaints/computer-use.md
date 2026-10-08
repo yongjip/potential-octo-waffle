@@ -32,7 +32,11 @@ If the binding remains unusable, create a fresh tab in the same selected browser
 
 Use native app controls only after matching the intended window. An app name can match multiple installation paths, and the displayed native window can differ from the controlled browser tab. Prefer the known browser tab for portal tasks. Use supported UI APIs; do not mutate the page with evaluation or replace login with direct HTTP requests.
 
+If the tab's DOM state stays stale while the native page is usable, match the official origin and current page before using fresh native accessibility controls. A canonical application path can resolve ambiguity between the installed browser and updater copies. A settable field may support direct `setValue`; use the documented method and verify the result. Dismiss an autofill popover only when it obstructs the intended control. The documented key is `Escape`, not `ESC`. Re-derive indices after each action group and after screenshot-only observation.
+
 A navigation or click can take effect even when its tool call reports an error. Inspect the actual page, URL, dialog or native window before repeating it. A first snapshot can still show the preceding page or a loading placeholder. Wait for the intended receipt or form to appear before interpreting that snapshot. In the 2026-10-08 run, a Seoul password-login step had opened despite an extension-blocking report; no extension permission change was needed.
+
+A timed-out download can still leave a file in the browser's downloads. Check the relevant observed outcome without browsing unrelated downloads. A failed script can also leave earlier UI actions completed; a variable whose initializer failed may remain undeclared. Inspect the current page before resuming with a fresh binding. Reset temporary viewport overrides before finishing. Do not infer page geometry from a stale or contradictory observation.
 
 Protected password values can be redacted by the observation adapter. A comparison against the stored password is not reliable proof of input correctness. In the 2026-10-08 disclosure login, an ID/PW mismatch followed DOM filling. Native password input with the same saved pair then authenticated. The cause of the difference was not established. Preserve the exact rejection and successful method; do not conclude that the stored credentials changed or repeatedly submit them blindly.
 
@@ -87,6 +91,8 @@ Apply action-time confirmation or handoff requirements separately for CAPTCHAs, 
 
 A login CAPTCHA and a later filing CAPTCHA are separate pending steps. Do not ask again for the already authorized login challenge. Prepare the actual filing, show its current challenge and identify the tool requirement when a new action-time confirmation is needed. Continue independent queries and documentation while a required answer is pending; do not treat elapsed time as approval.
 
+Inspect the actual filing's required and optional privacy choices before submission. The Seoul general-petition form observed on 2026-10-09 required collection/use and third-party-provision consent, displayed recipient categories and ten-year retention, and allowed optional collection to be refused. Re-observe the current terms; do not treat these dated observations as permanent conditions. For a required confirmation, identify the actual populated data, recipients, purpose and retention. Avoid an all-consent control that includes optional fields. Current login-CAPTCHA authorization does not answer a new filing's privacy-consent question.
+
 ## Input and submission
 
 1. Open the selected procedure and institution. Verify the procedure before entering the final title and body.
@@ -94,6 +100,7 @@ A login CAPTCHA and a later filing CAPTCHA are separate pending steps. Do not as
    Compare the complete text value with the packet, including newlines, and preserve its hash. A text box's internal scroll can hide part of the body in a screenshot. A byte counter may update only after a keyboard event; the counter alone does not prove that the full text was entered. Check the actual value and the applicable form limit. Verify prefilled identity and contact fields privately, and preserve the authorized notification choices.
 3. Upload only the identified attachments, following the tool's file-upload documentation. Verify displayed filenames and any upload errors. Do not treat a selected local file as proof of upload completion.
 4. Read the final review screen and compare it with the packet. Reconcile any changed institution, legal acceptance, privacy choice, cost or attachment scope before the consequential action.
+   Keep the proposal's purpose separate from the portal's actual procedure label. A policy suggestion entered through Seoul's 시정일반 건의ㆍ질의 form is not proof of registration in a different formal proposal procedure. If an entered form expires while waiting, preserve its historical evidence and frozen packet, mark the live form unavailable, and restore it before submission. Do not keep reporting an expired form as ready.
 5. Immediately before submitting, persist a local event setting `status=submission_unknown`, with the packet hash and attempt time in the note. This makes an interrupted run recoverable. Submit once.
 6. Verify the success screen and new receipt number. Save primary evidence, then append `submitted` or `waiting` with the receipt and exact displayed state. Take and retain proof of work using the computer-use tool's documented artifact mechanism. Regenerate the board.
 
