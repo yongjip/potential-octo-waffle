@@ -193,6 +193,14 @@ Integrated public rental rules include a married household with a child aged six
 
 The follow-up question requested recommendations. Additional eligibility, transition and financing demands were saved as private candidates. The existing frozen proposal, its body hash and the eleven-case/sixteen-event ledger remained unchanged. Select the additional demands before making a substantive packet revision. Verify implementation authority, affected supply, transition base date and the exact notice on the next review. Sources: private dated research note; [proposal preparation procedure](computer-use.md); [research handoff](../../data/agents/handoffs/complaints-household-demands-2026-10-09.md).
 
+## Lessons from correcting the funding objective on 2026-10-09
+
+The follow-up clarified that admitting an income-exceeding household does not supply the upfront deposit. The previous recommendation gave eligibility exceptions and transition provisions priority without making affordable entry the central outcome. Correct the recommendation around deposit funding and access without family support. Keep the earlier specific income-ceiling request as one policy instrument, and test whether it is sufficient alongside the actual payment terms. The earlier candidate note remains historical; the corrected focus is stored privately.
+
+Family-supported and self-funded household scenarios can test the concern that nominally low-income applicants with external wealth have greater access. This is a hypothesis to evaluate with the matched notice, asset/transfer rules, available financing and held administrative records. Do not assert that this describes actual admitted households, that transferred funds escape assessment, or that every household can or cannot finance a particular unit. Keep user-reported prices separate from verified recruitment deposits. Do not mechanically subtract an asset ceiling from a deposit without verifying debt recognition and asset definitions.
+
+Use one central request for affordable, fair access and a small set of answerable questions: financing without family transfers, how applicant groups compare, and which deposit/payment or income rules will change. Keep secondary deadline issues subordinate to this outcome. No frozen packet, ledger status or filing changed during this correction. Sources: private clarification/correction record; [preparation procedure](computer-use.md); [correction handoff](../../data/agents/handoffs/complaints-family-funding-correction-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
