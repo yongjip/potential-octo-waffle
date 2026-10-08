@@ -12,7 +12,7 @@ Use a query task for already submitted cases. A request to build automation is n
 
 ## Portal entry points
 
-These public menus were observed on 2026-10-07 without signing in. Re-observe the live UI before using them. Authenticated forms and account records have not been inspected.
+These public menus were observed on 2026-10-07 without signing in. Re-observe the live UI before using them. Password login was verified for these three portals and 국민참여입법센터 on 2026-10-08, as recorded in `remote-runbook.md`. Individual case details and filing forms remain separate verification tasks. Legislation-center account support does not extend the current complaint tracker's portal or procedure contract.
 
 | Portal | Query entry | New submission entry |
 | --- | --- | --- |
@@ -21,6 +21,20 @@ These public menus were observed on 2026-10-07 without signing in. Re-observe th
 | eungdapso.seoul.go.kr | 민원결과 → 응답소 민원결과 | 민원신청 → 시정일반 건의ㆍ질의 |
 
 Use the observed links in `portals.json` as starting points. Menu labels and form fields are runtime observations, not permanent selectors. Obtain fresh accessibility state or a DOM snapshot after actions before deciding the next action. Match labels and visible text; use screenshot coordinates only when necessary.
+
+## Browser observation recovery
+
+Read [lessons-learned.md](lessons-learned.md) and the current tool documentation before recovery. Keep the selected browser across turns and tab failures. After context compaction, refresh the documented API before continuing.
+
+If an older tab reports stale accessibility capture, detached elements or a screenshot that does not match the current page, inspect its current visible state. These failures do not establish password rejection or a change to a complaint. Read the tool's troubleshooting guidance when the failure requires it.
+
+If the binding remains unusable, create a fresh tab in the same selected browser at the observed official entry. Re-derive locators and the current CAPTCHA from that tab. Do not reselect a browser, repeat a password submission blindly, guess native coordinates from an unsuitable image, or navigate unrelated user tabs.
+
+Use native app controls only after matching the intended window. An app name can match multiple installation paths, and the displayed native window can differ from the controlled browser tab. Prefer the known browser tab for portal tasks. Use supported UI APIs; do not mutate the page with evaluation or replace login with direct HTTP requests.
+
+Keep proof screenshots under private evidence storage. Authenticated homepages can contain unrelated case titles and receipts. Preserve the original privately and prepare a separate display crop that retains portal context and the success signal without credential values or unrelated case details. Verify the saved image and embed it in the reply when required by the tool.
+
+Keep unfinished pages with a handoff mark only while action or user input is still needed. After success, append the completion result, close obsolete pending login tabs and let routine verification tabs close normally. Use a deliverable mark when the user actually needs the live page.
 
 ## Query procedure
 

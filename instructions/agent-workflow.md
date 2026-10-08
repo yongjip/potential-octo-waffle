@@ -8,6 +8,7 @@ Canonical language: English.
 2. Read the matching domain prompt.
 3. Run `npm run agent:status`.
 4. Claim every file or global scope you will modify.
+5. Read the applicable runbook, recorded lessons and latest relevant handoff before repeating a workflow.
 
 ```bash
 npm run agent:claim -- --agent=<name> --task=<task> --scope=<path>
@@ -38,6 +39,8 @@ Required fields:
 - next agent should.
 
 ## Finish
+
+Document every lesson learned during the task before completion. Preserve private evidence in private storage, update the applicable reusable runbook, and link the lesson record from the workflow's entry point. Follow `self-correction.md` for corrected assumptions and uncertain causes. For complaint work, maintain `tools/complaints/lessons-learned.md`.
 
 Run relevant validators:
 

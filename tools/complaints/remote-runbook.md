@@ -31,6 +31,22 @@ let complaintLogin = await complaintAccounts.loadPortalCredentials(
 
 This is a loading pattern, not a verified portal-login executor. The account tool does not click login or submit and cannot determine whether a password is correct.
 
+## Password login checks
+
+Read [lessons-learned.md](lessons-learned.md) before repeating account verification. The four stored pairs passed password login on 2026-10-08. That observation does not establish future session validity or access to any individual case.
+
+1. Check redacted local storage status and host match. Keep `browser_session=not_verified` and the runtime schema unchanged; the account CLI does not observe the browser.
+2. Observe the official origin, account and current login form. For a password-verification task, distinguish an existing session from a fresh credential login. End an existing session only within the requested check and after preserving unfinished work. For a case query, reuse a suitable authorized session.
+3. Load only the selected pair into private local variables. Fill the observed ID and password controls through supported computer-use APIs. Redact both values before emitting diagnostic state. Do not enable ID saving, password saving or persistent login without the applicable authorization.
+4. If a CAPTCHA is present, apply the current tool's action-time policy. A direct user instruction to enter the currently pending security characters is confirmation for that step. The agent may read and enter them through supported tools; do not ask again for the same pending step. Do not reuse an expired image or record the characters in a public document.
+5. Submit once and observe the authenticated result. Record the submitted-attempt count separately from observation or navigation failures. A capture error before submission is not a rejected password.
+6. For Seoul integrated membership, verify return to `eungdapso.seoul.go.kr` and an authenticated Eungdapso signal. Membership login alone does not complete the requested portal check.
+7. Save original evidence privately under `auth/login-checks/<run>/`. Record portal, origin, observation time, fresh-login method, result, visible signals, attempt count, evidence path and SHA-256. Append the completed observation without deleting earlier pending diagnostics. Clear local credential variables when finished.
+
+Observed signals on 2026-10-08 were 국민신문고 `나의 신문고` and `로그아웃`, 정보공개포털 `마이페이지` and `로그아웃`, 응답소 `로그아웃` and `내정보 변경`, and 국민참여입법센터 `마이페이지` and `로그아웃`. Re-observe live controls instead of treating these labels as permanent selectors. Stop once an authoritative result is visible and its evidence is saved.
+
+Do not promote this check into a case query, filing acceptance or support for legislative opinions in the complaint tracker. Storage, browser verification and accepted procedure records remain separate.
+
 ## Connected-Mac operation
 
 1. Select the Mac and workspace holding the private data. Verify the shell hostname against the profile. Confirm that computer use controls that Mac before loading credentials; browser and shell hosts can differ.
