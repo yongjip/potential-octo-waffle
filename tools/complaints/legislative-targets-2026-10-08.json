@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-08",
+  "timezone": "Asia/Seoul",
+  "visibility": "public_candidate",
+  "purpose": "Dated research snapshot for preparing clause-specific correction opinions. This is not a receipt ledger or a running monitor.",
+  "collection": {
+    "assembly_title_screening": {
+      "source_id": "LT-20261008-ASSEMBLY-LIST",
+      "ongoing_count_observed": 321,
+      "titles_screened": 30,
+      "order": "bill_number_descending",
+      "full_texts_reviewed_from_this_sample": ["2221814"],
+      "limitations": "Titles were screened, not all 30 bill texts. This is not nationwide exhaustive review."
+    },
+    "opinion_drafts_prepared": 2,
+    "external_submissions": 0,
+    "recurring_monitor_configured": false
+  },
+  "sources": [
+    {
+      "source_id": "LT-20261008-CUSTOMS-NOTICE",
+      "issuer": "대한민국 국회",
+      "title": "관세법 일부개정법률안 2221814 입법예고",
+      "url": "https://pal.assembly.go.kr/napal/lgsltpa/lgsltpaOngoing/view.do?menuNo=1100026&lgsltPaId=PRC_707A5F4A8617479E9738B01DB72804",
+      "basis_date": "2026-10-06",
+      "observed_on": "2026-10-08",
+      "observation_method": "computer_use",
+      "locator": "입법예고 법률안 table; 제안이유 및 주요내용; 의견제출 방법",
+      "verification_status": "confirmed",
+      "limits": "Notice and committee referral were observed. Detailed committee deliberation and meeting records were not reviewed."
+    },
+    {
+      "source_id": "LT-20261008-CUSTOMS-PDF",
+      "issuer": "대한민국 국회",
+      "title": "관세법 일부개정법률안 2221814 원문",
+      "url": "https://likms.assembly.go.kr/filegate/servlet/FileGate?bookId=52e53836-c006-4351-ade8-439046a8600b&type=1",
+      "basis_date": "2026-10-06",
+      "observed_on": "2026-10-08",
+      "observation_method": "local_original_pdf_text_and_visual_review",
+      "locator": "Full six-page original; proposed Article 265-3 and commencement on printed pages 3-4",
+      "sha256": "e0890e548297a50d9d0eae8e87b4f84cfe4231046b472bf69e297971cce98e0b",
+      "verification_status": "confirmed",
+      "limits": "Proposal text only; not proof of adoption, actual processing or harm. Raw original is retained privately."
+    },
+    {
+      "source_id": "LT-20261008-PIPA",
+      "issuer": "국가법령정보센터",
+      "title": "개인정보 보호법, 법률 제21445호, 2026-09-11 시행본",
+      "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=283839&chrClsCd=010202&urlMode=lsInfoP&efYd=20260911&ancYnChk=0",
+      "basis_date": "2026-09-11",
+      "observed_on": "2026-10-08",
+      "observation_method": "computer_use",
+      "locator": "Articles 16, 21 and 23; current law version header",
+      "verification_status": "confirmed",
+      "limits": "General safeguards and legal-authorization exception reviewed. Application to a particular collection design remains a separate assessment."
+    },
+    {
+      "source_id": "LT-20261008-AI-NOTICE",
+      "issuer": "행정안전부",
+      "title": "인공지능 활용 서비스 목록 관리 및 공표에 관한 규정안, 제2026-1258호",
+      "url": "https://opinion.lawmaking.go.kr/gcom/admpp/47498?announceType=TYPE6&mappingAdmRulSeq=2000000331718",
+      "basis_date": "2026-10-07",
+      "observed_on": "2026-10-08",
+      "observation_method": "computer_use",
+      "locator": "Public notice, proposed Articles 1-8 and opinion-submission section",
+      "verification_status": "confirmed",
+      "limits": "The full proposed articles appear in the public notice. Both attachment categories showed no files. Not an enacted final rule."
+    },
+    {
+      "source_id": "LT-20261008-AI-PARENT-LAW",
+      "issuer": "국가법령정보센터",
+      "title": "인공지능 및 데이터 기반 행정 활성화에 관한 법률, 법률 제21392호, 2026-08-28 시행본",
+      "url": "https://www.law.go.kr/lsInfoP.do?ancYnChk=0&lsId=013792",
+      "basis_date": "2026-08-28",
+      "observed_on": "2026-10-08",
+      "observation_method": "computer_use",
+      "locator": "Article 3 paragraphs 5 and 7; Article 30; current law version header",
+      "verification_status": "confirmed",
+      "limits": "Parent law requires annual publication. This does not establish that extra current online disclosure is already required."
+    },
+    {
+      "source_id": "LT-20261008-TELECOM-NOTICE",
+      "issuer": "과학기술정보통신부",
+      "title": "전기통신사업법 시행령 일부개정령안 재입법예고, 제2026-933호",
+      "url": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/88476?isOgYn=Y&pageIndexSub=30",
+      "basis_date": "2026-09-10",
+      "observed_on": "2026-10-08",
+      "observation_method": "web_original_notice",
+      "locator": "Notice period, main-content section and attachment list",
+      "verification_status": "confirmed",
+      "limits": "Only the notice body was reviewed. Numerical threshold, boundary operator, current promulgation and final clause need original-text verification."
+    },
+    {
+      "source_id": "LT-20261008-INFECTION-NOTICE",
+      "issuer": "질병관리청",
+      "title": "감염병의 예방 및 관리에 관한 법률 시행규칙 일부개정령안 재입법예고, 제2026-376호",
+      "url": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/88934",
+      "basis_date": "2026-10-06",
+      "observed_on": "2026-10-08",
+      "observation_method": "web_original_notice",
+      "locator": "Main-content items and opinion period; attachment list",
+      "verification_status": "confirmed",
+      "limits": "Amendment and regulatory-impact attachments and earlier versions were not compared. No substantive defect was established."
+    },
+    {
+      "source_id": "LT-20261008-GRANT-NOTICE",
+      "issuer": "대한민국 국회",
+      "title": "지방자치단체 보조금 관리에 관한 법률 일부개정법률안 2221811 입법예고",
+      "url": "https://pal.assembly.go.kr/napal/lgsltpa/lgsltpaOngoing/view.do?lgsltPaId=PRC_E0BF388555884DB8B575E87EFF16C1",
+      "basis_date": "2026-10-06",
+      "observed_on": "2026-10-08",
+      "observation_method": "computer_use_metadata_only",
+      "locator": "Bill-identification and opinion-period table",
+      "verification_status": "confirmed",
+      "limits": "Metadata only. Proposal summary was not readable; direct original-PDF retrieval returned HTTP 400. Contents remain pending."
+    },
+    {
+      "source_id": "LT-20261008-ASSEMBLY-LIST",
+      "issuer": "대한민국 국회",
+      "title": "진행 중 입법예고 목록",
+      "url": "https://pal.assembly.go.kr/napal/lgsltpa/lgsltpaOngoing/list.do?searchConClosed=0&menuNo=1100026",
+      "basis_date": "2026-10-08",
+      "observed_on": "2026-10-08",
+      "observation_method": "computer_use",
+      "locator": "Count header and first 30 rows, bill number descending",
+      "verification_status": "confirmed",
+      "limits": "Count is a dated page observation and can change. Titles alone do not establish a legislative problem."
+    }
+  ],
+  "targets": [
+    {
+      "issue_id": "civic-customs-biometric-safeguards",
+      "object_type": "parliamentary_bill",
+      "official_id": "2221814",
+      "title": "관세법 일부개정법률안",
+      "responsible_body": "국회 재정경제기획위원회",
+      "priority": 1,
+      "observation": {
+        "observed_on": "2026-10-08",
+        "stage_raw": "진행 중 입법예고",
+        "proposed_on": "2026-10-06",
+        "committee_referred_on": "2026-10-07",
+        "source_id": "LT-20261008-CUSTOMS-NOTICE"
+      },
+      "assertions": [
+        {"field": "biometric_collection_authority", "value": "Proposed Article 265-3(1) allows collection for specified inspection/search work when necessary.", "status": "confirmed", "basis_date": "2026-10-06", "source_id": "LT-20261008-CUSTOMS-PDF", "locator": "page 3, Article 265-3(1)"},
+        {"field": "interagency_request", "value": "Article 265-3(2) permits requesting biometrics and limits refusal without just cause.", "status": "confirmed", "basis_date": "2026-10-06", "source_id": "LT-20261008-CUSTOMS-PDF", "locator": "page 3, Article 265-3(2)"},
+        {"field": "existing_safeguard", "value": "Article 265-3(3) requires processing under the Personal Information Protection Act.", "status": "confirmed", "basis_date": "2026-10-06", "source_id": "LT-20261008-CUSTOMS-PDF", "locator": "pages 3-4, Article 265-3(3)"},
+        {"field": "delegation", "value": "Article 265-3(4) leaves concrete biometric scope, collection methods and procedures to the Customs Commissioner.", "status": "confirmed", "basis_date": "2026-10-06", "source_id": "LT-20261008-CUSTOMS-PDF", "locator": "page 4, Article 265-3(4)"}
+      ],
+      "analysis": {
+        "classification": "preventive_correction_candidate",
+        "reason": "Clarify target, necessity, transfer and retention conditions at an appropriate legal level while preserving existing privacy safeguards.",
+        "recommendations_are_current_law": false,
+        "adoption_or_actual_harm_confirmed": false
+      },
+      "opinion_window": {"starts_on": "2026-10-07", "ends_on": "2026-10-16", "ends_at": null, "timezone": "Asia/Seoul", "source_id": "LT-20261008-CUSTOMS-NOTICE"},
+      "opinion_route": {"portal": "assembly_legislative_notice", "source_id": "LT-20261008-CUSTOMS-NOTICE", "tracker_supported": false},
+      "draft_path": "opinions/2026-10-08-customs-biometrics.md",
+      "filing": {"status": "not_submitted", "case_id": null, "receipt_number": null},
+      "next_check": {"on": "2026-10-09", "type": "internal_planning_date", "action": "Re-observe latest text, deadline and committee before finalizing the opinion.", "scheduled": false}
+    },
+    {
+      "issue_id": "civic-public-ai-inventory-transparency",
+      "object_type": "administrative_rule_notice",
+      "official_id": "행정안전부공고 제2026-1258호",
+      "title": "인공지능 활용 서비스 목록 관리 및 공표에 관한 규정안",
+      "responsible_body": "행정안전부 인공지능정부정책과",
+      "priority": 2,
+      "observation": {"observed_on": "2026-10-08", "stage_raw": "입법의견 접수 진행중", "source_id": "LT-20261008-AI-NOTICE"},
+      "assertions": [
+        {"field": "immediate_change_reporting", "value": "Proposed Article 6(2) requires reporting specified service changes without delay.", "status": "confirmed", "basis_date": "2026-10-07", "source_id": "LT-20261008-AI-NOTICE", "locator": "Article 6(2)"},
+        {"field": "publication", "value": "Article 7(2) specifies annual Gazette publication by December 31, with exclusions for specified information.", "status": "confirmed", "basis_date": "2026-10-07", "source_id": "LT-20261008-AI-NOTICE", "locator": "Article 7(2)"},
+        {"field": "change_publication_interval", "value": "The proposed Articles 6-7 do not specify an interval for public updates after change reports.", "status": "confirmed", "basis_date": "2026-10-07", "source_id": "LT-20261008-AI-NOTICE", "locator": "Articles 6-7"},
+        {"field": "annual_publication_parent_law", "value": "Current parent-law Article 30(2) requires annual list publication.", "status": "confirmed", "basis_date": "2026-08-28", "source_id": "LT-20261008-AI-PARENT-LAW", "locator": "Article 30(2)"}
+      ],
+      "analysis": {
+        "classification": "preventive_correction_candidate",
+        "reason": "Connect immediate reporting to timely public updates, item-level disclosure and usable responsibility/inquiry information.",
+        "proposed_update_interval_days": 30,
+        "recommendations_are_current_law": false,
+        "annual_publication_claimed_illegal": false,
+        "adoption_or_actual_harm_confirmed": false
+      },
+      "opinion_window": {"starts_on": "2026-10-07", "ends_on": "2026-11-05", "ends_at": null, "timezone": "Asia/Seoul", "source_id": "LT-20261008-AI-NOTICE"},
+      "opinion_route": {"portal": "public_participation_lawmaking", "source_id": "LT-20261008-AI-NOTICE", "tracker_supported": false},
+      "draft_path": "opinions/2026-10-08-ai-service-inventory.md",
+      "filing": {"status": "not_submitted", "case_id": null, "receipt_number": null},
+      "next_check": {"on": "2026-10-13", "type": "internal_planning_date", "action": "Re-observe the rule text and opinion route before finalizing the opinion.", "scheduled": false}
+    }
+  ],
+  "leads": [
+    {"official_id": "과학기술정보통신부공고 제2026-933호", "source_id": "LT-20261008-TELECOM-NOTICE", "classification": "closed_notice_follow_up", "opinion_ends_on": "2026-09-14", "substantive_assessment_status": "pending", "next_action": "Obtain latest original attachment and promulgated text; verify threshold and boundary operator before calculating small-shop effects."},
+    {"official_id": "질병관리청공고 제2026-376호", "source_id": "LT-20261008-INFECTION-NOTICE", "classification": "attachment_comparison_lead", "opinion_ends_on": "2026-10-12", "substantive_assessment_status": "pending", "next_action": "Compare amendment and regulatory-impact attachments against the earlier notice. Short duration alone is not a substantive defect."},
+    {"official_id": "2221811", "source_id": "LT-20261008-GRANT-NOTICE", "classification": "metadata_only", "opinion_ends_on": "2026-10-16", "substantive_assessment_status": "pending", "next_action": "Obtain the original bill before assessing any correction."}
+  ]
+}
