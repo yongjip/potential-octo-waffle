@@ -183,6 +183,16 @@ A broad numeric-length privacy scan flagged public legal-source URL identifiers 
 
 Sources: private dated decision/source record and revision history; [packet revision procedure](computer-use.md); [current strategy and historical intake](strategy.md); [revision handoff](../../data/agents/handoffs/complaints-income-ceiling-2026-10-09.md).
 
+## Lessons from eligibility and transition research on 2026-10-09
+
+A policy-review timeline can exceed a household's eligibility period. Seoul's programme information assesses the seven-year marriage condition at the recruitment announcement date. Check the matching notice and actual registration date before calculating a personal deadline. A proposed extension or transition provision is a requested change; submitting a petition does not itself preserve admission eligibility. Source: [Seoul programme information, modified 2026-08-31](https://news.seoul.go.kr/citybuild/archives/525640).
+
+Current Housing Supply Rules Article 41 permit an income-exceeding route for newlywed private housing special supply when household-owned real estate value meets the specified limit, with selection through the remaining lottery allocation. Article 43 also contains a property-based income exception for private first-home special supply and has no seven-year marriage condition. These are purchase programmes with their own household ownership, subscription and other requirements. They support comparison and a separate eligibility check; they do not grant admission to a rental programme. Keep real estate value, total assets, net assets and available deposit funds distinct. Source: [Articles 41 and 43, effective 2026-06-15](https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033568573).
+
+Integrated public rental rules include a married household with a child aged six or under as an alternative to the seven-year category. Its separate income conditions still apply. Do not assume a child exists or transfer that category to another programme. Source: [Annex 5-2, amended 2025-10-31](https://www.law.go.kr/LSW/flDownload.do?bylClsCd=110201&flSeq=159738515&gubun=).
+
+The follow-up question requested recommendations. Additional eligibility, transition and financing demands were saved as private candidates. The existing frozen proposal, its body hash and the eleven-case/sixteen-event ledger remained unchanged. Select the additional demands before making a substantive packet revision. Verify implementation authority, affected supply, transition base date and the exact notice on the next review. Sources: private dated research note; [proposal preparation procedure](computer-use.md); [research handoff](../../data/agents/handoffs/complaints-household-demands-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
