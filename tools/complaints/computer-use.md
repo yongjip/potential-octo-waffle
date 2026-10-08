@@ -40,11 +40,16 @@ Keep unfinished pages with a handoff mark only while action or user input is sti
 
 1. Open the intended portal and confirm the origin. Reuse an authorized existing session when available. Apply the current computer-use policy to sign-in and authentication steps. Ask the user to complete authentication when interaction cannot proceed through supported tools. Record `auth_required`; do not overwrite the case status or report success.
 2. Open the case list and match portal receipt, institution, and title. The agency receipt alone may not identify the portal case. If the primary receipt is missing, search within the authorized account by institution, title and date, then record the actual receipt.
+   In the Seoul observation on 2026-10-08, the signed-in member list returned no matching record, but the visible 민원결과 통합조회 route returned the original and supplementary filings. Follow the observed integrated-query link when appropriate. Do not infer that a filing is absent from one empty list. Keep prefilled contact data and encrypted navigation parameters private.
 3. Record the exact status label, institution, department, submitted/received timestamps, displayed due date, transfer and extension notices, and response date. Preserve the original due date in the event history when it changes.
 4. Save the relevant screenshot, receipt or notice, and response text under `data/complaints/evidence/<case_id>/`. Keep the unedited original and any extraction separate. Follow the computer-use tool's documented screenshot and download methods. Verify saved paths and attach file hashes to evidence metadata when available.
 5. If an artifact cannot be saved, keep evidence pending and name the limitation. Reading a status without persisting its primary evidence must not be described as a completed evidence archive.
 6. Create an event with observation time, source kind, source URL, evidence path, and changed fields. Append with `node tools/complaints/tracker.mjs record --file=<event-file>` and regenerate the board.
 7. Compare each original question with the reply. Keep an explicit source passage for `answered` or `partial`. Do not treat an absent answer as proof that no research exists. Keep `resolution_status=unresolved` or `unknown` until the request's outcome is assessed.
+
+Seoul's integrated list can show 처리중 while the detail shows 결재중. Preserve both observations and use the more specific detail as `status_raw`. An approval-in-progress notice is not a final reply. Empty additional-answer fields establish only that no answer is displayed in that location. Do not invent a due date or an internal processing result.
+
+Case links may reuse a named popup. After opening another case, inspect the existing popup's fresh receipt and title before assuming that no detail opened or that a new tab must exist. Save DOM text and a screenshot first. Optional PDF export must not block the ledger update; when download handling stalls, retain the primary evidence already obtained and record the export limitation.
 
 For repeated query runs, notify only on a new reply or document, transfer, extension, meaningful deadline change, imminent action deadline, failure, or required user action. Unchanged and non-actionable states should remain quiet. Do not create a recurring schedule without a user request for scheduling or monitoring.
 
@@ -53,6 +58,10 @@ For repeated query runs, notify only on a new reply or document, transfer, exten
 Prepare a concrete filing packet before starting any external write. It must contain the destination and institution, procedure type, title, exact final body, questions, period, parent receipt, attachments with paths and hashes, disclosure/receipt methods, privacy choices, and the user's execution authorization. Store the packet locally and make it reviewable.
 
 Check for an existing receipt and a matching submitted case. A case in `submitted`, `waiting`, `response_received`, `closed`, or `submission_unknown` must not be submitted again. If further action is appropriate, create a new child case specifying what changed or what remains unanswered.
+
+Read the already-filed supplementary body before drafting another follow-up. If a pending case contains the same questions, defer the overlapping filing and retain the distinct records request or prospective policy proposal. Record this decision in the private plan. Match recruitment notices by date, program, unit size and conditions; the same apartment name does not establish the same supply round.
+
+Create a child case as `draft` or `prepared` before starting a new filing attempt. It has no receipt or submission date. This is necessary to persist `submission_unknown` before the external submit action. Add accepted filing facts only after observing the receipt; a prepared case is not a submitted case.
 
 For information disclosure, request identifiable existing records held or managed by the institution. Keep newly requested research and policy explanations in a suitable petition or proposal. The historical A/B/C requests use electronic files and receipt through the information disclosure portal; compare these choices with the actual form.
 

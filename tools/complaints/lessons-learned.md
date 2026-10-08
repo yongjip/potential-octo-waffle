@@ -101,6 +101,24 @@ An asset ceiling is not cash available for a deposit. Affordability review must 
 
 Sources: [tracker guide](README.md#상태와-근거), [telephone follow-up](phone-followup.md), [follow-up plan](followup-plan.md), [route correction handoff](../../data/agents/handoffs/complaints-seoul-followup-route-2026-10-08.md), [proposal handoff](../../data/agents/handoffs/complaints-call-proposals-2026-10-08.md).
 
+## Lessons from the case query on 2026-10-08
+
+The signed-in Seoul member query returned no match for an existing receipt. The visible integrated-query route recovered the original and supplementary filings. One empty account surface does not establish absence or authorize resubmission. Record the route, date and matching case evidence; do not assume the difference proves a guest-account origin. Prefilled contact details and encrypted case links stay private.
+
+The list showed 처리중 for the supplementary filing and the detail showed 결재중. The reply area contained only an approval-in-progress notice. Preserve the list and detail labels, and keep the case waiting until a final reply appears. The original had a written answer, while its additional-answer fields were empty. Separate these observations from the user's report of a later phone call. No phone-to-case mapping was explicitly displayed.
+
+The existing supplementary body already contained the substantive questions intended for another follow-up. The corrected plan defers the overlapping petition and prepares the independent existing-records request and prospective policy proposal. A portal-completed original can remain substantively unresolved. A generic legal explanation does not answer whether integrated analysis was performed, and an omitted answer does not prove that no analysis exists.
+
+The case links reused one popup. A fresh receipt and title in the existing tab identified the second case. Inspect the refreshed popup before looking for another tab. Save text and screenshots before optional downloads. The PDF export succeeded but took several minutes despite requested timeouts; do not make export the only path to persisting an observation. The cause of the delay remains unestablished.
+
+A public Seoul notice for the same apartment had a different year, unit size and deposit from the complaint's cited example. Keep the exact supply round pending until date, program, area and conditions match. An official summary is a lead to the original notice, not permission to substitute a different round in calculations or filing statements.
+
+Later browser operations timed out and reset the REPL. Browser IDs changed after that actual reset, and an earlier ID identified the app panel rather than Edge. Preserve a valid binding during ordinary tab recovery; after a real kernel reset, discover the browser again and verify its name, profile and provider before restoring tab handles. Repeated tab creation did not restore usable control. No password or new filing was submitted from those failed steps. Preserve successful evidence, record the concrete blocker, and continue independent preparation. Do not diagnose a password rejection or change portal case status from tool failure. Reassess connection and the current login challenge on resumption.
+
+The filing runbook needs a local draft or prepared child before the submit action so that `submission_unknown` can be persisted. Receipt creation comes after observed acceptance. A plan saying to create the case only after acceptance omits the recovery state. The corrected procedure distinguishes prepared local cases from accepted filings.
+
+Sources: private portal-query evidence; [query and preparation procedure](computer-use.md#query-procedure); [follow-up plan](followup-plan.md); [execution handoff](../../data/agents/handoffs/complaints-execution-2026-10-08.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
