@@ -167,6 +167,22 @@ Proof originals and display crops were kept separate under private evidence. The
 
 Sources: private dated login/form evidence; [browser recovery and filing procedure](computer-use.md); [password checks](remote-runbook.md); [dated login handoff](../../data/agents/handoffs/complaints-login-2026-10-09.md).
 
+## Lessons from substantive policy revision on 2026-10-09
+
+The user replaced the earlier broad policy-comparison priority with an explicit requested change. Make that change the first request and the substantive completion criterion. Preserve funding analysis, distributional effects and implementation questions as supporting work. A request to change policy is a user decision; it is not evidence that the rule has changed or that the institution already has power to implement it.
+
+The published national rule distinguishes income-setting authority at 85 square metres, while Seoul's programme information displays income bands at 60 square metres. These boundaries serve different purposes. Read the exact applied rule and special programme criteria instead of substituting one threshold for the other. The current rule alone does not prove that Seoul may abolish every initial-admission criterion. A historical childbirth-related renewal exception also does not remove an initial-admission restriction. Sources: [current rule, Article 18](https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lspttninfSeq=141321), [Seoul programme information](https://news.seoul.go.kr/citybuild/archives/525640), [historical renewal explanation](https://mediahub.seoul.go.kr/archives/2011674).
+
+The requested expensive-deposit boundary had no user-selected amount or verified funding criterion. The revised packet asks the institution for the amount, evidence, target supply and implementation date. Do not invent a round monetary number merely to make a request look concrete. State the desired policy change firmly and keep its unresolved implementation inputs explicit.
+
+The earlier packet, live-form comparison and pending submission question covered the old body. Preserve those as history, freeze a new body and hash, append a revision event to the unsubmitted case, and mark the old live form for replacement. Keep original question IDs and add the new policy requests separately. Do not create a second accepted case, reuse the old body confirmation or ask a new hypothetical approval before the revised actual form is ready. No browser action or filing was performed during this local revision.
+
+Current plan summaries had retained old login blockers inside nested progress and packet fields after a later execution update. The public strategy also described initial intake counts as current. Synchronize the current fields, preserve the earlier snapshots and label the initial table as historical. The initial eleven intake records and the later eleven ledger cases have different membership; nine verified historical filings and two prepared cases do not establish lifetime account coverage.
+
+A broad numeric-length privacy scan flagged public legal-source URL identifiers as suspected private receipts. Check the actual known private identifiers across the entire public file, review numeric prose separately, and retain verified official-source links. A long digit sequence alone does not establish private data. The focused check passed without exposing the private values.
+
+Sources: private dated decision/source record and revision history; [packet revision procedure](computer-use.md); [current strategy and historical intake](strategy.md); [revision handoff](../../data/agents/handoffs/complaints-income-ceiling-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
