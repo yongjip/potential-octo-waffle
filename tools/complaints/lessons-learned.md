@@ -221,6 +221,16 @@ The fully self-funded scenario can conflict with a separate asset ceiling when t
 
 The reviewed draft, computations, source limits and reviewer reports were saved privately. The proposed saving rate and alternatives were not silently applied to the existing frozen submission. The packet hash and eleven-case/sixteen-event ledger remained unchanged, with no new filing. Sources: private dated review evidence; [reusable review procedure](income-linkage-review.md); [review handoff](../../data/agents/handoffs/complaints-income-linkage-review-2026-10-09.md).
 
+## Lessons from the early-career policy framing on 2026-10-09
+
+The user clarified that the seven-period benchmark expresses a desired path from early-career earnings to accumulated housing funds. It is not a claim that all newlyweds have actually saved for seven years. The preceding answer foregrounded that empirical caveat and did not fully express the positive access objective. Lead the revised prose with practical entry for asset-forming households, then state the assumptions and limits. Preserve the earlier calculations and evidence as historical versions.
+
+Connect the deposit and income ceiling to the institution's stated programme purpose. Separate current income from accumulated assets. A family-transfer advantage can be a plausible institutional mechanism without proving that actual entrants predominantly receive transfers. Frame it as a question to evaluate. Keep the institutional benchmark distinct from new applicant savings, employment-history or gift-history tests.
+
+The city's 2022 social-mix explanation emphasised mixed rental/owner-occupied housing and removing discrimination. Extending access to households at different stages of asset formation is a proposal, not an established instruction to abolish income ceilings. Use the argument as support; concrete deposit/ceiling consistency remains primary. The current city programme summary describes housing for newlyweds and a low-birth-rate objective, but does not state that its marriage cutoff legally guarantees seven years of earned savings. Sources: [2022 city social-mix explanation](https://mediahub.seoul.go.kr/archives/2004325); [city programme summary](https://news.seoul.go.kr/citybuild/archives/525640); private dated user clarification and candidate prose.
+
+The revised rationale was saved as a private candidate. The frozen filing packet, its body hash and the eleven-case/sixteen-event ledger remain unchanged. Source: [framing handoff](../../data/agents/handoffs/complaints-early-career-framing-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
