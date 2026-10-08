@@ -119,6 +119,34 @@ The filing runbook needs a local draft or prepared child before the submit actio
 
 Sources: private portal-query evidence; [query and preparation procedure](computer-use.md#query-procedure); [follow-up plan](followup-plan.md); [execution handoff](../../data/agents/handoffs/complaints-execution-2026-10-08.md).
 
+## Lessons from resumed filing preparation on 2026-10-08
+
+The user's instruction to enter the current disclosure-login CAPTCHA was applied without asking again. The first characters were rejected. A refreshed image was read from a correctly scaled crop. After an explicit ID/PW mismatch, native password input with the same saved credentials authenticated. Keep these three submitted outcomes separate. The reason DOM filling and native input differed remains unknown. Protected value observations may be redacted, so a false equality result is not evidence that the user stored the wrong password.
+
+The authenticated disclosure account list contained the three expected housing requests and another existing request. The three filed bodies included the common electronic-file and partial-disclosure wording from the earlier draft. Verify the complete actual body before promoting its provenance. The additional request and its extension notice were added as historical intake, not counted as a new submission.
+
+The list's default date range was one month. Its calendar inputs were read-only, and a search longer than one year produced an explicit limit notice. Record each actual date range and result. Cover a relevant longer interval with continuous ranges, and retain limits on any claim of account completeness. A loading placeholder showing zero is not a completed empty result.
+
+A browser call could fail while its intended navigation had already occurred. Native observation confirmed the new page after an apparent click or extension-blocking failure. Inspect the reached page before repeating the action. No security setting or extension permission was changed. This does not establish that every reported failure is harmless.
+
+The filing page had another CAPTCHA after login. The Seoul account also had a distinct pending login challenge. These require their own current-step confirmation under the tool policy. The prepared records request retained its exact body, one recipient, electronic receipt, no attachment and existing notification choices. Preparing it did not create a receipt. Keep the reviewable packet and unfinished live form while waiting; preserve the user's earlier filing purpose rather than asking a new generic permission question.
+
+Screenshot display sizes differed from source pixel sizes. Verify saved image dimensions and page geometry before cropping. Preserve originals privately, retain separate display crops, and exclude credential and contact fields from displayed proof. A crop from thumbnail coordinates can miss the CAPTCHA. A text box's internal scroll can also hide the start of a complete entered body; compare its value with the frozen packet.
+
+The account module imported in the computer-use adapter, but the tracker import failed because that adapter lacked `process`. Normal Node execution recorded the events successfully. Keep this as an adapter limit and use the supported CLI for local ledger changes. No executable fix was required.
+
+The national petition list returned three historical filings in its observed three-month range. The two housing petitions and an ISA petition were archived. Their submitted and agency-received timestamps were different. The supplementary housing petition's primary receipt was recovered. All nine known historical filings now have primary evidence. The two locally prepared cases have no receipts and remain separate. This is bounded account coverage, not lifetime completeness.
+
+The national petition page showed `상세내용 접기` even while its applicant and original-body sections were hidden. A repeated link name and a successful click were not enough to prove expansion. A fresh native control associated with the body heading exposed the full original request. It contained seven final questions; the imported summary had four. Existing question IDs were preserved, and omitted questions received their original numbers. General policy-review language was recorded as a partial answer to future-plan questions, without treating it as proof of prior analysis or a defined review project.
+
+The ISA reply described preservation of existing government-proposal terms. It did not independently verify every requested carryover rule, the final legislative text or implementation. Keep that institutional statement, the unresolved details and the user's contribution to any change separate. The newly discovered competition disclosure request also remained waiting under an observed extension; an extension label alone does not establish unlawful delay.
+
+A later Seoul login observation had returned to the identifier step. The authorized identifier step restored the password challenge. A background DOM wait timed out before dispatch, while selecting the matching native tab exposed the intended page. The cause of that timing difference remains unknown. Keep the unfinished page and current challenge, and do not repeat a submitted password or alter browser protections.
+
+A broad diagnostic text filter also matched a private identifier control. Full observations belong in private evidence, and displayed diagnostics need an explicit safe field list rather than broad keyword filtering. Do not copy such values into public lessons, commits or displayed screenshots.
+
+Sources: private resumed-run evidence; [browser recovery and filing procedure](computer-use.md); [password checks and adapter limit](remote-runbook.md); [resumed-run handoff](../../data/agents/handoffs/complaints-filing-2026-10-08.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.

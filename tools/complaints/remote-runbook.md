@@ -40,12 +40,15 @@ Read [lessons-learned.md](lessons-learned.md) before repeating account verificat
 3. Load only the selected pair into private local variables. Fill the observed ID and password controls through supported computer-use APIs. Redact both values before emitting diagnostic state. Do not enable ID saving, password saving or persistent login without the applicable authorization.
 4. If a CAPTCHA is present, apply the current tool's action-time policy. A direct user instruction to enter the currently pending security characters is confirmation for that step. The agent may read and enter them through supported tools; do not ask again for the same pending step. Do not reuse an expired image or record the characters in a public document.
 5. Submit once and observe the authenticated result. Record the submitted-attempt count separately from observation or navigation failures. A capture error before submission is not a rejected password.
+   If the portal explicitly rejects a CAPTCHA or ID/PW, record that message and inspect the current form before a justified retry. Do not treat a redacted password-value comparison as a failed credential check. The 2026-10-08 disclosure session authenticated after native password input with the same saved pair that had been rejected after DOM filling. The underlying cause is unknown; use supported input and the observed result, not an assumed password change.
 6. For Seoul integrated membership, verify return to `eungdapso.seoul.go.kr` and an authenticated Eungdapso signal. Membership login alone does not complete the requested portal check.
 7. Save original evidence privately under `auth/login-checks/<run>/`. Record portal, origin, observation time, fresh-login method, result, visible signals, attempt count, evidence path and SHA-256. Append the completed observation without deleting earlier pending diagnostics. Clear local credential variables when finished.
 
 Observed signals on 2026-10-08 were 국민신문고 `나의 신문고` and `로그아웃`, 정보공개포털 `마이페이지` and `로그아웃`, 응답소 `로그아웃` and `내정보 변경`, and 국민참여입법센터 `마이페이지` and `로그아웃`. Re-observe live controls instead of treating these labels as permanent selectors. Stop once an authoritative result is visible and its evidence is saved.
 
 Do not promote this check into a case query, filing acceptance or support for legislative opinions in the complaint tracker. Storage, browser verification and accepted procedure records remain separate.
+
+Local module support differs between adapters. In the 2026-10-08 computer-use REPL, the account module worked, but importing the tracker failed because `process` was unavailable. Run tracker operations through its normal CLI or Node environment. Keep browser actions in `cua_repl`; do not change tracker code merely to work around that adapter limitation.
 
 ## Connected-Mac operation
 

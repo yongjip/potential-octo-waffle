@@ -32,6 +32,10 @@ If the binding remains unusable, create a fresh tab in the same selected browser
 
 Use native app controls only after matching the intended window. An app name can match multiple installation paths, and the displayed native window can differ from the controlled browser tab. Prefer the known browser tab for portal tasks. Use supported UI APIs; do not mutate the page with evaluation or replace login with direct HTTP requests.
 
+A navigation or click can take effect even when its tool call reports an error. Inspect the actual page, URL, dialog or native window before repeating it. A first snapshot can still show the preceding page or a loading placeholder. Wait for the intended receipt or form to appear before interpreting that snapshot. In the 2026-10-08 run, a Seoul password-login step had opened despite an extension-blocking report; no extension permission change was needed.
+
+Protected password values can be redacted by the observation adapter. A comparison against the stored password is not reliable proof of input correctness. In the 2026-10-08 disclosure login, an ID/PW mismatch followed DOM filling. Native password input with the same saved pair then authenticated. The cause of the difference was not established. Preserve the exact rejection and successful method; do not conclude that the stored credentials changed or repeatedly submit them blindly.
+
 Keep proof screenshots under private evidence storage. Authenticated homepages can contain unrelated case titles and receipts. Preserve the original privately and prepare a separate display crop that retains portal context and the success signal without credential values or unrelated case details. Verify the saved image and embed it in the reply when required by the tool.
 
 Keep unfinished pages with a handoff mark only while action or user input is still needed. After success, append the completion result, close obsolete pending login tabs and let routine verification tabs close normally. Use a deliverable mark when the user actually needs the live page.
@@ -50,6 +54,14 @@ Keep unfinished pages with a handoff mark only while action or user input is sti
 Seoul's integrated list can show 처리중 while the detail shows 결재중. Preserve both observations and use the more specific detail as `status_raw`. An approval-in-progress notice is not a final reply. Empty additional-answer fields establish only that no answer is displayed in that location. Do not invent a due date or an internal processing result.
 
 Case links may reuse a named popup. After opening another case, inspect the existing popup's fresh receipt and title before assuming that no detail opened or that a new tab must exist. Save DOM text and a screenshot first. Optional PDF export must not block the ledger update; when download handling stalls, retain the primary evidence already obtained and record the export limitation.
+
+An accordion label alone does not establish that its contents are visible. The national petition detail observed on 2026-10-08 showed `상세내용 접기` while applicant fields and the original body were hidden. Expand the control associated with the intended heading, then verify the actual receipt, title and complete body. Identical link names need heading context. If a DOM click reports success without exposing the fields, inspect the current native page before using its matching control. Derive native indices from fresh state; allow trailing whitespace in parsed accessibility labels.
+
+Compare the complete filed questions with the imported summary. Preserve existing question IDs and add omitted questions with their original numbers. Keep submitted, agency-received and response timestamps separate. Retain historical due and extension dates even when a reply was already received. A general review promise may partly answer a future-plan question, but does not answer whether prior analysis or identifiable records exist.
+
+Record the account-list filters and covered dates. The disclosure list observed on 2026-10-08 defaulted to one month and allowed at most one year per search. Its date fields were read-only; use the visible calendar's year, month and day controls. Divide a necessary longer interval into explicit, continuous ranges. An empty range does not establish an empty lifetime account. Read newly found rows and extension notices before adding them to the ledger; a newly discovered historical filing is not a new submission.
+
+Keep full authenticated observations private. Build user-facing diagnostics from an explicit safe field list. A broad text filter can match government-identifier or contact controls as well as the intended status. Do not output their values. If an unfinished login returns to its identifier step, preserve the earlier observation and restore only the authorized step; re-observe its current challenge before action.
 
 For repeated query runs, notify only on a new reply or document, transfer, extension, meaningful deadline change, imminent action deadline, failure, or required user action. Unchanged and non-actionable states should remain quiet. Do not create a recurring schedule without a user request for scheduling or monitoring.
 
@@ -73,10 +85,13 @@ If authorization is missing, finish the local packet first and ask for the exact
 
 Apply action-time confirmation or handoff requirements separately for CAPTCHAs, legally binding acceptance, new security-sensitive access, and other actions covered by the current policy. Do not infer consent from a website notice or an earlier AI recommendation. Do not ask hypothetical approvals before a concrete filing exists.
 
+A login CAPTCHA and a later filing CAPTCHA are separate pending steps. Do not ask again for the already authorized login challenge. Prepare the actual filing, show its current challenge and identify the tool requirement when a new action-time confirmation is needed. Continue independent queries and documentation while a required answer is pending; do not treat elapsed time as approval.
+
 ## Input and submission
 
 1. Open the selected procedure and institution. Verify the procedure before entering the final title and body.
 2. Fill from the frozen packet using supported accessibility or DOM APIs. Re-read the entered values, institution, period and privacy choices. Do not silently shorten or rewrite the body to fit a limit; prepare a new reviewed version if required.
+   Compare the complete text value with the packet, including newlines, and preserve its hash. A text box's internal scroll can hide part of the body in a screenshot. A byte counter may update only after a keyboard event; the counter alone does not prove that the full text was entered. Check the actual value and the applicable form limit. Verify prefilled identity and contact fields privately, and preserve the authorized notification choices.
 3. Upload only the identified attachments, following the tool's file-upload documentation. Verify displayed filenames and any upload errors. Do not treat a selected local file as proof of upload completion.
 4. Read the final review screen and compare it with the packet. Reconcile any changed institution, legal acceptance, privacy choice, cost or attachment scope before the consequential action.
 5. Immediately before submitting, persist a local event setting `status=submission_unknown`, with the packet hash and attempt time in the note. This makes an interrupted run recoverable. Submit once.
