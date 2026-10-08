@@ -2,7 +2,7 @@
 
 기준일: 2026년 10월 8일 KST
 
-**사용자가 회원가입을 하고, 가입한 계정의 아이디와 비밀번호를 로컬 입력 도구에 넣는다.** 도구는 세 포털의 값을 Git에서 제외된 `.env`에 저장한다. 원격 작업도 이 파일과 민원 장부가 있는 Mac에서 실행한다. 회원가입, 로그인 확인, 실제 민원 접수는 서로 다른 완료 단계다.
+**사용자가 회원가입을 하고, 가입한 계정의 아이디와 비밀번호를 로컬 입력 도구에 넣는다.** 도구는 네 포털의 값을 Git에서 제외된 `.env`에 저장한다. 원격 작업도 이 파일과 민원 장부가 있는 Mac에서 실행한다. 회원가입, 로그인 확인, 실제 민원 접수는 서로 다른 완료 단계다.
 
 ## 가입할 계정
 
@@ -11,6 +11,7 @@
 | 국민신문고 | 국민신문고 회원 | [회원 유형 선택](https://www.epeople.go.kr/nep/mfrnUser/mbrSelectPage.npaid) | 일반회원의 본인확인 단계. 간편인증·금융인증서·공동인증서·휴대전화 선택지 |
 | 정보공개포털 | 정보공개포털 회원 | [회원가입](https://www.open.go.kr/mberSvc/mber/persionIn.do) | 개인(내국인) 선택 후 이용약관·개인정보 안내 단계 |
 | 서울시 응답소 | 서울시 통합회원 | [서울시 회원가입](https://www.seoul.go.kr/member/join/regist01.do) | 일반회원의 필수 약관·개인정보 동의와 선택 정보 수신 항목 |
+| 국민참여입법센터 | 국민참여입법센터 회원 | [회원가입](https://opinion.lawmaking.go.kr/member/agrGn) | 공개 홈의 로그인·회원가입 메뉴와 가입 진입점. 실제 가입·로그인은 확인 전 |
 
 위 내용은 2026-10-08 공개 화면에서 확인했다. 실제 본인확인, 가입 완료와 계정 내역은 확인하지 않았다. 서울시 통합회원으로 응답소를 사용할 수 있으므로 응답소 전용 계정을 추가로 만들 필요는 없다. 기존 계정이 있으면 같은 계정을 사용한다. 새 계정에 과거 비회원 제출 내역이 자동 연결되는지는 별도 확인 대상이다.
 
@@ -18,7 +19,7 @@
 
 | 경로 | 내용 | 권한 |
 | --- | --- | --- |
-| `data/complaints/auth/.env` | 세 계정의 아이디와 비밀번호 | 소유자만 읽고 쓰는 `600` |
+| `data/complaints/auth/.env` | 네 계정의 아이디와 비밀번호 | 소유자만 읽고 쓰는 `600` |
 | `data/complaints/auth/runtime.json` | 실행 Mac 이름, 브라우저, 대상 포털 | `600` |
 | `data/complaints/auth/` | 비공개 계정 저장 폴더 | 소유자만 접근하는 `700` |
 | [`.env.example`](.env.example) | 빈 값과 환경변수 이름 | 공개 예시. 실제 값 입력 금지 |
@@ -37,7 +38,9 @@ node tools/complaints/accounts.mjs store --portal=all
 node tools/complaints/accounts.mjs status
 ```
 
-`store`는 국민신문고, 정보공개포털, 서울시 통합회원 순서로 입력을 받는다. 각 계정에서 아이디, 기존 비밀번호, 비밀번호 확인을 입력하고 각각 Enter를 누른다. **아이디와 비밀번호 모두 화면에 표시하지 않는다.** 비밀번호가 일치한 계정부터 저장한다. 도중에 취소하면 앞서 저장한 계정은 유지한다.
+`init`는 기존 세 포털 설정에서도 사용할 수 있다. 기존 계정 파일의 내용을 보존하고 입법센터의 빈 변수 두 개를 추가한다. 실행 Mac 설정은 유지한다. 입법센터 변수가 이미 있으면 그 값을 유지한다.
+
+`store`는 국민신문고, 정보공개포털, 서울시 통합회원, 국민참여입법센터 순서로 입력을 받는다. 각 계정에서 아이디, 기존 비밀번호, 비밀번호 확인을 입력하고 각각 Enter를 누른다. **아이디와 비밀번호 모두 화면에 표시하지 않는다.** 비밀번호가 일치한 계정부터 저장한다. 도중에 취소하면 앞서 저장한 계정은 유지한다.
 
 한 계정만 입력하거나 로컬 저장 값을 바꿀 때는 해당 포털만 선택한다. 이 명령은 포털의 비밀번호를 바꾸지 않는다.
 
@@ -45,7 +48,15 @@ node tools/complaints/accounts.mjs status
 node tools/complaints/accounts.mjs store --portal=epeople
 node tools/complaints/accounts.mjs store --portal=open_go_kr
 node tools/complaints/accounts.mjs store --portal=seoul_eungdapso
+node tools/complaints/accounts.mjs store --portal=lawmaking
 ```
+
+| 계정 | 아이디 변수 | 비밀번호 변수 |
+| --- | --- | --- |
+| 국민신문고 | `COMPLAINTS_EPEOPLE_ID` | `COMPLAINTS_EPEOPLE_PASSWORD` |
+| 정보공개포털 | `COMPLAINTS_OPEN_GO_ID` | `COMPLAINTS_OPEN_GO_PASSWORD` |
+| 서울시 통합회원 | `COMPLAINTS_SEOUL_ID` | `COMPLAINTS_SEOUL_PASSWORD` |
+| 국민참여입법센터 | `COMPLAINTS_LAWMAKING_ID` | `COMPLAINTS_LAWMAKING_PASSWORD` |
 
 값은 명령 인수나 채팅에 넣지 않는다. `.env`를 `source`로 실행하지 않는다. 저장 도구는 JSON 형식의 따옴표를 사용하고 `$`, 백틱, 역슬래시 등을 문자 그대로 보존한다. `status`는 저장 여부만 출력한다. 아이디나 비밀번호는 출력하지 않는다.
 
@@ -54,9 +65,9 @@ node tools/complaints/accounts.mjs doctor
 node --test tools/complaints/accounts.test.mjs
 ```
 
-`doctor` 종료 코드 `0`은 세 계정의 값이 저장됐다는 뜻이다. `2`는 빈 계정이 남았다는 뜻이다. `1`은 저장 위치·권한·형식·실행 Mac 점검 실패다. 종료 코드 `0`도 실제 로그인이나 민원 접수를 증명하지 않는다.
+`doctor` 종료 코드 `0`은 네 계정의 값이 저장됐다는 뜻이다. `2`는 빈 계정이 남았다는 뜻이다. `1`은 저장 위치·권한·형식·실행 Mac 점검 실패다. 종료 코드 `0`도 실제 로그인이나 민원 접수를 증명하지 않는다.
 
-이번 준비에서는 현재 작업 Mac에 빈 파일을 생성했다. 계정 도구와 기존 장부의 테스트 17개를 통과했다. 가짜 계정으로 실제 터미널 입력을 점검했고, 아이디·비밀번호가 출력되지 않는 것과 특수문자 보존을 확인했다. 현재 computer use 세션에서 로컬 모듈을 불러와 빈 계정의 저장 여부를 확인했다. 실제 계정 값은 입력하지 않았다.
+최초 세 포털 준비에서는 현재 작업 Mac에 빈 파일을 생성했다. 계정 도구와 기존 장부의 테스트 17개를 통과했다. 가짜 계정으로 실제 터미널 입력을 점검했고, 아이디·비밀번호가 출력되지 않는 것과 특수문자 보존을 확인했다. 당시 computer use 세션에서 로컬 모듈을 불러와 빈 계정의 저장 여부를 확인했다. 실제 계정 값은 입력하지 않았다.
 
 ## 원격 실행 방식
 
@@ -64,7 +75,7 @@ node --test tools/complaints/accounts.test.mjs
 
 OpenAI 공식 안내는 원격에서 실행할 호스트와 작업 공간을 선택하는 방식과, 연결된 호스트에서 코드가 실행되는 방식을 설명한다. 이는 민원 포털에 로그인이 됐다는 증거와는 별도다. [OpenAI 원격 작업 안내](https://developers.openai.com/blog/mastering-codex-remote-for-engineering)
 
-로그인 이후에는 같은 Mac의 브라우저 세션을 사용한다. 인증이 만료되거나 추가 본인확인이 나오면 그 단계를 처리한 뒤 이어서 작업한다. **아이디·비밀번호 저장만으로 완전 무인 제출이 보장되지는 않는다.** 세 포털의 인증 후 조회와 실제 접수는 아직 검증 전이다.
+로그인 이후에는 같은 Mac의 브라우저 세션을 사용한다. 인증이 만료되거나 추가 본인확인이 나오면 그 단계를 처리한 뒤 이어서 작업한다. **아이디·비밀번호 저장만으로 완전 무인 제출이 보장되지는 않는다.** 네 포털의 인증 후 조회와 실제 접수는 아직 검증 전이다. 입법센터의 계정 저장 지원과 기존 세 민원 포털을 지원하는 장부는 별도 기능이다.
 
 실행 순서와 비밀번호를 출력하지 않는 로딩 방법은 [원격 실행 지침](remote-runbook.md)을 따른다. 기존 사건 조회·폼 입력·접수증 보관은 [computer use 실행 지침](computer-use.md)을 따른다.
 

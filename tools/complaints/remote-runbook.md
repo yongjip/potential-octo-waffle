@@ -6,7 +6,9 @@ Canonical language: English. The user creates the accounts and enters credential
 
 1. Use a stable private data directory on the execution Mac. The main checkout's `data/complaints/` is the default. Temporary Git worktrees have a different default; pass the absolute main data directory when using a worktree.
 2. Initialize with `accounts.mjs init --host=<actual-execution-hostname>`. Keep `auth/.env` and `auth/runtime.json` at mode 600 and their directories at mode 700. Never commit either file or copy real values into examples.
+   Initialization upgrades the earlier three-portal store by preserving its credential bytes and adding empty lawmaking keys. It keeps the configured host. Current storage supports epeople, open_go_kr, seoul_eungdapso and lawmaking.
 3. The user runs `accounts.mjs store --portal=all` in their own terminal. Both values are hidden. Never request credentials in chat, command arguments, screenshots, handoffs or environment dumps.
+   Use `accounts.mjs store --portal=lawmaking` to enter only the Citizen Participation Legislation Center account. Its keys are `COMPLAINTS_LAWMAKING_ID` and `COMPLAINTS_LAWMAKING_PASSWORD`.
 4. Run `accounts.mjs status` or `doctor`. Print only presence flags. Missing credentials, malformed files, wrong host, unsafe permissions, links or tracked files fail locally. Do not retarget an existing profile silently.
 5. Use `loadPortalCredentials(dataDir, portal)` from `accounts.mjs` inside the supported local credential adapter. It returns only the selected pair. Do not print or serialize it. Do not source the env file.
 

@@ -24,6 +24,18 @@
       "query": "https://eungdapso.seoul.go.kr/mpg/complaint/complaint_lis.do",
       "new_request": "https://eungdapso.seoul.go.kr/req/rectify/rectify.do",
       "query_labels": ["민원결과", "응답소 민원결과"]
+    },
+    "lawmaking": {
+      "name": "국민참여입법센터",
+      "home": "https://opinion.lawmaking.go.kr/",
+      "membership": "https://opinion.lawmaking.go.kr/member/agrGn",
+      "observed_on": "2026-10-08",
+      "observation_scope": "Public homepage and membership entry only; no login, authenticated forms or submissions verified",
+      "query": null,
+      "new_request": null,
+      "query_labels": [],
+      "submission_labels": ["(부처)입법예고", "(부처)행정예고", "불편법령신고"],
+      "tracking_supported": false
     }
   }
 }
