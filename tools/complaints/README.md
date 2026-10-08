@@ -27,6 +27,7 @@
 | [발굴 실행 지침](discovery-runbook.md) | 에이전트의 조사 순서, 근거 확인, 중복 후보 정리와 결과 기록 |
 | [주거정책 민원 경과](../../data/complaints/housing-policy-history.md) | 공유 대화의 국토부 및 서울시 민원, 정보공개청구, 후속 판단 |
 | [민원 추적 장부](../../data/complaints/board.md) | 현재 상태, 근거 수준, 접수번호, 다음 확인일 |
+| [전화 설명의 기록과 서면 확인](phone-followup.md) | 전화 전사와 공식 회신 구분, 질문별 후속 확인과 자료 청구 |
 | [computer use 실행 지침](computer-use.md) | 포털별 진입 경로, 조회·작성·접수 확인, 중복 제출 복구 |
 | [기관과 포털 목록](portals.json) | 공개 화면에서 확인한 메뉴와 URL |
 | [새 사건 예시](case.example.json) | 새 민원 또는 정보공개청구 입력 형식 |
