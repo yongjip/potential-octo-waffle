@@ -287,6 +287,14 @@ When expanding an approved strategy into dates, distinguish internal targets, of
 
 A dated plan does not establish execution, sending authorisation or an active reminder. Leave optional DMs conditional on an actual receipt and explicit sending direction. Preserve the reviewed plan, selected focus, frozen packet and ledger; save the calendar separately. The [official campaign procedure](official-campaign.md) is the entry point. The [dated action handoff](../../data/agents/handoffs/complaints-dated-actions-2026-10-09.md) records checks and integration.
 
+## Lessons from resuming a prepared filing on 2026-10-09
+
+A stale form can still display an old body and signed-in header while its session-management frame and expiry notice establish logout. Save the old form, then verify authentication through the intended result or filing path. Do not treat that stale page as a live verified submission form. A fresh login challenge invokes the current tool's action-time CAPTCHA confirmation, even when a prior challenge was delegated. Ask once for the current step, show its screenshot, and continue authorised packet preparation while awaiting the answer. Do not enter the challenge, accept elapsed time as permission or mark a filing attempt from a login navigation.
+
+An accessibility input error can report that no input was sent and supply a new tree with changed indices. Read the fresh tree and retarget the observed field. An observed DOM identifier or semantic locator can avoid a changing native index; never guess a field or count an input-preparation failure as a rejected password. Do not emit entered credentials in diagnostic state.
+
+Inspect data shapes before deriving receipt references or replacing a current plan component. Receipt collections can be arrays; nested packet components can hold routing metadata as well as a path. Preserve the old state, update known fields without collapsing an object, and validate references. A concise reviewed body can retire earlier supporting questions through a local revision; keep IDs and history, and distinguish consolidation from an agency answer. Remove references to an attachment that is not actually included. The [computer-use procedure](computer-use.md) is the entry point; the [submission handoff](../../data/agents/handoffs/complaints-submit-policy-2026-10-09.md) records reached states.
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.

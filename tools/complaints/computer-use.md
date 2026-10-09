@@ -101,6 +101,8 @@ Apply action-time confirmation or handoff requirements separately for CAPTCHAs, 
 
 A login CAPTCHA and a later filing CAPTCHA are separate pending steps. Do not ask again for the already authorized login challenge. Prepare the actual filing, show its current challenge and identify the tool requirement when a new action-time confirmation is needed. Continue independent queries and documentation while a required answer is pending; do not treat elapsed time as approval.
 
+If a later run has expired authentication and displays a new login challenge, a general instruction to execute the plan does not replace the tool's action-time CAPTCHA confirmation. Save the actual challenge view, mark the tab for handoff, ask once for that pending step and continue authorised local preparation. A previous challenge's authorisation remains evidence for that earlier step. Follow the [dated resumed-filing lesson](lessons-learned.md#lessons-from-resuming-a-prepared-filing-on-2026-10-09).
+
 Inspect the actual filing's required and optional privacy choices before submission. The Seoul general-petition form observed on 2026-10-09 required collection/use and third-party-provision consent, displayed recipient categories and ten-year retention, and allowed optional collection to be refused. Re-observe the current terms; do not treat these dated observations as permanent conditions. For a required confirmation, identify the actual populated data, recipients, purpose and retention. Avoid an all-consent control that includes optional fields. Current login-CAPTCHA authorization does not answer a new filing's privacy-consent question.
 
 ## Input and submission
