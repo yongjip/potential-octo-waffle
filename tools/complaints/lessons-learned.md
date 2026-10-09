@@ -605,6 +605,16 @@ This task also attempted an optional PDF-library import that was unavailable. Us
 
 Preparation did not file a case, send a message or create a schedule. Mark the older live body for replacement and distinguish the previously observed limits from a new live-form verification. Integrate only the reusable procedure, this lesson and the deidentified handoff. The next evidence check is the actual institution's response against the separate requested decisions and a verified financing path. Sources: [campaign procedure](official-campaign.md#review-whether-the-programme-reaches-its-intended-households), [handoff](../../data/agents/handoffs/complaints-support-target-v9.md).
 
+## Lessons from the price-alignment clarification on 2026-10-10
+
+After the support-target revision, the user questioned whether the author had to investigate recipients and clarified that excessive discounting in an expensive location could concentrate public benefit on selected occupants. The earlier suggestion to lower initial funding requirements and the phrase “if high deposits are retained” could imply a discount remedy the user had not selected. Replace that remedy with appropriate deposit/public-benefit design and income/asset criteria aligned with the resulting deposit. This clarification does not set a new price, prohibit every public discount or freeze the current amount indefinitely.
+
+A structural question can use the published criteria and explicit calculations without a personal recipient survey. Actual recipient funding shares and dominance claims still need evidence. Remove the author-investigation disclaimer from the main body while retaining the institution's records request and the attachment's evidence scope. Do not convert a missing distribution dataset into a prerequisite that prevents making a policy proposal.
+
+The parent revised the active body, memo, attachment and current execution pointers together. Financial scenarios stayed unchanged. The new wording was checked by the parent; the preceding three-agent review remains limited to its frozen earlier input. Preserve that review instead of claiming it tested the changed body. Every page of the revised final PDF needs visual review even when only two prose pages change. The live form and prior actual receipts remain separate from preparation.
+
+Sources and next action: [campaign procedure](official-campaign.md#review-whether-the-programme-reaches-its-intended-households), [handoff](../../data/agents/handoffs/complaints-price-alignment-v10.md). The institution should explain deposit appropriateness, selected amendment decisions, financing feasibility and allocation/public-cost effects. These remain requested findings rather than established outcomes.
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
