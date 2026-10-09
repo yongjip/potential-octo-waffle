@@ -1,5 +1,7 @@
 # Handoff for resuming council identity authentication
 
+Later checkpoint: the [independent document-review handoff](complaints-council-document-review-2026-10-09.md) supersedes this handoff's pending audit-body and attachment scope. Keep the registration/login proof below. The current campaign record identifies the revised packet; do not reuse the older submission confirmation for it.
+
 - agent: codex-complaints-execution
 - task: complaints-council-auth-resume-2026-10-09
 - date: 2026-10-09 KST
