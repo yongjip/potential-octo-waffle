@@ -104,7 +104,7 @@ test("malformed secret files fail without putting their content in errors", () =
     });
   }
   assert.throws(() => parseCredentialEnv(""), /missing required keys/);
-  assert.equal(Object.values(PORTAL_KEYS).flat().length, 8);
+  assert.equal(Object.values(PORTAL_KEYS).flat().length, 10);
 }));
 
 test("legacy account storage upgrades without changing existing bytes or credential values", () => fixture(async dir => {
@@ -115,12 +115,12 @@ test("legacy account storage upgrades without changing existing bytes or credent
   profile.portals = ["epeople", "open_go_kr", "seoul_eungdapso"];
   profile.fixture_metadata = "preserve";
   await writeFile(profileFile, JSON.stringify(profile) + "\n", { mode: 0o600 });
-  const legacy = (await readFile(envFile(dir), "utf8")).split("\n").filter(line => !line.startsWith("COMPLAINTS_LAWMAKING_") && line.length).join("\n");
+  const legacy = (await readFile(envFile(dir), "utf8")).split("\n").filter(line => !line.startsWith("COMPLAINTS_LAWMAKING_") && !line.startsWith("COMPLAINTS_SEOUL_COUNCIL_") && line.length).join("\n");
   await writeFile(envFile(dir), legacy, { mode: 0o600 });
   assert.throws(() => parseCredentialEnv(legacy), /missing required keys/);
   const result = await initializeAccounts(dir, os.hostname());
   assert.equal(result.upgraded, true);
-  assert.equal(await readFile(envFile(dir), "utf8"), legacy + '\nCOMPLAINTS_LAWMAKING_ID=""\nCOMPLAINTS_LAWMAKING_PASSWORD=""\n');
+  assert.equal(await readFile(envFile(dir), "utf8"), legacy + '\nCOMPLAINTS_LAWMAKING_ID=""\nCOMPLAINTS_LAWMAKING_PASSWORD=""\nCOMPLAINTS_SEOUL_COUNCIL_ID=""\nCOMPLAINTS_SEOUL_COUNCIL_PASSWORD=""\n');
   const updated = JSON.parse(await readFile(profileFile, "utf8"));
   assert.deepEqual(updated.portals, Object.keys(PORTAL_KEYS));
   assert.equal(updated.fixture_metadata, "preserve");
@@ -146,13 +146,48 @@ test("incomplete legacy storage is rejected before either file is upgraded", () 
   const profileText = JSON.stringify(profile) + "\n";
   await writeFile(profileFile, profileText, { mode: 0o600 });
   const original = await readFile(envFile(dir), "utf8");
-  const legacy = original.split("\n").filter(line => !line.startsWith("COMPLAINTS_LAWMAKING_")).join("\n");
+  const legacy = original.split("\n").filter(line => !line.startsWith("COMPLAINTS_LAWMAKING_") && !line.startsWith("COMPLAINTS_SEOUL_COUNCIL_")).join("\n");
   for (const malformed of [legacy.replace('COMPLAINTS_SEOUL_PASSWORD=""\n', ''), legacy + 'COMPLAINTS_LAWMAKING_ID="fixture-partial"\n']) {
     await writeFile(envFile(dir), malformed, { mode: 0o600 });
     await assert.rejects(initializeAccounts(dir, os.hostname()), /missing required keys/);
     assert.equal(await readFile(profileFile, "utf8"), profileText);
     assert.equal(await readFile(envFile(dir), "utf8"), malformed);
   }
+}));
+
+test("four-portal storage adds council keys without changing existing bytes or login pairs", () => fixture(async dir => {
+  await initializeAccounts(dir, os.hostname());
+  await storeCredentials(dir, "lawmaking", "fixture-legislation", fakePassword);
+  const profileFile = path.join(dir, "auth/runtime.json");
+  const profile = JSON.parse(await readFile(profileFile, "utf8"));
+  profile.portals = ["epeople", "open_go_kr", "seoul_eungdapso", "lawmaking"];
+  await writeFile(profileFile, JSON.stringify(profile) + "\n", { mode: 0o600 });
+  const legacy = (await readFile(envFile(dir), "utf8")).split("\n").filter(line => !line.startsWith("COMPLAINTS_SEOUL_COUNCIL_")).join("\n");
+  await writeFile(envFile(dir), legacy, { mode: 0o600 });
+  assert.equal((await initializeAccounts(dir, os.hostname())).upgraded, true);
+  assert.equal(await readFile(envFile(dir), "utf8"), legacy + 'COMPLAINTS_SEOUL_COUNCIL_ID=""\nCOMPLAINTS_SEOUL_COUNCIL_PASSWORD=""\n');
+  assert.deepEqual(await loadPortalCredentials(dir, "lawmaking"), { id: "fixture-legislation", password: fakePassword });
+  await storeCredentials(dir, "seoul_council", "fixture-council", fakePassword);
+  assert.deepEqual(await loadPortalCredentials(dir, "seoul_council"), { id: "fixture-council", password: fakePassword });
+  assert.equal((await initializeAccounts(dir, os.hostname())).upgraded, false);
+  const status = spawnSync(process.execPath, [CLI, "status", `--data-dir=${dir}`], { encoding: "utf8" });
+  assert.equal(status.status, 0);
+  assert.equal(JSON.parse(status.stdout).portals.seoul_council.credentials_ready, true);
+  assert.doesNotMatch(status.stdout + status.stderr, /fixture-legislation|fixture-council|fixture-only/);
+}));
+
+test("partially added council keys are rejected before migration changes either file", () => fixture(async dir => {
+  await initializeAccounts(dir, os.hostname());
+  const profileFile = path.join(dir, "auth/runtime.json");
+  const profile = JSON.parse(await readFile(profileFile, "utf8"));
+  profile.portals = ["epeople", "open_go_kr", "seoul_eungdapso", "lawmaking"];
+  const profileText = JSON.stringify(profile) + "\n";
+  await writeFile(profileFile, profileText, { mode: 0o600 });
+  const malformed = (await readFile(envFile(dir), "utf8")).replace('COMPLAINTS_SEOUL_COUNCIL_PASSWORD=""\n', '');
+  await writeFile(envFile(dir), malformed, { mode: 0o600 });
+  await assert.rejects(initializeAccounts(dir, os.hostname()), /missing required keys/);
+  assert.equal(await readFile(envFile(dir), "utf8"), malformed);
+  assert.equal(await readFile(profileFile, "utf8"), profileText);
 }));
 
 test("credentials inside Git require ignore rules and must remain untracked", () => fixture(async dir => {

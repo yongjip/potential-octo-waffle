@@ -15,10 +15,13 @@ export const PORTAL_KEYS = Object.freeze({
   open_go_kr: ["COMPLAINTS_OPEN_GO_ID", "COMPLAINTS_OPEN_GO_PASSWORD"],
   seoul_eungdapso: ["COMPLAINTS_SEOUL_ID", "COMPLAINTS_SEOUL_PASSWORD"],
   lawmaking: ["COMPLAINTS_LAWMAKING_ID", "COMPLAINTS_LAWMAKING_PASSWORD"],
+  seoul_council: ["COMPLAINTS_SEOUL_COUNCIL_ID", "COMPLAINTS_SEOUL_COUNCIL_PASSWORD"],
 });
 const KEYS = Object.values(PORTAL_KEYS).flat();
-const LEGACY_PORTALS = ["epeople", "open_go_kr", "seoul_eungdapso"];
-const LEGACY_KEYS = LEGACY_PORTALS.flatMap(portal => PORTAL_KEYS[portal]);
+const LEGACY_PORTAL_SETS = [
+  ["epeople", "open_go_kr", "seoul_eungdapso"],
+  ["epeople", "open_go_kr", "seoul_eungdapso", "lawmaking"],
+];
 const UID = os.userInfo().uid;
 
 function requireValue(condition, message) {
@@ -117,7 +120,10 @@ export function parseCredentialEnv(text, { allowLegacy = false } = {}) {
     seen.add(match[1]);
   }
   const complete = seen.size === KEYS.length;
-  const legacy = allowLegacy && seen.size === LEGACY_KEYS.length && LEGACY_KEYS.every(key => seen.has(key));
+  const legacy = allowLegacy && LEGACY_PORTAL_SETS.some(portals => {
+    const keys = portals.flatMap(portal => PORTAL_KEYS[portal]);
+    return seen.size === keys.length && keys.every(key => seen.has(key));
+  });
   requireValue(complete || legacy, "Credential file is missing required keys");
   return result;
 }
@@ -163,7 +169,7 @@ function validateProfile(profile, { allowLegacy = false } = {}) {
   requireValue(profile.execution === "connected_mac" && profile.browser === "edge", "This runtime profile supports a connected Mac and Edge");
   requireValue(Array.isArray(profile.portals), "Runtime profile must contain the supported portals");
   const complete = profile.portals.length === Object.keys(PORTAL_KEYS).length && new Set(profile.portals).size === profile.portals.length && profile.portals.every(portal => Object.hasOwn(PORTAL_KEYS, portal));
-  const legacy = allowLegacy && profile.portals.length === LEGACY_PORTALS.length && new Set(profile.portals).size === LEGACY_PORTALS.length && profile.portals.every(portal => LEGACY_PORTALS.includes(portal));
+  const legacy = allowLegacy && LEGACY_PORTAL_SETS.some(portals => profile.portals.length === portals.length && new Set(profile.portals).size === portals.length && profile.portals.every(portal => portals.includes(portal)));
   requireValue(complete || legacy, "Runtime profile must contain the supported portals");
   requireValue(profile.session_state === "not_verified", "A stored credential must not be represented as a verified browser session");
   return profile;
@@ -186,13 +192,14 @@ export async function initializeAccounts(dataDir, expectedHostname) {
       envText = await privateRead(files.envFile);
       parseCredentialEnv(envText, { allowLegacy: true });
     } catch (error) { if (error.code !== "ENOENT") throw error; }
-    const legacyEnv = envText !== undefined && !/^COMPLAINTS_LAWMAKING_ID=/mu.test(envText);
-    const legacyProfile = existing && existing.portals.length === LEGACY_PORTALS.length;
+    const missingKeys = envText === undefined ? [] : KEYS.filter(key => !new RegExp(`^${key}=`, "mu").test(envText));
+    const legacyEnv = missingKeys.length > 0;
+    const legacyProfile = existing && existing.portals.length !== Object.keys(PORTAL_KEYS).length;
     // Validate both inputs first; preserve the original credential bytes during upgrade.
     if (envText === undefined) {
       await atomicWrite(files.envFile, serializeEnv(Object.fromEntries(KEYS.map(key => [key, ""]))));
     } else if (legacyEnv) {
-      const addition = PORTAL_KEYS.lawmaking.map(key => `${key}=""`).join("\n") + "\n";
+      const addition = missingKeys.map(key => `${key}=""`).join("\n") + "\n";
       const upgraded = envText + (envText.endsWith("\n") ? "" : "\n") + addition;
       requireValue(Buffer.byteLength(upgraded, "utf8") <= 64 * 1024, "Private configuration exceeds the supported size");
       await atomicWrite(files.envFile, upgraded);
@@ -314,7 +321,7 @@ async function main() {
   }
   const dataDir = path.resolve(options["data-dir"] ?? path.join(ROOT, "data/complaints"));
   if (command === "help") {
-    console.log("accounts.mjs init --host=YOUR_MAC_HOSTNAME | store --portal=all|epeople|open_go_kr|seoul_eungdapso|lawmaking | status | doctor\nOptional: --data-dir=/absolute/private/path\nInit upgrades existing three-portal storage without replacing credential values. Store prompts hide both values. This tool does not create accounts, sign in, transfer secrets or submit complaints.");
+    console.log("accounts.mjs init --host=YOUR_MAC_HOSTNAME | store --portal=all|epeople|open_go_kr|seoul_eungdapso|lawmaking|seoul_council | status | doctor\nOptional: --data-dir=/absolute/private/path\nInit upgrades existing three- or four-portal storage without replacing credential values. Store prompts hide both values. This tool does not create accounts, sign in, transfer secrets or submit complaints.");
     return;
   }
   requireValue(["init", "store", "status", "doctor"].includes(command), "Unknown command");
