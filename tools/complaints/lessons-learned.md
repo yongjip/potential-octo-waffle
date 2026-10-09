@@ -259,6 +259,14 @@ Reconstruct the conversation's selected objective before introducing new evidenc
 
 The user requested a Socratic form. A short hypothetical question sequence can expose whether the combined conditions serve the institution's stated purpose. It is authored prose, not a historical quotation or actual agency admission. Phrase family-support advantage as a mechanism to examine. Do not assert universal ineligibility, the prevalence of inherited funds or exempt treatment of gifts. Preserved prior evidence, the selected focus and the frozen proposal; no filing or tracker event changed. Sources: [argument review procedure](income-linkage-review.md#review-and-prepare-a-proposal); [dated handoff](../../data/agents/handoffs/complaints-coherent-income-logic-2026-10-09.md).
 
+## Lessons from preparing a call based sharing draft on 2026-10-09
+
+The user requested a way to share the connected policy argument and include the supplied call. Prepare a full article, a short introduction and a source note around the selected access question. Do not expand the issue into unrelated demands or publish the whole conversation. No visible Page or concrete publishing destination was supplied. The personal draft and call evidence remain in ignored storage; only reusable procedure and this lesson enter the documentation commit.
+
+The supplied automated transcript is not an audio-checked record. Use attributed paraphrases and preserve the exact time locations privately. Include the discussed absence or insufficiency of a simulation, the separate operation of criteria, the contemplated improvement, concerns about written wording and selective quotation, and the closing response about a written reply. Do not turn these into an official admission of universal analytical absence, permanent refusal or concealment. An earlier user report of a pending reply is a dated report, not a newly checked portal status.
+
+Public copy retains the connected saving/interest/income-ceiling argument and dated notice sources. Exact household numbers belong in the evidence note with gross/net and financing assumptions intact. Remove identifying call and portal details from the copy; do not commit raw personal evidence. Advice and draft preparation do not select a social platform, create a share link or authorise messaging journalists or officials. Sources: [sharing procedure](sharing-evidence.md); [dated handoff](../../data/agents/handoffs/complaints-sharing-call-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
