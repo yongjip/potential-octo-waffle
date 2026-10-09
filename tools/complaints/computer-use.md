@@ -105,6 +105,8 @@ If a later run has expired authentication and displays a new login challenge, a 
 
 Inspect the actual filing's required and optional privacy choices before submission. The Seoul general-petition form observed on 2026-10-09 required collection/use and third-party-provision consent, displayed recipient categories and ten-year retention, and allowed optional collection to be refused. Re-observe the current terms; do not treat these dated observations as permanent conditions. For a required confirmation, identify the actual populated data, recipients, purpose and retention. Avoid an all-consent control that includes optional fields. Current login-CAPTCHA authorization does not answer a new filing's privacy-consent question.
 
+Record privacy choices by their actual meaning. A checked No control for case publication means publication is refused; it must not be stored as `casePublic=true`. Keep case-publication permission, optional collection and the separate applicant-information visibility control distinct. Before reading a file count, inspect whether the observed upload control is an actual file input or a button. Preserve completed edits after a read-only verification error and resume the verification without repeating those edits. See the [authenticated filing lesson](lessons-learned.md#lessons-from-authenticated-filing-preparation-on-2026-10-09).
+
 ## Input and submission
 
 1. Open the selected procedure and institution. Verify the procedure before entering the final title and body.
