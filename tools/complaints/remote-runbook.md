@@ -1,6 +1,6 @@
 # Account storage and connected-Mac complaint runs
 
-Canonical language: English. The user creates the accounts and enters credentials. The agent prepares storage and uses supported computer-use tools after setup. Account creation is not the current task.
+Canonical language: English. Follow the latest destination-specific account instruction. The user created the original four accounts and entered their credentials. On 2026-10-09 the user separately authorised the agent to create a council account and generate and store its initial pair. Apply the current tool's confirmation rules to the actual authentication and agreement steps.
 
 ## Private storage
 
@@ -57,9 +57,19 @@ Local module support differs between adapters. In the 2026-10-08 computer-use RE
 1. Select the Mac and workspace holding the private data. Verify the shell hostname against the profile. Confirm that computer use controls that Mac before loading credentials; browser and shell hosts can differ.
 2. Read this file and `computer-use.md`. Identify the operation: existing-case query, draft preparation or authorized filing. Account, login and case-processing states remain separate.
 3. Observe the current login UI and origin. Eungdapso uses Seoul integrated membership. Reuse an authorized session for the intended account or load only that portal's pair. Do not output entered credential values in diagnostic state.
-4. Apply current computer-use rules for authentication, CAPTCHA, new-password entry, binding agreements and sensitive transmission. The user handles signup. Storage preparation does not authorize accepting terms or filing an unspecified petition.
+4. Apply current computer-use rules for authentication, CAPTCHA, initial credential entry, binding agreements and sensitive transmission. Complete authorised nonbinding signup preparation. Confirm actual binding terms at action time, and hand existing-password changes to the user. Storage preparation alone does not authorise accepting terms or filing an unspecified petition.
 5. Verify the authenticated account before reading or filing. Reconcile historical receipts; a new account may not include old guest filings automatically.
 6. Follow the tracker lock and duplicate checks. Before filing, persist `submission_unknown`. After acceptance, save primary evidence and the receipt. Authentication failure must not overwrite case status.
 7. Report only reached states: storage prepared, credentials stored, local loading supported, authenticated session verified, remote query verified, or filing accepted. Credential presence is not proof of working remote submission.
 
 The observed terms are recorded in `accounts-and-remote.md`. The user directed that those passages must not become an operator-permission gate. Do not add that gate or invent received permission. Apply concrete tool confirmation requirements independently. Do not schedule recurring work unless the user requests it.
+
+## Council phone authentication
+
+Start phone authentication from the actual council registration page when creating a council account. Keep its callback separate from a login-linked identity flow. Use the carrier supplied by the user. A carrier reply does not answer another portal's pending CAPTCHA confirmation.
+
+On 2026-10-09, choosing a carrier in a held NICE window displayed a session-ended notice with generic cookie advice. A newly opened registration-linked window reached the authentication-method choices. This does not establish that cookie blocking caused the earlier failure. Save the expired state, close that window and reopen from the parent registration control. Do not weaken browser privacy protections solely because an error page suggests it.
+
+The fresh SKT flow offered PASS, QR and SMS. Selecting QR exposed a required identity-service consent checkbox and four detail views: personal-information use, unique-identifier processing, NICE service terms and carrier terms. Inspect those actual terms and obtain the current tool's action-time confirmation before accepting them. Explain the specific data categories and recipients. QR selection is preparation; it does not establish that a QR code was displayed, a phone request was sent or authentication completed.
+
+Keep short-lived authentication state current across turns. If a pending window expires, preserve the earlier observation and reopen the same authorised registration flow. Reconfirm if the terms, destination or data scope changes. Verify the phone result, registration acceptance, fresh login and any council filing separately. Keep terms and screenshots in ignored private evidence. See the [phone-authentication lesson](lessons-learned.md#lessons-from-council-phone-authentication-on-2026-10-09).
