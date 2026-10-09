@@ -535,6 +535,18 @@ The integration worktree omitted two ignored private complaint documents linked 
 
 Sources and next checks: [public official records procedure](public-official-records.md); [PETI disclosure explanation](https://www.peti.go.kr/prptOptp.do); [PETI permitted nondisclosure](https://www.peti.go.kr/nticDen.do); [handoff](../../data/agents/handoffs/complaints-public-records-2026-10-09.md). Resolve remaining filing or career date gaps from an original correction or appointment record when needed. Keep detailed named evidence private.
 
+## Lessons from source-based proposal strategy on 2026-10-09
+
+The user clarified that the public-official research was intended to improve the common proposal using relevant speeches and interviews. The preceding output concentrated on careers, policy themes and assets. Treat that research as an input. Complete the requested application with a source-use plan and a concrete shared revision candidate.
+
+Each source needs an explicit role. A programme release establishes stated purpose. A directly related funding question establishes that the issue was raised at a particular time. A policy-validation interview can support a proposed evaluation method. An allocation concern defines a material comparison question. None alone establishes support for the selected eligibility change, automatic ordinance application or an already demonstrated distributional effect.
+
+The revised argument starts with programme purpose, describes the publicly raised issue, uses the same notice's combined criteria, states the selected income and asset changes, and requests reasons, a feasible path and an implementation owner. A financing remedy and an eligibility remedy address different conditions. Preserve the public exchange's alternatives rather than making the source speaker endorse the user's remedy. Use the same document for all readers and retain exact dates and original context.
+
+The new candidate was checked against the existing portal character limit and frozen calculation values. Current packet, PDF, policy focus and ledger remain preserved while the candidate is evaluated. No research agent was presented as an independent reviewer of this revision. A changed argument needs a matching final attachment and live form before transmission, even when the requested policy scope stays the same.
+
+Sources and next action: [official campaign procedure](official-campaign.md); [deidentified handoff](../../data/agents/handoffs/complaints-citation-strategy-2026-10-09.md). Apply any adopted candidate through the existing packet revision procedure and recheck the final body, source dates, attachment layout and delivery state.
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
