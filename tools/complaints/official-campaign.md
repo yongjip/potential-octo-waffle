@@ -38,6 +38,8 @@ After a reply, classify the three answer items as answered, partial or unanswere
 
 ## Prepare a council route when a dated window matters
 
+Use the [public reader research](reader-research.md) when choosing current committee members or adapting an introductory note. Verify the current council term, remit and professional-office responsibilities before using historical speeches. Separate a relevant public question from endorsement, actual reading or rule-changing authority. Keep the selected request and evidence consistent while changing the introduction and question order.
+
 Verify a current official window, scope and responsible committee. Prepare the evidence while the agency case proceeds if waiting would miss the window. Give the elected body a focused institutional question: were the combined conditions evaluated, and what is the improvement decision? This is different from an individual qualification exception or a repeated copy of the same administrative request.
 
 On 2026-10-09 the [Seoul council audit submission guide](https://www.smc.seoul.kr/board/BoardList.do?boardTypeId=162&menuId=001005009) states a 2026-09-04 to 2026-10-23 window. It accepts policy/project improvement matters and excludes private-interest matters. Some submissions may be reference material rather than audit questions. Identity is nonpublic, but content may be used publicly in the audit. Do not equate a nonpublic submission list with a promise that attachments will never be disclosed. The [committee guide](https://admin.smc.seoul.kr/publish/view.do?menuId=001004001) places the housing office and SH under the Housing and Space Committee. Recheck these dated facts before a later campaign.
