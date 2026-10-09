@@ -1,5 +1,7 @@
 # Handoff for council document review
 
+Later checkpoint: the [reader-copy correction handoff](complaints-council-reader-copy-2026-10-09.md) supersedes revision 2 as the current submission candidate. The independent reviews and calculations below remain preserved evidence.
+
 - agent: codex-complaints-review
 - task: complaints-council-document-review-2026-10-09
 - date: 2026-10-09 KST

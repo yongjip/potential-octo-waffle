@@ -393,6 +393,16 @@ The substantive revision preserved the previous packet and six-page attachment. 
 
 Sources: [campaign review procedure](official-campaign.md#prepare-a-council-route-when-a-dated-window-matters); [review handoff](../../data/agents/handoffs/complaints-council-document-review-2026-10-09.md). Full calculations, reviewer observations, PDF and private execution evidence remain ignored.
 
+## Lessons from council reader-copy correction on 2026-10-09
+
+The user questioned the automated-call heading and an official-host byte-comparison statement in the reviewed council attachment. Inspection confirmed that the intended attachment repeated internal verification details on the source page and every notice extract. This was a reader-facing drafting mistake: those process details obscured the institutional question without resolving source authenticity.
+
+Preserved revision 2 and prepared a new revision. Renamed the heading to a participant's call-summary record, retained the brief automated-transcription and unchecked-audio scope, kept time locations and improvement context, and requested written clarification of the relevant case. Removed the repeated host/file comparison wording from the submission while retaining the actual external-copy provenance, notice identity, relevant pages and links. The private source record still states that official-host byte comparison is incomplete. No source-verification status was upgraded. Financial assumptions and the selected request did not change.
+
+For the user's legal question, official Supreme Court material distinguishes a telephone participant's own recording from a third party's interception. This addresses the recording issue under the Communications Secrets Protection Act; it is not blanket clearance for unrestricted online publication, every disclosure or every recording method. Keep the precise legal sources and limits privately, and use only the relevant paraphrase in the dossier. Do not label an automatically generated summary as a verified verbatim transcript merely because a recording exists.
+
+Separate reader-relevant provenance and material uncertainty from internal execution diagnostics. Render and inspect the final attachment before freezing the revised envelope, synchronize current pointers and preserve the earlier revisions. No council transmission occurred. Sources: [campaign procedure](official-campaign.md#prepare-a-council-route-when-a-dated-window-matters); [reader-copy handoff](../../data/agents/handoffs/complaints-council-reader-copy-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
