@@ -32,6 +32,20 @@ Limit the main written request to three answer items:
 
 Use supporting tables as attachments. Keep pre-entry accumulation separate from post-entry cash flow. A hypothetical loan is not an available product. Apply the ceiling at its actual screening stages. A seven-year saving comparison is a proposed benchmark, not every household's observed saving history. Follow the [income linkage review](income-linkage-review.md).
 
+## Review whether the programme reaches its intended households
+
+When the user questions support for a household that can supply a large deposit, turn that concern into a programme-target question. Current income, accumulated housing wealth and required own funds are different quantities. Neither low current income nor ability to pay a deposit alone establishes support need. A conditional required cash amount is not an observed recipient asset holding or a selected wealth cutoff. Do not claim that a particular funding group dominates without recipient data.
+
+Define the joint assessment: current income, held housing assets, initial own funds, continuing payment burden and the additional housing-stability effect. Ask the institution to compare the current criteria, lower initial funding requirements and the selected eligibility changes on the same unit scope. Include effects on existing applicants, scarce-unit allocation and public cost. Request held contract/non-contract and financing aggregates separately from a new evaluation plan; do not assume the institution holds origin data or require a new individual audit.
+
+Keep the selected priority and fallback. If high deposits are retained, connect deposit-linked asset adjustment to that unit segment and to the same support-need and allocation review. Raising an asset ceiling can admit households with more assessed assets; acknowledge that policy choice instead of describing it as automatically targeted support. Do not silently replace the request with a new parental-wealth, funding-origin or minimum-income eligibility test.
+
+For an authorised delegated review, freeze one candidate and give the same factual limits to separate constructed case-officer, legal/budget and team-lead roles. Record a parent council lens separately. Save each input hash and completed response. Reconcile objections, revise the body and have the same roles reread the changed input. Distinguish the scope of body review from the parent's calculation, attachment and delivery checks. A simulated reply cannot supply an actual policy decision, recipient distribution, institutional owner or acceptance probability.
+
+Use product-specific loan conditions and a labelled rate scenario in the attachment. A larger loan reduces upfront own funds while increasing later payments. Keep policy and bank eligibility, deferral compatibility, assessed assets and approval unknowns beside the comparison. Describe an interest-only column as money before principal and other household costs. Check contract cash needed before loan execution; it is part of own funds, not a second amount to add. Align every duplicate rate field in the generator, calculation record, body and attachment after changing a scenario. Check current nested pointers after freezing the final rendered attachment.
+
+See the [support-target revision lesson](lessons-learned.md#lessons-from-the-support-target-document-revision-on-2026-10-10) and [delegated review procedure](official-roleplay.md#run-a-delegated-document-rehearsal).
+
 ## Use one official case as the main record
 
 Read existing filings, replies and the prepared packet before selecting a channel. Check current case status, receipt, deadline and the live final body before submitting. Record a phone explanation as an event; do not mark unanswered items complete because a call occurred.
