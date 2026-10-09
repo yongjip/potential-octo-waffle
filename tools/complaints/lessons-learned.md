@@ -267,6 +267,20 @@ The supplied automated transcript is not an audio-checked record. Use attributed
 
 Public copy retains the connected saving/interest/income-ceiling argument and dated notice sources. Exact household numbers belong in the evidence note with gross/net and financing assumptions intact. Remove identifying call and portal details from the copy; do not commit raw personal evidence. Advice and draft preparation do not select a social platform, create a share link or authorise messaging journalists or officials. Sources: [sharing procedure](sharing-evidence.md); [dated handoff](../../data/agents/handoffs/complaints-sharing-call-2026-10-09.md).
 
+## Lessons from official campaign planning on 2026-10-09
+
+The user requested explicit delegated review of a plan for officials and an assessment of a mayor DM. Review the core argument, official channels and account provenance separately, then review the combined plan. Lead with the selected high-deposit initial income-ceiling abolition and linked-adjustment fallback. Keep the main written reply to acceptance/reasons, feasible access if retaining the rule, and authority/owner/next step. Do not add further applicant tests or turn the request into a list of loosely related demands.
+
+Use the prepared actual procedure as the starting point. A policy proposal can be filed through general city suggestions/questions; its label does not require switching to a voting portal. A public additional-answer guide for completed results does not establish an in-progress body-append function. Read the actual case and deadline before execution. Keep held-analysis disclosure separate from policy-change requests, and do not let the former delay the latter.
+
+Check dated opportunities before choosing to wait. The official Seoul council audit guide, checked 2026-10-09, has a 2026-10-23 cutoff and covers policy/project improvement matters. Prepare institutional questions in parallel with the agency case. Keep any internal target separate from the official cutoff. A nonpublic identity or list does not guarantee that the content will remain private during audit use. Adoption as an audit question is not guaranteed. Source: [official audit guide](https://www.smc.seoul.kr/board/BoardList.do?boardTypeId=162&menuId=001005009).
+
+Official homepage links establish social-account provenance, not DM availability or direct official reading. Public evidence does not establish a response probability. Recommend one short supplemental routing DM after actual filing, and reserve sending for explicit user authorisation. A planning request about DM effectiveness is not sending authorisation. The formal mayor-request path has a result viewer but does not guarantee personal mayor review. Sources: [mayor homepage](https://mayor.seoul.go.kr/index.do), [official mayor request](https://eungdapso.seoul.go.kr/req/mayor_hope/mayor_hope.do).
+
+A receipt, phone explanation, read marker and generic review statement are separate from an itemised written policy decision. A decision is separate from a changed rule and actual recruitment notice. Preserve the supplied call's improvement context and closing response as well as the disputed analysis explanation. Do not infer future refusal, deliberate concealment or universal analysis absence from an automated transcript. A condensed official memo remains a revision candidate; freeze the existing focus, packet and ledger by hash.
+
+The reusable [official campaign procedure](official-campaign.md) holds the implementation rules. The [campaign handoff](../../data/agents/handoffs/complaints-official-campaign-2026-10-09.md) records validation and private deliverables. Verify exported helper signatures before calling them; the tracker loader requires its data directory and returns asynchronously.
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.

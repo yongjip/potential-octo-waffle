@@ -72,4 +72,6 @@ When the user explains the saving period as a policy-design benchmark for early-
 
 For an authorised delegated review, give distinct reviewers arithmetic, policy design and counterargument tasks. Recompute numerical examples independently and ask for a review of the combined recommendation. Preserve differences in proposed saving rates and unresolved definitions. Do not count mathematical agreement as evidence that a policy is optimal or a legal route available.
 
+When converting the reviewed argument into an official action plan, use the [official campaign procedure](official-campaign.md). Fix three written answer items, preserve one primary case, check dated council opportunities and treat mayor DMs as optional routing. Distinguish a plan or draft from actual delivery and a written decision from a changed recruitment notice.
+
 Present the chosen rule, sensitivity examples, the prohibition on a new income floor, and the remaining asset/gross-net conditions. Keep optional growth and loan scenarios outside the core demand. Save the reviewed proposal as a candidate until a submission revision is selected. Follow [packet revision procedures](computer-use.md) and [dated lessons](lessons-learned.md#lessons-from-the-deposit-and-income-linkage-review-on-2026-10-09).
