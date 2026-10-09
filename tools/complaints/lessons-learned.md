@@ -455,6 +455,12 @@ Preserve prior versions, then update the current memo, portal body, rendered dos
 
 The accepted administrative case contains the earlier income request. Track the new asset component as prepared and unsubmitted; do not retroactively describe it as delivered or unanswered by that agency. No external filing or message occurred in the document-edit task. An older live form still requires replacement and fresh comparison. Source: [campaign procedure](official-campaign.md#fix-the-request-and-answer-items); [review procedure](income-linkage-review.md#review-and-prepare-a-proposal); [handoff](../../data/agents/handoffs/complaints-joint-proposal-2026-10-09.md).
 
+## Lessons from the family support rationale on 2026-10-09
+
+The user clarified the represented group: high earned income, little starting wealth, no parental support and outflows to support parents. Preserve this as reported experience and a policy concern, not a universal profile. Distinguish current salary, accumulated wealth, family resources and support obligations. Explain the proposed fairness principle through practical access to the programme's stated goal while retaining the selected income/asset changes. Tax burden is relevant context; do not silently invent benefits proportional to tax payments or a new proof-of-support gate.
+
+A claim of exclusion from every public benefit, exclusive capture by wealthy families or asset prices rising faster than wages needs programme-specific or period-specific evidence. Narrow the filing to the actual housing criteria without erasing the user's concern. No new factual trend or beneficiary study was established. Existing modelled saving rates do not measure actual support outflows; define categories and prevent double deductions before adding such a scenario. Save the argument privately and preserve the frozen packet/ledger until a specific revision is requested. Sources: [argument review procedure](income-linkage-review.md#review-and-prepare-a-proposal); [handoff](../../data/agents/handoffs/complaints-family-support-rationale-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
