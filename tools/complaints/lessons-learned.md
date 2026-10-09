@@ -231,6 +231,16 @@ The city's 2022 social-mix explanation emphasised mixed rental/owner-occupied ho
 
 The revised rationale was saved as a private candidate. The frozen filing packet, its body hash and the eleven-case/sixteen-event ledger remain unchanged. Source: [framing handoff](../../data/agents/handoffs/complaints-early-career-framing-2026-10-09.md).
 
+## Lessons from earned-income fairness review on 2026-10-09
+
+The user explicitly introduced a historical earned-income minimum after previously preferring no extra tests. Treat it as an intentional alternative to review, not the accidental income floor warned about in the ceiling formula. Updated the runbook to scope the warning to silent conversion and honour later user instructions. Keep the existing selected packet intact until a revision is chosen.
+
+Separate a fairness argument from a confirmed omission or unlawful discrimination claim. The reviewed 2026-06-22 asset rule includes deposits, securities and other holdings. Gifted or investment-derived funds retained in assessed assets can therefore affect admission; an annual earnings ceiling and an asset ceiling still affect households differently. Cryptocurrency absence from an enumerated list does not establish total screening exemption. Exact recruitment and agency interpretation remain checks. Source: [asset rule](https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000280812&chrClsCd=010201).
+
+Historical earnings do not establish current wealth, saved funds or absence of family transfers. A cumulative savings-derived floor uses total net income over a defined period, not annual income. Review short-career and interrupted-career exclusions and treatment of self-employment. A tax-history route or priority may serve a different goal from a high minimum amount. The reviewed Article 43 version uses a five-year income-tax history and includes cases with no payable amount after exemptions/credits; it is a separate programme precedent, not a wealth-origin test or authority for Mirinae. Source: [Article 43, effective 2026-06-15](https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033568573).
+
+Private evidence and candidate prose preserve the user clarification, calculations, verified scope and unresolved asset/supply details. No frozen body, prior review manifest, ledger case/event or filing changed. Source: [fairness handoff](../../data/agents/handoffs/complaints-earned-income-fairness-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.

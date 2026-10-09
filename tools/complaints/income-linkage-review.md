@@ -18,7 +18,9 @@ For the benchmark household, accumulated savings are `T*s*Y`. The income needed 
 
 The proposed programme design condition is `D <= T*s*C`. If the institution accepts this benchmark while retaining an income ceiling, the implied minimum ceiling is `C >= D/(T*s)`. One linkage option is `C_new = max(C_base, D/(T*s))`, which retains a higher existing ceiling. Another option is to reduce the deposit while keeping the ceiling. A deposit-linked exemption can avoid setting an extremely high new ceiling; its deposit boundary, applicable supply and legal route need explicit definition.
 
-Do not apply `D <= T*s*Y` as a new applicant requirement. It implies `Y >= D/(T*s)` and creates an income floor. Do not require proof of seven years of savings, no past gifts or earnings origin. Labour income is the benchmark scenario; restricting admission to employees would be a separate policy choice that could exclude self-employed households.
+For a ceiling-linkage proposal, do not silently apply `D <= T*s*Y` as a new applicant requirement. It implies `Y >= D/(T*s)` and creates an income floor. Do not add proof of seven years of savings, no past gifts or earnings origin without an explicit policy choice. Labour income is the benchmark scenario; restricting admission to employees would be a separate policy choice that could exclude self-employed households.
+
+If the user explicitly proposes a historical earned-income floor, review it as a separate intentional option. Earlier preferences against extra tests do not override later instructions. Define the period, household/gross/net basis and applicable supply. A cumulative floor derived from savings is `H >= D/s`, where `H` is net income summed over the defined period, not annual income. It neither proves funds were saved nor excludes family support. Compare exclusion of short-career, interrupted-career and self-employed households with the intended access goal. An earned-income or tax-history route/priority is another policy option, not an established equivalent or current programme entitlement. Keep it a candidate until selected for a packet revision.
 
 ## Interpret the saving rate and income growth
 
@@ -27,6 +29,8 @@ A 30-percent benchmark assumes less saving capacity and leaves more income for o
 For a backwards-looking growth scenario, define which annual periods are included. If current net income is the most recent of seven annual amounts, accumulation is `s*Y*sum((1+g)^(-k), k=0..6)`. Positive past growth lowers past income relative to current income and raises the current income required to fund the deposit. Gross salary growth is not automatically net-income growth. Keep this sensitivity outside the simple main rule unless requested.
 
 ## Check implementation and remaining constraints
+
+Review source-of-funds fairness without claiming that all gifts or investment returns escape assessment. Assets retained as deposits, securities or other assessed holdings can affect eligibility. Separate income assessment, asset assessment, tax liability, household scope and timing. An asset type absent from an enumerated list does not by itself prove complete exclusion from actual screening. Record the exact rule version and ask for the applicable cryptocurrency treatment. Another programme's tax-history criterion is a comparative precedent, not authority to import it. See the [dated fairness lesson](lessons-learned.md#lessons-from-earned-income-fairness-review-on-2026-10-09).
 
 Keep gross and net income ceilings separate. A gross ceiling cannot be inserted directly into this net-income formula. Require a published standard conversion by the relevant household/recruitment class, without inventing a flat tax rate. Record the calculation convention, applicable announcement and basis date.
 
