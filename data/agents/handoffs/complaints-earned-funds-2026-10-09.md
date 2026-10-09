@@ -21,3 +21,9 @@ Read repository instructions, evidence/domain policy, prior earned-income fairne
 ## Next agent should
 
 Read the separate private earned-funds candidate. Define the intended exclusive gate versus an additional route/priority before any packet revision. Do not choose N, savings rates, applicant thresholds or transfer exclusions on the user's behalf. Keep the current council revision 4 packet and accepted Seoul policy case unchanged. The held council form still requires revision-4 replacement before filing; no new council attempt exists. Preserve pending disclosure authentication and the unsent mayor DM as separate work. Use the current scopes and any required concrete transmission confirmation if a later substantive revision is selected.
+
+## Simplification follow-up
+
+The user then raised a tentative concern that fund-origin recognition undermines simplification. Preserve this concern without marking the candidate rejected. The recommendation is to keep high-deposit income-ceiling abolition as the main demand and deposit linkage as the existing fallback. Do not convert the fairness rationale into gift/parent history screening. Even an additional route or priority requires definitions and evidence; it is not automatically simple.
+
+Follow-up agent/task: codex-complaints-simplicity / complaints-simplicity-2026-10-09. Claimed the same four scopes. Changed the two reusable documents, this handoff and the separate private candidate; no runtime, selected packet, PDF or ledger change. Fresh instructions/KB doctors passed with zero errors/warnings; project doctor parsed 339 JSON files with zero errors and the same 28 warnings. Checked 85 local links and exclusion of ten actual credential values and contact-like values. Seven active complaint file hashes remained unchanged; counts stayed at eleven cases and twenty-five events. Preserve the prior review validation as historical evidence and record integration separately before release.

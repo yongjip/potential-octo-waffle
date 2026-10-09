@@ -419,6 +419,12 @@ Historical income supports a capacity estimate but does not prove actual savings
 
 Rechecked the city programme summary's stated purpose and separate income/asset criteria. The official asset-rule page returned a navigation shell, so no fresh complete-text verification was claimed. Income-document availability does not establish a complete source-of-funds audit. Preserve source-specific limits privately. Source: [city programme summary](https://news.seoul.go.kr/citybuild/archives/525640); [review procedure](income-linkage-review.md#separate-a-programme-rule-from-an-applicant-test); [earned-funds handoff](../../data/agents/handoffs/complaints-earned-funds-2026-10-09.md).
 
+## Lessons from the simplification follow-up on 2026-10-09
+
+After exploring earned-origin funds, the user questioned whether the option undermines simplification. Record this as a design concern; it is not a final rejection of the candidate. The selected ceiling-abolition request remains the primary demand. No packet or applicant requirement changed.
+
+A source-of-funds condition adds applicant documents, definitions and exception handling. An additional route or priority also needs those decisions and is not automatically simple. Prefer removing the identified high-deposit income restriction before introducing an unrelated origin test. Keep family-support fairness in the rationale, with the evidence limit explicit, rather than silently adding parental-wealth screening. A deposit-linked ceiling remains the previously selected fallback, not a new mandatory history test. Source: [review procedure](income-linkage-review.md#separate-a-programme-rule-from-an-applicant-test); [follow-up handoff](../../data/agents/handoffs/complaints-earned-funds-2026-10-09.md#simplification-follow-up).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
