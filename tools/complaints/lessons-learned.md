@@ -643,6 +643,18 @@ A character-limit check stopped a body candidate before preparation records were
 
 Sources and next action: [official SH report](https://ms.smc.seoul.kr/attach/record/SEOUL/appendix/a11/A0071628.pdf?time=20260612132628), [city explanation](https://www.seoul.go.kr/news/news_report.do?nttNo=456605), [calculation procedure](income-linkage-review.md#review-deposits-financing-and-the-need-for-support-together), [handoff](../../data/agents/handoffs/complaints-deferral-correction-v12.md). Confirm the matched contract and screening treatment before claiming individual settlement or asset qualification.
 
+## Lessons from removing a fixed hypothetical loan on 2026-10-10
+
+The user challenged the fixed hypothetical bank loan in the active comparison. It had been included to consider borrowing rather than assume every deposit must be earned in cash. Its amount was neither a matched approval nor a verified maximum. Centring a small residual gap after that amount made the argument depend on an arbitrary financing choice and invited the response that a different loan would change the result. Keep the old calculation as a historical sensitivity, not a current policy finding.
+
+Use the same notice's deposit, permitted deferral and income benchmark first. Calculate accumulated take-home savings under declared rates, then derive the additional funding needed to make the entry payment. Distinguish required funding from an available loan. Ask the institution for a feasible product, approved amount, deferral compatibility, execution timing, continuing payment and asset-assessment path under the same household and notice. A calculated shortfall does not establish that borrowing is unavailable or that all households fail entry. Preserve the chosen income and asset requests without turning the savings benchmark into a new admission test.
+
+Remove the selected fixed loan, its residual-gap emphasis and its combined monthly-interest claim from the active body and attachment. Retain public product comparisons only as separate reference material. Preserve historical packets and actual receipts. The actual loan approval and joint asset qualification remain unverified. No new delegated review, filing or message occurred during this revision.
+
+Copying a calculation record can retain stale financing data inside a nested field even after the visible loan fields have been removed. Inspect semantic fields as well as the reader copy. Remove the old embedded financing comparison and residual gap from current calculation metadata, point explicitly to the preserved historical packet and align the generator input, active envelope and execution records. Do not rerun a snapshot routine to overwrite the baseline after discovering a stale field. No PDF content changed during this metadata repair.
+
+Sources and next action: [calculation procedure](income-linkage-review.md#compare-todays-funding-with-accumulated-earnings), [campaign procedure](official-campaign.md#fix-the-request-and-answer-items), [handoff](../../data/agents/handoffs/complaints-loan-clarity-v13.md). The next substantive evidence is the institution's matched financing and assessment explanation.
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
