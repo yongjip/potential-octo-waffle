@@ -433,6 +433,12 @@ The user then described capture by low-earned-income households with wealthy fam
 
 The city programme summary confirms a newlywed/childbearing purpose and separate income/assets criteria. A targeted read of a city operational release found deferral use and borrowing difficulties, with no parental-funding breakdown in that release. Two targeted searches do not establish that no such data exists anywhere. Sources: [programme summary](https://news.seoul.go.kr/citybuild/archives/525640); [operational release](https://www.seoul.go.kr/news/news_report.do?nttNo=465059&srchCtgry=465); [review procedure](income-linkage-review.md#review-and-prepare-a-proposal); [handoff](../../data/agents/handoffs/complaints-resource-path-2026-10-09.md).
 
+## Lessons from the latent family funding clarification on 2026-10-09
+
+The user clarified that presently low personal assets do not imply an inability to obtain family funds when a large deposit becomes due. The previous response gave the personal asset cap too much weight and did not sufficiently address this distinction. Lead with current holdings versus access to external family resources. Compare practical funding access for households with similar assessed income and assets, without asserting that all supported households qualify or that actual recipients are predominantly family-funded.
+
+The matched eighth-notice local extraction states that eligibility continues through entry, and that loss of income/assets qualifications can cancel selection or the contract. Its external-archive provenance remains unchanged; a fresh official-host byte comparison was not completed. Treat this as a limit on the claim that a gift after selection automatically preserves eligibility. Ask separately how later funding is assessed; do not propose assessment avoidance. Keep the selected ceiling-abolition demand separate from a new parental-wealth test and preserve the frozen filing. Source: [review procedure](income-linkage-review.md#review-and-prepare-a-proposal); [correction handoff](../../data/agents/handoffs/complaints-resource-path-2026-10-09.md#latent-family-funding-follow-up).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
