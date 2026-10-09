@@ -8,6 +8,10 @@ State the selected change first and one acceptable fallback. Explain the connect
 
 Write the selected scope affirmatively: identify the criterion to change and the criteria to retain. Avoid an exclusion list of unselected alternatives or a generic guarantee caveat when the actual request and calculation assumptions already define the scope. Keep internal safeguards in the operating record; retain reader-relevant assumptions beside the evidence. See the [scope wording lesson](lessons-learned.md#lessons-from-council-scope-wording-on-2026-10-09).
 
+When the user asks to update documents after expanding the selected policy scope, revise the affirmative scope throughout the current memo, body, dossier, policy-focus record and execution pointers. Preserve previous envelopes and attachments. An asset-adjustment proposal cannot coexist with a current blanket instruction to retain the old asset cap. Keep any unselected numeric threshold or formula explicit, and give the institution separate decisions on income abolition, its fallback and deposit-linked asset adjustment within the same first answer item. Lead with verified programme purpose and the funding-path mechanism in a constructive tone. Do not convert an earned-income benchmark into a new origin or income-floor test. See the [joint-proposal revision lesson](lessons-learned.md#lessons-from-the-joint-proposal-document-revision-on-2026-10-09).
+
+Track delivery per request component when an existing accepted case covers only the earlier demand. A newly prepared asset request is not a missing answer in a case where it has never been delivered. Preserve actual submitted bodies and ledger records. Update the future reply matrix without rewriting historical acceptance, and mark an older live form for replacement rather than claiming it contains the latest revision.
+
 Limit the main written request to three answer items:
 
 1. Acceptance or rejection of the primary change and fallback, with reasons.

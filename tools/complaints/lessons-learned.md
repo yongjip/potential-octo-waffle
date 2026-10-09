@@ -447,6 +447,14 @@ The city summary modified on 2026-08-31 states a basic asset limit of KRW 662 mi
 
 Frame the proposal as access without mandatory reliance on family resources or borrowing. Link any proposed ceiling to the rental deposit rather than the purchase value. A higher ceiling also admits wealthier households and does not remove the family-funding advantage by itself; that policy tradeoff remains separate from the user's selected tone. Do not silently add an income floor, asset-origin audit or a new parental test. Sources: [city summary](https://news.seoul.go.kr/citybuild/archives/525640); [review procedure](income-linkage-review.md#check-implementation-and-remaining-constraints); [handoff](../../data/agents/handoffs/complaints-asset-linkage-2026-10-09.md).
 
+## Lessons from the joint proposal document revision on 2026-10-09
+
+The user accepted the constructive tone, proposed deposit-linked asset criteria and requested a document update. That sequence authorises a concrete document revision. The earlier instruction to preserve the old asset condition is superseded for the revised proposal. Lead with the programme purpose, explain the possible family-resource access difference, and state income-ceiling abolition and deposit-linked asset adjustment as two improvements. Keep a deposit-linked income ceiling as the fallback, and seek three institutional answers rather than multiplying procedures or applicant tests. A numeric deposit boundary or asset formula was not selected.
+
+Preserve prior versions, then update the current memo, portal body, rendered dossier, selected-focus record, campaign pointers and nested current execution summaries together. Add the conditional full-self-funding asset comparison without changing prior savings/interest assumptions or upgrading notice-copy provenance. Render and inspect every final page before freezing the packet and attachment hashes. Preserve the provided-call attribution and the earlier written answer. Remove stale scope wording from the revised reader copy.
+
+The accepted administrative case contains the earlier income request. Track the new asset component as prepared and unsubmitted; do not retroactively describe it as delivered or unanswered by that agency. No external filing or message occurred in the document-edit task. An older live form still requires replacement and fresh comparison. Source: [campaign procedure](official-campaign.md#fix-the-request-and-answer-items); [review procedure](income-linkage-review.md#review-and-prepare-a-proposal); [handoff](../../data/agents/handoffs/complaints-joint-proposal-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
