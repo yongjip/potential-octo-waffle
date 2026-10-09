@@ -71,6 +71,16 @@ Check these dimensions using `adequate`, `needs_detail`, `missing` or `not_appli
 
 ## Debrief a dialogue or reply
 
+### Run a delegated document rehearsal
+
+When the user requests agents, give separate agents the same frozen proposal, selected scope, calculations and factual limits. Assign a role, channel and mode to each. Do not give them another reviewer's verdict before their first reply. Have each role write a short simulated response before explaining its reasoning. Record the exact response, agent task, input hash and review conditions privately.
+
+Distinguish separate agent runs from empirical independence. Shared models, instructions and constructed roles can produce similar concerns. Agreement is a prompt-conditioned review result, not a vote by actual officials or an acceptance probability. Label any parent-only review lens separately.
+
+Assess the response before assessing the proposal. An unresolved decision, authority or timetable may reflect missing institutional information in the rehearsal. Do not treat that gap as a forecast of official evasion. Keep the strongest supported concern, normative allocation objection and concrete missing fact separate. Funding difficulty can justify a joint-criteria review without establishing that abolition is the only remedy.
+
+For revisions, propose the smallest sentence that addresses a material objection. Preserve the primary request, fallback and related asset request. Ask the institution to define an unselected target segment rather than silently adopting a threshold. Keep existing-record availability distinct from a request for new analysis. Rehearsal suggestions remain candidates until adopted through the packet revision workflow.
+
 Return separate findings for persuasion and response completeness. Use the current campaign's answer items when available. For this type of joint proposal, use:
 
 - R1: decisions and reasons on income-ceiling abolition, its fallback and deposit-linked asset adjustment.

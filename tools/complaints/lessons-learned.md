@@ -547,6 +547,16 @@ The new candidate was checked against the existing portal character limit and fr
 
 Sources and next action: [official campaign procedure](official-campaign.md); [deidentified handoff](../../data/agents/handoffs/complaints-citation-strategy-2026-10-09.md). Apply any adopted candidate through the existing packet revision procedure and recheck the final body, source dates, attachment layout and delivery state.
 
+## Lessons from delegated official document rehearsal on 2026-10-10
+
+The user explicitly requested an official agent to read the current proposal and simulate a response. Three separate agents received the same frozen candidate and factual limits, with case-officer, team-lead and legal/budget roles. A parent-only council lens was recorded separately. These are separate model executions under shared instructions, not independent human reviewers or a measured response forecast. Preserve exact simulated replies and distinguish each role's self-assessment from the parent's synthesis.
+
+All three assigned roles accepted joint consideration of eligibility and funding as a valid issue and labelled the request and tone adequate. Their shared objection was that a funding gap alone does not decide the preferred allocation remedy. This is a result of this constructed rehearsal. It does not prove that real officials will accept the issue or reject abolition. Preserve the chosen primary request while asking the institution to compare the current rule and each amendment on the same unit scope, including applicant opportunity and public cost. An undefined segment can be an institutional decision to request; do not silently adopt a threshold or make the author supply every internal dataset.
+
+Two roles marked a common review constraint as a partial R1 response, while one required an individual policy decision and marked it unanswered. Resolve that scoring difference at the requested subitem level. A general constraint can be an explanation without deciding abolition, fallback linkage or asset linkage separately. R2 and R3 lacked actual institutional information in all simulated replies. That is an input limit, not evidence of expected evasion. Keep existing-record availability, a request for new analysis and a real decision distinct.
+
+Record suggestions as unadopted until the packet workflow applies them. Preserve actual preparation and delivery records, numerical assumptions and source limits. Keep case text and role results private; public documentation contains the method and this deidentified lesson. The next empirical check is an actual institutional reply against the same requested subitems. Sources: [delegated rehearsal procedure](official-roleplay.md#run-a-delegated-document-rehearsal); [handoff](../../data/agents/handoffs/complaints-delegated-roleplay.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
