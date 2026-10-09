@@ -37,6 +37,8 @@ Keep different programmes separate. A social-housing deposit-refund question can
 
 Research public duties and public policy work. Do not infer a position from party membership, personal finances, family circumstances or unverified personality descriptions. A current chair can be a necessary oversight recipient while also having strong allocation concerns about the proposal.
 
+When the user requests deeper careers, past activity, public ideological positions or declared asset changes, use [public official records](public-official-records.md). Record official affiliation and explicit statements as dated facts. Keep topic-specific policy interpretation separate from a private-belief claim. Compare asset totals only after checking filing basis, family coverage and permitted nondisclosure. A declared asset change does not establish a motive, annual income or wrongdoing.
+
 ## Adapt the introduction and question order
 
 Keep the same selected demand, evidence and assumptions for every reader. Change the short introduction, evidence order and institutional action requested. Do not give different readers incompatible promises.
