@@ -557,6 +557,20 @@ Two roles marked a common review constraint as a partial R1 response, while one 
 
 Record suggestions as unadopted until the packet workflow applies them. Preserve actual preparation and delivery records, numerical assumptions and source limits. Keep case text and role results private; public documentation contains the method and this deidentified lesson. The next empirical check is an actual institutional reply against the same requested subitems. Sources: [delegated rehearsal procedure](official-roleplay.md#run-a-delegated-document-rehearsal); [handoff](../../data/agents/handoffs/complaints-delegated-roleplay.md).
 
+## Lessons from the net-income table revision on 2026-10-10
+
+The user requested a take-home-income comparison after the direct-savings table had used an assessment-income annual equivalent before tax deduction. That gross bound was labelled, but it did not answer the desired cash-saving question. Retain it as history and make the main comparison use estimated income after tax and employee insurance.
+
+Calculate each worker before combining the household. Declare the wage split, fully taxable wage assumption, own basic deduction and excluded optional allowances and credits. Use official sources for the applicable rates and deduction formulas. National pension and health, long-term care and employment contributions affect both the cash amount and the applicable tax deductions. Deduct cash contributions once and avoid incompatible credits. Annual final-tax income is not an exact monthly payslip.
+
+Use a single estimated annual net amount for all financing rows. A deferral or loan reduces required own funds, not accumulated savings. Show direct savings by rate first and financing shortfalls second. Hold the rule year constant only as a labelled comparison assumption. Current rates cannot silently stand for actual past or future payroll.
+
+The first rendered candidate created a ninth page containing only source links. Preserve that candidate, compact the source-link paragraph and inspect every page of the repaired eight-page PDF. A changed page count is a layout finding, not a reason to drop source evidence. Update body, attachment hash and current pointers only after the repaired PDF passes visual review.
+
+This revision found a nested execution record with a current packet filename but an older numeric revision. Check both representations. Preserve real receipts and ledger files, historical packets and the frozen input used by earlier roleplay agents. Updating numbers in a separate wording candidate does not give it a matching active PDF or a new delegated review. Public integration contains only the reusable guide, this lesson and the handoff; private calculation and submission files remain local.
+
+Sources: [net-income procedure](income-linkage-review.md#interpret-the-saving-rate-and-income-growth), [handoff](../../data/agents/handoffs/complaints-net-income-v8.md), [NPS rates and contribution basis](https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0097M0.do), [NHIS 2026 rates](https://edi.nhis.or.kr/portal/images/popup/20251204_pop01longdesc.html), [NTS annual tax calculation](https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7870&mi=6434).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
