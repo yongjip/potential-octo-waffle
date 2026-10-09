@@ -615,6 +615,20 @@ The parent revised the active body, memo, attachment and current execution point
 
 Sources and next action: [campaign procedure](official-campaign.md#review-whether-the-programme-reaches-its-intended-households), [handoff](../../data/agents/handoffs/complaints-price-alignment-v10.md). The institution should explain deposit appropriateness, selected amendment decisions, financing feasibility and allocation/public-cost effects. These remain requested findings rather than established outcomes.
 
+## Lessons from upper saving rates and problem-first opening on 2026-10-10
+
+The user requested 50, 70 and 100 percent saving because an earlier lower-rate range left a large monthly amount for other expenditure. Show the selected range and monthly remaining income together. Define that remaining amount as take-home income after saving and before living costs, childcare, family support and other expenditure during the pre-entry period. A 100-percent row has zero living expenditure and is a theoretical upper bound. Neither that row nor another assumed saving rate becomes an applicant requirement or an observed average.
+
+The expanded range changed the interpretation of the financing comparison. One upper-rate scenario nearly reached required own funds, and another exceeded them. Report both results fairly. Use savings minus required own funds and distinguish a shortfall from an excess. Retain the larger-loan sensitivity, actual approval/deferral uncertainty and separate assessed-asset check. Do not turn a visually stronger range into an unsupported claim that entry is impossible for every household or that all income left after saving is discretionary surplus.
+
+The user also requested a short problem explanation before the proposal. The opening now explains the conditional conflict between accumulating deposit funds and meeting income/asset ceilings, then connects the programme purpose and selected improvements. A short explanation before the asset request also clarifies its role. Preserve a constructive tone, the existing priority/fallback and the three written-answer items. A previous preference for a purpose-first opening is not permanent when the user changes the order.
+
+The parent revised the current body, memo, calculation record, attachment and nested execution pointers together. The earlier delegated review remains about its frozen input only. Preserve historical ranges, tax models and actual filing records. Preparation and a locally checked character count do not establish that the current live form contains the revised packet.
+
+During layout review, an added table row pushed the final financing explanation onto a nearly empty page. Reduce table padding while keeping readable type, regenerate and inspect every final page. Repeated use of a render filename displayed an earlier image despite a changed PDF page count. Use distinct final render paths and compare PDF page titles and counts before claiming final visual QA. The source-writing checks also caught escaped code newlines and an invalid digit-leading keyword. Correct the source and verify its syntax before running a mutating synchronisation script. A recombination check found a tiny decimal-rounding difference; compare currency calculations with an explicit sub-unit tolerance instead of exact floating or rounded-decimal equality. No cause beyond the observed image-path mismatch is assumed.
+
+Sources and next action: [calculation procedure](income-linkage-review.md#interpret-the-saving-rate-and-income-growth), [campaign procedure](official-campaign.md#fix-the-request-and-answer-items), [handoff](../../data/agents/handoffs/complaints-upper-savings-v11.md). Recheck the live form before delivery and preserve conditional financial assumptions beside the final comparison.
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
