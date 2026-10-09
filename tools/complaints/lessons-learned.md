@@ -349,6 +349,18 @@ One authentication-result check then returned an instruction to finish in the PA
 
 Sources: [phone-authentication procedure](remote-runbook.md#council-phone-authentication); [dated handoff](../../data/agents/handoffs/complaints-council-phone-auth-2026-10-09.md). Raw terms, expired-state proof and current consent proof remain private. The phone-authentication result and accepted account are still pending at this checkpoint.
 
+## Lessons from resuming an approved phone request on 2026-10-09
+
+The user reported completing phone approval. The held NICE result button returned a session-ended page, and the council parent still showed the identity-verification step. Preserve the user's report, NICE result and unchanged parent stage as distinct observations. The elapsed interval since the earlier saved checkpoint was about sixteen minutes; the actual session lifetime and expiry cause remain unproven. Generic cookie advice does not justify weakening browser privacy protections. The user then explicitly requested another notification; reopened a registration-linked flow rather than replaying an expired result.
+
+A fresh flow exposed the same four required agreement labels. Automatic approval review rejected accepting them using the earlier flow's approval because the new flow lacked action-time confirmation. Stopped that acceptance attempt, displayed the current agreement list and requested the new flow's actual approval. Corrected the runbook's earlier implication that unchanged labels alone allow reusing agreement approval after expiry. Keep the previously permitted method change within one active callback separate from acceptance in a newly opened callback. Do not bypass a rejection through another UI input path.
+
+The local browser handle was absent after resuming, although the held tab still existed. Reacquired the exact known tab from the selected Edge browser and observed its live state. This is a recovered binding, not evidence of a tab-close or authentication failure. Complete the live phone round trip promptly after the user reports approval, and verify the parent callback before reporting authentication or account creation complete. Keep independent documentation and Git integration from delaying that check.
+
+The user then explicitly approved the displayed new flow's four agreements. Acceptance succeeded, and the same observed name/phone procedure reached a fresh CAPTCHA. Requested action-time confirmation for that actual challenge and the new notification. This resolved the agreement-review rejection; it did not complete the CAPTCHA or send a fresh request. Keep those states separate instead of leaving the resolved agreement blocker as the current blocker.
+
+Sources: [current authentication procedure](remote-runbook.md#council-phone-authentication); [resume handoff](../../data/agents/handoffs/complaints-council-auth-resume-2026-10-09.md). Failure proof and current agreement proof remain private. The fresh CAPTCHA confirmation, notification and authentication are pending at this checkpoint.
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
