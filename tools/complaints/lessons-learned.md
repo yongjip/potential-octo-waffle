@@ -251,6 +251,14 @@ The KRW 1 billion deposit example separates the full deposit, today's own funds,
 
 Record the explicit categories, narrow open questions and independent calculations privately. Preserve the frozen proposal, selected focus and eleven-case/sixteen-event ledger. Request a standard funding table that satisfies the same notice's deposit, income, assets and actual financing conditions together. The user request did not create a new filing or change an existing packet. Sources: [reusable notice and funding checks](income-linkage-review.md#read-the-matched-notice-before-declaring-an-omission); [dated handoff](../../data/agents/handoffs/complaints-ten-eok-funding-2026-10-09.md).
 
+## Lessons from connecting saving and borrowing costs on 2026-10-09
+
+The user corrected the preceding answer for treating loan principal mainly as an upfront funding component and expanding the response into more demands. Earlier notes contained interest calculations, but the user-facing argument did not connect asset formation, debt service and the income ceiling as one access problem. The correction concerns synthesis and emphasis; the prior isolated saving calculations were not mathematically invalidated.
+
+Reconstruct the conversation's selected objective before introducing new evidence. Link the purpose of access for asset-forming households, money saved from earnings, the high deposit, borrowing costs and the income ceiling. Borrowing can reduce upfront own funds while creating continuing interest costs. Review pre-entry saving and post-entry cash flow separately; do not apply future loan interest to earlier savings or assume an entry ceiling lasts unchanged forever. Keep one requested correction and use calculations as its support. Do not substitute more information requests or invented asset-origin conditions for the selected policy argument.
+
+The user requested a Socratic form. A short hypothetical question sequence can expose whether the combined conditions serve the institution's stated purpose. It is authored prose, not a historical quotation or actual agency admission. Phrase family-support advantage as a mechanism to examine. Do not assert universal ineligibility, the prevalence of inherited funds or exempt treatment of gifts. Preserved prior evidence, the selected focus and the frozen proposal; no filing or tracker event changed. Sources: [argument review procedure](income-linkage-review.md#review-and-prepare-a-proposal); [dated handoff](../../data/agents/handoffs/complaints-coherent-income-logic-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
