@@ -409,6 +409,16 @@ The user asked what a paragraph excluding individual exceptions, parental-asset/
 
 Use one direct scope sentence instead of unselected alternative exclusions or generic guarantee language. Keep precise financial assumptions and policy-comparison limits beside the calculation, and keep operational scope safeguards privately. No council form change or submission occurred. Sources: [campaign procedure](official-campaign.md#fix-the-request-and-answer-items); [scope handoff](../../data/agents/handoffs/complaints-council-scope-clarity-2026-10-09.md).
 
+## Lessons from earned-funds recognition on 2026-10-09
+
+The user proposed a recognised asset amount that excludes gifts/speculative returns and limits access to households that saved sufficient earned income over a defined past period. This is an intentional new applicant test, not the accidental income floor warned about in an institutional ceiling formula. Earlier exclusions in the selected memo do not prohibit exploring it. Kept it as a separate candidate; no period, amount, priority weight or new rule was selected for filing.
+
+Separate the purposes of wealth and funding checks. Deducting transferred wealth from an asset ceiling can favour the recipient. Excluding transfers from a defined earned-own-fund amount instead tests the requested independent-funding condition. Retain actual total assets separately. If borrowing and deferral remain allowed, compare earned own funds with the residual own-fund requirement, not automatically the full deposit, and assess later interest/principal capacity. A debt-free full-deposit floor can collide with a separate wealth ceiling under matching dates and valuation.
+
+Historical income supports a capacity estimate but does not prove actual savings, current available funds or absence of transfers. A strict already-saved requirement can exclude the asset-forming households the earlier proposal sought to admit. Define source tracing, the period, household/net basis, self-employment and career breaks, and objective transfer/return categories before claiming an administrable rule. The term speculation alone does not identify an auditable asset category. Compare an exclusive gate, an additional earned-income eligibility route and priority as distinct options, without treating a recommended route as adopted.
+
+Rechecked the city programme summary's stated purpose and separate income/asset criteria. The official asset-rule page returned a navigation shell, so no fresh complete-text verification was claimed. Income-document availability does not establish a complete source-of-funds audit. Preserve source-specific limits privately. Source: [city programme summary](https://news.seoul.go.kr/citybuild/archives/525640); [review procedure](income-linkage-review.md#separate-a-programme-rule-from-an-applicant-test); [earned-funds handoff](../../data/agents/handoffs/complaints-earned-funds-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
