@@ -281,6 +281,12 @@ A receipt, phone explanation, read marker and generic review statement are separ
 
 The reusable [official campaign procedure](official-campaign.md) holds the implementation rules. The [campaign handoff](../../data/agents/handoffs/complaints-official-campaign-2026-10-09.md) records validation and private deliverables. Verify exported helper signatures before calling them; the tracker loader requires its data directory and returns asynchronously.
 
+## Lessons from dated action planning on 2026-10-09
+
+When expanding an approved strategy into dates, distinguish internal targets, official cutoffs and event-triggered actions. Give every row a completion record. Set a backup filing day before the confirmed cutoff, and prepare council evidence while an agency response is pending. Do not invent an agency response deadline to fit the calendar or escalate a case only because an internal review day arrives. Review a received reply promptly and request only the remaining items.
+
+A dated plan does not establish execution, sending authorisation or an active reminder. Leave optional DMs conditional on an actual receipt and explicit sending direction. Preserve the reviewed plan, selected focus, frozen packet and ledger; save the calendar separately. The [official campaign procedure](official-campaign.md) is the entry point. The [dated action handoff](../../data/agents/handoffs/complaints-dated-actions-2026-10-09.md) records checks and integration.
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.

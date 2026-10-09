@@ -32,6 +32,8 @@ On 2026-10-09 the [Seoul council audit submission guide](https://www.smc.seoul.k
 
 Keep any earlier internal filing goal explicitly separate from the official cutoff. A date in a plan does not create a reminder, schedule or active monitor. Preserve notice provenance, calculation assumptions and substantive agency replies in the attachment set. Use the [sharing evidence procedure](sharing-evidence.md) for call summaries and identifying details.
 
+For a dated action calendar, give each row a target date, action, completion evidence and any prerequisite. Distinguish the official cutoff from the internal filing goal and an earlier backup day. Base overdue follow-up on the observed case deadline, not a date invented for the calendar. A received reply can trigger review immediately; an unanswered but still in-time case does not establish delay. Include an optional DM only after actual filing and separate sending authorisation. Keep rows planned until execution evidence exists. Preserve the reviewed plan and frozen packet; store the date expansion as a separate private artifact. Follow the [dated calendar lesson](lessons-learned.md#lessons-from-dated-action-planning-on-2026-10-09).
+
 ## Treat a direct message as supplemental routing
 
 Verify social accounts through an official institution homepage. Do not rely on an aggregator or a similar account name. The [Seoul mayor homepage](https://mayor.seoul.go.kr/index.do), checked 2026-10-09, directly links [Instagram](https://www.instagram.com/ohsehoon4u/) and [Facebook](https://www.facebook.com/ohsehoon4you). This establishes linked account provenance, not DM receiving settings, direct mayor reading or response probability.
