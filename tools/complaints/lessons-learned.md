@@ -479,6 +479,12 @@ The user asked to update the documents after discussing conditional asset-based 
 
 Preserve the prior builder, envelope, dossier and calculations. Revise all current reader files and nested execution pointers, then freeze the next envelope after inspecting all eight rendered pages. The additional official city source supports the renewal exception, not income-group recipient duration. Inspect the relevant archived notice page without upgrading its provenance. Prior savings, loan and asset-comparison values remain unchanged. Compare model inputs/results separately from named revision, source-page and QA metadata; a new QA timestamp is not a changed calculation. No fresh delegated review was performed; retain earlier reviews as historical records. Keep current preparation separate from actual case delivery and an older live form. Source: [campaign procedure](official-campaign.md#fix-the-request-and-answer-items); [handoff](../../data/agents/handoffs/complaints-entry-renewal-revision-2026-10-09.md).
 
+## Lessons from the savings table clarification on 2026-10-09
+
+The user read the table as savings after seven years at the same income ceiling. Its rows instead showed inverse required net income, while the column heading omitted required. The inverse arithmetic was correct, but the presentation concealed the different question. State the intended quantity first. For a constant ceiling and saving rate, show the same direct accumulated savings across funding scenarios and compare required own funds separately.
+
+Replace the main inverse table with a savings-by-rate table and a funding-shortfall table. Keep the assessment-income versus net-income distinction beside the figures: using the whole assessment annual equivalent without tax deduction is an optimistic bound, not verified after-tax savings. Preserve historical inverse calculations, notice inputs and actual submission records. Version the updated body, attachment and current pointers after visual QA. A presentation correction does not change the selected policy scope. Source: [review procedure](income-linkage-review.md#interpret-the-saving-rate-and-income-growth); [handoff](../../data/agents/handoffs/complaints-savings-table-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
