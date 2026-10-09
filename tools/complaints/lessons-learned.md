@@ -403,6 +403,12 @@ For the user's legal question, official Supreme Court material distinguishes a t
 
 Separate reader-relevant provenance and material uncertainty from internal execution diagnostics. Render and inspect the final attachment before freezing the revised envelope, synchronize current pointers and preserve the earlier revisions. No council transmission occurred. Sources: [campaign procedure](official-campaign.md#prepare-a-council-route-when-a-dated-window-matters); [reader-copy handoff](../../data/agents/handoffs/complaints-council-reader-copy-2026-10-09.md).
 
+## Lessons from council scope wording on 2026-10-09
+
+The user asked what a paragraph excluding individual exceptions, parental-asset/gift-history investigations and minimum-income conditions meant. The paragraph also said income-ceiling abolition could not guarantee funding or other eligibility. It was intended as an internal scope safeguard, but its defensive phrasing introduced alternatives and obscured the selected request. Replaced it in the attachment with an affirmative request to retain the existing non-income eligibility criteria and abolish the initial income ceiling for high-deposit units. Aligned the portal body's closing scope sentence with the same wording. Preserved revision 3 and its evidence. Primary demand, fallback, calculations and financing/source limits did not change.
+
+Use one direct scope sentence instead of unselected alternative exclusions or generic guarantee language. Keep precise financial assumptions and policy-comparison limits beside the calculation, and keep operational scope safeguards privately. No council form change or submission occurred. Sources: [campaign procedure](official-campaign.md#fix-the-request-and-answer-items); [scope handoff](../../data/agents/handoffs/complaints-council-scope-clarity-2026-10-09.md).
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.

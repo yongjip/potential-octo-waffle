@@ -6,6 +6,8 @@ Turn a selected policy request into a short official memo, a tracked written dec
 
 State the selected change first and one acceptable fallback. Explain the connected mechanism before adding calculations. For a deposit and income-ceiling issue, connect earned savings, upfront funding, later interest and the admission ceiling. Separate current income from accumulated wealth. Do not add parental-wealth, gift-history or minimum-income tests without a selected policy change.
 
+Write the selected scope affirmatively: identify the criterion to change and the criteria to retain. Avoid an exclusion list of unselected alternatives or a generic guarantee caveat when the actual request and calculation assumptions already define the scope. Keep internal safeguards in the operating record; retain reader-relevant assumptions beside the evidence. See the [scope wording lesson](lessons-learned.md#lessons-from-council-scope-wording-on-2026-10-09).
+
 Limit the main written request to three answer items:
 
 1. Acceptance or rejection of the primary change and fallback, with reasons.

@@ -1,5 +1,7 @@
 # Handoff for council reader-copy correction
 
+Later checkpoint: the [scope-clarity handoff](complaints-council-scope-clarity-2026-10-09.md) replaces revision 3 as the current unsubmitted candidate. The call/source corrections below remain in effect.
+
 - agent: codex-complaints-reader-copy
 - task: complaints-council-reader-copy-2026-10-09
 - date: 2026-10-09 KST
