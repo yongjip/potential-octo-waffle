@@ -12,6 +12,8 @@ When the user asks to update documents after expanding the selected policy scope
 
 Track delivery per request component when an existing accepted case covers only the earlier demand. A newly prepared asset request is not a missing answer in a case where it has never been delivered. Preserve actual submitted bodies and ledger records. Update the future reply matrix without rewriting historical acceptance, and mark an older live form for replacement rather than claiming it contains the latest revision.
 
+When a later document-update request adopts a conditional asset-exit argument, revise the memo, portal body and dossier together. Distinguish initial entry from renewal and place the current childbirth exemption beside the conditional mechanism. A higher income is not a measured shorter support duration. Preserve the selected demands and answer count rather than adding a new withdrawal rule. Version the envelope and attachment after complete rendering, synchronise current nested pointers, and retain historical packets and actual receipts. Follow the [entry/renewal revision lesson](lessons-learned.md#lessons-from-the-entry-and-renewal-document-revision-on-2026-10-09).
+
 Limit the main written request to three answer items:
 
 1. Acceptance or rejection of the primary change and fallback, with reasons.
