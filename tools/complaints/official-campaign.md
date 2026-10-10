@@ -120,6 +120,8 @@ Use the [policy evaluation context](context-yongjip-kim-policy-evaluation/SKILL.
 
 An additional gross-wage equivalent needs an explicit net-benefit basis and deductions on additional wages. A constant percentage, unverified tax treatment or derived market comparator remains a labelled scenario. Do not present that result as total salary, screening income, a new applicant test or actual recipient cash. Keep market, rate and tax assumptions beside the table, show rate sensitivity and preserve unvalued rights and outcomes.
 
+For childbirth incentives, separate annual pricing, conditional tenure, renewal exemptions and future purchase rights. Count qualifying births from the notice's actual reference date. A future purchase discount uses the exercise-date sale appraisal, not the rental deposit or today's unverified sale price. Compare multi-period benefits only with stated timing, discount rate and qualification assumptions. Observed births and birth intentions do not identify additional births caused by the programme. See the [childbirth valuation lesson](lessons-learned.md#lessons-from-childbirth-evidence-and-benefit-comparison-on-2026-10-10).
+
 Finish arithmetic, all-page visual review and body-limit checks before freezing the revision. Align aliases, nested current-version records and future answer mapping. Keep accepted-case delivery unchanged. Identify the actual review scope; an earlier delegated review does not become a new independent review. Recheck the live route and replace stale text before transmission. See the [current-packet completion lesson](lessons-learned.md#lessons-from-completing-annual-valuation-in-the-prepared-packet-on-2026-10-10).
 
 ## Compare public-asset uses when the user adds that policy question
