@@ -839,3 +839,5 @@ A broad version substitution produced two current links whose destinations did n
 Also align the optional-message document's current-version summary without rewriting an already accepted request as a new delivery. Refresh inventory hashes for mutable current files while retaining frozen artifact hashes and the previous manifest. Some inventory hashes were already stale before this task; that observation does not establish why they diverged.
 
 Automatic approval review rejected the public commit-and-push command before execution because this file scope differed from the earlier explicit approval. Complete the local documents and permitted commit, then request approval for the exact public files and destination. Preserve private outputs and do not bypass the publication gate.
+
+The user subsequently approved the three named public files and existing branch. Record that scoped approval, publish those files and verify the remote commit. Keep submission drafts, PDFs, receipts and account records outside the public change.
