@@ -825,3 +825,17 @@ Repeated combined reads exceeded the output budget, and one guessed discovery fi
 Automatic approval review rejected the combined commit-and-push command before execution because the remote destination and disclosure scope for personal working preferences lacked explicit approval. Preserve the saved context and complete the permitted local commit. Keep the push pending approval for the named destination; do not bypass the rejection through another publishing route.
 
 The user then explicitly approved the seven reviewed files and the named repository and branch. Record that approval before the authorised push and verify the resulting remote commit. A destination-specific approval resolves this publication gate; it does not authorise unrelated private material or another destination.
+
+## Lessons from integrating fixed awards and housing choice in revision 20 on 2026-10-10
+
+The user authorised completing the gap between supplementary reasoning and the prepared submission. Integrate the same-condition acquisition discount and current housing-need objective in the portal body, first-page proposal, detailed attachment, calculation model, official memo, plans and future answer mapping. Preserve earlier frozen documents and actual case delivery. A separate saved style or supplementary note is not a completed submission revision.
+
+At exercise-date value V and fixed deduction C, price is V-C and the gross discount is C. A per-child amount can illustrate the mechanism without becoming the selected policy amount. Hold qualifying births, tenure and exercise conditions fixed. Retain non-purchasing renter comparison, existing promises and prospective application. Do not claim measured choice effects or replace the primary admission-rule request with the new rationale.
+
+The initial body was 2,059 characters and failed the known 2,000-character check before PDF authoring. Shorten it while retaining the selected demands and material assumptions; the final body is 1,995 characters. Align the first-page proposal before the final render, then inspect every final page. Root performed the official-reader review and fourteen-page visual check; this is not a new independent reviewer or an acceptance prediction.
+
+A broad version substitution produced two current links whose destinations did not exist. The readback caught them before completion. Resolve actual evidence and report paths individually, validate every current local link, and distinguish current summaries from historical version notes. Existing financial models, source limitations and the actual response state remain unchanged. No filing, DM or schedule was created. See the [revision procedure](official-campaign.md#apply-an-adopted-annual-valuation-to-the-current-prepared-packet) and [handoff](../../data/agents/handoffs/complaints-housing-choice-v20.md).
+
+Also align the optional-message document's current-version summary without rewriting an already accepted request as a new delivery. Refresh inventory hashes for mutable current files while retaining frozen artifact hashes and the previous manifest. Some inventory hashes were already stale before this task; that observation does not establish why they diverged.
+
+Automatic approval review rejected the public commit-and-push command before execution because this file scope differed from the earlier explicit approval. Complete the local documents and permitted commit, then request approval for the exact public files and destination. Preserve private outputs and do not bypass the publication gate.
