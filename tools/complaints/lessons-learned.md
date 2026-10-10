@@ -655,6 +655,14 @@ Copying a calculation record can retain stale financing data inside a nested fie
 
 Sources and next action: [calculation procedure](income-linkage-review.md#compare-todays-funding-with-accumulated-earnings), [campaign procedure](official-campaign.md#fix-the-request-and-answer-items), [handoff](../../data/agents/handoffs/complaints-loan-clarity-v13.md). The next substantive evidence is the institution's matched financing and assessment explanation.
 
+## Lessons from focusing the deferral paragraph on 2026-10-10
+
+The user questioned why the institution's payment-deferral paragraph still discussed bank debt after the fixed hypothetical loan was removed. The paragraph had also retained internal notes about excluding a deferred principal cash requirement and not deducting later interest from earlier savings. Those notes described the author's model checks rather than the institution's payment conditions. They increased reading effort and reopened a financing discussion that already had a separate section.
+
+Keep the paragraph focused on actual entry payment, the dated deferral charge, annual rate changes and the actually paid deposit returned at exit. Keep those source-backed conditions and the charge calculation unchanged. Preserve private methodology and settlement qualifications in the verification record. Bank compatibility, approval and asset-assessment qualifications still matter where the document asks for an actual financing path; removing them from the deferral paragraph does not remove that separate question or establish an approval.
+
+Synchronise the shorter paragraph with the portal body's charge sentence and preserve the prior version. The financial model, savings assumptions, selected policy requests and three written-answer items did not change. Inspect all final attachment pages and confirm both text preservation outside the changed paragraph and current-pointer consistency. No new delegated review, filing or message occurred. Sources and next action: [campaign procedure](official-campaign.md#fix-the-request-and-answer-items), [handoff](../../data/agents/handoffs/complaints-deferral-copy-v14.md). Use the focused paragraph in the active packet and keep method checks outside the reader copy.
+
 ## Issue discovery and legislative review
 
 Define a concrete burden, comparison group, rule version and requested correction. Check independent evidence, counterevidence, existing safeguards and prior remediation. A complaint count is not a count of unique people or a prevalence estimate unless the source supports that unit.
