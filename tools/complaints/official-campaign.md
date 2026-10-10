@@ -166,6 +166,10 @@ After an actual official filing, a short optional DM can state the issue, select
 
 ## Define completion and preserve decisions
 
+For a combined resources-and-benefits proposal, compare whether low-asset households gain a practical application and payment opportunity and how benefits allocated to high-asset households change. Do not make recipient funding-origin statistics a prerequisite for a rule-and-payment comparison. Keep existing-answer follow-ups, new reform proposals and held-record requests in separate envelopes. An official future-project description verifies the project only; verify recruitment dates, prices, allocations and payment obligations from the eventual notice.
+
+Use [submission-rehearsal.md](submission-rehearsal.md) before filing a reviewed set. Record the current version, complete body match, actual form limits and attachment observation. Distinguish local readiness, partial live rehearsal and verified acceptance. Preserve frozen historical packets, including old authorization metadata, and use a new dated manifest for the current execution scope. See the [fast-preparation lessons](lessons-learned.md#lessons-from-fast-submission-preparation-and-rehearsal-on-2026-10-11).
+
 The first milestone is an itemised written position with reasons, owner and next step. A receipt, phone call, read marker or generic review statement does not meet that milestone. Policy success requires a changed rule and actual recruitment notice. A reasoned refusal supplies a decision for the next proposal; it is not an adopted improvement.
 
 Do not infer that separate legal rules explain away their combined effect. Ask for the exact change authority and required consultation. Current departmental press material can resolve a stale routing label, but it does not prove unilateral power to change an income ceiling. Preserve relevant countercontext, such as improvement work already described by the agency. An automated call transcript without audio comparison supports attributed paraphrase, not a finding of deliberate concealment, universal document absence or illegality.

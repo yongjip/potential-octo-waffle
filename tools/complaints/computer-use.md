@@ -4,6 +4,8 @@ Canonical language: English. This runbook covers Korean civil petitions and info
 
 ## Task inputs
 
+For a reviewed multi-institution filing, apply [submission-rehearsal.md](submission-rehearsal.md). Keep the current form state, selected attachment and verified acceptance separate. A partial rehearsal is not an end-to-end filing test.
+
 For account preparation and connected-Mac execution, read `remote-runbook.md` and `accounts-and-remote.md`. The user creates the accounts and enters credentials using `accounts.mjs`; the agent must not treat storage preparation as an account-creation task. Use the stable private data directory, verify the execution host, and load only the selected portal's credentials without printing them. A saved pair is not proof of a working login. Preserve the user's direction about portal-terms passages; do not add an operator-permission gate based on those observations.
 
 Read `data/complaints/cases.jsonl`, replay `events.jsonl` using `tracker.mjs`, and read the case history. Keep `issue_id`, `case_id`, `parent_case_id`, the portal receipt, and the agency receipt distinct. Records imported from a shared conversation remain pending until compared with primary evidence.

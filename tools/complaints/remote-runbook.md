@@ -54,6 +54,8 @@ Local module support differs between adapters. In the 2026-10-08 computer-use RE
 
 ## Connected-Mac operation
 
+Use [submission-rehearsal.md](submission-rehearsal.md) for recipient-specific preparation and the current result matrix. Check the execution host and destination authentication again after a long interruption. A displayed selected filename does not confirm server acceptance. Do not infer an upload failure from an empty adapter FileList alone.
+
 1. Select the Mac and workspace holding the private data. Verify the shell hostname against the profile. Confirm that computer use controls that Mac before loading credentials; browser and shell hosts can differ.
 2. Read this file and `computer-use.md`. Identify the operation: existing-case query, draft preparation or authorized filing. Account, login and case-processing states remain separate.
 3. Observe the current login UI and origin. Eungdapso uses Seoul integrated membership. Reuse an authorized session for the intended account or load only that portal's pair. Do not output entered credential values in diagnostic state.

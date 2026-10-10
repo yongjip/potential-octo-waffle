@@ -48,3 +48,23 @@
 새 제출을 시작할 때는 먼저 장부에 접수번호가 없는 준비 사건을 만든다. 제출 직전에 접수 결과 미확인 상태를 기록하고, 수리 화면을 확인한 뒤 실제 번호와 제출 상태를 기록한다. 준비 사건과 수리된 사건의 수를 구분한다.
 
 연결된 Mac에서 실행할 때는 실제 실행 호스트와 비공개 자료 위치를 먼저 확인한다. 계정 준비와 원격 로그인 성공은 별도 상태다. [원격 실행 지침](remote-runbook.md)과 [computer use 실행 지침](computer-use.md)을 적용한다. 계획 문서의 날짜만으로 정기 조회나 알림이 실행되지는 않는다.
+
+## Plan national and municipal income-and-asset requests together
+
+Use the [submission rehearsal procedure](submission-rehearsal.md) to prepare the clean envelope and inspect the actual portal. An internal target is not a requirement to wait. File ready requests independently, and keep a deadline-bound audit report ahead of its official cutoff. A future development can be named from an official project source, but its price, recruitment date, allocations and payment conditions require its actual notice.
+
+Start with actual existing complaints, original replies and pending disclosure requests. A local ledger state is not a fresh portal observation. Record a reply quotation and document location before classifying a question as answered, partly answered, unrelated or missing. Recover absent lookup references before creating another case. Reuse pending requests for the same records.
+
+Read the current ledger through `tracker.mjs board` or `loadStore()` with events applied. A row in `cases.jsonl` can intentionally retain its original preparation state. Do not correct that base row or resubmit from it when later events confirm acceptance. Match the accepted body and receipt evidence, then identify which later demands were never delivered. Supplement those new demands separately; do not classify them as unanswered questions in the accepted case.
+
+Distinguish ordinary public sale, profit-sharing sale, special rental conversion, private general supply and each special-supply route. Verify the controlling regulation, appendix, operative guidance and selected recruitment notice. Some over-income applicants already have a real-estate-asset route. Do not request an existing route as a new rule or equate its asset definition with total wealth. Income eligibility, allocation stage, selection and financing are separate results.
+
+Separate the first missing-answer follow-up from a later reform proposal. Complete the specific-unit eligibility, allocation and payment comparison before sending a proposal that relies on it. Compare effects on other allocation groups when proposing more lottery places. Do not turn lottery shares into individual winning probabilities. Direct national rule changes to the responsible national authority and local implementation questions to the relevant municipality or supplier.
+
+Use dated internal targets, dependent steps and observable completion conditions. Check actual portal deadlines and extensions separately. A written date does not create automation. If a required original reply or source is unavailable, move the dependent target and continue independent preparation. Preserve current accepted submissions and frozen packets while drafting a broader population's request separately.
+
+Keep executive-agency supplements, council audit requests and national rule proposals in recipient-specific bodies. Use an official closing date to set the audit filing target; a later response-review date must not replace the first filing date. An already verified notice can support an independent structural-access proposal without waiting for a missing-answer reply, a new unit comparison or unavailable recipient funding shares. See the [submission-reconciliation lessons](lessons-learned.md#lessons-from-reconciling-documents-and-submission-plans-on-2026-10-10).
+
+When the user adopts a more specific argument, put it into the actual prepared questions and response criteria. For financial-asset coverage and income priority, ask how holdings and assessment income apply at each allocation stage, why the current definition was chosen and which integrated access-and-benefit correction will be considered. Do not treat returns as the whole asset or label every non-real-estate asset financial. A new rule-justification question belongs in the new proposal, not an old missing-answer table. Map the same principle through public rental's existing total-asset rules separately. See the [adopted-logic lessons](lessons-learned.md#lessons-from-applying-the-adopted-financial-assets-logic-on-2026-10-10).
+
+See the [research and planning lessons](lessons-learned.md#lessons-from-planning-income-and-asset-subscription-requests-on-2026-10-10). Keep case-specific drafts, originals and dated plans in the private complaint directories.
