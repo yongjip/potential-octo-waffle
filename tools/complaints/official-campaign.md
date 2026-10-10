@@ -100,6 +100,18 @@ If the tracker does not support the elected body's portal and procedure, retain 
 
 For a dated action calendar, give each row a target date, action, completion evidence and any prerequisite. Distinguish the official cutoff from the internal filing goal and an earlier backup day. Base overdue follow-up on the observed case deadline, not a date invented for the calendar. A received reply can trigger review immediately; an unanswered but still in-time case does not establish delay. Include an optional DM only after actual filing and separate sending authorisation. Keep rows planned until execution evidence exists. Preserve the reviewed plan and frozen packet; store the date expansion as a separate private artifact. Follow the [dated calendar lesson](lessons-learned.md#lessons-from-dated-action-planning-on-2026-10-09).
 
+## Compare support and access across deposit amounts
+
+Keep four questions separate: who passes the application criteria, who can assemble the payment, who needs housing support, and what public benefit the programme produces. A household's current income or ability to assemble a large deposit alone does not answer all four. Do not claim actual recipient composition from a structural funding example.
+
+Show deposit amount, payment due by entry, deferred amount and periodic charge under the same dated payment conditions. Identify illustrative deposits separately from matched notice amounts. Delayed payment is neither a gift nor forgiven principal. A larger deferred amount does not establish a larger total benefit or fiscal subsidy; pricing, continued occupancy, operating costs and policy effects require separate valuation. Keep a current-year comparison rate distinct from the planned entry year's rate.
+
+Use a second table for current spendable own cash and the additional amount needed to meet the entry payment. Do not equate that cash with assessed assets. Do not add an unsupported fixed loan or infer eligibility from a zero funding gap. Financing approval, recognised debt, assessment timing and selection remain separate conditions.
+
+For a recipient and effectiveness review, define non-overlapping deposit bins as analytical categories. Distinguish supply, applications, selection, contracts and entry. Request held aggregate income, assets, funding-origin and payment records, public costs and housing/family outcomes. Separate a family's gift from repayable borrowing where records permit. Unknown values remain unknown; observed childbirth or stated intentions do not establish a causal policy effect. Distinguish existing records from a new evaluation plan. This request does not create new individual parental-wealth checks or applicant tests.
+
+Preserve the selected criteria change and public-asset comparison alongside the new table. Update the frozen packet, attachment, current pointers and prepared answer mapping together. Preserve real case delivery and reply evidence. See the [deposit-bin comparison lesson](lessons-learned.md#lessons-from-deposit-bin-support-and-access-comparison-on-2026-10-10).
+
 ## Compare public-asset uses when the user adds that policy question
 
 Separate the reason a public asset was acquired from the reason to retain its current use. A published acquisition standard does not establish the actual unit's acquisition price, ownership, sale authority or opportunity cost. Distinguish a tenant deposit, historical acquisition cost, current sale value and public subsidy. Keep a family-independent access benchmark as a programme evaluation question, not a new family-origin eligibility test or an asserted universal legal duty.
