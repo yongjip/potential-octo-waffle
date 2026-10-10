@@ -46,6 +46,8 @@ If quantitative evidence depends on a table or chart, verify its layout and note
 
 ## Output and verification
 
+For policy proposals and evaluations, apply the [policy benefit context](context-yongjip-kim-policy-evaluation/SKILL.md). Present defensible household benefits as annual money amounts. Where tax treatment permits, compare them with the additional gross wage needed for the same after-tax effect. Include entry funds and ongoing costs. Keep government expenditure and wider outcomes separate. Preserve assumptions and nonmonetary effects. This evaluation method does not authorise editing an accepted case or a frozen submission.
+
 Produce a candidate brief with an explicit verification question, current rule, concrete burden, independent evidence, counterevidence, responsible institution, requested change and outcome measure. Report only what the evidence supports. Separate findings in an official document from present portal behavior and legal interpretation.
 
 For a first batch, discovery-research.md proposes four complaint reports, three decisions, up to ten candidates, two comparisons and one observed journey. These are workload limits for a pilot, not evidence-based performance targets or scheduled jobs. Review verified-candidate yield, rejection reasons and uncovered user groups, then follow actual improvements through the existing complaint workflow.
