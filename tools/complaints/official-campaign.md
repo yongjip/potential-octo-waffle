@@ -112,6 +112,16 @@ For a recipient and effectiveness review, define non-overlapping deposit bins as
 
 Preserve the selected criteria change and public-asset comparison alongside the new table. Update the frozen packet, attachment, current pointers and prepared answer mapping together. Preserve real case delivery and reply evidence. See the [deposit-bin comparison lesson](lessons-learned.md#lessons-from-deposit-bin-support-and-access-comparison-on-2026-10-10).
 
+## Apply an adopted annual valuation to the current prepared packet
+
+Saving a convention for future evaluations does not revise the current frozen submission. When the user asks whether every document is updated, compare the adopted scope with the actual body, attachment, calculation record and current execution pointers. Report any gap, then complete the authorised revision. Preserve previous packets and real case evidence.
+
+Use the [policy evaluation context](context-yongjip-kim-policy-evaluation/SKILL.md) to separate annual recipient benefit, public fiscal cost and policy outcomes. Compare the lower deposit's funding cost and the deferral's rate difference using the same reference rate. Reconcile the result with the full market funding cost minus paid-cash funding cost and deferral interest. Never add refundable or deferred principal as an annual gift.
+
+An additional gross-wage equivalent needs an explicit net-benefit basis and deductions on additional wages. A constant percentage, unverified tax treatment or derived market comparator remains a labelled scenario. Do not present that result as total salary, screening income, a new applicant test or actual recipient cash. Keep market, rate and tax assumptions beside the table, show rate sensitivity and preserve unvalued rights and outcomes.
+
+Finish arithmetic, all-page visual review and body-limit checks before freezing the revision. Align aliases, nested current-version records and future answer mapping. Keep accepted-case delivery unchanged. Identify the actual review scope; an earlier delegated review does not become a new independent review. Recheck the live route and replace stale text before transmission. See the [current-packet completion lesson](lessons-learned.md#lessons-from-completing-annual-valuation-in-the-prepared-packet-on-2026-10-10).
+
 ## Compare public-asset uses when the user adds that policy question
 
 Separate the reason a public asset was acquired from the reason to retain its current use. A published acquisition standard does not establish the actual unit's acquisition price, ownership, sale authority or opportunity cost. Distinguish a tenant deposit, historical acquisition cost, current sale value and public subsidy. Keep a family-independent access benchmark as a programme evaluation question, not a new family-origin eligibility test or an asserted universal legal duty.
