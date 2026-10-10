@@ -94,6 +94,18 @@ If the tracker does not support the elected body's portal and procedure, retain 
 
 For a dated action calendar, give each row a target date, action, completion evidence and any prerequisite. Distinguish the official cutoff from the internal filing goal and an earlier backup day. Base overdue follow-up on the observed case deadline, not a date invented for the calendar. A received reply can trigger review immediately; an unanswered but still in-time case does not establish delay. Include an optional DM only after actual filing and separate sending authorisation. Keep rows planned until execution evidence exists. Preserve the reviewed plan and frozen packet; store the date expansion as a separate private artifact. Follow the [dated calendar lesson](lessons-learned.md#lessons-from-dated-action-planning-on-2026-10-09).
 
+## Compare public-asset uses when the user adds that policy question
+
+Separate the reason a public asset was acquired from the reason to retain its current use. A published acquisition standard does not establish the actual unit's acquisition price, ownership, sale authority or opportunity cost. Distinguish a tenant deposit, historical acquisition cost, current sale value and public subsidy. Keep a family-independent access benchmark as a programme evaluation question, not a new family-origin eligibility test or an asserted universal legal duty.
+
+Compare retention, selected admission-rule changes, reinvestment within the responsible jurisdiction and conditional inter-jurisdiction cooperation. Do not assume a city can sell any public rental unit or buy replacements outside its jurisdiction. Request the relevant authority and constraints. Include location, social mixing, commute and caregiving access instead of treating a cheaper remote unit as equivalent by default.
+
+Evaluate alternatives over the same horizon. Reconcile sale proceeds with deposit returns, related debts and transaction costs without double counting. Apply the same treatment to replacement-unit deposits and their future return obligations. Compare acquisition and operating costs, household payments, supported households and years, and remaining public assets. An unsupported sale price divided by an assumed replacement price does not establish the number of homes that can be provided. Cheap historical acquisition alone does not prove retention is the best present use.
+
+When the user authorises a concrete revision, incorporate a bounded comparative review alongside the selected current-rule improvement. Keep the requested decisions explicit. A broader review must not silently replace or postpone the existing admission-rule proposal. Distinguish existing institutional records from a new review plan. Regroup the prepared answer items when needed, preserve the delivery and response status of accepted cases, and identify newly prepared questions as not yet submitted. Do not mark historical unanswered cases as having received the new question.
+
+Follow the [public-asset comparison lesson](lessons-learned.md#lessons-from-public-asset-alternative-comparison-on-2026-10-10).
+
 ## Audit references and build conditional eligibility tables
 
 Audit each active reference against the particular claim it supports. Opening a URL or recognising an institution is not verification of that claim. Keep the notice title, date, household size, floor area, page convention and provenance together. Record remaining original-file equivalence checks privately. A checked archived copy does not become an official-host original. Preserve separate authority, calculation and interpretation limits instead of saying that every reference is verified.

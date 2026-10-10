@@ -703,3 +703,15 @@ Sources: [agent workflow](../../instructions/agent-workflow.md), [self-correctio
 - A family gift can fill a payment gap while increasing assessed assets. Check continuous eligibility through entry before drawing conclusions from the system's historical query timing. A family loan is not automatically recognised debt.
 - Conditional matrices may contain no verified admission cell. That is an evidence limit, not a reason to invent approval or conclude universal exclusion. Report screening, payment need, approval and selection separately.
 - Preserve actual receipts, old packets, calculations and prior reviewer inputs. Internal source-audit details do not automatically belong in an externally sent attachment.
+
+## Lessons from public-asset alternative comparison on 2026-10-10
+
+The user first asked a conceptual question without authorising a document change, then explicitly adopted the direction for documentation and the prepared submission. Treat these as different scopes. A policy discussion does not modify a frozen packet until the user requests the revision.
+
+Official city explanations identify acquisition standards and housing-stability, location and family-policy purposes. They do not establish the actual unit's acquisition cost or a measured advantage over sale and reinvestment. Distinguish the acquisition rationale from the current operating choice. A tenant deposit is not a sale price, and a refundable deposit is not unrestricted public revenue.
+
+Compare alternatives using the same horizon, public costs, household payments, supported households and years, location effects and remaining public assets. Account for returns, debt and costs without double counting. Verify disposal authority and cooperation conditions before treating cross-jurisdiction replacement as executable. Do not select a replacement-home count or assert that cheap units necessarily provide better welfare without evidence.
+
+Preserve the selected admission-rule priority and fallback alongside the added review. Keep prepared questions separate from questions actually delivered in accepted cases. The additional comparison groups related written decisions without changing real response evidence. Reuse prior calculation checks for unchanged models and inspect the newly authored pages and final export. A constructed official review identifies objections; it does not predict actual acceptance.
+
+Sources: [city acquisition guide](https://news.seoul.go.kr/citybuild/archives/520265), [published acquisition standard](https://news.seoul.go.kr/citybuild/files/2024/02/65dd3b53be8e01.95626212.pdf), [programme purpose](https://www.seoul.go.kr/news/news_report.do?nttNo=464286), [long-term housing account](https://www.seoul.go.kr/news/news_report.do?nttNo=453251&srchCtgry=465), [campaign procedure](official-campaign.md#compare-public-asset-uses-when-the-user-adds-that-policy-question), [handoff](../../data/agents/handoffs/complaints-public-value-v16.md).
