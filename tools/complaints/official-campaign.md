@@ -2,6 +2,8 @@
 
 Turn a selected policy request into a short official memo, a tracked written decision and an implementation check. Keep personal drafts, call evidence and actual receipt numbers in ignored complaint storage. A plan is not evidence that a filing or message was sent.
 
+Apply the [reasoning and drafting style](context-yongjip-kim-policy-evaluation/SKILL.md#reasoning-and-drafting-style): verified purpose, concrete mismatch, matched evidence and a simple correction. Keep the user's comparison stage and selected request intact. See the [style documentation lesson](lessons-learned.md#lessons-from-saving-policy-reasoning-and-drafting-style-on-2026-10-10).
+
 ## Fix the request and answer items
 
 State the selected change first and one acceptable fallback. Explain the connected mechanism before adding calculations. For a deposit and income-ceiling issue, connect earned savings, upfront funding, later interest and the admission ceiling. Separate current income from accumulated wealth. Do not add parental-wealth, gift-history or minimum-income tests without a selected policy change.

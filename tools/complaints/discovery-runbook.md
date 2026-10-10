@@ -46,7 +46,7 @@ If quantitative evidence depends on a table or chart, verify its layout and note
 
 ## Output and verification
 
-For policy proposals and evaluations, apply the [policy benefit context](context-yongjip-kim-policy-evaluation/SKILL.md). Present defensible household benefits as annual money amounts. Where tax treatment permits, compare them with the additional gross wage needed for the same after-tax effect. Include entry funds and ongoing costs. Keep government expenditure and wider outcomes separate. Preserve assumptions and nonmonetary effects. This evaluation method does not authorise editing an accepted case or a frozen submission.
+For policy proposals and evaluations, apply the [policy reasoning and evaluation context](context-yongjip-kim-policy-evaluation/SKILL.md). Start from the verified purpose and compare actual access conditions and support. Keep the comparison stage explicit and prefer a simple correction where it fits the purpose. Present defensible household benefits as annual money amounts. Where tax treatment permits, compare them with the additional gross wage needed for the same after-tax effect. Include entry funds and ongoing costs. Keep government expenditure and wider outcomes separate. Preserve assumptions and nonmonetary effects. This evaluation method does not authorise editing an accepted case or a frozen submission.
 
 Produce a candidate brief with an explicit verification question, current rule, concrete burden, independent evidence, counterevidence, responsible institution, requested change and outcome measure. Report only what the evidence supports. Separate findings in an official document from present portal behavior and legal interpretation.
 

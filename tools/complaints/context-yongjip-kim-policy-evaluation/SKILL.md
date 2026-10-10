@@ -1,15 +1,39 @@
 ---
 name: context-yongjip-kim-policy-evaluation
-description: "Use when preparing public-policy proposals or evaluating policy benefits for Yongjip Kim."
+description: "Use when evaluating public policies or drafting policy proposals for Yongjip Kim."
 ---
 
-# Policy benefit evaluation
+# Policy reasoning, drafting and benefit evaluation
 
 Apply these working conventions to Yongjip Kim's policy proposals and evaluations in this repository. Read this file through the complaint strategy or discovery runbook. It is the editable project context; it does not require a separately installed plugin.
 
 More-specific applicable context takes precedence for working conventions; levels to the left take priority.
 
 **Individual (this skill)** > Team > Business unit > Company > Default
+
+## Reasoning and drafting style
+
+Apply this style to policy analysis and proposals. It records working preferences, not a personality profile or political ideology.
+
+### Build the argument
+
+- Start from the policy's verified purpose. Identify the concrete mismatch between that purpose, access conditions and the resulting support. Compliance with separate rules does not establish that their combined design serves the purpose.
+- Follow the user's developing argument before adding another rationale. Keep the comparison household, qualifying conditions, time and policy stage explicit. Answer the question within that scope.
+- Distinguish current earned income, accumulated assets and spendable funds. Separate earned savings, gifts and repayable family borrowing. Do not treat high income as proof of existing wealth or access to family support.
+- Trace the money: what must the household pay, what support can it receive, and under which conditions? Express recurring benefits annually and future purchase discounts at the exercise date. Use the monetary methods below without replacing nonmonetary outcomes.
+- Compare support for the same qualifying conditions. Identify when a house price or an initial choice changes the award size. Ask whether that difference serves the stated purpose. Prefer simple, transparent rules that make the selected benefit predictable when they fit the purpose. A fixed award can equalise one component; it does not equalise every household outcome.
+- Explain structural mechanisms separately from observed recipient shares and measured behavioural effects. Do not assert that a class monopolises support without evidence. A well-defined funding gap can justify an institutional question without proving universal exclusion.
+- Keep the selected change and fallback visible as the analysis expands. Do not add parental-wealth, gift-history or minimum-income screening merely to solve a comparison problem.
+
+### Write for an official reader
+
+- Lead with the main point. Use short sentences and concrete terms. For a proposal, use a short purpose-based problem statement, matched evidence or calculation, then a specific correction and requested decision.
+- Use a firm, constructive tone. Describe the design issue and public purpose without pleading, accusing a recipient group or turning every sentence into a challenge. Frame the request as a general rule improvement.
+- Keep assumptions that change the conclusion beside the relevant calculation. Place internal verification logs and secondary qualifications in supporting records. Do not let unrelated caveats obscure a valid comparison.
+- Use questions when they reveal a precise design contradiction or elicit a written decision. Follow them with the relevant facts and proposed remedy.
+- Correct a mistaken comparison plainly. Do not agree reflexively or defend an earlier answer by changing the question's scope.
+
+At acquisition-time appraisal `V` and a fixed qualifying deduction `C`, purchase price is `V - C` and the gross purchase discount is `C`. Compare that acquisition-stage discount before discussing later ownership returns. Prior appreciation during tenancy is not the tenant's ownership return. See the [purchase-stage lesson](../lessons-learned.md#lessons-from-fixed-awards-and-the-purchase-stage-on-2026-10-10).
 
 ## Working conventions
 
@@ -42,7 +66,9 @@ The wage-equivalent calculation describes additional wages needed to match a ben
 
 Before treating a funding-cost estimate as an after-tax benefit, adjust for relevant tax on alternative returns or deductions on borrowing costs where applicable. A nominal comparison rate alone does not establish a household's net saving.
 
-## Output order
+## Output order for detailed comparisons
+
+For a short policy memo, use problem → matched evidence or calculation → concrete correction and requested decision. Use the sequence below for detailed analysis or an attachment. Include only the fields needed in a short answer.
 
 1. State the policy purpose and the household used for comparison.
 2. Present annual recipient benefit, with the principal components.
