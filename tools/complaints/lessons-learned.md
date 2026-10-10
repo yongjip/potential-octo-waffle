@@ -704,6 +704,16 @@ Sources: [agent workflow](../../instructions/agent-workflow.md), [self-correctio
 - Conditional matrices may contain no verified admission cell. That is an evidence limit, not a reason to invent approval or conclude universal exclusion. Report screening, payment need, approval and selection separately.
 - Preserve actual receipts, old packets, calculations and prior reviewer inputs. Internal source-audit details do not automatically belong in an externally sent attachment.
 
+## Lessons from family borrowing and matrix interpretation on 2026-10-10
+
+The user challenged a family-funding explanation that left the impression that nobody could enter. The internal matrix excluded bank loans and equated current spendable cash with assessed assets. Its restricted assumptions cannot establish universal exclusion. Explain the available mechanisms directly before listing unresolved individual conditions.
+
+A current city release reports actual entry and deferral use. The matched recruitment notice deducts recognised institutional debt while generally excluding private transactions; court-confirmed private debt is a distinct category. A current bank page advertises a public-housing loan product. These sources establish rules, a published product and entry evidence. They do not establish the future matched unit's loan approval, compatibility with deferral, recipients' actual funding sources or the deferral's exact asset treatment.
+
+Show a mixed-funding arithmetic example when useful, but label the loan amount a scenario. Keep gross payment funds separate from assessed assets. Verify whether the unpaid nominal deposit is included, excluded or offset in screening before giving an assessed-asset pass/fail result. A private loan not qualifying for deduction does not imply that all households using family loans are excluded. Preserve the previous matrix and the selected submission argument; an internal financing explanation does not reintroduce a fixed hypothetical loan into the submission.
+
+Sources and next checks: [city entry account](https://www.seoul.go.kr/news/news_report.do?nttNo=465059&srchCtgry=465), [published bank product](https://spot.wooribank.com/pot/Dream?PRD_CD=P020000139&withyou=POLON0052), [matrix interpretation procedure](official-campaign.md#interpret-family-support-matrices-without-universal-exclusion). Seek the matched institution's screening and financing explanation for a final individual eligibility conclusion. Private verification is stored in ignored complaint evidence. A failed patch used part of a long paragraph as if it were a full line; the retry used an existing standalone heading and preserved the unchanged paragraph.
+
 ## Lessons from public-asset alternative comparison on 2026-10-10
 
 The user first asked a conceptual question without authorising a document change, then explicitly adopted the direction for documentation and the prepared submission. Treat these as different scopes. A policy discussion does not modify a frozen packet until the user requests the revision.

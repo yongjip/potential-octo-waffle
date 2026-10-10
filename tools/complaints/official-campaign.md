@@ -54,6 +54,12 @@ Use product-specific loan conditions and a labelled rate scenario in the attachm
 
 See the [support-target revision lesson](lessons-learned.md#lessons-from-the-support-target-document-revision-on-2026-10-10) and [delegated review procedure](official-roleplay.md#run-a-delegated-document-rehearsal).
 
+## Interpret family-support matrices without universal exclusion
+
+When a user asks whether a matrix implies nobody can enter, check actual entry evidence and the model's financing exclusions first. A zero-bank-loan cash model is a restricted comparison. Do not present its empty admission set as a result for the whole programme. Keep the funding sum separate from assessed assets, eligibility, selection and approved lending.
+
+Verify whether a family gift, an ordinary private loan or a recognised court-confirmed debt is being modelled. A family-funded amount can coexist with a recognised bank loan. Private debt that is not deducted does not by itself rule out every mixed-funding household. Verify the deferral's asset treatment, financial-query timing and the bank's actual compatibility before marking an individual case as eligible. Public entry totals demonstrate entry, not recipients' family funding or the matched future unit's approval. See the [family-borrowing interpretation lesson](lessons-learned.md#lessons-from-family-borrowing-and-matrix-interpretation-on-2026-10-10).
+
 ## Use one official case as the main record
 
 Read existing filings, replies and the prepared packet before selecting a channel. Check current case status, receipt, deadline and the live final body before submitting. Record a phone explanation as an event; do not mark unanswered items complete because a call occurred.
