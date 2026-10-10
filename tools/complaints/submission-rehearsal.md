@@ -10,11 +10,13 @@ Canonical language: English. This procedure prepares institution-specific petiti
 4. Preserve earlier frozen versions. Give substantive body changes a new version and body hash. Use a dated current manifest for stale historical metadata without rewriting accepted delivery or old evidence.
 5. Keep a ready petition independent of unavailable recipient statistics, another petition's reply or an unpublished future recruitment notice. Recheck a future example when its official notice is available.
 
+Use short, descriptive filenames for outgoing text and attachments. Use the recipient's language. Exclude internal task labels, revision numbers and review-status labels from the filename, cover and footer. Preserve version history privately and update current links and attachment metadata. Renaming alone preserves the file hash; editing a cover or footer requires a new hash, a content comparison and visual inspection before replacing the selected attachment.
+
 ## Establish the current route
 
 | Destination | Starting route | Intended operation |
 | --- | --- | --- |
-| Seoul executive agency | [Eungdapso general suggestions and questions](https://eungdapso.seoul.go.kr/req/rectify/rectify.do) | Check an existing case's actual additional-inquiry control. If unavailable, use one linked follow-up for distinct new demands. |
+| Seoul executive agency | [Eungdapso general suggestions and questions](https://eungdapso.seoul.go.kr/req/rectify/rectify.do) | Inspect the existing case's additional-inquiry or edit control. An authorised amendment can preserve the original body and append reviewed new demands. If unavailable, use one linked follow-up. |
 | National ministry or municipality | [e-People petition](https://www.epeople.go.kr/nep/pttn/gnrlPttn/PttnRqstWrtnInfo.paid) | Select the intended agency. Keep an existing-answer follow-up separate from a new policy proposal. |
 | Existing institutional records | [Information disclosure portal](https://www.open.go.kr/com/main/mainView.do) | Use the information-disclosure procedure and one actual record-holding institution. Specify records and dates. Do not require creation of a new analysis. |
 | Seoul council policy audit | [Audit citizen-report board](https://www.smc.seoul.kr/board/BoardList.do?boardTypeId=162&menuId=001005009) | Use the audit report form while its current window is open. Ordinary council petitions use another route. |
@@ -34,6 +36,12 @@ Public guidance identifies a starting route. It does not establish the current a
 Apply the current tool's confirmation rules to the actual pending step. Routine authorised sign-in and document preparation do not require a generic extra approval. A newly displayed CAPTCHA or binding agreement can require action-time confirmation even after general delegation. Save and mark the actual pending page, ask once for that concrete step and continue independent work. Do not weaken security protections to recover a failed upload.
 
 If an upload or observation stalls, inspect the current control and outcome before retrying. Read the tool's applicable troubleshooting guide. A long interruption does not establish a permission, cookie, network or session-expiry cause. Reacquire current state and check whether the earlier action already took effect.
+
+If the browser adapter cannot observe a page, inspect the matching native browser window through the same computer-use tool. A real draft-loading dialog or an inactive task tab can be visible there. Resolve only the observed blocker, then inspect the intended page again. A successful recovery does not prove the cause of earlier adapter failures.
+
+Before refreshing an unsaved form, verify an exact local backup of its title, body and selected source files. Check whether a fresh server page still shows authentication. Client-side text on an old form is insufficient. Restore the reviewed fields and attachments after an intentional refresh. If automatic approval review rejects an action, report its reason, preserve the form and establish a safe recovery before retrying. Do not change security settings or use an indirect action to bypass the rejection.
+
+An editable existing body is different from an additional-message function. Record the exact case state and observed route. Freeze and review the combined amendment, keep the old body as an exact prefix, and track original and supplemental question numbers separately. Preserve historical delivery evidence. Rehearse before the final modify/save control; if the amendment succeeds later, verify the saved complete body under the same receipt. Do not also file its fallback as a separate request.
 
 ## Execute without unnecessary waiting
 

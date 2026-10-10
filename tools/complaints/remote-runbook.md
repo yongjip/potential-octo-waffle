@@ -56,6 +56,8 @@ Local module support differs between adapters. In the 2026-10-08 computer-use RE
 
 Use [submission-rehearsal.md](submission-rehearsal.md) for recipient-specific preparation and the current result matrix. Check the execution host and destination authentication again after a long interruption. A displayed selected filename does not confirm server acceptance. Do not infer an upload failure from an empty adapter FileList alone.
 
+For an observation failure, inspect the matching current native browser window through `cua_repl`. Reuse the selected browser. Resolve a visibly observed dialog or select the actual task tab before repeating an input. A successful native action is not proof of an adapter failure's cause. Verify local form backups before a deliberate refresh, and verify a fresh authenticated page before restoring the reviewed form. Treat an unavailable adapter FileList as unavailable rather than as an empty selected-file list.
+
 1. Select the Mac and workspace holding the private data. Verify the shell hostname against the profile. Confirm that computer use controls that Mac before loading credentials; browser and shell hosts can differ.
 2. Read this file and `computer-use.md`. Identify the operation: existing-case query, draft preparation or authorized filing. Account, login and case-processing states remain separate.
 3. Observe the current login UI and origin. Eungdapso uses Seoul integrated membership. Reuse an authorized session for the intended account or load only that portal's pair. Do not output entered credential values in diagnostic state.

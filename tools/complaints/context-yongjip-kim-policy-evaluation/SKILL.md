@@ -3,7 +3,7 @@ name: context-yongjip-kim-policy-evaluation
 description: "Use when evaluating public policies or drafting policy proposals for Yongjip Kim."
 ---
 
-# Policy reasoning, drafting and benefit evaluation
+# Policy proposal writing
 
 Apply these working conventions to Yongjip Kim's policy proposals and evaluations in this repository. Read this file through the complaint strategy or discovery runbook. It is the editable project context; it does not require a separately installed plugin.
 
@@ -32,6 +32,7 @@ Apply this style to policy analysis and proposals. It records working preference
 
 ### Write for an official reader
 
+- Name outgoing files for their subject and purpose in the recipient's language. Use short names. Keep internal task labels, revision numbers, agent names and review-status wording out of filenames, covers and footers. Record revision history and hashes in the private manifest. Keep established code identifiers and historical evidence intact. A renamed file needs updated links; a presentation edit also needs a new attachment hash and visual checks.
 - Lead with the main point. Use short sentences and concrete terms. For a proposal, use a short purpose-based problem statement, matched evidence or calculation, then a specific correction and requested decision.
 - Use a firm, constructive tone. Describe the design issue and public purpose without pleading, accusing a recipient group or turning every sentence into a challenge. Frame the request as a general rule improvement.
 - Keep assumptions that change the conclusion beside the relevant calculation. Place internal verification logs and secondary qualifications in supporting records. Do not let unrelated caveats obscure a valid comparison.

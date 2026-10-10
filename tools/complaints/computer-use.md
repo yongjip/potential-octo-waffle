@@ -87,6 +87,8 @@ For deposit/income arithmetic, use the [linkage review procedure](income-linkage
 
 Check for an existing receipt and a matching submitted case. A case in `submitted`, `waiting`, `response_received`, `closed`, or `submission_unknown` must not be submitted again. If further action is appropriate, create a new child case specifying what changed or what remains unanswered.
 
+An authorised amendment through an existing case's actual edit control is a separate operation. Inspect the case state and editable fields first. Freeze a combined version that preserves the old body and appends the new requests. Keep historical packets and evidence unchanged. Rehearse before the modify/save action. After actual saving, verify the complete revised body under the existing receipt and record the new delivery time and question scope. Use a linked child filing only as a fallback when that route is unavailable; do not execute both paths.
+
 Read the already-filed supplementary body before drafting another follow-up. If a pending case contains the same questions, defer the overlapping filing and retain the distinct records request or prospective policy proposal. Record this decision in the private plan. Match recruitment notices by date, program, unit size and conditions; the same apartment name does not establish the same supply round.
 
 Create a child case as `draft` or `prepared` before starting a new filing attempt. It has no receipt or submission date. This is necessary to persist `submission_unknown` before the external submit action. Add accepted filing facts only after observing the receipt; a prepared case is not a submitted case.
