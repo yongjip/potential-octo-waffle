@@ -692,3 +692,14 @@ When a lesson corrects an earlier statement, preserve its history through a corr
 Run relevant validators after edits. Documentation changes need link and consistency checks; add runtime tests when implementation changes. Keep pre-existing warnings distinct from new errors. A document or planned date does not create a recurring monitor or promise later execution.
 
 Sources: [agent workflow](../../instructions/agent-workflow.md), [self-correction policy](../../instructions/self-correction.md).
+
+## Lessons from reference auditing and family-support matrices on 2026-10-10
+
+- Match each active reference to its actual claim, rule and effective period. Source existence is not full claim verification. Keep original-file equivalence, unread contracts and other unresolved checks distinct from demonstrated errors.
+- A current-year rate can be a valid illustration while remaining unverified for the unit's later planned entry year. Label both dates.
+- Public lending limits vary by product, collateral and application channel. They do not establish personal approval or minimum required own cash. Keep dated basic rates separate from hypothetical comparison rates.
+- Salary used for eligibility comparisons is not the same as take-home pay used for saving calculations. State the assessed-income definition and household assumptions.
+- Net assessed assets and spendable cash need separate definitions. A cash-only table can equate them only under explicit assumptions. Do not double count savings already contained in current assets.
+- A family gift can fill a payment gap while increasing assessed assets. Check continuous eligibility through entry before drawing conclusions from the system's historical query timing. A family loan is not automatically recognised debt.
+- Conditional matrices may contain no verified admission cell. That is an evidence limit, not a reason to invent approval or conclude universal exclusion. Report screening, payment need, approval and selection separately.
+- Preserve actual receipts, old packets, calculations and prior reviewer inputs. Internal source-audit details do not automatically belong in an externally sent attachment.
