@@ -49,6 +49,28 @@ Once a reviewed envelope and the current route are ready, use the user's authori
 
 Immediately before the one final submission attempt, create a prepared child case if necessary and persist `submission_unknown`. Then submit once. Verify the accepted receipt, complete saved body, actual assignment and displayed deadline. Preserve primary evidence and append the result. If the outcome is uncertain, query the list before retrying. Never promote an uploaded filename, filled form or success-looking navigation into a confirmed receipt.
 
+## Split council reports by the decision being requested
+
+Separate topics when their decision, evidence and completion criteria differ. Keep one question and one matching attachment per report. State which other topics have separate reports. Preserve the earlier combined packet and mark it superseded; do not file it as an additional report.
+
+For an entry-criteria report, compare the same estimated take-home income's cumulative savings with the same notice's actual payment requirement. Keep income, saving years and other funding assumptions fixed across saving-rate rows. This compares institutional criteria; it must not create a minimum-income or savings-history requirement for applicants. State the original assessment-income definition and the take-home conversion assumptions.
+
+For a support-effects report, compare annual funding-cost savings using the same valuation assumptions across deposit amounts. Separate the price advantage and the interest advantage. Do not add the deferred principal as a benefit, treat an illustrative market ratio as a measured price, or call the calculation total government expenditure. Ask for alternative public-asset uses under the same period and target population.
+
+For a childbirth-purchase report, compare deductions at the same conditional purchase stage. Use common chart axes and separate qualifying-birth groups. Label any fixed amount as an illustration. Equal deductions do not establish equal lifetime wealth or equal subsequent house-price gains. Preserve the exact qualifying date, including whether the announcement date counts, residence requirements and resale-return conditions.
+
+Use a short body within the live limit and a subject-specific PDF. The two-page format used in this execution was enough for a chart, calculation assumptions, requests and references. Set a custom ReportLab Flowable's instance width and height after calling its base initializer; class attributes alone can leave a zero-height layout. Re-render every revised PDF and inspect all pages. Record final hashes before selection. If a selected file changes on disk, reselect it before upload.
+
+After registration, open the owner's saved detail, compare the full body and download the actual attachment. Record the portal's actual identifier type. An audit-board ID is not automatically an ombudsman receipt number. An owner's general complaint menu may cover only the ombudsman procedure. Its empty list does not prove that audit reports are absent. A save confirmation and a subsequent registered-success alert are separate steps; wait for the actual outcome instead of clicking the final control again.
+
+The observed portal stripped hyphens from attachment names and rendered a middle dot as an HTML entity in a title. Map the server name to the frozen attachment hash. If a saved-title correction is rejected by automatic approval review, preserve the accepted case, request the specific correction once and continue unaffected reports. After the reply, reload the approved local envelope or use the exact approved value. Verify the specific corrected title, not merely a stale variable's self-consistency. Append a correction record when an earlier observation was wrong.
+
+For contact corrections, distinguish the user's preferred correspondence email from account login IDs. Save the preference privately and verify each destination's contact field. Sensitive input values can be replaced with a redaction marker in the browser adapter, so a string comparison against that returned value can be false even when the real field is correct. Confirm the actual screen and the saved detail. For screenshot clips, use document coordinates: viewport rectangle plus scroll offset. Inspect the saved crop before embedding it. Keep complete private evidence separate from a cropped public-facing proof.
+
+These steps verify filing, not committee assignment, a reply deadline or actual policy change. Keep unresolved questions and the next internal check date with each accepted report. A date in a plan creates no scheduled reminder.
+
+See the [topic-splitting and filing lessons](lessons-learned.md#lessons-from-splitting-and-filing-council-reports-on-2026-10-11).
+
 ## Publish the reusable method
 
 Keep clean submission bodies, receipts, replies, account data, phone verification, screenshots and case-specific rehearsal evidence in ignored private storage. Commit the reusable procedure and a deidentified handoff only. Use an explicit file allowlist, inspect the patch and scan for personal identifiers and credentials before publishing to the authorised repository and branch. Preserve unrelated working-tree changes. Recheck the remote head before pushing and verify the remote commit afterward.

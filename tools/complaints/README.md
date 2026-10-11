@@ -42,6 +42,8 @@
 
 `data/complaints/`는 기존 `.gitignore` 규칙에 따라 Git에서 제외되는 로컬 자료다. 접수번호, 회신, 실제 제출 본문, 첨부 및 화면 캡처는 여기에 보관한다. 운영 코드와 익명 예시는 `tools/complaints/`에 둔다. Git 제외는 백업이 아니므로 이 자료는 별도 비공개 백업 대상이다.
 
+의회 제보는 [주제별 접수 기록](../../data/complaints/council/2026-10-11/README.md)에서 세 건의 본문·첨부·접수 상태와 후속 질문을 추적한다. 각 기록은 입주 기준, 공공자산 활용, 출산 매입 할인에 집중한다. [주제별 작성·차트·접수 지침](submission-rehearsal.md#split-council-reports-by-the-decision-being-requested)을 따른다. 후속 제출 전 [사용자 연락처 선호](../../data/complaints/contact-preferences.json)를 확인한다. 연락 이메일과 포털 로그인 ID를 같은 값으로 가정하지 않는다.
+
 2026년 10월 8일 저장된 계정 정보로 네 포털 모두 실제 로그인에 성공했다. 서울시는 통합회원 로그인 후 응답소 복귀까지 확인했다. 계정 저장 점검, 로그인 확인, 개별 민원 조회, 접수 완료는 각각 별도 결과다. 로그인 증거는 비공개 `data/complaints/auth/login-checks/`에 보관한다. 이후 작업에서 얻는 교훈도 [교훈 기록](lessons-learned.md)에 추가하고 해당 실행 지침에 반영한다.
 
 ## 시간을 줄이는 기능
