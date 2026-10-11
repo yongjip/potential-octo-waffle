@@ -10,8 +10,8 @@ const STATUSES = new Set(["draft", "prepared", "submission_unknown", "submitted"
 const SOURCE_KINDS = new Set(["shared_user_quote", "shared_assistant_summary", "portal_observation", "official_document", "local_decision"]);
 const PRIMARY_SOURCES = new Set(["portal_observation", "official_document"]);
 const DATE_FIELDS = ["submitted_on", "received_on", "response_on", "portal_due_on", "decision_notified_on", "next_check_on", "last_checked_on"];
-const CHANGE_FIELDS = new Set(["status", "status_raw", "resolution_status", "evidence_status", "receipt_number", "agency_receipt_number", "agency", "title", "next_action", "questions", "filing", ...DATE_FIELDS]);
-const FACT_FIELDS = new Set(["status", "status_raw", "evidence_status", "receipt_number", "agency_receipt_number", "agency", "submitted_on", "received_on", "response_on", "portal_due_on", "decision_notified_on", "last_checked_on"]);
+const CHANGE_FIELDS = new Set(["status", "status_raw", "resolution_status", "evidence_status", "receipt_number", "agency_receipt_number", "portal_record_id", "agency", "title", "next_action", "questions", "filing", ...DATE_FIELDS]);
+const FACT_FIELDS = new Set(["status", "status_raw", "evidence_status", "receipt_number", "agency_receipt_number", "portal_record_id", "agency", "submitted_on", "received_on", "response_on", "portal_due_on", "decision_notified_on", "last_checked_on"]);
 const TRANSITIONS = {
   draft: ["draft", "prepared", "hold", "cancelled"],
   prepared: ["draft", "prepared", "submission_unknown", "submitted", "waiting", "hold", "cancelled"],
@@ -44,8 +44,11 @@ export function validateCase(record) {
     requireValue(typeof record[field] === "string" && record[field].trim().length > 0, `${field} is required`);
   }
   requireValue(/^[a-z0-9][a-z0-9-]*$/.test(record.case_id), "case_id must use lowercase letters, digits and hyphens");
-  requireValue(["open_go_kr", "epeople", "seoul_eungdapso"].includes(record.portal), "Unknown portal");
-  requireValue(["petition", "information_disclosure", "objection", "proposal"].includes(record.kind), "Unknown procedure kind");
+  requireValue(["open_go_kr", "epeople", "seoul_eungdapso", "seoul_council"].includes(record.portal), "Unknown portal");
+  requireValue(["petition", "information_disclosure", "objection", "proposal", "council_audit_report"].includes(record.kind), "Unknown procedure kind");
+  requireValue((record.portal === "seoul_council") === (record.kind === "council_audit_report"), "Council reports require their own portal and procedure kind");
+  requireValue(record.portal_record_id == null || (record.portal === "seoul_council" && /^\d+$/.test(record.portal_record_id) && typeof record.portal_record_id === "string"), "portal_record_id must be a council board ID string");
+  if (record.portal === "seoul_council") requireValue(!record.receipt_number && !record.agency_receipt_number, "A council board ID is not a formal receipt number");
   requireValue(STATUSES.has(record.status), "Unknown status");
   requireValue(["pending", "confirmed", "conflict", "context_only"].includes(record.evidence_status), "Unknown evidence_status");
   requireValue(["unknown", "unresolved", "resolved"].includes(record.resolution_status), "Unknown resolution_status");
@@ -59,10 +62,10 @@ export function validateCase(record) {
   }
   if (record.status === "response_received") requireValue(validDay(record.response_on), "Response receipt requires response_on");
   if (["draft", "prepared"].includes(record.status)) {
-    requireValue(!record.receipt_number && !record.agency_receipt_number && !record.submitted_on && !record.received_on && !record.response_on, "A recorded filing cannot be prepared for resubmission; create a child case");
+    requireValue(!record.receipt_number && !record.agency_receipt_number && !record.portal_record_id && !record.submitted_on && !record.received_on && !record.response_on, "A recorded filing cannot be prepared for resubmission; create a child case");
   }
   if (["submitted", "waiting"].includes(record.status) && record.evidence_status === "confirmed") {
-    requireValue(!!record.receipt_number, "Confirmed filing requires the portal receipt number");
+    requireValue(record.portal === "seoul_council" ? !!record.portal_record_id : !!record.receipt_number, "Confirmed filing requires the portal receipt number or council board ID");
   }
   requireValue(Array.isArray(record.questions), "questions must be an array");
   const questionIds = new Set();
@@ -91,6 +94,11 @@ function validateRelations(cases) {
     if (record.receipt_number) {
       const key = `${record.portal}:${record.receipt_number}`;
       requireValue(!receipts.has(key), `Duplicate portal receipt: ${record.case_id}`);
+      receipts.add(key);
+    }
+    if (record.portal_record_id) {
+      const key = `${record.portal}:board:${record.portal_record_id}`;
+      requireValue(!receipts.has(key), `Duplicate council board ID: ${record.case_id}`);
       receipts.add(key);
     }
   }
@@ -168,18 +176,19 @@ export function renderBoard(cases, asOf) {
     else if (["submitted", "waiting"].includes(r.status) && r.portal_due_on === asOf) attention = "표시 예정일 당일";
     else if (r.status === "response_received" && r.resolution_status !== "resolved") attention = "답변 내용 검토";
     if (r.next_check_on && r.next_check_on <= asOf) attention += " · 점검일 도래";
-    return `| ${[r.case_id, r.title, r.agency, r.status, r.evidence_status, r.receipt_number, r.portal_due_on, r.next_check_on, attention].map(cell).join(" | ")} |`;
+    return `| ${[r.case_id, r.title, r.agency, r.status, r.evidence_status, r.receipt_number, r.portal_record_id ?? "해당 없음", r.portal_due_on, r.next_check_on, attention].map(cell).join(" | ")} |`;
   });
   const details = records.map(r => [
     `## ${r.case_id}`,
     `상위 사건: ${r.parent_case_id ?? "없음"}. 해결 상태: ${r.resolution_status}. 포털 원문 상태: ${r.status_raw ?? "미확인"}.`,
     `제출일: ${r.submitted_on ?? "미확인"}. 기관 접수일: ${r.received_on ?? "미확인"}. 답변일: ${r.response_on ?? "미확인"}. 마지막 포털 확인: ${r.last_checked_on ?? "없음"}.`,
     `처리기관 접수번호: ${r.agency_receipt_number ?? "미확인"}. 근거 종류: ${r.source.kind}. 근거 관찰일: ${r.source.observed_on}.`,
+    ...(r.portal_record_id ? [`의회 게시물 ID: ${r.portal_record_id}. 공식 민원 접수번호와 구분한다.`] : []),
     `근거: ${r.source.evidence_path ? `[저장한 원문](<${r.source.evidence_path}>)` : r.source.url ? `[출처](${r.source.url})` : "로컬 작성 기록"}.`,
     `다음 행동: ${r.next_action}`,
     ...r.questions.map(q => `- ${q.id}: ${q.request} — ${q.answer_status}${q.response_evidence ? ` (${q.response_evidence})` : ""}`),
   ].join("\n\n")).join("\n\n");
-  return `# 민원 추적 장부\n\n작성 기준: ${asOf} KST. cases.jsonl과 events.jsonl에서 생성한 로컬 자료.\n\n총 ${records.length}건 · 제출 또는 대기 ${waiting}건 · 답변 수신 ${records.filter(r => r.status === "response_received").length}건 · 공식 근거 대조 전 ${records.filter(r => r.evidence_status !== "confirmed").length}건.\n\n포털 표시 예정일과 내부 점검일은 별도이며 법정기한을 자동 계산하지 않는다. pending의 상태와 날짜는 출처에 남은 기록으로 읽는다.\n\n| 사건 | 제목 | 기관 | 처리 상태 | 근거 상태 | 포털 접수번호 | 표시 예정일 | 내부 점검일 | 확인할 사항 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n${rows.join("\n")}\n\n${details}\n`;
+  return `# 민원 추적 장부\n\n작성 기준: ${asOf} KST. cases.jsonl과 events.jsonl에서 생성한 로컬 자료.\n\n총 ${records.length}건 · 제출 또는 대기 ${waiting}건 · 답변 수신 ${records.filter(r => r.status === "response_received").length}건 · 공식 근거 대조 전 ${records.filter(r => r.evidence_status !== "confirmed").length}건.\n\n포털 표시 예정일과 내부 점검일은 별도이며 법정기한을 자동 계산하지 않는다. pending의 상태와 날짜는 출처에 남은 기록으로 읽는다.\n\n| 사건 | 제목 | 기관 | 처리 상태 | 근거 상태 | 포털 접수번호 | 의회 게시물 ID | 표시 예정일 | 내부 점검일 | 확인할 사항 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n${rows.join("\n")}\n\n${details}\n`;
 }
 
 async function appendLine(file, value) {
@@ -217,6 +226,26 @@ export async function recordEvent(dataDir, event) {
   });
 }
 
+export async function addCase(dataDir, input) {
+  return withLock(dataDir, async () => {
+    validateCase(input);
+    await verifyEvidence(input, dataDir);
+    let store;
+    try { store = await loadStore(dataDir); }
+    catch (error) { if (error.code !== "ENOENT" || error.path !== path.join(dataDir, "cases.jsonl")) throw error; store = { cases: new Map() }; }
+    if (store.cases.has(input.case_id)) {
+      const base = (await readLines(path.join(dataDir, "cases.jsonl"))).find(row => row.case_id === input.case_id);
+      requireValue(isDeepStrictEqual(base, input), "case_id already exists with different content");
+      return "already_added";
+    }
+    const next = new Map(store.cases);
+    next.set(input.case_id, input);
+    validateRelations(next);
+    await appendLine(path.join(dataDir, "cases.jsonl"), input);
+    return "added";
+  });
+}
+
 async function main() {
   const [command = "help", ...args] = process.argv.slice(2);
   const options = {};
@@ -238,19 +267,7 @@ async function main() {
     requireValue(typeof options.file === "string", "--file is required");
     const input = JSON.parse(await readFile(path.resolve(options.file), "utf8"));
     if (command === "record") console.log(await recordEvent(dataDir, input));
-    else await withLock(dataDir, async () => {
-      validateCase(input);
-      await verifyEvidence(input, dataDir);
-      let store;
-      try { store = await loadStore(dataDir); }
-      catch (error) { if (error.code !== "ENOENT" || error.path !== path.join(dataDir, "cases.jsonl")) throw error; store = { cases: new Map() }; }
-      requireValue(!store.cases.has(input.case_id), "case_id already exists");
-      const next = new Map(store.cases);
-      next.set(input.case_id, input);
-      validateRelations(next);
-      await appendLine(path.join(dataDir, "cases.jsonl"), input);
-      console.log("added");
-    });
+    else console.log(await addCase(dataDir, input));
     return;
   }
   const store = await loadStore(dataDir);

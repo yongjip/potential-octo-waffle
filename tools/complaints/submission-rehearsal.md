@@ -91,6 +91,20 @@ Retain historical rehearsals as dated evidence. Add a current execution manifest
 
 See the [execution lessons](lessons-learned.md#lessons-from-completing-executive-agency-filings-on-2026-10-11).
 
+## Review and file a tax-policy petition
+
+Keep a common policy correction in one case when the responsible institution and requested decision are the same. Separate the clean form body from a short evidence PDF. Match every outgoing reference to its claim and verify the current legal version, taxpayer scope, transaction type, tax base and national/local components. Give independent reviewers the final artifact after material reference or scope corrections. Preserve earlier packet and source observations privately.
+
+Before moving to institution selection, compare the entire entered body with the frozen value, including blank lines. Replace an earlier selected attachment when its local bytes changed. Confirm one actual listed file, current bytes and visibility. A mixed-byte character counter can differ from Unicode character count. An upload widget can clear its FileList after accepting a file. Neither difference alone proves truncation or failed upload.
+
+Inspect the effect of a preview action. On the inspected e-People flow, 신청 in the preview closed that overlay; the actual page then exposed its registration button. Persist the uncertain-submission state before the real registration action and use that control once. Do not treat an unchanged label as proof that a control has the same function.
+
+Save the completion receipt and screenshot before downloading anything. Open the saved case from the owner's list, compare the complete body, inspect readable paragraph gaps and verify the actual institution and displayed deadline. Use supported download controls to retrieve the accepted attachment, then compare its bytes with the frozen PDF. Preserve a partial verification honestly if the download remains unavailable. A backend can take longer than the requested wait, so a pending download must not prompt resubmission.
+
+Record the actual notification choices. Keep an internal follow-up date separate from the portal deadline and an automation. Evaluate the eventual reply against each reform request; an explanation of current law alone does not answer whether the requested reform will be accepted.
+
+See the [ETF review and filing lessons](lessons-learned.md#lessons-from-reviewing-and-filing-the-etf-tax-petition-on-2026-10-11).
+
 ## Publish the reusable method
 
 Keep clean submission bodies, receipts, replies, account data, phone verification, screenshots and case-specific rehearsal evidence in ignored private storage. Commit the reusable procedure and a deidentified handoff only. Use an explicit file allowlist, inspect the patch and scan for personal identifiers and credentials before publishing to the authorised repository and branch. Preserve unrelated working-tree changes. Recheck the remote head before pushing and verify the remote commit afterward.
