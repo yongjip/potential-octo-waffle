@@ -75,6 +75,22 @@ See the [topic-splitting and filing lessons](lessons-learned.md#lessons-from-spl
 
 See the [saved-body readability correction](lessons-learned.md#lessons-from-correcting-saved-body-readability-on-2026-10-11).
 
+## Complete executive-agency filings and preserve amendments
+
+Use confirmed profile details for ordinary required fields without a generic approval request. Do not treat a required consent as a required text field. Under the current computer-use tool, each displayed CAPTCHA and binding agreement requires action-time confirmation. Bundle the actual pending confirmations when possible. Reuse confirmation for the same unchanged action; future general delegation does not remove a tool requirement. Read-only notices and routine input do not require that confirmation.
+
+For custom radio controls, inspect the visible label when checking the input has no effect. The inspected e-People input had a one-pixel box beneath its visible label. Clicking the observed label changed the actual checked state. Verify the resulting selection before moving on. Do not invent click options or infer agreement from an attempted action. Decline unrequested location access if the browser displays that prompt. Its presence in one flow does not explain every failed action.
+
+An existing Eungdapso edit must retain the accepted original as an exact prefix and preserve its receipt and original submission date. Append the reviewed supplement and add its questions to the ledger with distinct identifiers. Keep earlier question statuses and accepted evidence. Verify the new complete saved body, contact field and visible paragraph gaps. Do not create a replacement case when the amendment succeeds.
+
+Persist an uncertain-submission record immediately before the one final attempt. A normal confirmation dialog can precede actual registration. Inspect the subsequent result without repeating the submit control. In the inspected e-People flow, the completion page's application-history link opened a list. Open the matching title from that list and compare the complete saved body. The saved text used `white-space: pre-wrap`; plain-text blank lines were readable. Eungdapso and information disclosure used visible break elements. These portals did not require the council's formatting payload.
+
+For information disclosure, record both submission and institution-processing state. A portal receipt can coexist with an institution's pending-receipt state. Record a displayed processing date exactly, together with its observation time. Keep it separate from the next internal check date. Do not calculate an agency deadline for a petition that has not displayed one.
+
+Retain historical rehearsals as dated evidence. Add a current execution manifest and point the preparation index to it instead of rewriting an old rehearsal as a filing. Check each full body against its frozen hash and inspect the real saved screenshot. Declining optional e-People contact consent disabled email and phone notices in this execution; track those cases through the website and do not claim that notification contact fields were saved.
+
+See the [execution lessons](lessons-learned.md#lessons-from-completing-executive-agency-filings-on-2026-10-11).
+
 ## Publish the reusable method
 
 Keep clean submission bodies, receipts, replies, account data, phone verification, screenshots and case-specific rehearsal evidence in ignored private storage. Commit the reusable procedure and a deidentified handoff only. Use an explicit file allowlist, inspect the patch and scan for personal identifiers and credentials before publishing to the authorised repository and branch. Preserve unrelated working-tree changes. Recheck the remote head before pushing and verify the remote commit afterward.

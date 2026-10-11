@@ -45,6 +45,8 @@
 
 의회 제보는 [주제별 접수 기록](../../data/complaints/council/2026-10-11/README.md)에서 세 건의 본문·첨부·접수 상태와 후속 질문을 추적한다. 각 기록은 입주 기준, 공공자산 활용, 출산 매입 할인에 집중한다. [주제별 작성·차트·접수 지침](submission-rehearsal.md#split-council-reports-by-the-decision-being-requested)을 따른다. 후속 제출 전 [사용자 연락처 선호](../../data/complaints/contact-preferences.json)를 확인한다. 연락 이메일과 포털 로그인 ID를 같은 값으로 가정하지 않는다.
 
+2026년 10월 11일 나머지 다섯 작업도 제출 또는 저장을 완료했다. 서울시 기존 민원 보충 수정, 서울시 기존 검토자료 정보공개청구, 국토부 후속질의와 특별공급 개선 제안, 하남시 전세보증료 개선 제안이다. [비공개 접수 기록](../../data/complaints/filings/2026-10-11/README.md)에서 접수번호·본문 대조·화면 표시·처리기한을 확인한다. [기관별 접수와 수정 지침](submission-rehearsal.md#complete-executive-agency-filings-and-preserve-amendments)과 [이번 실행의 교훈](lessons-learned.md#lessons-from-completing-executive-agency-filings-on-2026-10-11)을 따른다. 접수 완료는 답변이나 제도 개선의 완료를 뜻하지 않는다.
+
 2026년 10월 8일 저장된 계정 정보로 네 포털 모두 실제 로그인에 성공했다. 서울시는 통합회원 로그인 후 응답소 복귀까지 확인했다. 계정 저장 점검, 로그인 확인, 개별 민원 조회, 접수 완료는 각각 별도 결과다. 로그인 증거는 비공개 `data/complaints/auth/login-checks/`에 보관한다. 이후 작업에서 얻는 교훈도 [교훈 기록](lessons-learned.md)에 추가하고 해당 실행 지침에 반영한다.
 
 ## 시간을 줄이는 기능
