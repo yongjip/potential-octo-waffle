@@ -35,6 +35,7 @@
 | [전화 설명의 기록과 서면 확인](phone-followup.md) | 전화 전사와 공식 회신 구분, 질문별 후속 확인과 자료 청구 |
 | [민원 후속 실행 계획](followup-plan.md) | 제출 묶음, 답변별 후속 조건, 내부 목표일과 처리기한 구분, 실제 변경 확인 |
 | [제출 전 점검](submission-rehearsal.md) | 기관별 최종 문안, 실제 폼·본문·첨부 대조, 인증 대기, 중복 방지와 접수 증거 |
+| [접수 본문의 가독성 확인](lessons-learned.md#lessons-from-correcting-saved-body-readability-on-2026-10-11) | 저장 내용 대조와 실제 화면의 문단·요청 항목 간격 확인을 구분 |
 | [민원 포털 사용법](computer-use.md) | 포털별 진입 경로, 조회·작성·접수 확인, 중복 제출 복구 |
 | [기관과 포털 목록](portals.json) | 공개 화면에서 확인한 메뉴와 URL |
 | [새 사건 예시](case.example.json) | 새 민원 또는 정보공개청구 입력 형식 |

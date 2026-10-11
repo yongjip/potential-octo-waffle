@@ -63,6 +63,8 @@ Use a short body within the live limit and a subject-specific PDF. The two-page 
 
 After registration, open the owner's saved detail, compare the full body and download the actual attachment. Record the portal's actual identifier type. An audit-board ID is not automatically an ombudsman receipt number. An owner's general complaint menu may cover only the ombudsman procedure. Its empty list does not prove that audit reports are absent. A save confirmation and a subsequent registered-success alert are separate steps; wait for the actual outcome instead of clicking the final control again.
 
+Check reader-visible layout separately from text integrity. Inspect the saved detail for paragraph gaps and separate numbered requests. A textarea can preserve every newline while the published page collapses them into one block. On the inspected council page, a single paragraph with `white-space: normal` ignored the saved plain-text newlines. Break tags entered through its normal edit form restored visible spacing. Keep the canonical prose separate from this portal-specific payload, count formatting characters against the live limit, and preserve titles, policy text and attachments. Use only the formatting controls or harmless line-break markup actually supported by the destination. Do not copy this council workaround to another portal or mutate the page's scripts or styles. Save and inspect a screenshot of the real server-saved result before reporting readable formatting.
+
 The observed portal stripped hyphens from attachment names and rendered a middle dot as an HTML entity in a title. Map the server name to the frozen attachment hash. If a saved-title correction is rejected by automatic approval review, preserve the accepted case, request the specific correction once and continue unaffected reports. After the reply, reload the approved local envelope or use the exact approved value. Verify the specific corrected title, not merely a stale variable's self-consistency. Append a correction record when an earlier observation was wrong.
 
 For contact corrections, distinguish the user's preferred correspondence email from account login IDs. Save the preference privately and verify each destination's contact field. Sensitive input values can be replaced with a redaction marker in the browser adapter, so a string comparison against that returned value can be false even when the real field is correct. Confirm the actual screen and the saved detail. For screenshot clips, use document coordinates: viewport rectangle plus scroll offset. Inspect the saved crop before embedding it. Keep complete private evidence separate from a cropped public-facing proof.
@@ -70,6 +72,8 @@ For contact corrections, distinguish the user's preferred correspondence email f
 These steps verify filing, not committee assignment, a reply deadline or actual policy change. Keep unresolved questions and the next internal check date with each accepted report. A date in a plan creates no scheduled reminder.
 
 See the [topic-splitting and filing lessons](lessons-learned.md#lessons-from-splitting-and-filing-council-reports-on-2026-10-11).
+
+See the [saved-body readability correction](lessons-learned.md#lessons-from-correcting-saved-body-readability-on-2026-10-11).
 
 ## Publish the reusable method
 
