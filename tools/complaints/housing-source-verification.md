@@ -12,6 +12,8 @@ Use this procedure for a requested source refresh or a material financing assump
 
 The official public notice UI is [SH notices](https://www.i-sh.co.kr/main/lay2/program/S1T294C297/www/brd/m_247/list.do). Search navigation can move between SH board layouts. The detail URL can be shared across POST-based records; preserve the exact title, public record ID and observed preview link as well as the snapshot. Missing search results do not establish deletion or the absence of all later corrections.
 
+If a current original link reports that its posting period has expired, preserve that message and record identity. An official webzine or a secondary archive can recover a prior public record ID, but a search service's cached official text does not establish current download access, byte equivalence or the absence of later corrections. Do not extend one notice's expiry to other rounds. After bounded checks of the official notice, application notice board and retained public link, request the agency's held final notice and substantive correction files. Keep the request prepared separately from accepted filings until it is authorized and delivered. Record partial pagination explicitly.
+
 ## Deferral and bank lending
 
 Confirm these as separate conditions:
@@ -28,6 +30,8 @@ Confirm these as separate conditions:
 | Joint use | A statement or agreement covering SH deferral and that bank/guarantee product together |
 
 A public bank maximum and an SH deferral scheme do not independently establish joint approval. Record unavailable confirmation as pending, with the specific missing condition. Do not replace it with a blanket claim that financing is possible or impossible. An informational source check does not authorize sending a bank inquiry or a new petition.
+
+Trace calculator explanations to the actual current lender/guarantor rule. HF's published deposit cap, guarantee amount, payment execution rule and exceptions do not establish SGI approval. Keep the bank loan amount separate from the guarantee amount. A collateral ratio fitting the paid deposit arithmetically is also not an underwriting decision. Prepare questions about the landlord's return-claim handling separately from the lender/guarantor's acceptance, income recognition, cost-ratio treatment and execution procedure.
 
 ## Calculations and report wording
 
