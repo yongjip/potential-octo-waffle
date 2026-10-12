@@ -6,20 +6,21 @@ Human-facing research notes may remain Korean, but operational instructions for 
 
 ## Current Operating Mode
 
-The repository is in structure-confirmation mode. Do not start new research writes until the instruction layer, KB schemas, and validation checks pass.
+Use task-scoped research and maintenance. A user-requested research task can proceed after the instruction and KB checks pass. Read `WORKSPACE.md` to select its workflow and current records. This mode does not imply that legacy migration or factual source verification is complete.
 
-Allowed during structure confirmation:
+Within the authorized task:
 
 - Add or refine instructions, schemas, validators, migration maps, and samples.
-- Read current real-estate corpus files.
+- Read relevant corpus files and official sources.
+- Add sourced intake, verification and working analysis for the requested question.
 - Run non-destructive validation commands.
 
-Not allowed during structure confirmation:
+Preserve these boundaries:
 
-- Move or delete current `analysis/`, `data/`, or `project-notes/` files.
-- Convert existing JSON arrays to JSONL without explicit approval.
-- Edit generated research outputs as if they were primary sources.
-- Add new factual real-estate research claims outside the structure work.
+- Do not broadly move or delete `analysis/`, `data/`, or `project-notes/` to tidy the workspace. Use task routing and indexes first; a concrete migration needs a preservation and reference-update plan.
+- Do not convert existing JSON arrays to JSONL without explicit user authorization for that migration.
+- Do not edit generated research outputs as if they were primary sources.
+- Keep new factual claims within the requested scope and apply the source/date/visibility gates below.
 
 ## Required Reading Order
 

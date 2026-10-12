@@ -5,6 +5,8 @@ import path from "node:path";
 import { fileExists, formatCount, isExternalLink, readJson, stripMarkdownAnchor } from "./lib/project-utils.mjs";
 
 const REQUIRED_FILES = [
+  "AGENTS.md",
+  "WORKSPACE.md",
   "INSTRUCTIONS.md",
   "instructions/evidence-policy.md",
   "instructions/agent-workflow.md",
@@ -68,7 +70,9 @@ async function main() {
 
   const instructionsText = await readFile("INSTRUCTIONS.md", "utf8").catch(() => "");
   if (!instructionsText.includes("Canonical language: English")) warnings.push("INSTRUCTIONS.md should state canonical language policy");
-  if (!instructionsText.includes("structure-confirmation mode")) warnings.push("INSTRUCTIONS.md should state structure-confirmation mode");
+  const operatingMode = instructionsText.split("## Current Operating Mode")[1]?.split(/^## /m)[0] ?? "";
+  if (!/structure-confirmation mode|task-scoped research and maintenance/i.test(operatingMode))
+    warnings.push("INSTRUCTIONS.md should state the current operating mode");
 
   console.log("Instructions doctor");
   console.log(formatCount("required files", REQUIRED_FILES.length));

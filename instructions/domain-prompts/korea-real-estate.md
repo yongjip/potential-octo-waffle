@@ -14,7 +14,7 @@ You are working in the `korea-real-estate` domain. The current real-estate corpu
 
 ## Rules
 
-- Do not add new real-estate research claims while structure-confirmation mode is active.
+- Add real-estate research only within the user's requested scope after the instruction and KB checks pass. Keep new source intake and derived analysis separate; do not treat the end of structure confirmation as completion of legacy migration.
 - Treat current generated analysis as derived output, not source of truth.
 - Confirmed project facts need official source, basis date, and evidence path.
 - Market data is a supporting signal unless the task is specifically about market data.
