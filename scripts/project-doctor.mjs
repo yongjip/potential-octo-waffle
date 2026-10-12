@@ -13,6 +13,8 @@ import {
 } from "./lib/project-utils.mjs";
 
 const REQUIRED_FILES = [
+  "AGENTS.md",
+  "WORKSPACE.md",
   "README.md",
   "INSTRUCTIONS.md",
   "analysis/README.md",
@@ -46,6 +48,11 @@ const KEY_TRIPLETS = [
 ];
 
 const LINK_SCAN_FILES = [
+  "AGENTS.md",
+  "WORKSPACE.md",
+  "tools/complaints/README.md",
+  "tools/complaints/workflow.md",
+  "tools/complaints/housing-source-verification.md",
   "README.md",
   "INSTRUCTIONS.md",
   "instructions/evidence-policy.md",

@@ -5,7 +5,7 @@ Canonical language: English.
 ## Start
 
 1. Read `INSTRUCTIONS.md`.
-2. Read the matching domain prompt.
+2. Use `WORKSPACE.md` to select the matching task entry point and domain prompt. For complaints, read `tools/complaints/workflow.md` and the current private pointer rather than the entire dated handoff history.
 3. Run `npm run agent:status`.
 4. Claim every file or global scope you will modify.
 5. Read the applicable runbook, recorded lessons and latest relevant handoff before repeating a workflow.

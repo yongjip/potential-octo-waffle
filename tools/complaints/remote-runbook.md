@@ -13,7 +13,7 @@ Canonical language: English. Follow the latest destination-specific account inst
 4. Run `accounts.mjs status` or `doctor`. Print only presence flags. Missing credentials, malformed files, wrong host, unsafe permissions, links or tracked files fail locally. Do not retarget an existing profile silently.
 5. Use `loadPortalCredentials(dataDir, portal)` from `accounts.mjs` inside the supported local credential adapter. It returns only the selected pair. Do not print or serialize it. Do not source the env file.
 
-Git does not synchronize credentials or the private complaint ledger. A listed remote host does not prove that the repository, browser or credentials are present there. Account preparation does not create a new SSH service or HTTP credential endpoint. The user subsequently authorized a daily same-chat status schedule on 2026-10-11; follow [status-monitoring.md](status-monitoring.md), which separates scheduling from actual successful portal queries.
+Git does not synchronize credentials or the private complaint ledger. A listed remote host does not prove that the repository, browser or credentials are present there. Account preparation does not create a new SSH service or HTTP credential endpoint. The user authorized a same-chat status schedule on 2026-10-11 and later reduced it to every Monday at 09:00 Asia/Seoul. Follow [status-monitoring.md](status-monitoring.md), which separates scheduling from actual successful portal queries and allows user-requested checks after portal emails.
 
 ## Loading in the computer-use session
 

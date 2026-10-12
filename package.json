@@ -11,6 +11,8 @@
     "kb:doctor": "node scripts/kb-doctor.mjs",
     "regenerate": "node scripts/regenerate-research-artifacts.mjs",
     "status": "git status --short",
+    "complaints:status": "node tools/complaints/status.mjs",
+    "complaints:test": "node --test tools/complaints/*.test.mjs",
     "audit:dates": "node scripts/generate-fixed-date-hardcode-audit.mjs",
     "weekly-log": "node scripts/create-weekly-monitoring-log.mjs --help"
   },

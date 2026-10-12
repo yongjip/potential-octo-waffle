@@ -30,6 +30,26 @@ test("the query plan separates pending portal work from substantive reply review
   assert.equal(plan.review_queue[0].case_id, "answered");
 });
 
+test("a pending additional answer is queried under the original receipt without reopening its final reply", () => {
+  const reply = { ...caseRecord("answered", "R-456"), status: "response_received", response_on: "2026-10-10", resolution_status: "unresolved", filing: { additional_answer: { status: "submitted", requested_on: "2026-10-11", evidence_path: "aftercare.txt" } } };
+  const cases = new Map([["answered", reply]]);
+  const plan = planChecks(cases, "2026-10-11");
+  assert.equal(plan.checks.length, 1);
+  assert.deepEqual(plan.checks[0].identity, { type: "receipt_number", value: "R-456" });
+  assert.equal(plan.checks[0].status, "response_received");
+  assert.equal(reply.response_on, "2026-10-10");
+  assert.deepEqual(plan.checks[0].pending_additional_answer, { requested_on: "2026-10-11", evidence_path: "aftercare.txt" });
+  assert.equal(plan.review_queue[0].case_id, "answered");
+  reply.filing.additional_answer.status = "response_received";
+  assert.deepEqual(planChecks(cases, "2026-10-11").checks, []);
+  reply.filing.additional_answer.status = "submitted";
+  reply.resolution_status = "resolved";
+  assert.deepEqual(planChecks(cases, "2026-10-11").checks, []);
+  reply.resolution_status = "unresolved";
+  reply.status = "closed";
+  assert.deepEqual(planChecks(cases, "2026-10-11").checks, []);
+});
+
 test("unchanged observations update evidence without sending duplicate alerts", async () => fixture(async dir => {
   assert.deepEqual((await ingestRun(dir, run())).alerts, []);
   assert.deepEqual((await ingestRun(dir, run("second-run"))).alerts, []);

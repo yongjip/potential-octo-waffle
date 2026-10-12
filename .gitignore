@@ -57,6 +57,11 @@ data/*
 !data/agents/
 !data/agents/**
 
+# New complaint handoffs can contain private receipts and operational evidence.
+# Already tracked historical files remain tracked; publish reusable instructions
+# in tools/complaints instead of adding personal handoffs.
+data/agents/handoffs/complaints-*.md
+
 # Local-only source cache folders remain excluded if data is force-added later.
 data/**/_scratch/
 data/**/_tmp/

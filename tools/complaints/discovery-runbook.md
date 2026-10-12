@@ -10,7 +10,31 @@ Choose one field, user goal, population and comparison period. State the questio
 
 Use an official report or original decision where available. Search results, headings and AI summaries locate evidence; they do not establish the underlying issue. Preserve document date, observation date, applicable rule version and analysis period separately. Follow the evidence gate before recording a confirmed fact.
 
+### Broaden an income-and-asset comparison without changing its purpose
+
+When the user broadens a proposal beyond newlywed or youth households, define the wider population explicitly. Preserve age, marriage and residence rules as conditions of each example, not conditions of the whole proposal. Do not extend a marriage-based saving period to general households.
+
+Distinguish current assessed income, accumulated assets, available entry funds and ongoing costs. Separate access to a service or financial product from reimbursement or preferential pricing. Existing asset screening does not establish that the combined income, asset and entry-payment rules fit the purpose. A summary with no displayed asset limit does not prove that every operational assessment ignores assets.
+
+Prioritise purpose-matched cases and compare realistic alternatives to abrupt income cutoffs. Preserve legitimate low-income priority and known programmes available without income limits as counterevidence. Do not treat every threshold as unlawful discrimination or describe all high-income households as excluded from all support. Separate a city's own discretion from national and provincial conditions.
+
+Verify the notice's issue date, effective date, renewal conditions and exceptions before quantifying a threshold. A guarantee-fee reimbursement is not an automatic annual grant. A service limit is not a cash payment. General interest support and additional category support must not be merged. Keep held-record requests separate from requests for a new policy review. See the [income-and-asset research lessons](lessons-learned.md#lessons-from-broadening-income-and-asset-research-on-2026-10-10).
+
+### Analyse structural access without recipient microdata
+
+Do not make recipient statistics a prerequisite for every distributional conclusion. First intersect the notice's eligibility and allocation rules with its price, payment dates and verified financing conditions. These conditions can establish that only households able to mobilise specified funds can complete a purchase, even when applicant-level asset or gift data are unavailable. This is a structural access finding, not a measured beneficiary share.
+
+Define the resource group by the funding requirement. Separate existing cash, liquidated assets, repayable borrowing and family support. Do not call a payment outside one designated loan minimum own capital or require that a cumulative amount be held at application. Treat a planned loan as planned, not as an approved loan. Verify the actual contract, middle-payment and final-payment schedule in the original table. Do not equate a sale price with a bank's assessed market value.
+
+Read the asset test literally. A ceiling for buildings and land is not a ceiling for financial assets or total assets. Check over-income routes and earlier-stage priority separately. A formally available route does not remove a funding barrier; a funding barrier does not establish that every over-income applicant is legally excluded.
+
+State the demonstrated distributional mechanism before the remaining statistical question. Recipient data can measure the relative shares of funding sources within the resource-capable group. Its absence does not erase the independently established barrier. A paper reporting this criticism is not empirical proof of beneficiary finances; read its method, attribution and footnote before using it. See the [structural-access lesson](lessons-learned.md#lessons-from-correcting-structural-access-analysis-on-2026-10-10).
+
+Before presenting that statistical question as a feasible next step, verify collection, access, population, variables, relevant dates and a valid link to the programme's recipients. A public general-household survey or an agency-held funding plan does not establish an accessible buyer-linked dataset. Where no access route is verified, record the research limit internally. Do not attach a repeated missing-share disclaimer to a proposal that relies only on demonstrated payment conditions and makes no share claim. See the [data-availability lesson](lessons-learned.md#lessons-from-checking-funding-data-availability-on-2026-10-10).
+
 ## Research procedure
+
+For procurement and suspected misuse, start with a named official contract, audit item or committee exchange. Separate an elected member's concern, the department's response and an established finding. Verify an actual file download and its fields before promising a data scan. A concentration or threshold pattern is a lead; request the linked scope, estimate, selection, inspection and payment records before asserting misconduct. Preserve completed remedial action and test its implementation. See the [procurement discovery lessons](lessons-learned.md#2026-10-12--procurement-and-budget-candidates).
 
 1. Read the selected complaint reports and improvement decisions. Capture the exact collection scope, exclusions, unit of counting, issue description and source passages. Separate requests made by complainants from findings made by the institution.
 2. Group candidates by the rule or process causing the burden. Mark repeated submissions, coordinated requests, syndicated reports and shared underlying sources. Complaint counts are not unique people or prevalence estimates unless the source establishes that interpretation.
