@@ -50,6 +50,28 @@ test("a pending additional answer is queried under the original receipt without 
   assert.deepEqual(planChecks(cases, "2026-10-11").checks, []);
 });
 
+test("a local reply plan stays discoverable when an accepted case moves from querying to reply review", async () => fixture(async dir => {
+  const original = (await loadStore(dir)).cases.get("first");
+  assert.equal("reply_review_plan" in planChecks(new Map([["first", original]]), "2026-10-11").checks[0], false);
+  const pointer = { path: "plans/response-review.json", procedure: "tools/complaints/reply-review.md" };
+  await recordEvent(dir, { event_id: "review-plan", case_id: "first", observed_at: "2026-10-11T20:00:00+09:00", source: { kind: "local_decision", observed_on: "2026-10-11" }, changes: { filing: { ...original.filing, reply_review_plan: { ...pointer, status: "awaiting_response" } }, next_action: "Review the reply against the accepted questions and bounded evidence." } });
+  let store = await loadStore(dir);
+  assert.deepEqual(planChecks(store.cases, "2026-10-11").checks[0].reply_review_plan, pointer);
+  assert.deepEqual(store.cases.get("first").questions, original.questions);
+  assert.equal(store.cases.get("first").last_checked_on, original.last_checked_on);
+  const replyText = "Complete new reply requiring comparison with the linked review plan.";
+  await writeFile(path.join(dir, "reply.txt"), replyText);
+  const input = run("reply-with-plan", { status_raw: "완료", status: "response_received", response_on: "2026-10-11" });
+  input.observations[0].reply = { evidence_path: "reply.txt", sha256: createHash("sha256").update(replyText).digest("hex") };
+  await ingestRun(dir, input);
+  store = await loadStore(dir);
+  const plan = planChecks(store.cases, "2026-10-11");
+  assert.equal(plan.checks.length, 0);
+  assert.deepEqual(plan.review_queue[0].reply_review_plan, pointer);
+  assert.equal(store.cases.get("first").receipt_number, original.receipt_number);
+  assert.notEqual(store.cases.get("first").resolution_status, "resolved");
+}));
+
 test("unchanged observations update evidence without sending duplicate alerts", async () => fixture(async dir => {
   assert.deepEqual((await ingestRun(dir, run())).alerts, []);
   assert.deepEqual((await ingestRun(dir, run("second-run"))).alerts, []);

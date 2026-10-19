@@ -15,7 +15,7 @@ Use `node tools/complaints/monitor.mjs plan` only when you need the individual c
 | Task | Read | Complete when |
 | --- | --- | --- |
 | Weekly/user-requested portal check | [Status monitoring](status-monitoring.md), relevant [remote instructions](remote-runbook.md) | Fresh receipt-matched observation ingested; meaningful changes reported |
-| Review an answer | Accepted body and full new reply; [phone follow-up](phone-followup.md) if relevant | Delivered questions classified with reply locations and next action |
+| Review an answer | [Reply review](reply-review.md), accepted body, full new reply and private `filing.reply_review_plan` when present; [phone follow-up](phone-followup.md) if relevant | Delivered questions classified against the reply, related disclosure decisions and applicable precedents; next action recorded |
 | Submit or amend a case | [Submission procedure](submission-rehearsal.md), then relevant [portal procedure](computer-use.md) | Exact saved body and accepted attachments verified; ledger event added |
 | Verify SH sources and financing | [Housing source verification](housing-source-verification.md) and current analysis/source manifest | Official scope, corrections, product terms and unresolved joint conditions recorded |
 | Draft policy correction | Policy writing context and [campaign procedure](official-campaign.md) | Same scope in body, tables and attachment; assumptions beside consequential values |

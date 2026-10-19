@@ -28,11 +28,16 @@ function hasPendingAdditionalAnswer(record) {
     && record.filing?.additional_answer?.status === "submitted";
 }
 
+function replyReviewPlan(record) {
+  const plan = record.filing?.reply_review_plan;
+  return plan?.path ? { reply_review_plan: { path: plan.path, procedure: plan.procedure ?? "tools/complaints/reply-review.md" } } : {};
+}
+
 export function planChecks(cases, asOf) {
   requireValue(validDay(asOf), "as_of must be a real YYYY-MM-DD date");
-  const checks = [...cases.values()].filter(r => ACTIVE.has(r.status) || hasPendingAdditionalAnswer(r)).map(r => ({ case_id: r.case_id, portal: r.portal, title: r.title, agency: r.agency, identity: identityFor(r), source_url: r.source.url ?? null, status: r.status, status_raw: r.status_raw ?? null, portal_due_on: r.portal_due_on ?? null, next_check_on: r.next_check_on ?? null, ...(hasPendingAdditionalAnswer(r) ? { pending_additional_answer: { requested_on: r.filing.additional_answer.requested_on, evidence_path: r.filing.additional_answer.evidence_path } } : {}) }));
+  const checks = [...cases.values()].filter(r => ACTIVE.has(r.status) || hasPendingAdditionalAnswer(r)).map(r => ({ case_id: r.case_id, portal: r.portal, title: r.title, agency: r.agency, identity: identityFor(r), source_url: r.source.url ?? null, status: r.status, status_raw: r.status_raw ?? null, portal_due_on: r.portal_due_on ?? null, next_check_on: r.next_check_on ?? null, ...replyReviewPlan(r), ...(hasPendingAdditionalAnswer(r) ? { pending_additional_answer: { requested_on: r.filing.additional_answer.requested_on, evidence_path: r.filing.additional_answer.evidence_path } } : {}) }));
   checks.sort((a, b) => (a.portal_due_on ?? "9999").localeCompare(b.portal_due_on ?? "9999") || a.portal.localeCompare(b.portal) || a.case_id.localeCompare(b.case_id));
-  return { as_of: asOf, checks, review_queue: [...cases.values()].filter(r => r.status === "response_received" && r.resolution_status !== "resolved").map(r => ({ case_id: r.case_id, next_action: r.next_action, unanswered: r.questions.filter(q => ["unanswered", "partial"].includes(q.answer_status)).map(q => q.id) })) };
+  return { as_of: asOf, checks, review_queue: [...cases.values()].filter(r => r.status === "response_received" && r.resolution_status !== "resolved").map(r => ({ case_id: r.case_id, next_action: r.next_action, ...replyReviewPlan(r), unanswered: r.questions.filter(q => ["unanswered", "partial"].includes(q.answer_status)).map(q => q.id) })) };
 }
 
 async function readHistory(dataDir) {
