@@ -32,6 +32,18 @@ Classify delivered questions as answered, partial, unanswered or not applicable,
 
 Review each arriving reply promptly; do not postpone acquisition because a related case is still pending. Consolidate the remaining issue before preparing another petition. Follow-ups, objections, external messages and changes to an existing filing need their own authorization. A documented plan is not authorization to submit automatically.
 
+## Review a repeated-petition notice
+
+Separate a warning about future closure from an actual repeated-petition closure. Record the earlier receipts and notification dates cited by the authority. A notice that two replies were sent does not establish that every later question was answered or that all closure conditions have been met. Compare the accepted bodies, not just their titles or the common policy topic.
+
+Article 23 of the Civil Petitions Treatment Act requires consideration of the petition's nature, substantive similarity and relationship, and circumstances requiring the same answer. Do not recommend cosmetic rewriting, changing recipients or filing each new notice as a way to reset the count. A new notice number, date or calculation alone does not guarantee separate treatment. Identify the genuinely new facts or legal conditions, why they can affect the answer, and the distinct decision or corrective action requested. Preserve the connection to the earlier issue.
+
+Keep three possible routes separate: policy improvement through the existing council case, acquisition of identified existing records, and review of the authority's handling of unanswered questions. An ombudsman or complaints-review request is a proposed independent review, not a guaranteed finding of misconduct or a mechanism to compel the preferred policy. Verify the current route before execution. Monitoring candidates or preparing a differentiated petition does not authorize automatic filing or a new monitoring schedule.
+
+For an individual ombudsman request, verify the current local ordinance's grievance-investigation procedure rather than applying collective audit-request signature requirements. Put the handling issue first: which delivered questions were examined, why an answer omitted them, and whether a repeated-petition notice was general guidance or an actual similarity assessment. If the authority made that assessment, ask how it considered a justified need to clarify unanswered items. Distinguish overlapping questions from genuinely additional requests by comparing the earlier accepted bodies. A section heading's date is not necessarily the verified save or submission date.
+
+Prepare a compact comparison and a separate source appendix. Preserve the authority's explanations that did answer part of a question, and label the applicant's assessment as such. Keep full source text distinct from marked extracts and preserve any later additional reply. An unanswered disclosure request need not delay a self-contained review of already documented handling; do not assume its eventual result. Have factual, legal and receiving-official reviews check the same final draft and render every attachment page before freezing the packet.
+
 ## Tracking and completion
 
 Preserve each receipt, accepted body, attachments, historical reply and displayed deadline. Add a local planning event with the private plan pointer and next action. Do not change portal status, `last_checked_on`, delivered questions or filing acceptance merely because a plan was updated.

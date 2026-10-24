@@ -4,6 +4,20 @@ Turn a selected policy request into a short official memo, a tracked written dec
 
 Apply the [reasoning and drafting style](context-yongjip-kim-policy-evaluation/SKILL.md#reasoning-and-drafting-style): verified purpose, concrete mismatch, matched evidence and a simple correction. Keep the user's comparison stage and selected request intact. See the [style documentation lesson](lessons-learned.md#lessons-from-saving-policy-reasoning-and-drafting-style-on-2026-10-10).
 
+## Review outcomes and select the next decision
+
+Before expanding a campaign, replay the ledger and inspect accepted originals and actual replies. Separate receipt, acquired records, a reasoned policy position, a concrete change commitment and implemented rules. Record the last portal verification date. Neither a polite acknowledgement nor an announced reform establishes that the petition caused a change. Recent cases still within their displayed processing period are not evidence of failure.
+
+Keep reply-review completion separate from policy resolution. An unresolved response queue does not measure unread replies. Check whether a linked follow-up has already been accepted before recommending it again. Reconcile free-text next actions with recorded deadlines and child cases through local planning events; preserve portal facts and the original evidence date.
+
+Choose a small active policy portfolio using the user's objective, strength of the demonstrated mismatch, available decision authority and next observable milestone. Keep other accepted cases on the existing monitor. For each active topic, identify one principal change, a useful fallback, the recipient's actual authority and the evidence that would establish implementation. Similar income-versus-asset concerns do not make every programme's purpose or remedy identical. Actual-expense tax relief, selective grants, public services and policy loans require separate choices.
+
+Do not make a procedural review or a narrowly scoped disclosure result a prerequisite for every policy route. Use an existing council case for the policy decision and, when justified, an ombudsman request for handling quality. Verify actual assignment and the current supplement route before sending. An ombudsman may reclassify or refer a case; legal admissibility does not establish that the route is strategically best. A disclosure result blocks only claims that require that result, not independent topics already supported by accepted evidence. When revising that sequence, align the plan's completion conditions, linked cases' next actions and local review-plan metadata. Preserve accepted filing content and portal observations.
+
+Lead each recipient's memo with the decision within that recipient's authority. Use a short summary and the decisive comparison, with full evidence as an appendix. Preserve wider adopted issues in their own accepted cases instead of reintroducing every demand in every letter. Repeat review only for a material new record, changed rule, actual decision or unresolved assigned milestone. A further generic reply can be recorded and transferred to the existing policy route without another identical procedural complaint.
+
+An independent strategy review must compare alternative routes, waiting costs and stopping conditions. A factual, legal or receiving-official check of a draft does not also establish strategic superiority or a probability of success. See the [campaign review lesson](lessons-learned.md#2026-10-24--review-campaign-outcomes-and-remove-unrelated-waiting-gates).
+
 ## Fix the request and answer items
 
 State the selected change first and one acceptable fallback. Explain the connected mechanism before adding calculations. For a deposit and income-ceiling issue, connect earned savings, upfront funding, later interest and the admission ceiling. Separate current income from accumulated wealth. Do not add parental-wealth, gift-history or minimum-income tests without a selected policy change.
